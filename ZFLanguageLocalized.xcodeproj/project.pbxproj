@@ -12,8 +12,6 @@
 		58555BB12266CAA100668869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58555BB02266CAA100668869 /* Assets.xcassets */; };
 		58555BB42266CAA100668869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58555BB22266CAA100668869 /* Main.storyboard */; };
 		58555BB72266CAA100668869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555BB62266CAA100668869 /* main.m */; };
-		58555BC02266CD9100668869 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 58555BBF2266CD9100668869 /* libz.tbd */; };
-		58555BC22266CDA600668869 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 58555BC12266CDA600668869 /* libiconv.2.tbd */; };
 		585672C922687224000989AA /* CvsStringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 585672C522687224000989AA /* CvsStringParser.m */; };
 		585672CA22687224000989AA /* ParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 585672C622687224000989AA /* ParserManager.m */; };
 		585672CD2268725F000989AA /* ZafulParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 585672CC2268725F000989AA /* ZafulParser.m */; };
@@ -46,8 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58555BC22266CDA600668869 /* libiconv.2.tbd in Frameworks */,
-				58555BC02266CD9100668869 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
