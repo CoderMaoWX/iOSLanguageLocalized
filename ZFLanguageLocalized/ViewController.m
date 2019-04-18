@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "LAWExcelTool.h"
+#import "ZafulParser.h"
 
-@interface ViewController ()<LAWExcelParserDelegate, NSTextFieldDelegate>
+@interface ViewController ()<NSTextFieldDelegate>
 
 @property (weak) IBOutlet NSTextField *excelPathCell;
 @property (weak) IBOutlet NSTextField *excelLabel;
@@ -59,7 +59,7 @@
     NSOpenPanel *panel = [NSOpenPanel openPanel];
     panel.allowsMultipleSelection = NO; //是否允许多选file
     panel.canChooseDirectories = NO;   //是否允许选择文件夹
-    panel.allowedFileTypes = @[@"xlsx"]; //只能选择xlsx文件
+    panel.allowedFileTypes = @[@"csv"]; //只能选择xlsx文件
     
     [panel beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse result) {
         if (result == NSModalResponseCancel)return;
@@ -69,11 +69,11 @@
         NSFileManager *fileManager = [NSFileManager defaultManager];
         BOOL isExists = [fileManager fileExistsAtPath:filePath isDirectory:&isDirectory];
         if (!isExists) {
-            [self showErrorText:@"选择的xlsx文件不存在" excelLabel:self.excelLabel];
+            [self showErrorText:@"选择的csv文件不存在" excelLabel:self.excelLabel];
             return;
         }
-        if (!isDirectory && ![filePath hasSuffix:@"xlsx"]) {
-            [self showErrorText:@"仅支持xlsx文件!" excelLabel:self.excelLabel];
+        if (!isDirectory && ![filePath hasSuffix:@"csv"]) {
+            [self showErrorText:@"仅支持csv文件!" excelLabel:self.excelLabel];
             return;
         }
         self.excelPathCell.stringValue = panel.URL.path;
@@ -110,107 +110,124 @@
 
 - (IBAction)startConvertAction:(NSButton *)sender {
     sender.enabled = NO;
-    [LAWExcelTool shareInstance].delegate = self;
-    [[LAWExcelTool shareInstance] parserExcelWithPath:self.excelPathCell.stringValue];
-}
-
-#pragma mark - <LAWExcelParserDelegate>
-
-/**
- *  解析xlsx文件,处理解析结果
- */
-- (void)parser:(LAWExcelTool *)parser success:(id)responseObj {
-    NSLog(@"解析xlsx文件,处理解析结果: \n%@", responseObj);
-    [self startWriteReplaceCurrentLange:responseObj];
-}
-
-- (void)startWriteReplaceCurrentLange:(NSArray *)infoArray {
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.indictorView.hidden = NO;
-        [self.indictorView startAnimation:nil];
-    });
-
+    self.indictorView.hidden = NO;
+    [self.indictorView startAnimation:nil];
     if (!self.localizblePath || !self.excelPath) {
-        [self showStatusTip:@"多语言文件替换失败" status:NO];
-        return;
+        [self showStatusTip:@"多语言文件替换失败, 文件路径错误" status:NO];
+    } else {
+        NSString *csvFilePath = self.excelPathCell.stringValue;
+        
+        NSArray *parseContentArray = [ZafulParser professionalParserCsvFileWithPath:csvFilePath];
+        
+        if (![parseContentArray isKindOfClass:[NSArray class]] || parseContentArray.count == 0) {
+            parseContentArray = [ZafulParser backupParserCsvFileWithPath:csvFilePath];
+        }
+        
+        if (![parseContentArray isKindOfClass:[NSArray class]] || parseContentArray.count == 0) {
+            [self showStatusTip:@"多语言转换失败, localizable路径错误" status:NO];
+        } else {
+            // 解析正确
+            [self parseReplaceManyLanguage:parseContentArray];
+        }
     }
+}
+
+- (void)parseReplaceManyLanguage:(NSArray *)infoArray
+{
+    NSArray *languageFlagArr = infoArray.firstObject;
+    for (NSArray *temColumnArray in infoArray) {
+        if (temColumnArray.count != languageFlagArr.count) {
+            [self showStatusTip:@"多语言转换失败, localizable路径错误" status:NO];
+            return;
+        }
+    }
+    NSMutableDictionary *allAppdingDict = [NSMutableDictionary dictionary];
+    NSArray *allColumnArray = [infoArray subarrayWithRange:NSMakeRange(1, infoArray.count-1)];
+    
+    for (NSInteger j=0; j<allColumnArray.count; j++) {
+        NSArray *tempRowStringArray = allColumnArray[j];
+        
+        NSString *languageKey = tempRowStringArray.firstObject;
+        for (NSInteger i=0; i<tempRowStringArray.count; i++) {
+            if (i == 0) continue;
+            
+            NSString *languageValue = tempRowStringArray[i];
+            
+            // 编译替换翻译中存在引号
+            languageValue = [languageValue stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
+            
+            NSMutableString *appdingString = [NSMutableString stringWithString:@"\n"];
+            [appdingString appendFormat:@"\"%@\" = \"%@\";\n", languageKey, languageValue];
+            
+            NSString *language = languageFlagArr[i];
+            NSString *lastValue = allAppdingDict[language];
+            if (lastValue) {
+                allAppdingDict[language] = [NSString stringWithFormat:@"%@%@", lastValue, appdingString];
+            } else {
+                allAppdingDict[language] = appdingString;
+            }
+        }
+    }
+    //NSLog(@"多语言===%@", allAppdingDict);
+    
     NSFileManager *fileManger = [NSFileManager defaultManager];
-    NSMutableDictionary *langDict = [NSMutableDictionary dictionary];
     
     NSMutableArray *allLanguageDirArray = [NSMutableArray arrayWithArray:[fileManger contentsOfDirectoryAtPath:self.localizblePath error:nil]];
     [allLanguageDirArray removeObject:@".DS_Store"];//排除异常
     
+    // 获取多语言目录列表: Key（Android/iOS Key), en.lproj, de.lproj, es.lproj ...
+    NSMutableDictionary *langLprojDict = [NSMutableDictionary dictionary];
     for (NSString *pathDicr in allLanguageDirArray) {
         NSLog(@"多语言文件夹子目录===%@", pathDicr);
         
-        NSString *langFlag = [pathDicr componentsSeparatedByString:@"."].firstObject;
-        if ([langFlag isEqualToString:@"en"]) {
-            
-            NSString *localizablePath = [NSString stringWithFormat:@"%@/%@/Localizable.strings", self.localizblePath, pathDicr];
-            if ([fileManger fileExistsAtPath:localizablePath]) {
-                langDict[@"en"] = localizablePath;
-            }
+        NSString *localizablePath = [NSString stringWithFormat:@"%@/%@/Localizable.strings", self.localizblePath, pathDicr];
+        if ([fileManger fileExistsAtPath:localizablePath]) {
+            langLprojDict[pathDicr] = localizablePath;
         }
     }
     
-    NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"keyName" ascending:YES]];
-    NSMutableArray *excelInfoArray = [NSMutableArray arrayWithArray:infoArray];
-    [excelInfoArray sortUsingDescriptors:sortDescriptors];
-    NSLog(@"排序后的数组====%@",excelInfoArray);
-    
-    NSArray *firstArray = [excelInfoArray subarrayWithRange:NSMakeRange(0, excelInfoArray.count/2)];
-    NSArray *lastArray = [excelInfoArray subarrayWithRange:NSMakeRange(excelInfoArray.count/2, excelInfoArray.count/2)];
-    
-    // 遍历替换多语言文件
-    [langDict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull langFlag, id  _Nonnull localizablePath, BOOL * _Nonnull stop) {
-       
-        NSError *error = nil;
-        NSString *allFileString = [NSString stringWithContentsOfFile:localizablePath encoding:NSUTF8StringEncoding error:&error];
-        if (error || !allFileString || allFileString.length == 0) {
-            [self showStatusTip:@"多语言文件替换失败" status:NO];
-            return;
-        }
-        
-        NSMutableString *appdingString = [NSMutableString stringWithString:@"\n"];
-        if (firstArray.count == lastArray.count) {
-            for (NSInteger i=0; i<firstArray.count; i++) {
-                NSDictionary *keyDict = firstArray[i];
-                NSString *key = keyDict[@"value"];
+    // 语言替换
+    for (NSString *langKey in langLprojDict.allKeys) {
+        for (NSString *appdingLangKey in allAppdingDict.allKeys) {
+            
+            NSError *error = nil;
+            if ([langKey isEqualToString:appdingLangKey]) {
+                NSString *localizablePath = langLprojDict[langKey];
                 
-                NSDictionary *valueDict = lastArray[i];
-                NSString *value = valueDict[@"value"];
-                if ([value containsString:@"\n"]) {
-                    value = [value stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
+                
+                NSString *allFileString = [NSString stringWithContentsOfFile:localizablePath encoding:NSUTF8StringEncoding error:&error];
+                if (error || !allFileString || allFileString.length == 0) {
+                    [self showStatusTip:@"多语言转换失败, localizable路径错误" status:NO];
+                    continue;
                 }
-                [appdingString appendFormat:@"\"%@\" = \"%@\";\n", key, value];
-            }
-        }
-        
-        // 末尾追加写入
-        NSError *err = nil;
-        if (self.versionFlag && self.versionFlag.length>0) { //存在版本号就替换相应版本号的多语言
-            NSRange range = [allFileString rangeOfString:self.versionFlag];
-            if (range.location == NSNotFound) {
+                
+                NSString *appdingString = allAppdingDict[appdingLangKey];
                 
                 // 末尾追加写入
-                NSString *replaceAllString = [allFileString stringByAppendingString:appdingString];
-                [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&err];
-            } else {
-                NSString *tempAppdingString = [allFileString substringToIndex:(range.location + range.length + 1)];
-                NSString *replaceAllString = [tempAppdingString stringByAppendingString:appdingString];
-                
-                // 整体覆盖写入
-                [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&err];
+                if (self.versionFlag && self.versionFlag.length>0) {
+                    NSRange range = [allFileString rangeOfString:self.versionFlag];
+                    
+                    //不存在版本号标识就末尾追加写入多语言
+                    if (range.location == NSNotFound) {
+                        NSString *replaceAllString = [allFileString stringByAppendingString:appdingString];
+                        [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+                        
+                    } else { //存在版本号标识就替换相应版本号的多语言
+                        NSString *tempAppdingString = [allFileString substringToIndex:(range.location + range.length + 1)];
+                        NSString *replaceAllString = [tempAppdingString stringByAppendingString:appdingString];
+                        
+                        // 整体覆盖写入
+                        [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+                    }
+                } else {
+                    // 末尾追加写入
+                    NSString *replaceAllString = [allFileString stringByAppendingString:appdingString];
+                    [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+                }
             }
-        } else {
-            // 末尾追加写入
-            NSString *replaceAllString = [allFileString stringByAppendingString:appdingString];
-            [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&err];
         }
-        [self showStatusTip:@"多语言文件全部替换成功" status:YES];
-        return;
-    }];
+    }
+    [self showStatusTip:@"多语言文件全部替换成功" status:YES];
 }
 
 #pragma mark - <Other deal with>

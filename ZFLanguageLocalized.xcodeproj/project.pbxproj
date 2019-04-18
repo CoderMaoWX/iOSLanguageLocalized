@@ -14,40 +14,9 @@
 		58555BB72266CAA100668869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555BB62266CAA100668869 /* main.m */; };
 		58555BC02266CD9100668869 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 58555BBF2266CD9100668869 /* libz.tbd */; };
 		58555BC22266CDA600668869 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 58555BC12266CDA600668869 /* libiconv.2.tbd */; };
-		58555C9D2266E92A00668869 /* main11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58555C452266E92A00668869 /* main11.cpp */; };
-		58555C9E2266E92A00668869 /* XlsReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58555C472266E92A00668869 /* XlsReader.cpp */; };
-		58555C9F2266E92A00668869 /* DHxlsReaderIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C522266E92A00668869 /* DHxlsReaderIOS.m */; };
-		58555CA02266E92A00668869 /* DHcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C562266E92A00668869 /* DHcell.m */; };
-		58555CA12266E92A00668869 /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C592266E92A00668869 /* xls.c */; };
-		58555CA22266E92A00668869 /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C5A2266E92A00668869 /* xlstool.c */; };
-		58555CA32266E92A00668869 /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C5B2266E92A00668869 /* ole.c */; };
-		58555CA42266E92A00668869 /* xls2csv.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C5C2266E92A00668869 /* xls2csv.c */; };
-		58555CA52266E92A00668869 /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C5D2266E92A00668869 /* getopt.c */; };
-		58555CA62266E92A00668869 /* LAWExcelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C5E2266E92A00668869 /* LAWExcelTool.m */; };
-		58555CA72266E92A00668869 /* ZXLSXParsers注解.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C602266E92A00668869 /* ZXLSXParsers注解.m */; };
-		58555CA82266E92A00668869 /* ZSheetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C642266E92A00668869 /* ZSheetParser.m */; };
-		58555CA92266E92A00668869 /* ZXLSXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C652266E92A00668869 /* ZXLSXParser.m */; };
-		58555CAA2266E92A00668869 /* ZSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C682266E92A00668869 /* ZSheet.m */; };
-		58555CAB2266E92A00668869 /* ZSheetCol.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C6B2266E92A00668869 /* ZSheetCol.m */; };
-		58555CAC2266E92A00668869 /* ZContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C6D2266E92A00668869 /* ZContent.m */; };
-		58555CAD2266E92A00668869 /* ZWorkbookParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C702266E92A00668869 /* ZWorkbookParser.m */; };
-		58555CAE2266E92A00668869 /* ZBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C712266E92A00668869 /* ZBaseParser.m */; };
-		58555CAF2266E92A00668869 /* ZContentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C742266E92A00668869 /* ZContentParser.m */; };
-		58555CB02266E92A00668869 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C772266E92A00668869 /* unzip.c */; };
-		58555CB12266E92A00668869 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C782266E92A00668869 /* zip.c */; };
-		58555CB22266E92A00668869 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C792266E92A00668869 /* ioapi.c */; };
-		58555CB32266E92A00668869 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C7A2266E92A00668869 /* mztools.c */; };
-		58555CB42266E92A00668869 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C822266E92A00668869 /* SSZipArchive.m */; };
-		58555CB52266E92A00668869 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C852266E92A00668869 /* aeskey.c */; };
-		58555CB62266E92A00668869 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C862266E92A00668869 /* hmac.c */; };
-		58555CB72266E92A00668869 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C892266E92A00668869 /* aescrypt.c */; };
-		58555CB82266E92A00668869 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C8A2266E92A00668869 /* fileenc.c */; };
-		58555CB92266E92A00668869 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C8D2266E92A00668869 /* sha1.c */; };
-		58555CBA2266E92A00668869 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C922266E92A00668869 /* prng.c */; };
-		58555CBB2266E92A00668869 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C942266E92A00668869 /* pwd2key.c */; };
-		58555CBC2266E92A00668869 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C952266E92A00668869 /* aestab.c */; };
-		58555CBD2266E92A00668869 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 58555C982266E92A00668869 /* entropy.c */; };
-		58555CBE2266E92A00668869 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555C9C2266E92A00668869 /* CSVParser.m */; };
+		585672C922687224000989AA /* CvsStringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 585672C522687224000989AA /* CvsStringParser.m */; };
+		585672CA22687224000989AA /* ParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 585672C622687224000989AA /* ParserManager.m */; };
+		585672CD2268725F000989AA /* ZafulParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 585672CC2268725F000989AA /* ZafulParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,84 +32,13 @@
 		58555BB82266CAA100668869 /* ZFLanguageLocalized.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZFLanguageLocalized.entitlements; sourceTree = "<group>"; };
 		58555BBF2266CD9100668869 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		58555BC12266CDA600668869 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
-		58555C452266E92A00668869 /* main11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main11.cpp; sourceTree = "<group>"; };
-		58555C462266E92A00668869 /* XlsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XlsReader.h; sourceTree = "<group>"; };
-		58555C472266E92A00668869 /* XlsReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XlsReader.cpp; sourceTree = "<group>"; };
-		58555C482266E92A00668869 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		58555C4A2266E92A00668869 /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
-		58555C4B2266E92A00668869 /* xlsstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlsstruct.h; sourceTree = "<group>"; };
-		58555C4C2266E92A00668869 /* brdb.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.c.h; sourceTree = "<group>"; };
-		58555C4D2266E92A00668869 /* xlstool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstool.h; sourceTree = "<group>"; };
-		58555C4E2266E92A00668869 /* xls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls.h; sourceTree = "<group>"; };
-		58555C4F2266E92A00668869 /* ole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ole.h; sourceTree = "<group>"; };
-		58555C502266E92A00668869 /* brdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.h; sourceTree = "<group>"; };
-		58555C522266E92A00668869 /* DHxlsReaderIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHxlsReaderIOS.m; sourceTree = "<group>"; };
-		58555C532266E92A00668869 /* DHxlsReaderIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHxlsReaderIOS-Prefix.pch"; sourceTree = "<group>"; };
-		58555C542266E92A00668869 /* DHcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHcell.h; sourceTree = "<group>"; };
-		58555C552266E92A00668869 /* DHxlsReaderIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHxlsReaderIOS.h; sourceTree = "<group>"; };
-		58555C562266E92A00668869 /* DHcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHcell.m; sourceTree = "<group>"; };
-		58555C572266E92A00668869 /* DHcell-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHcell-Private.h"; sourceTree = "<group>"; };
-		58555C592266E92A00668869 /* xls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls.c; sourceTree = "<group>"; };
-		58555C5A2266E92A00668869 /* xlstool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xlstool.c; sourceTree = "<group>"; };
-		58555C5B2266E92A00668869 /* ole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ole.c; sourceTree = "<group>"; };
-		58555C5C2266E92A00668869 /* xls2csv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls2csv.c; sourceTree = "<group>"; };
-		58555C5D2266E92A00668869 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
-		58555C5E2266E92A00668869 /* LAWExcelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWExcelTool.m; sourceTree = "<group>"; };
-		58555C602266E92A00668869 /* ZXLSXParsers注解.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZXLSXParsers注解.m"; sourceTree = "<group>"; };
-		58555C622266E92A00668869 /* ZBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBaseParser.h; sourceTree = "<group>"; };
-		58555C632266E92A00668869 /* ZWorkbookParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWorkbookParser.h; sourceTree = "<group>"; };
-		58555C642266E92A00668869 /* ZSheetParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSheetParser.m; sourceTree = "<group>"; };
-		58555C652266E92A00668869 /* ZXLSXParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLSXParser.m; sourceTree = "<group>"; };
-		58555C662266E92A00668869 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		58555C682266E92A00668869 /* ZSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSheet.m; sourceTree = "<group>"; };
-		58555C692266E92A00668869 /* ZContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZContent.h; sourceTree = "<group>"; };
-		58555C6A2266E92A00668869 /* ZSheetCol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSheetCol.h; sourceTree = "<group>"; };
-		58555C6B2266E92A00668869 /* ZSheetCol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSheetCol.m; sourceTree = "<group>"; };
-		58555C6C2266E92A00668869 /* ZPaserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPaserProtocol.h; sourceTree = "<group>"; };
-		58555C6D2266E92A00668869 /* ZContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZContent.m; sourceTree = "<group>"; };
-		58555C6E2266E92A00668869 /* ZSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSheet.h; sourceTree = "<group>"; };
-		58555C6F2266E92A00668869 /* ZContentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZContentParser.h; sourceTree = "<group>"; };
-		58555C702266E92A00668869 /* ZWorkbookParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWorkbookParser.m; sourceTree = "<group>"; };
-		58555C712266E92A00668869 /* ZBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBaseParser.m; sourceTree = "<group>"; };
-		58555C722266E92A00668869 /* ZSheetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSheetParser.h; sourceTree = "<group>"; };
-		58555C732266E92A00668869 /* ZXLSXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXLSXParser.h; sourceTree = "<group>"; };
-		58555C742266E92A00668869 /* ZContentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZContentParser.m; sourceTree = "<group>"; };
-		58555C772266E92A00668869 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		58555C782266E92A00668869 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		58555C792266E92A00668869 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		58555C7A2266E92A00668869 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		58555C7B2266E92A00668869 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		58555C7C2266E92A00668869 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		58555C7D2266E92A00668869 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		58555C7E2266E92A00668869 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		58555C7F2266E92A00668869 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		58555C802266E92A00668869 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
-		58555C812266E92A00668869 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		58555C822266E92A00668869 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
-		58555C842266E92A00668869 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
-		58555C852266E92A00668869 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
-		58555C862266E92A00668869 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
-		58555C872266E92A00668869 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
-		58555C882266E92A00668869 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
-		58555C892266E92A00668869 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
-		58555C8A2266E92A00668869 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
-		58555C8B2266E92A00668869 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
-		58555C8C2266E92A00668869 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
-		58555C8D2266E92A00668869 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
-		58555C8E2266E92A00668869 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
-		58555C8F2266E92A00668869 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
-		58555C902266E92A00668869 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
-		58555C912266E92A00668869 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
-		58555C922266E92A00668869 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
-		58555C932266E92A00668869 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
-		58555C942266E92A00668869 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
-		58555C952266E92A00668869 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
-		58555C962266E92A00668869 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
-		58555C972266E92A00668869 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
-		58555C982266E92A00668869 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
-		58555C992266E92A00668869 /* LAWExcelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWExcelTool.h; sourceTree = "<group>"; };
-		58555C9B2266E92A00668869 /* CSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParser.h; sourceTree = "<group>"; };
-		58555C9C2266E92A00668869 /* CSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
+		585672C422687224000989AA /* JXArcCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXArcCompatibilityMacros.h; sourceTree = "<group>"; };
+		585672C522687224000989AA /* CvsStringParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CvsStringParser.m; sourceTree = "<group>"; };
+		585672C622687224000989AA /* ParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserManager.m; sourceTree = "<group>"; };
+		585672C722687224000989AA /* CvsStringParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CvsStringParser.h; sourceTree = "<group>"; };
+		585672C822687224000989AA /* ParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserManager.h; sourceTree = "<group>"; };
+		585672CB2268725F000989AA /* ZafulParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZafulParser.h; sourceTree = "<group>"; };
+		585672CC2268725F000989AA /* ZafulParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZafulParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +57,7 @@
 		58555B9E2266CAA000668869 = {
 			isa = PBXGroup;
 			children = (
-				58555C412266E92A00668869 /* ExcelParser */,
+				585672C322687224000989AA /* ParserManager */,
 				58555BA92266CAA000668869 /* ZFLanguageLocalized */,
 				58555BA82266CAA000668869 /* Products */,
 				58555BBE2266CD9100668869 /* Frameworks */,
@@ -179,6 +77,8 @@
 			children = (
 				58555BAA2266CAA000668869 /* AppDelegate.h */,
 				58555BAB2266CAA000668869 /* AppDelegate.m */,
+				585672CB2268725F000989AA /* ZafulParser.h */,
+				585672CC2268725F000989AA /* ZafulParser.m */,
 				58555BAD2266CAA000668869 /* ViewController.h */,
 				58555BAE2266CAA000668869 /* ViewController.m */,
 				58555BB02266CAA100668869 /* Assets.xcassets */,
@@ -199,193 +99,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		58555C412266E92A00668869 /* ExcelParser */ = {
+		585672C322687224000989AA /* ParserManager */ = {
 			isa = PBXGroup;
 			children = (
-				58555C422266E92A00668869 /* XLS */,
-				58555C5F2266E92A00668869 /* XLSX */,
-				58555C9A2266E92A00668869 /* CSV */,
-				58555C5E2266E92A00668869 /* LAWExcelTool.m */,
-				58555C992266E92A00668869 /* LAWExcelTool.h */,
+				585672C422687224000989AA /* JXArcCompatibilityMacros.h */,
+				585672C522687224000989AA /* CvsStringParser.m */,
+				585672C622687224000989AA /* ParserManager.m */,
+				585672C722687224000989AA /* CvsStringParser.h */,
+				585672C822687224000989AA /* ParserManager.h */,
 			);
-			path = ExcelParser;
-			sourceTree = "<group>";
-		};
-		58555C422266E92A00668869 /* XLS */ = {
-			isa = PBXGroup;
-			children = (
-				58555C432266E92A00668869 /* DHxlsReader */,
-			);
-			path = XLS;
-			sourceTree = "<group>";
-		};
-		58555C432266E92A00668869 /* DHxlsReader */ = {
-			isa = PBXGroup;
-			children = (
-				58555C442266E92A00668869 /* cplusplus */,
-				58555C482266E92A00668869 /* config.h */,
-				58555C492266E92A00668869 /* libxls */,
-				58555C512266E92A00668869 /* DHxlsReaderIOS */,
-				58555C582266E92A00668869 /* src */,
-			);
-			path = DHxlsReader;
-			sourceTree = "<group>";
-		};
-		58555C442266E92A00668869 /* cplusplus */ = {
-			isa = PBXGroup;
-			children = (
-				58555C452266E92A00668869 /* main11.cpp */,
-				58555C462266E92A00668869 /* XlsReader.h */,
-				58555C472266E92A00668869 /* XlsReader.cpp */,
-			);
-			path = cplusplus;
-			sourceTree = "<group>";
-		};
-		58555C492266E92A00668869 /* libxls */ = {
-			isa = PBXGroup;
-			children = (
-				58555C4A2266E92A00668869 /* xlstypes.h */,
-				58555C4B2266E92A00668869 /* xlsstruct.h */,
-				58555C4C2266E92A00668869 /* brdb.c.h */,
-				58555C4D2266E92A00668869 /* xlstool.h */,
-				58555C4E2266E92A00668869 /* xls.h */,
-				58555C4F2266E92A00668869 /* ole.h */,
-				58555C502266E92A00668869 /* brdb.h */,
-			);
-			path = libxls;
-			sourceTree = "<group>";
-		};
-		58555C512266E92A00668869 /* DHxlsReaderIOS */ = {
-			isa = PBXGroup;
-			children = (
-				58555C522266E92A00668869 /* DHxlsReaderIOS.m */,
-				58555C532266E92A00668869 /* DHxlsReaderIOS-Prefix.pch */,
-				58555C542266E92A00668869 /* DHcell.h */,
-				58555C552266E92A00668869 /* DHxlsReaderIOS.h */,
-				58555C562266E92A00668869 /* DHcell.m */,
-				58555C572266E92A00668869 /* DHcell-Private.h */,
-			);
-			path = DHxlsReaderIOS;
-			sourceTree = "<group>";
-		};
-		58555C582266E92A00668869 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				58555C592266E92A00668869 /* xls.c */,
-				58555C5A2266E92A00668869 /* xlstool.c */,
-				58555C5B2266E92A00668869 /* ole.c */,
-				58555C5C2266E92A00668869 /* xls2csv.c */,
-				58555C5D2266E92A00668869 /* getopt.c */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		58555C5F2266E92A00668869 /* XLSX */ = {
-			isa = PBXGroup;
-			children = (
-				58555C602266E92A00668869 /* ZXLSXParsers注解.m */,
-				58555C612266E92A00668869 /* xmlParser */,
-				58555C752266E92A00668869 /* SSZipArchive */,
-			);
-			path = XLSX;
-			sourceTree = "<group>";
-		};
-		58555C612266E92A00668869 /* xmlParser */ = {
-			isa = PBXGroup;
-			children = (
-				58555C622266E92A00668869 /* ZBaseParser.h */,
-				58555C632266E92A00668869 /* ZWorkbookParser.h */,
-				58555C642266E92A00668869 /* ZSheetParser.m */,
-				58555C652266E92A00668869 /* ZXLSXParser.m */,
-				58555C662266E92A00668869 /* config.h */,
-				58555C672266E92A00668869 /* models */,
-				58555C6F2266E92A00668869 /* ZContentParser.h */,
-				58555C702266E92A00668869 /* ZWorkbookParser.m */,
-				58555C712266E92A00668869 /* ZBaseParser.m */,
-				58555C722266E92A00668869 /* ZSheetParser.h */,
-				58555C732266E92A00668869 /* ZXLSXParser.h */,
-				58555C742266E92A00668869 /* ZContentParser.m */,
-			);
-			path = xmlParser;
-			sourceTree = "<group>";
-		};
-		58555C672266E92A00668869 /* models */ = {
-			isa = PBXGroup;
-			children = (
-				58555C682266E92A00668869 /* ZSheet.m */,
-				58555C692266E92A00668869 /* ZContent.h */,
-				58555C6A2266E92A00668869 /* ZSheetCol.h */,
-				58555C6B2266E92A00668869 /* ZSheetCol.m */,
-				58555C6C2266E92A00668869 /* ZPaserProtocol.h */,
-				58555C6D2266E92A00668869 /* ZContent.m */,
-				58555C6E2266E92A00668869 /* ZSheet.h */,
-			);
-			path = models;
-			sourceTree = "<group>";
-		};
-		58555C752266E92A00668869 /* SSZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				58555C762266E92A00668869 /* minizip */,
-				58555C802266E92A00668869 /* SSZipArchive.h */,
-				58555C812266E92A00668869 /* Common.h */,
-				58555C822266E92A00668869 /* SSZipArchive.m */,
-				58555C832266E92A00668869 /* aes */,
-			);
-			path = SSZipArchive;
-			sourceTree = "<group>";
-		};
-		58555C762266E92A00668869 /* minizip */ = {
-			isa = PBXGroup;
-			children = (
-				58555C772266E92A00668869 /* unzip.c */,
-				58555C782266E92A00668869 /* zip.c */,
-				58555C792266E92A00668869 /* ioapi.c */,
-				58555C7A2266E92A00668869 /* mztools.c */,
-				58555C7B2266E92A00668869 /* crypt.h */,
-				58555C7C2266E92A00668869 /* zip.h */,
-				58555C7D2266E92A00668869 /* unzip.h */,
-				58555C7E2266E92A00668869 /* mztools.h */,
-				58555C7F2266E92A00668869 /* ioapi.h */,
-			);
-			path = minizip;
-			sourceTree = "<group>";
-		};
-		58555C832266E92A00668869 /* aes */ = {
-			isa = PBXGroup;
-			children = (
-				58555C842266E92A00668869 /* prng.h */,
-				58555C852266E92A00668869 /* aeskey.c */,
-				58555C862266E92A00668869 /* hmac.c */,
-				58555C872266E92A00668869 /* aestab.h */,
-				58555C882266E92A00668869 /* pwd2key.h */,
-				58555C892266E92A00668869 /* aescrypt.c */,
-				58555C8A2266E92A00668869 /* fileenc.c */,
-				58555C8B2266E92A00668869 /* aesopt.h */,
-				58555C8C2266E92A00668869 /* aes_via_ace.h */,
-				58555C8D2266E92A00668869 /* sha1.c */,
-				58555C8E2266E92A00668869 /* brg_types.h */,
-				58555C8F2266E92A00668869 /* entropy.h */,
-				58555C902266E92A00668869 /* hmac.h */,
-				58555C912266E92A00668869 /* brg_endian.h */,
-				58555C922266E92A00668869 /* prng.c */,
-				58555C932266E92A00668869 /* aes.h */,
-				58555C942266E92A00668869 /* pwd2key.c */,
-				58555C952266E92A00668869 /* aestab.c */,
-				58555C962266E92A00668869 /* sha1.h */,
-				58555C972266E92A00668869 /* fileenc.h */,
-				58555C982266E92A00668869 /* entropy.c */,
-			);
-			path = aes;
-			sourceTree = "<group>";
-		};
-		58555C9A2266E92A00668869 /* CSV */ = {
-			isa = PBXGroup;
-			children = (
-				58555C9B2266E92A00668869 /* CSVParser.h */,
-				58555C9C2266E92A00668869 /* CSVParser.m */,
-			);
-			path = CSV;
+			path = ParserManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,43 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58555CAE2266E92A00668869 /* ZBaseParser.m in Sources */,
-				58555CA32266E92A00668869 /* ole.c in Sources */,
-				58555C9E2266E92A00668869 /* XlsReader.cpp in Sources */,
-				58555CAF2266E92A00668869 /* ZContentParser.m in Sources */,
-				58555CB92266E92A00668869 /* sha1.c in Sources */,
+				585672CA22687224000989AA /* ParserManager.m in Sources */,
+				585672C922687224000989AA /* CvsStringParser.m in Sources */,
 				58555BAF2266CAA000668869 /* ViewController.m in Sources */,
-				58555CA22266E92A00668869 /* xlstool.c in Sources */,
-				58555CA52266E92A00668869 /* getopt.c in Sources */,
-				58555CB62266E92A00668869 /* hmac.c in Sources */,
-				58555CB52266E92A00668869 /* aeskey.c in Sources */,
-				58555CA82266E92A00668869 /* ZSheetParser.m in Sources */,
-				58555CA72266E92A00668869 /* ZXLSXParsers注解.m in Sources */,
-				58555CB12266E92A00668869 /* zip.c in Sources */,
-				58555C9F2266E92A00668869 /* DHxlsReaderIOS.m in Sources */,
-				58555CB42266E92A00668869 /* SSZipArchive.m in Sources */,
-				58555CA02266E92A00668869 /* DHcell.m in Sources */,
-				58555CBC2266E92A00668869 /* aestab.c in Sources */,
-				58555CB32266E92A00668869 /* mztools.c in Sources */,
 				58555BB72266CAA100668869 /* main.m in Sources */,
-				58555CA12266E92A00668869 /* xls.c in Sources */,
-				58555CAC2266E92A00668869 /* ZContent.m in Sources */,
-				58555CBB2266E92A00668869 /* pwd2key.c in Sources */,
-				58555CAB2266E92A00668869 /* ZSheetCol.m in Sources */,
-				58555CBD2266E92A00668869 /* entropy.c in Sources */,
-				58555CBA2266E92A00668869 /* prng.c in Sources */,
-				58555C9D2266E92A00668869 /* main11.cpp in Sources */,
 				58555BAC2266CAA000668869 /* AppDelegate.m in Sources */,
-				58555CAA2266E92A00668869 /* ZSheet.m in Sources */,
-				58555CBE2266E92A00668869 /* CSVParser.m in Sources */,
-				58555CB82266E92A00668869 /* fileenc.c in Sources */,
-				58555CA42266E92A00668869 /* xls2csv.c in Sources */,
-				58555CAD2266E92A00668869 /* ZWorkbookParser.m in Sources */,
-				58555CA92266E92A00668869 /* ZXLSXParser.m in Sources */,
-				58555CB02266E92A00668869 /* unzip.c in Sources */,
-				58555CA62266E92A00668869 /* LAWExcelTool.m in Sources */,
-				58555CB72266E92A00668869 /* aescrypt.c in Sources */,
-				58555CB22266E92A00668869 /* ioapi.c in Sources */,
+				585672CD2268725F000989AA /* ZafulParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
