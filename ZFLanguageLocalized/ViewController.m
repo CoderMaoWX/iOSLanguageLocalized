@@ -193,25 +193,26 @@
         }
     }
     
-    NSMutableDictionary *allAppdingDict = [NSMutableDictionary dictionary];
     NSArray *firstInfoArray = parseStringArray.firstObject;
-    
     // 找出英语在每行第几列
     NSInteger englishColumnIndex = -1;
-    if ([firstInfoArray containsObject:@"英语"]) {
-        englishColumnIndex = [firstInfoArray indexOfObject:@"英语"];
+    NSString *emglish = @"英语";
+    if ([firstInfoArray containsObject:emglish]) {
+        englishColumnIndex = [firstInfoArray indexOfObject:emglish];
     }
-    if (englishColumnIndex == -1 && [firstInfoArray containsObject:@"英文"]) {
-        englishColumnIndex = [firstInfoArray indexOfObject:@"英文"];
+    NSString *yingwen = @"英文";
+    if (englishColumnIndex == -1 && [firstInfoArray containsObject:yingwen]) {
+        englishColumnIndex = [firstInfoArray indexOfObject:yingwen];
     }
-    if (englishColumnIndex == -1 && [firstInfoArray containsObject:@"en.lproj"]) {
-        englishColumnIndex = [firstInfoArray indexOfObject:@"en.lproj"];
+    NSString *enlproj = @"en.lproj";
+    if (englishColumnIndex == -1 && [firstInfoArray containsObject:enlproj]) {
+        englishColumnIndex = [firstInfoArray indexOfObject:enlproj];
     }
-    
     if (englishColumnIndex == -1) {
         englishColumnIndex = 1;
     }
     
+    NSMutableDictionary *allAppdingDict = [NSMutableDictionary dictionary];
     // 剔除csv文件的第一行数组 -> (key,  英文, 意大利语, 葡萄牙语, 繁体中文...)
     NSArray *allColumnArray = [parseStringArray subarrayWithRange:NSMakeRange(1, parseStringArray.count-1)];
     
@@ -353,12 +354,21 @@
             NSString *replaceAllString = @"";
             NSString *tempAppdingString = [allFileString substringToIndex:(range.location + range.length)];
             
-            NSString *allFileLastString = [allFileString componentsSeparatedByString:tempAppdingString].lastObject;
-            if (allFileLastString) {
-                NSString *needReplaceString =  [allFileLastString componentsSeparatedByString:@"\n//"].firstObject;
+            NSString *allLastFileString = [allFileString componentsSeparatedByString:tempAppdingString].lastObject;
+            if (allLastFileString) {
+                NSString *needReplaceString =  [allLastFileString componentsSeparatedByString:@"\n//"].firstObject;
                 
                 if (needReplaceString) {
-                    replaceAllString = [allFileString stringByReplacingOccurrencesOfString:needReplaceString withString:appdingString];
+                    // 需要判断老的文案中是否有老的值
+                    NSDictionary *oldNeedReplaceDict = [self getKeyValueFromBigString:needReplaceString];
+                    NSDictionary *newNeedReplaceDict = [self getKeyValueFromBigString:appdingString];
+                    
+                    NSString *newAppdingString = [self refreshReplaceOldValueString:oldNeedReplaceDict
+                                                                 newNeedReplaceDict:newNeedReplaceDict
+                                                                   newAppdingString:appdingString];
+                    
+                    replaceAllString = [allFileString stringByReplacingOccurrencesOfString:needReplaceString
+                                                                                withString:newAppdingString];
                 }
             } else {
                 replaceAllString = [tempAppdingString stringByAppendingString:appdingString];
@@ -376,6 +386,58 @@
         NSString *replaceAllString = [allFileString stringByAppendingString:appdingString];
         self.writeLangSuccess = [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
     }
+}
+
+/**
+ * 替换老的里面的value
+ */
+- (NSString *)refreshReplaceOldValueString:(NSDictionary *)oldNeedReplaceDict
+                        newNeedReplaceDict:(NSDictionary *)newNeedReplaceDict
+                          newAppdingString:(NSString *)newAppdingString
+{
+    NSMutableDictionary *oldAppdingDict = [NSMutableDictionary dictionaryWithDictionary:oldNeedReplaceDict];
+    NSMutableString *oldAppdingString = [NSMutableString stringWithString:@"\n"];
+    
+    [newNeedReplaceDict enumerateKeysAndObjectsUsingBlock:^(NSString *newKey, NSString *newValue, BOOL * _Nonnull stop) {
+        [oldNeedReplaceDict enumerateKeysAndObjectsUsingBlock:^(NSString *oldKey, NSString *oldValue, BOOL * _Nonnull stop) {
+            if ([newKey isEqualToString:oldKey]) {
+                [oldAppdingDict removeObjectForKey:oldKey];
+            }
+        }];
+    }];
+    
+    [oldAppdingDict enumerateKeysAndObjectsUsingBlock:^(NSString *oldKey, NSString *oldValue, BOOL * _Nonnull stop) {
+        [oldAppdingString appendFormat:@"%@ =%@;\n", oldKey, oldValue];
+    }];
+    
+    [oldAppdingString appendString:newAppdingString];
+    return oldAppdingString;
+}
+
+/**
+ * 需要判断老的文案中是否有老的值
+ */
+- (NSDictionary *)getKeyValueFromBigString:(NSString *)needReplaceBigString
+{
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    
+    NSArray *needReplaceArray = [needReplaceBigString componentsSeparatedByString:@";\n"];
+    for (NSInteger i=0; i<needReplaceArray.count; i++) {
+        NSString *string = needReplaceArray[i];
+        if (!string || string.length == 0) continue;
+        
+        NSArray *tempArray = [string componentsSeparatedByString:@"="];
+        NSString *key = tempArray.firstObject;
+        if (key) {
+            key = [key stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+            key = [key stringByReplacingOccurrencesOfString:@" " withString:@""];
+        }
+        NSString *value = tempArray.lastObject;
+        if (key.length>0 && value.length>0) {
+            dict[key] = value;
+        }
+    }
+    return dict;
 }
 
 -(NSMutableArray *)littleLangFailPathArray {
