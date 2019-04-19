@@ -28,8 +28,6 @@
 		58555BB52266CAA100668869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58555BB62266CAA100668869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58555BB82266CAA100668869 /* ZFLanguageLocalized.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZFLanguageLocalized.entitlements; sourceTree = "<group>"; };
-		58555BBF2266CD9100668869 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		58555BC12266CDA600668869 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
 		585672C422687224000989AA /* JXArcCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXArcCompatibilityMacros.h; sourceTree = "<group>"; };
 		585672C522687224000989AA /* CvsStringParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CvsStringParser.m; sourceTree = "<group>"; };
 		585672C622687224000989AA /* ParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserManager.m; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 				585672C322687224000989AA /* ParserManager */,
 				58555BA92266CAA000668869 /* ZFLanguageLocalized */,
 				58555BA82266CAA000668869 /* Products */,
-				58555BBE2266CD9100668869 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,15 +81,6 @@
 				58555BB82266CAA100668869 /* ZFLanguageLocalized.entitlements */,
 			);
 			path = ZFLanguageLocalized;
-			sourceTree = "<group>";
-		};
-		58555BBE2266CD9100668869 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				58555BC12266CDA600668869 /* libiconv.2.tbd */,
-				58555BBF2266CD9100668869 /* libz.tbd */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		585672C322687224000989AA /* ParserManager */ = {
