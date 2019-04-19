@@ -52,6 +52,7 @@
 
 - (void)controlTextDidChange:(NSNotification *)obj {
     self.errorImageView.hidden = YES;
+    self.errorLabel.hidden = YES;
     
     self.excelLabel.hidden = YES;
     self.excelPath = self.excelPathCell.stringValue;
@@ -107,17 +108,33 @@
     if (![self judgeExcelPathIsSuccess:self.excelPath]) return;
     if (![self judgeLocalizblePathIsSuccess:self.localizblePath]) return;
     
+    if (!self.versionFlag || self.versionFlag.length < 10) {
+        self.versionLabel.stringValue = @"版本号标识过短, 请重新输入";
+        self.versionLabel.hidden = NO;
+        return;
+    }
+    if (!([self.versionFlag hasPrefix:@"//========"] || [self.versionFlag hasPrefix:@"// ======="])
+        || (![self.versionFlag containsString:@"V"] || ![self.versionFlag containsString:@"."])) {
+        self.versionLabel.stringValue = @"版本号标识不符合规范, 请输入类似\"//====V4.x.x====\"标识";
+        self.versionLabel.hidden = NO;
+        return;
+    }
+    
     sender.enabled = NO;
     self.indictorView.hidden = NO;
     [self.indictorView startAnimation:nil];
     [self.littleLangFailPathArray removeAllObjects];
+    self.versionLabel.hidden = YES;
     
-    // 开始转换多语言
-    [self startParseReplaceManyLanguage];
+    // 开始翻译多语言
+    NSString *csvFilePath = self.excelPathCell.stringValue;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self startParseReplaceManyLanguage:csvFilePath];
+    });
 }
 
-- (void)startParseReplaceManyLanguage
-{
+// 开始翻译多语言
+- (void)startParseReplaceManyLanguage:(NSString *)csvFilePath {
     NSFileManager *fileManger = [NSFileManager defaultManager];
     
     NSMutableArray *allLanguageDirArray = [NSMutableArray arrayWithArray:[fileManger contentsOfDirectoryAtPath:self.localizblePath error:nil]];
@@ -136,11 +153,9 @@
     
     if (langLprojDict.allKeys.count == 0) {
         [self showErrorText:@"目录文件夹不存在需要翻译的多语言文件" excelLabel:self.localizbleLabel];
-        self.indictorView.hidden = YES;
         return;
     }
     
-    NSString *csvFilePath = self.excelPathCell.stringValue;
     NSArray *parseStringArray = [ZafulParser professionalParserCsvFileWithPath:csvFilePath];
     if (![parseStringArray isKindOfClass:[NSArray class]] || parseStringArray.count == 0) {
         parseStringArray = [ZafulParser backupParserCsvFileWithPath:csvFilePath];
@@ -222,7 +237,7 @@
             languageValue = [languageValue stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
             
             NSMutableString *appdingString = [NSMutableString stringWithString:@"\n"];
-            [appdingString appendFormat:@"\"%@\" = \"%@\";\n", languageKey, languageValue];
+            [appdingString appendFormat:@"\"%@\" = \"%@\";", languageKey, languageValue];
             
             NSString *language = languageFlagArr[i];
             NSString *lastValue = allAppdingDict[language];
@@ -272,9 +287,10 @@
             }
             
             // 执行多语言替换操作
+            NSString *finalAppdingString = [NSString stringWithFormat:@"%@\n", appdingString];
             [self executeManyLaguageReplace:localizablePath
                               allFileString:allFileString
-                              appdingString:appdingString];
+                              appdingString:finalAppdingString];
             
             // 删除已经替换成功的文件路径
             [backupLangLprojDict removeObjectForKey:langKey];
@@ -294,9 +310,10 @@
         }
         
         // 用英语替换所有 为给出翻译的多语言文件
+        NSString *finalAppdingString = [NSString stringWithFormat:@"%@\n", appdingEnglishString];
         [self executeManyLaguageReplace:localizablePath
                           allFileString:allFileString
-                          appdingString:appdingEnglishString];
+                          appdingString:finalAppdingString];
     }
     
     if (self.writeLangSuccess) {
@@ -320,72 +337,45 @@
                     appdingString:(NSString *)appdingString
 {
     NSError *error = nil;
-    
     if (self.versionFlag && self.versionFlag.length>0) {
         NSRange range = [allFileString rangeOfString:self.versionFlag];
         
         //不存在版本号标识就末尾追加写入多语言
         if (range.location == NSNotFound) {
+            // 没找到就拼接到文件最后面
+            appdingString = [NSString stringWithFormat:@"%@%@\n",self.versionFlag, appdingString];
+            
             NSString *replaceAllString = [allFileString stringByAppendingString:appdingString];
             self.writeLangSuccess = [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
             
-        } else { //存在版本号标识就替换相应版本号的多语言
-            NSString *tempAppdingString = [allFileString substringToIndex:(range.location + range.length + 1)];
-            NSString *replaceAllString = [tempAppdingString stringByAppendingString:appdingString];
+        } else {
+            //存在版本号标识就替换相应版本号的多语言
+            NSString *replaceAllString = @"";
+            NSString *tempAppdingString = [allFileString substringToIndex:(range.location + range.length)];
             
-            // 整体覆盖写入
-            self.writeLangSuccess = [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+            NSString *allFileLastString = [allFileString componentsSeparatedByString:tempAppdingString].lastObject;
+            if (allFileLastString) {
+                NSString *needReplaceString =  [allFileLastString componentsSeparatedByString:@"\n//"].firstObject;
+                
+                if (needReplaceString) {
+                    replaceAllString = [allFileString stringByReplacingOccurrencesOfString:needReplaceString withString:appdingString];
+                }
+            } else {
+                replaceAllString = [tempAppdingString stringByAppendingString:appdingString];
+            }
+            
+            // 替换相应版本号的多语言
+            if (replaceAllString && replaceAllString.length > 0) {
+                self.writeLangSuccess = [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+            }
         }
     } else {
-        // 末尾追加写入
+        // 没找到就拼接到文件最后面
+        appdingString = [NSString stringWithFormat:@"%@%@\n",self.versionFlag, appdingString];
+        
         NSString *replaceAllString = [allFileString stringByAppendingString:appdingString];
         self.writeLangSuccess = [replaceAllString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
     }
-}
-
-/**
- * 到V4.5.6为止目前项目中存在的多言
- * 英文 / 法语 / 西班牙语 / 阿拉伯语 / 德语 / 印尼语 / 泰语 / 葡语 / 意大利语 / 俄语 / 繁体中文
- */
-- (NSDictionary *)mappingLanguageDict {
-    if (!_mappingLanguageDict) {
-        _mappingLanguageDict = @{
-                         @"德语" : @"de.lproj",
-                         @"法语" : @"fr.lproj",
-                         @"泰语" : @"th.lproj",
-                         
-                         @"英文"  : @"en.lproj",
-                         @"英语"  : @"en.lproj",
-                         
-                         @"越南语"  : @"vi.lproj",
-                         @"越语"    : @"vi.lproj",
-                         
-                         @"俄罗斯语" : @"ru.lproj",
-                         @"俄语"    : @"ru.lproj",
-                         
-                         @"土耳其语" : @"tr.lproj",
-                         @"土耳其"   : @"tr.lproj",
-                         
-                         @"阿语"     : @"ar.lproj",
-                         @"阿拉伯语"  : @"ar.lproj",
-                         
-                         @"西语"     : @"es.lproj",
-                         @"西班牙语"  : @"es.lproj",
-                         
-                         @"印度尼西亚" : @"id.lproj",
-                         @"印尼语"    : @"id.lproj",
-                         
-                         @"意大利语" : @"it.lproj",
-                         @"意语"    : @"it.lproj",
-                         
-                         @"葡语"    : @"pt.lproj",
-                         @"葡萄牙"   : @"pt.lproj",
-                         
-                         @"zh-Hans.lproj"  : @"zh-Hans.lproj",
-                         @"zh-Hans"        : @"zh-Hans.lproj",
-                         @"繁体中文" : @"zh-Hant-TW.lproj",};
-    }
-    return _mappingLanguageDict;
 }
 
 -(NSMutableArray *)littleLangFailPathArray {
@@ -413,8 +403,11 @@
 }
 
 - (void)showErrorText:(NSString *)errorText excelLabel:(NSTextField *)excelLabel {
-    excelLabel.hidden = NO;
-    excelLabel.stringValue = errorText;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        excelLabel.hidden = NO;
+        excelLabel.stringValue = errorText;
+        self.indictorView.hidden = YES;
+    });
 }
 
 - (BOOL)judgeExcelPathIsSuccess:(NSString *)filePath {
@@ -462,6 +455,51 @@
     [super setRepresentedObject:representedObject];
 
     // Update the view, if already loaded.
+}
+
+/**
+ * 到V4.5.6为止目前项目中存在的多言
+ * 英文 / 法语 / 西班牙语 / 阿拉伯语 / 德语 / 印尼语 / 泰语 / 葡语 / 意大利语 / 俄语 / 繁体中文
+ */
+- (NSDictionary *)mappingLanguageDict {
+    if (!_mappingLanguageDict) {
+        _mappingLanguageDict = @{
+                                 @"德语" : @"de.lproj",
+                                 @"法语" : @"fr.lproj",
+                                 @"泰语" : @"th.lproj",
+                                 
+                                 @"英文"  : @"en.lproj",
+                                 @"英语"  : @"en.lproj",
+                                 
+                                 @"越南语"  : @"vi.lproj",
+                                 @"越语"    : @"vi.lproj",
+                                 
+                                 @"俄罗斯语" : @"ru.lproj",
+                                 @"俄语"    : @"ru.lproj",
+                                 
+                                 @"土耳其语" : @"tr.lproj",
+                                 @"土耳其"   : @"tr.lproj",
+                                 
+                                 @"阿语"     : @"ar.lproj",
+                                 @"阿拉伯语"  : @"ar.lproj",
+                                 
+                                 @"西语"     : @"es.lproj",
+                                 @"西班牙语"  : @"es.lproj",
+                                 
+                                 @"印度尼西亚" : @"id.lproj",
+                                 @"印尼语"    : @"id.lproj",
+                                 
+                                 @"意大利语" : @"it.lproj",
+                                 @"意语"    : @"it.lproj",
+                                 
+                                 @"葡语"    : @"pt.lproj",
+                                 @"葡萄牙"   : @"pt.lproj",
+                                 
+                                 @"zh-Hans.lproj"  : @"zh-Hans.lproj",
+                                 @"zh-Hans"        : @"zh-Hans.lproj",
+                                 @"繁体中文" : @"zh-Hant-TW.lproj",};
+    }
+    return _mappingLanguageDict;
 }
 
 @end

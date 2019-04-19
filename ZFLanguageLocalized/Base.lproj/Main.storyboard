@@ -798,7 +798,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oj4-uS-Zy2">
-                                <rect key="frame" x="18" y="117" width="348" height="18"/>
+                                <rect key="frame" x="18" y="117" width="449" height="18"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="状态提示3" id="oKw-y0-Vkl">
                                     <font key="font" metaFont="system" size="14"/>
