@@ -167,13 +167,14 @@
     } else {
         //NSLog(@"成功解析出的CSV文件内容===%@", parseStringArray);
     }
-    
     // 根据目前已对接的翻译映射成多语言标识 (英文 -> en.lproj)
     NSMutableArray *languageFlagArr = [NSMutableArray array];
-    if ([parseStringArray.firstObject isKindOfClass:[NSArray class]]) {
+    NSArray *parseFirstArray = (NSArray *)parseStringArray.firstObject;
+    
+    if ([parseFirstArray isKindOfClass:[NSArray class]]) {
+        languageFlagArr = [NSMutableArray arrayWithArray:parseFirstArray];
         
-        languageFlagArr = [NSMutableArray arrayWithArray:parseStringArray.firstObject];
-        for (NSInteger i=0; i<((NSArray *)parseStringArray.firstObject).count; i++) {
+        for (NSInteger i=0; i<parseFirstArray.count; i++) {
             if (i == 0) continue;//翻译key
             NSString *replaceKey = languageFlagArr[i];
             if (![replaceKey isKindOfClass:[NSString class]]) continue;
@@ -458,7 +459,7 @@
         self.errorLabel.stringValue = statusText;
         self.executeButton.enabled = YES;
         if (status) {
-            self.localizblePathCell.stringValue = @"";
+            self.versionFlagCell.stringValue = @"";
             self.executeButton.enabled = NO;
         }
     });
@@ -530,8 +531,8 @@
                                  @"法语" : @"fr.lproj",
                                  @"泰语" : @"th.lproj",
                                  
-                                 @"英文"  : @"en.lproj",
-                                 @"英语"  : @"en.lproj",
+//                                 @"英文"  : @"en.lproj",
+//                                 @"英语"  : @"en.lproj",
                                  
                                  @"越南语"  : @"vi.lproj",
                                  @"越语"    : @"vi.lproj",

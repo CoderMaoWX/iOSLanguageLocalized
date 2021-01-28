@@ -20,10 +20,10 @@
     BOOL open = [parser openFileWithPath:filePath];
     if (open) {
         NSArray *infoArray = [parser parseFile];
-        NSLog(@"readCSVData===%@", infoArray);
+        NSLog(@"readCSVData111===%@", infoArray);
         return infoArray;
     } else {
-        NSLog(@"解析文件失败");
+        NSLog(@"解析文件失败111");
         return nil;
     }
 }
@@ -35,10 +35,10 @@
     NSString *CSVString = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     if (CSVString) {
         NSArray *infoArray = [[CvsStringParser parser] parseCSVString:CSVString];
-        NSLog(@"readCSVData===%@", infoArray);
+        NSLog(@"readCSVData222===%@", infoArray);
         return infoArray;
     } else {
-        NSLog(@"解析文件失败");
+        NSLog(@"解析文件失败222");
         return nil;
     }
 }
