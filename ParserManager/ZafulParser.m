@@ -29,7 +29,7 @@
 }
 
 /**
- * 备选解析方案, (此解析方案可能不准, 只要在上面的专业解析方法失败时才推荐调用)
+ * 备选解析方案, (此解析方案可能不准, 只有在上面的专业解析方法失败时才推荐调用)
  */
 + (NSArray *)backupParserCsvFileWithPath:(NSString *)filePath {
     NSString *CSVString = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];

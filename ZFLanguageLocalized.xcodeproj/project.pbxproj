@@ -15,6 +15,8 @@
 		585672C922687224000989AA /* CvsStringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 585672C522687224000989AA /* CvsStringParser.m */; };
 		585672CA22687224000989AA /* ParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 585672C622687224000989AA /* ParserManager.m */; };
 		585672CD2268725F000989AA /* ZafulParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 585672CC2268725F000989AA /* ZafulParser.m */; };
+		A3FCD63F2C42EDB0003FAC88 /* MatchLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */; };
+		A3FCD6402C42EDB0003FAC88 /* ReadCSVFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		585672C822687224000989AA /* ParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserManager.h; sourceTree = "<group>"; };
 		585672CB2268725F000989AA /* ZafulParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZafulParser.h; sourceTree = "<group>"; };
 		585672CC2268725F000989AA /* ZafulParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZafulParser.m; sourceTree = "<group>"; };
+		A3FCD63B2C42EDB0003FAC88 /* ReadCSVFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadCSVFileManager.h; sourceTree = "<group>"; };
+		A3FCD63C2C42EDB0003FAC88 /* MatchLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchLanguageManager.h; sourceTree = "<group>"; };
+		A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchLanguageManager.m; sourceTree = "<group>"; };
+		A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadCSVFileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +76,6 @@
 			children = (
 				58555BAA2266CAA000668869 /* AppDelegate.h */,
 				58555BAB2266CAA000668869 /* AppDelegate.m */,
-				585672CB2268725F000989AA /* ZafulParser.h */,
-				585672CC2268725F000989AA /* ZafulParser.m */,
 				58555BAD2266CAA000668869 /* ViewController.h */,
 				58555BAE2266CAA000668869 /* ViewController.m */,
 				58555BB02266CAA100668869 /* Assets.xcassets */,
@@ -86,11 +90,17 @@
 		585672C322687224000989AA /* ParserManager */ = {
 			isa = PBXGroup;
 			children = (
-				585672C422687224000989AA /* JXArcCompatibilityMacros.h */,
-				585672C522687224000989AA /* CvsStringParser.m */,
-				585672C622687224000989AA /* ParserManager.m */,
 				585672C722687224000989AA /* CvsStringParser.h */,
+				585672C522687224000989AA /* CvsStringParser.m */,
+				585672C422687224000989AA /* JXArcCompatibilityMacros.h */,
 				585672C822687224000989AA /* ParserManager.h */,
+				585672C622687224000989AA /* ParserManager.m */,
+				585672CB2268725F000989AA /* ZafulParser.h */,
+				585672CC2268725F000989AA /* ZafulParser.m */,
+				A3FCD63C2C42EDB0003FAC88 /* MatchLanguageManager.h */,
+				A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */,
+				A3FCD63B2C42EDB0003FAC88 /* ReadCSVFileManager.h */,
+				A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */,
 			);
 			path = ParserManager;
 			sourceTree = "<group>";
@@ -174,7 +184,9 @@
 			files = (
 				585672CA22687224000989AA /* ParserManager.m in Sources */,
 				585672C922687224000989AA /* CvsStringParser.m in Sources */,
+				A3FCD6402C42EDB0003FAC88 /* ReadCSVFileManager.m in Sources */,
 				58555BAF2266CAA000668869 /* ViewController.m in Sources */,
+				A3FCD63F2C42EDB0003FAC88 /* MatchLanguageManager.m in Sources */,
 				58555BB72266CAA100668869 /* main.m in Sources */,
 				58555BAC2266CAA000668869 /* AppDelegate.m in Sources */,
 				585672CD2268725F000989AA /* ZafulParser.m in Sources */,
