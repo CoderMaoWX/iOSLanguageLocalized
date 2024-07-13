@@ -64,7 +64,6 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
     NSString *filePath = [[NSUserDefaults standardUserDefaults] objectForKey:kLanguageLocalized];
     if ([filePath isKindOfClass:[NSString class]] && filePath.length > 0) {
         self.localizblePathCell.stringValue = filePath;
-//        self.excelPathCell.stringValue = @"/Users/luke/Desktop/App多语言样例的副本.csv";
         [self refreshUI];
     }
 }
@@ -183,8 +182,9 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
             continue;;
         }
         NSError *error = nil;
-        NSMutableString *allFileString = [NSMutableString stringWithContentsOfFile:localizablePath encoding:NSUTF8StringEncoding error:&error];
-        
+        NSMutableString *allFileString = [NSMutableString stringWithContentsOfFile:localizablePath
+                                                                          encoding:NSUTF8StringEncoding
+                                                                             error:&error];
         NSArray *addLanguageStrArr = readCSVToArrayDict[fileName];
         if (!addLanguageStrArr || addLanguageStrArr.count == 0) {
             continue;
@@ -205,8 +205,10 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
             // 替换相同key之后的
             allFileString = [NSMutableString stringWithString:replaceResultString];
         }
-        
-        BOOL writeLangSuccess = [allFileString writeToFile:localizablePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+        BOOL writeLangSuccess = [allFileString writeToFile:localizablePath
+                                                atomically:YES
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:&error];
         if (writeLangSuccess) {
             [[NSUserDefaults standardUserDefaults] setObject:self.localizblePath forKey:kLanguageLocalized];
             [[NSUserDefaults standardUserDefaults] synchronize];
