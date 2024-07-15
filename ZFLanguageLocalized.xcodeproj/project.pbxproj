@@ -15,6 +15,7 @@
 		A3FCD63F2C42EDB0003FAC88 /* MatchLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */; };
 		A3FCD6402C42EDB0003FAC88 /* ReadCSVFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */; };
 		CF61109F2C44FCA100A868C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF61109D2C44FCA100A868C3 /* Localizable.strings */; };
+		CF6110AA2C44FE1800A868C3 /* OuputCSVFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6110A92C44FE1800A868C3 /* OuputCSVFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		CF6110A52C44FCCC00A868C3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CF6110A62C44FCE500A868C3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		CF6110A72C44FCE500A868C3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF6110A82C44FE1800A868C3 /* OuputCSVFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OuputCSVFileManager.h; sourceTree = "<group>"; };
+		CF6110A92C44FE1800A868C3 /* OuputCSVFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OuputCSVFileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */,
 				A3FCD63B2C42EDB0003FAC88 /* ReadCSVFileManager.h */,
 				A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */,
+				CF6110A82C44FE1800A868C3 /* OuputCSVFileManager.h */,
+				CF6110A92C44FE1800A868C3 /* OuputCSVFileManager.m */,
 			);
 			path = ParserManager;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				58555BAF2266CAA000668869 /* ViewController.m in Sources */,
 				A3FCD63F2C42EDB0003FAC88 /* MatchLanguageManager.m in Sources */,
 				58555BB72266CAA100668869 /* main.m in Sources */,
+				CF6110AA2C44FE1800A868C3 /* OuputCSVFileManager.m in Sources */,
 				58555BAC2266CAA000668869 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -345,7 +351,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zaful.ZFLanguageLocalized;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -364,7 +370,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zaful.ZFLanguageLocalized;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
