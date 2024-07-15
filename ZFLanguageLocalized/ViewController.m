@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "ZafulParser.h"
 #import "MatchLanguageManager.h"
 #import "ReadCSVFileManager.h"
 
@@ -233,8 +232,7 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
         //NSLog(@"成功解析出的CSV文件内容===%@", readCSVToArrayDict);
     }
     NSInteger writeSuccessCount = 0;
-    NSString *englishKey = self.mappingLanguageDict[@"英语"];
-    NSArray *englishLanguageArr = csvToArrayDataDict[englishKey];
+    NSArray *englishLanguageArr = csvToArrayDataDict[@"en.lproj"];
     
     for (NSString *fileName in appLprojDict.allKeys) {
         NSString *localizablePath = appLprojDict[fileName];
@@ -247,9 +245,15 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
         NSMutableString *allFileString = [NSMutableString stringWithContentsOfFile:localizablePath
                                                                           encoding:NSUTF8StringEncoding
                                                                              error:&error];
+        NSString *csvDataKey = fileName;
+        
+        //如果没匹配到, 就找映射关系看能否再次匹配
+        if (![csvToArrayDataDict.allKeys containsObject:csvDataKey]) {
+            csvDataKey = [self matchLanguageKey:fileName csvToArrayDataDict:csvToArrayDataDict];
+        }
         
         //⚠️2. 再把CSV文件中的匹配到的翻译追加到 旧的翻译中去
-        NSArray *addLanguageStrArr = csvToArrayDataDict[fileName];
+        NSArray *addLanguageStrArr = csvToArrayDataDict[csvDataKey];
         if (![addLanguageStrArr isKindOfClass:[NSArray class]] || addLanguageStrArr.count == 0) {
             
             //如果在cvs文件中没有匹配到项目中的翻译文件, 则添加"英语"的翻译到项目中
@@ -265,15 +269,15 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
         }
         
         //⚠️3. 再把添加的key中 移除旧的中相同的key, 在相同位置保留最新的需要添加的
-        NSDictionary *csvInfoDict = csvToDictDataDict[fileName];
+        NSDictionary *csvInfoDict = csvToDictDataDict[csvDataKey];
         if ([csvInfoDict isKindOfClass:[NSDictionary class]] && csvInfoDict.count > 0) {
             
             for (NSString *languageKey in csvInfoDict.allKeys) {
                 NSString *languageValue = csvInfoDict[languageKey];
                 //替换现有key中相同key的翻译
-                NSString *replaceResultString = [MatchLanguageManager replaceStringInContent44:allFileString
-                                                                               matchingPattern:languageKey
-                                                                                  withNewValue:languageValue];
+                NSString *replaceResultString = [MatchLanguageManager replaceStringInContent:allFileString
+                                                                             matchingPattern:languageKey
+                                                                                withNewValue:languageValue];
                 // 替换相同key之后的
                 allFileString = [NSMutableString stringWithString:replaceResultString];
             }
@@ -299,52 +303,77 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
     }
 }
 
+- (NSString *)matchLanguageKey:(NSString *)fileName 
+            csvToArrayDataDict:(NSDictionary *)csvToArrayDataDict {
+    NSArray *allKeyArr = self.mappingLanguageDict[fileName];
+    if ([allKeyArr isKindOfClass:[NSArray class]]) {
+        
+        for (NSString *key in allKeyArr) {
+            NSArray *dataArr = csvToArrayDataDict[key];
+            if ([dataArr isKindOfClass:[NSArray class]] && dataArr.count > 0) {
+                return key;
+            }
+        }
+    }
+    return fileName;
+}
+
 /**
  * 此字典是用来映射CSV文件中的每列的翻译需要对应添加到项目的哪个翻译文件中去的
- * 英文 / 法语 / 西班牙语 / 阿拉伯语 / 德语 / 印尼语 / 泰语 / 葡语 / 意大利语 / 俄语 / 孟加拉语 / 繁体中文
+ * 列举映射了一些常规的国家, 后续如果有新需要映射的,可自行追加到后面
  */
 - (NSDictionary *)mappingLanguageDict {
     if (!_mappingLanguageDict) {
         _mappingLanguageDict = @{
-            @"德语" : @"de.lproj",
-            @"法语" : @"fr.lproj",
-            @"泰语" : @"th.lproj",
-            
-            @"英文"  : @"en.lproj",
-            @"英语"  : @"en.lproj",
-            
-            @"越南语"  : @"vi.lproj",
-            @"越语"    : @"vi.lproj",
-            
-            @"俄罗斯语" : @"ru.lproj",
-            @"俄语"    : @"ru.lproj",
-            
-            @"土耳其语" : @"tr.lproj",
-            @"土耳其"   : @"tr.lproj",
-            
-            @"阿语"     : @"ar.lproj",
-            @"阿拉伯语"  : @"ar.lproj",
-            
-            @"西语"     : @"es.lproj",
-            @"西班牙语"  : @"es.lproj",
-            
-            @"印度尼西亚" : @"id.lproj",
-            @"印尼语"    : @"id.lproj",
-            
-            @"意大利语" : @"it.lproj",
-            @"意语"    : @"it.lproj",
-            
-            @"葡语"    : @"pt.lproj",
-            @"葡萄牙语" : @"pt.lproj",
-            
-            @"孟加拉语" : @"bn.lproj",
-            
-            @"zh-Hans.lproj"  : @"zh-Hans.lproj",
-            @"zh-Hans" : @"zh-Hans.lproj",
-            @"汉语"    : @"zh-Hans.lproj",
-            @"中文"    : @"zh-Hans.lproj",
-            @"简体中文" : @"zh-Hans.lproj",
-            @"繁体中文" : @"zh-Hant-TW.lproj",};
+            @"de.lproj": @[
+                @"German", @"german", @"德语",
+            ],
+            @"fr.lproj" : @[
+                @"French", @"french", @"法语",
+            ],
+            @"th.lproj" : @[
+                @"Thailand", @"thailand", @"泰语",
+            ],
+            @"en.lproj" : @[
+                @"English", @"english", @"英文", @"英语",
+            ],
+            @"vi.lproj"  : @[
+                @"Vietnam", @"vietnam", @"越南语", @"越语",
+            ],
+            @"ru.lproj"  : @[
+                @"Russian", @"russian", @"俄罗斯语", @"俄语",
+            ],
+            @"tr.lproj" : @[
+                @"Turkey", @"turkey", @"土耳其语",  @"土耳其",
+            ],
+            @"ar.lproj" : @[
+                @"Arabic", @"arabic", @"阿语", @"阿拉伯语",
+            ],
+            @"es.lproj" : @[
+                @"Spanish", @"spanish", @"西语",  @"西班牙语",
+            ],
+            @"id.lproj" : @[
+                @"Indonesia", @"indonesia", @"印度尼西亚", @"印尼语",
+            ],
+            @"it.lproj" : @[
+                @"Italian", @"italian", @"意大利语", @"意语",
+            ],
+            @"pt.lproj" : @[
+                @"Portuguese", @"portuguese", @"葡语", @"葡萄牙语",
+            ],
+            @"bn.lproj" : @[
+                @"Bengali", @"bengali", @"孟加拉语",
+            ],
+            @"he.lproj" : @[
+                @"Hebrew", @"hebrew", @"希伯来语",
+            ],
+            @"ja.lproj" : @[
+                @"Japanese", @"japanese", @"日语",
+            ],
+            @"zh-Hans.lproj" : @[
+                @"Chinaese", @"chinaese", @"zh-Hans", @"中文", @"汉语", @"简体中文", @"繁体中文",
+            ],
+        };
     }
     return _mappingLanguageDict;
 }

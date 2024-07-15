@@ -10,6 +10,9 @@
 @implementation ReadCSVFileManager
 
 /// Path to your CSV file (其中有转义换行)
+/// 映射成: 
+/// key = es.lproj
+/// value = @[ " "key1" = "value1";  ", "  "key2" = "value2";  "] //数组里面放着字符串
 + (NSDictionary *)readCSVFileToArray:(NSString *)filePath {
 
     NSError *error = nil;
@@ -45,10 +48,16 @@
         }
         
         for (NSUInteger col = 1; col < [header count]; col++) {
-            NSMutableArray *columnArray = resultDict[header[col]];
+            NSString *resultKey = header[col];
+            if (![resultKey isKindOfClass:[NSString class]] || resultKey.length == 0
+                || [resultKey isEqualToString:@"\r"]
+                || [resultKey isEqualToString:@"\n"]) {
+                continue;
+            }
+            NSMutableArray *columnArray = resultDict[resultKey];
             if (!columnArray) {
                 columnArray = [NSMutableArray array];
-                resultDict[header[col]] = columnArray;
+                resultDict[resultKey] = columnArray;
             }
             
             NSString *key = columns[0];
@@ -73,17 +82,12 @@
     }
     
     return resultDict;
-    
-    // Print or use resultDict as needed
-//    NSDictionary *tmpDict = [NSDictionary dictionaryWithDictionary:resultDict];
-//    NSLog(@"Processed results: %@", tmpDict);
-//    for (NSString *columnKey in resultDict) {
-//        NSLog(@"%@: %@", columnKey, resultDict[columnKey]);
-//        NSLog(@"\n");
-//    }
 }
 
 // Path to your CSV file
+/// 映射成:
+/// key = es.lproj
+/// value = @{ "key1" = "value1"; , "key2" = "value2"; }  //字典里面放着key=value
 + (NSDictionary *)readCSVFileToDict:(NSString *)filePath {
     
     NSError *error = nil;
@@ -119,10 +123,16 @@
         }
         
         for (NSUInteger col = 1; col < [header count]; col++) {
-            NSMutableDictionary *columnDict = resultDict[header[col]];
+            NSString *resultKey = header[col];
+            if (![resultKey isKindOfClass:[NSString class]] || resultKey.length == 0
+                || [resultKey isEqualToString:@"\r"]
+                || [resultKey isEqualToString:@"\n"]) {
+                continue;
+            }
+            NSMutableDictionary *columnDict = resultDict[resultKey];
             if (!columnDict) {
                 columnDict = [NSMutableDictionary dictionary];
-                resultDict[header[col]] = columnDict;
+                resultDict[resultKey] = columnDict;
             }
             
             NSString *key = columns[0];
@@ -145,13 +155,6 @@
         }
     }
     return resultDict;
-    
-//    // Print or use resultDict as needed
-//    NSLog(@"Processed results:");
-//    for (NSString *columnKey in resultDict) {
-//        NSLog(@"%@: %@", columnKey, resultDict[columnKey]);
-//        NSLog(@"\n");
-//    }
 }
 
 
