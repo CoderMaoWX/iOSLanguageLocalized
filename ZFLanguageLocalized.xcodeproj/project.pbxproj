@@ -14,6 +14,7 @@
 		58555BB72266CAA100668869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555BB62266CAA100668869 /* main.m */; };
 		A3FCD63F2C42EDB0003FAC88 /* MatchLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */; };
 		A3FCD6402C42EDB0003FAC88 /* ReadCSVFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */; };
+		CF61109F2C44FCA100A868C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF61109D2C44FCA100A868C3 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,15 @@
 		A3FCD63C2C42EDB0003FAC88 /* MatchLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchLanguageManager.h; sourceTree = "<group>"; };
 		A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchLanguageManager.m; sourceTree = "<group>"; };
 		A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadCSVFileManager.m; sourceTree = "<group>"; };
+		CF61109E2C44FCA100A868C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF6110A02C44FCB000A868C3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		CF6110A12C44FCB000A868C3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF6110A22C44FCBE00A868C3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		CF6110A32C44FCBF00A868C3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF6110A42C44FCCC00A868C3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		CF6110A52C44FCCC00A868C3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CF6110A62C44FCE500A868C3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		CF6110A72C44FCE500A868C3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,7 @@
 				58555BAB2266CAA000668869 /* AppDelegate.m */,
 				58555BAD2266CAA000668869 /* ViewController.h */,
 				58555BAE2266CAA000668869 /* ViewController.m */,
+				CF61109D2C44FCA100A868C3 /* Localizable.strings */,
 				58555BB02266CAA100668869 /* Assets.xcassets */,
 				58555BB22266CAA100668869 /* Main.storyboard */,
 				58555BB52266CAA100668869 /* Info.plist */,
@@ -137,6 +148,10 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				de,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = 58555B9E2266CAA000668869;
 			productRefGroup = 58555BA82266CAA000668869 /* Products */;
@@ -154,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58555BB12266CAA100668869 /* Assets.xcassets in Resources */,
+				CF61109F2C44FCA100A868C3 /* Localizable.strings in Resources */,
 				58555BB42266CAA100668869 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,8 +196,24 @@
 			isa = PBXVariantGroup;
 			children = (
 				58555BB32266CAA100668869 /* Base */,
+				CF6110A02C44FCB000A868C3 /* fr */,
+				CF6110A22C44FCBE00A868C3 /* de */,
+				CF6110A42C44FCCC00A868C3 /* zh-Hans */,
+				CF6110A62C44FCE500A868C3 /* ja */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF61109D2C44FCA100A868C3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF61109E2C44FCA100A868C3 /* en */,
+				CF6110A12C44FCB000A868C3 /* fr */,
+				CF6110A32C44FCBF00A868C3 /* de */,
+				CF6110A52C44FCCC00A868C3 /* zh-Hans */,
+				CF6110A72C44FCE500A868C3 /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -191,6 +223,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -250,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
