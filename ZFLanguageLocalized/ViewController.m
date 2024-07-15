@@ -17,15 +17,14 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
 //csv翻译文件
 @property (weak) IBOutlet NSTextField *csvPathCell;
 @property (weak) IBOutlet NSTextField *csvTipLabel;
-@property (nonatomic, copy) NSString *csvFilePath;
 //项目多语言目录
 @property (weak) IBOutlet NSTextField *localizblePathCell;
 @property (weak) IBOutlet NSTextField *localizbleTipLabel;
-@property (nonatomic, copy) NSString *localizbleFilePath;
 //执行提示
 @property (weak) IBOutlet NSImageView *statusImageView;
 @property (weak) IBOutlet NSTextField *statusTipLabel;
 @property (weak) IBOutlet NSProgressIndicator *loadingView;
+//操作按钮
 @property (weak) IBOutlet NSButton *executeButton;
 //多语言文件映射
 @property (nonatomic, strong) NSDictionary *mappingLanguageDict;
@@ -40,12 +39,11 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
     CALayer *layer = [CALayer layer];
     layer.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     layer.contents = (__bridge id _Nullable)[self imageToCGImageRef:image];
-    layer.opacity = 0.5;
+    layer.opacity = 1.0;
     [self.view.layer addSublayer:layer];
-    
 }
 
-//NSImage 翻译为 CGImageRef
+//NSImage 转为 CGImageRef
 - (CGImageRef)imageToCGImageRef:(NSImage*)image {
     NSData * imageData = [image TIFFRepresentation];
     CGImageRef imageRef = nil;
@@ -77,28 +75,13 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
 }
 
 - (void)refreshUI {
+    self.csvTipLabel.hidden = YES;
+    self.localizbleTipLabel.hidden = YES;
     self.statusImageView.hidden = YES;
     self.statusTipLabel.hidden = YES;
     
-    self.csvTipLabel.hidden = YES;
-    self.csvFilePath = self.csvPathCell.stringValue;
-    
-    self.localizbleTipLabel.hidden = YES;
-    self.localizbleFilePath = self.localizblePathCell.stringValue;
-    
     self.executeButton.enabled = (self.csvPathCell.stringValue.length > 0 &&
                                   self.localizblePathCell.stringValue.length > 0);
-}
-
-- (void)showStatusTip:(NSString *)tipText status:(BOOL)status {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.statusImageView.image = [NSImage imageNamed:(status ? @"success" : @"fail")];
-        self.statusImageView.hidden = NO;
-        self.loadingView.hidden = YES;
-        self.statusTipLabel.hidden = NO;
-        self.statusTipLabel.stringValue = tipText;
-        self.executeButton.enabled = !status;
-    });
 }
 
 - (void)showCheckTip:(NSString *)tipText tipLabel:(NSTextField *)tipLabel {
@@ -106,6 +89,23 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
         tipLabel.hidden = NO;
         tipLabel.stringValue = tipText;
         self.loadingView.hidden = YES;
+    });
+}
+
+- (void)showResultTip:(NSString *)tipText status:(BOOL)status {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.csvPathCell.enabled = YES;
+        self.localizblePathCell.enabled = YES;
+        
+        self.loadingView.hidden = YES;
+        
+        self.statusImageView.image = [NSImage imageNamed:(status ? @"success" : @"fail")];
+        self.statusImageView.hidden = NO;
+        
+        self.statusTipLabel.hidden = NO;
+        self.statusTipLabel.stringValue = tipText;
+
+        self.executeButton.enabled = !status;
     });
 }
 
@@ -153,7 +153,6 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
         
         if ([self checkTipInputPath:filePath tipLabel:self.csvTipLabel]) {
             self.csvPathCell.stringValue = panel.URL.path;
-            self.csvFilePath = panel.URL.path;
             [self refreshUI];
         }
     }];
@@ -171,7 +170,6 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
         
         if ([self checkTipInputPath:filePath tipLabel:self.localizbleTipLabel]) {
             self.localizblePathCell.stringValue = panel.URL.path;
-            self.localizbleFilePath = panel.URL.path;
             [self refreshUI];
         }
     }];
@@ -179,26 +177,31 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
 
 /// 开始转换翻译
 - (IBAction)startConvertAction:(NSButton *)sender {
-    if (![self checkTipInputPath:self.csvFilePath tipLabel:self.csvTipLabel]) return;
-    if (![self checkTipInputPath:self.localizbleFilePath tipLabel:self.localizbleTipLabel]) return;
+    if (![self checkTipInputPath:self.csvPathCell.stringValue tipLabel:self.csvTipLabel]) return;
+    if (![self checkTipInputPath:self.localizblePathCell.stringValue tipLabel:self.localizbleTipLabel]) return;
     
-    self.executeButton.enabled = NO;
+    self.csvPathCell.enabled = NO;
+    self.localizblePathCell.enabled = NO;
     self.loadingView.hidden = NO;
     [self.loadingView startAnimation:nil];
+    self.executeButton.enabled = NO;
     
     // 开始添加CSV表格中的多语言翻译
-    NSString *csvFilePath = self.csvPathCell.stringValue;
+    NSString *csvFileURL = self.csvPathCell.stringValue;
+    NSString *localizbleURL = self.localizblePathCell.stringValue;
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [self dealwithMappingLanguage: csvFilePath];
+        [self dealwithMappingLanguage: csvFileURL 
+                       localizblePath: localizbleURL];
     });
 }
 
 /// 开始处理添加/替换多语言
-- (void)dealwithMappingLanguage:(NSString *)csvFilePath {
+- (void)dealwithMappingLanguage:(NSString *)csvURL
+                 localizblePath:(NSString *)localizbleURL {
     
     NSFileManager *fileManger = [NSFileManager defaultManager];
     
-    NSMutableArray *allLanguageDirArray = [NSMutableArray arrayWithArray:[fileManger contentsOfDirectoryAtPath:self.localizbleFilePath error:nil]];
+    NSMutableArray *allLanguageDirArray = [NSMutableArray arrayWithArray:[fileManger contentsOfDirectoryAtPath:localizbleURL error:nil]];
     [allLanguageDirArray removeObject:@".DS_Store"];//排除异常文件
     
     // 获取多语言目录列表: Key（Android/iOS Key), en.lproj, de.lproj, es.lproj ...
@@ -206,7 +209,7 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
     for (NSString *pathDicr in allLanguageDirArray) {
         //NSLog(@"多语言文件夹子目录===%@", pathDicr);
         
-        NSString *localizablePath = [NSString stringWithFormat:@"%@/%@/Localizable.strings", self.localizbleFilePath, pathDicr];
+        NSString *localizablePath = [NSString stringWithFormat:@"%@/%@/Localizable.strings", localizbleURL, pathDicr];
         if ([fileManger fileExistsAtPath:localizablePath]) {
             langLprojDict[pathDicr] = localizablePath;
         }
@@ -218,11 +221,11 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
     }
     
     // 读取CSV文件内容
-    NSDictionary *readCSVToArrayDict = [ReadCSVFileManager readCSVFileToArray:csvFilePath];
-    NSDictionary *readCSVToDictDict = [ReadCSVFileManager readCSVFileToDict:csvFilePath];
+    NSDictionary *readCSVToArrayDict = [ReadCSVFileManager readCSVFileToArray:csvURL];
+    NSDictionary *readCSVToDictDict = [ReadCSVFileManager readCSVFileToDict:csvURL];
 
     if (![readCSVToArrayDict isKindOfClass:[NSDictionary class]] || readCSVToArrayDict.count == 0) {
-        [self showStatusTip:@"多语言翻译失败, 请检查CSV文件内容是否错误" status:NO];
+        [self showResultTip:@"多语言翻译失败, 请检查CSV文件内容是否错误" status:NO];
         return;
     } else {
         //NSLog(@"成功解析出的CSV文件内容===%@", readCSVToArrayDict);
@@ -262,11 +265,11 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
                                                   encoding:NSUTF8StringEncoding
                                                      error:&error];
         if (writeLangSuccess) {
-            [[NSUserDefaults standardUserDefaults] setObject:self.localizbleFilePath forKey:kLanguageLocalized];
+            [[NSUserDefaults standardUserDefaults] setObject:localizbleURL forKey:kLanguageLocalized];
             [[NSUserDefaults standardUserDefaults] synchronize];
-            [self showStatusTip:@"💐恭喜, 多语言文件翻译成功" status:YES];
+            [self showResultTip:@"💐恭喜, 多语言文件翻译成功" status:YES];
         } else {
-            [self showStatusTip:@"😰未知错误 翻译失败, 请检查CSV文件内容是否正确" status:NO];
+            [self showResultTip:@"😰未知错误 翻译失败, 请检查CSV文件内容是否正确" status:NO];
         }
     }
 }
