@@ -205,72 +205,97 @@ static NSString *kLanguageLocalized = @"ZFLanguageLocalized";
     [allLanguageDirArray removeObject:@".DS_Store"];//排除异常文件
     
     // 获取多语言目录列表: Key（Android/iOS Key), en.lproj, de.lproj, es.lproj ...
-    NSMutableDictionary *langLprojDict = [NSMutableDictionary dictionary];
+    NSMutableDictionary *appLprojDict = [NSMutableDictionary dictionary];
     for (NSString *pathDicr in allLanguageDirArray) {
         //NSLog(@"多语言文件夹子目录===%@", pathDicr);
         
         NSString *localizablePath = [NSString stringWithFormat:@"%@/%@/Localizable.strings", localizbleURL, pathDicr];
         if ([fileManger fileExistsAtPath:localizablePath]) {
-            langLprojDict[pathDicr] = localizablePath;
+            appLprojDict[pathDicr] = localizablePath;
         }
     }
     
-    if (langLprojDict.allKeys.count == 0) {
-        [self showCheckTip:@"目录文件夹不存在需要翻译的多语言文件" tipLabel:self.localizbleTipLabel];
+    if (appLprojDict.allKeys.count == 0) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self showCheckTip:@"目录文件夹不存在需要翻译的多语言文件" tipLabel:self.localizbleTipLabel];
+        });
         return;
     }
     
     // 读取CSV文件内容
-    NSDictionary *readCSVToArrayDict = [ReadCSVFileManager readCSVFileToArray:csvURL];
-    NSDictionary *readCSVToDictDict = [ReadCSVFileManager readCSVFileToDict:csvURL];
+    NSDictionary *csvToArrayDataDict = [ReadCSVFileManager readCSVFileToArray:csvURL];
+    NSDictionary *csvToDictDataDict = [ReadCSVFileManager readCSVFileToDict:csvURL];
 
-    if (![readCSVToArrayDict isKindOfClass:[NSDictionary class]] || readCSVToArrayDict.count == 0) {
-        [self showResultTip:@"多语言翻译失败, 请检查CSV文件内容是否错误" status:NO];
+    if (![csvToArrayDataDict isKindOfClass:[NSDictionary class]] || csvToArrayDataDict.count == 0) {
+        [self showResultTip:@"多语言翻译失败, \n请检查CSV文件内容是否错误" status:NO];
         return;
     } else {
         //NSLog(@"成功解析出的CSV文件内容===%@", readCSVToArrayDict);
     }
+    NSInteger writeSuccessCount = 0;
+    NSString *englishKey = self.mappingLanguageDict[@"英语"];
+    NSArray *englishLanguageArr = csvToArrayDataDict[englishKey];
     
-    for (NSString *fileName in langLprojDict.allKeys) {
-        NSString *localizablePath = langLprojDict[fileName];
-        if (!localizablePath || localizablePath.length == 0) {
-            continue;;
+    for (NSString *fileName in appLprojDict.allKeys) {
+        NSString *localizablePath = appLprojDict[fileName];
+        
+        if (![localizablePath isKindOfClass:[NSString class]] || localizablePath.length == 0) {
+            continue;
         }
         NSError *error = nil;
+        //⚠️1. 先读取项目中匹配的旧的翻译文件
         NSMutableString *allFileString = [NSMutableString stringWithContentsOfFile:localizablePath
                                                                           encoding:NSUTF8StringEncoding
                                                                              error:&error];
-        NSArray *addLanguageStrArr = readCSVToArrayDict[fileName];
-        if (!addLanguageStrArr || addLanguageStrArr.count == 0) {
-            continue;
-        }
-        NSString *addString = [addLanguageStrArr componentsJoinedByString:@"\n"];
-        //直接拼接后的整个文件的大字符串
-        [allFileString appendString: addString];
         
-        NSDictionary *doctFileNameDict = readCSVToDictDict[fileName];
-        if (!doctFileNameDict || doctFileNameDict.count == 0) {
-            continue;
+        //⚠️2. 再把CSV文件中的匹配到的翻译追加到 旧的翻译中去
+        NSArray *addLanguageStrArr = csvToArrayDataDict[fileName];
+        if (![addLanguageStrArr isKindOfClass:[NSArray class]] || addLanguageStrArr.count == 0) {
+            
+            //如果在cvs文件中没有匹配到项目中的翻译文件, 则添加"英语"的翻译到项目中
+            if ([englishLanguageArr isKindOfClass:[NSArray class]] && englishLanguageArr.count > 0) {
+                NSString *englishString = [englishLanguageArr componentsJoinedByString:@"\n"];
+                //追加拼接:大字符串 (英语)
+                [allFileString appendString: englishString];
+            }
+        } else { //匹配到就直接添加
+            NSString *languageString = [addLanguageStrArr componentsJoinedByString:@"\n"];
+            //追加拼接:大字符串 (匹配到的)
+            [allFileString appendString: languageString];
         }
-        for (NSString *languageKey in doctFileNameDict.allKeys) {
-            NSString *languageValue = doctFileNameDict[languageKey];
-            NSString *replaceResultString = [MatchLanguageManager replaceStringInContent44:allFileString
-                                                                           matchingPattern:languageKey
-                                                                              withNewValue:languageValue];
-            // 替换相同key之后的
-            allFileString = [NSMutableString stringWithString:replaceResultString];
+        
+        //⚠️3. 再把添加的key中 移除旧的中相同的key, 在相同位置保留最新的需要添加的
+        NSDictionary *csvInfoDict = csvToDictDataDict[fileName];
+        if ([csvInfoDict isKindOfClass:[NSDictionary class]] && csvInfoDict.count > 0) {
+            
+            for (NSString *languageKey in csvInfoDict.allKeys) {
+                NSString *languageValue = csvInfoDict[languageKey];
+                //替换现有key中相同key的翻译
+                NSString *replaceResultString = [MatchLanguageManager replaceStringInContent44:allFileString
+                                                                               matchingPattern:languageKey
+                                                                                  withNewValue:languageValue];
+                // 替换相同key之后的
+                allFileString = [NSMutableString stringWithString:replaceResultString];
+            }
         }
+        
+        //⚠️4. 最后把处理好的大字符串写入指定文件
         BOOL writeLangSuccess = [allFileString writeToFile:localizablePath
                                                 atomically:YES
                                                   encoding:NSUTF8StringEncoding
                                                      error:&error];
         if (writeLangSuccess) {
-            [[NSUserDefaults standardUserDefaults] setObject:localizbleURL forKey:kLanguageLocalized];
-            [[NSUserDefaults standardUserDefaults] synchronize];
-            [self showResultTip:@"💐恭喜, 多语言文件翻译成功" status:YES];
-        } else {
-            [self showResultTip:@"😰未知错误 翻译失败, 请检查CSV文件内容是否正确" status:NO];
+            writeSuccessCount += 1;
         }
+    }
+    
+    if (writeSuccessCount == appLprojDict.allKeys.count) {
+        [[NSUserDefaults standardUserDefaults] setObject:localizbleURL forKey:kLanguageLocalized];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self showResultTip:@"💐恭喜, 多语言文件翻译全部成功" status:YES];
+    } else {
+        NSString *tipStr = writeSuccessCount > 0 ? @"😰多语言文件翻译 部分成功,部分失败, \n请检查CSV文件内容是否正确" : @"😰未知错误 翻译失败, \n请检查CSV文件内容是否正确";
+        [self showResultTip:tipStr status:NO];
     }
 }
 
