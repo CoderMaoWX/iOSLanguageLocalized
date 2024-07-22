@@ -1,6 +1,6 @@
 /*
  Localizable.strings
- Zaful
+ ZFLanguageLocalized
  
  Created by zhaowei on 2017/2/13.
  Copyright © 2017年 Y001. All rights reserved.
@@ -51,7 +51,7 @@
 "Share_VC_I_Know" = "I know";
 "Share_CopyLinkTitle" = "copy link";
 "Share_VC_Copied_Success" = "Copied successfully";
-"Share_VC_Less_Three_Tip" = "Pretty little thing from Zaful! Total <3! Check it out on Zaful.";
+"Share_VC_Less_Three_Tip" = "Pretty little thing from ZFLanguageLocalized! Total <3! Check it out on ZFLanguageLocalized.";
 "Share_VC_Shared_Facebook_Success" = "Successfully shared on Facebook";
 "Share_VC_Shared_Messenger_Success" = "Successfully shared on Messenger";
 "Share_VC_Shared_Pinterest_Success" = "Successfully shared on Pinterest";
@@ -61,7 +61,7 @@
 "Share_VC_Pinterest" = "Pinterest";
 "Share_VC_CopyLink" = "Copy Link";
 "Share_VC_Twitter" = "Twitter";
-"Share_VC_CheckOut_Tip" = "Zaful, really <3 this! So many boutiques on Zaful. Come check them out!";
+"Share_VC_CheckOut_Tip" = "ZFLanguageLocalized, really <3 this! So many boutiques on ZFLanguageLocalized. Come check them out!";
 "Share_VC_GetItFree" = "Share & Get It Free";
 "Share_VC_GetItFreeTitle" = "Get It Free";
 
@@ -115,17 +115,17 @@
 "Register_GG_Connect" = "   Google";
 "Register_policy" = "I have read and agreed to the privacy policy";
 "Register_TermsOfUser" = "Terms of Use";
-"Register_zaful.com" = "To complete registration, you must agree to the Zaful website Terms and Conditions.";
+"Register_ZFLanguageLocalized.com" = "To complete registration, you must agree to the ZFLanguageLocalized website Terms and Conditions.";
 "Register_password_less" = "Sorry, your password can't be less than 8 characters.";
 "Register_password_include" = "Password must include letters and numbers.";
 "Register_Confirm_Tip_Password" = "At least 8 characters & 1 number.";
-"Register_ConfirmInformation" = "I confirm all information provided is my own; I understand and agree it will be used as per the Zaful Privacy Policy. I can withdraw my consent at any time.";
+"Register_ConfirmInformation" = "I confirm all information provided is my own; I understand and agree it will be used as per the ZFLanguageLocalized Privacy Policy. I can withdraw my consent at any time.";
 
-"Register_AlertSubscribeTitle" = "I agree to receive marketing information about Zaful products and services and agree to the processing of my personal data for such purposes as described in the Zaful Privacy Policy. I can withdraw my consent at any time.";
+"Register_AlertSubscribeTitle" = "I agree to receive marketing information about ZFLanguageLocalized products and services and agree to the processing of my personal data for such purposes as described in the ZFLanguageLocalized Privacy Policy. I can withdraw my consent at any time.";
 
 "Register_TermsUse" = "Terms of Use";
 "Register_PrivacyPolicy" = "Privacy Policy";
-"Register_AgreeTermsOfUser" = "I agree to the Zaful Terms of Use";
+"Register_AgreeTermsOfUser" = "I agree to the ZFLanguageLocalized Terms of Use";
 "Register_agreeSubmitting" = "By submitting, I confirm all information...";
 "Register_subscribe" = "Subscribe to our newsletter";
 
@@ -247,7 +247,7 @@
 
 /*Free Gift*/
 "FreeGift" = "Free gifts";
-"FreeGift_Rule_Content" = "Zaful sends free gifts to customers who support us during specific activities. Customers are allowed to pick any gift at the bottom of this page by simply clicking \"Add to Bag\". So long as the total amount in your shopping bag meets the requirements, you can get it for free. Gifts differ from section to section, and a higher shopping bag value corresponds to a higher value of gift choices. Only one gift can be picked from each section. Contact our online customer service if you have any further questions.";
+"FreeGift_Rule_Content" = "ZFLanguageLocalized sends free gifts to customers who support us during specific activities. Customers are allowed to pick any gift at the bottom of this page by simply clicking \"Add to Bag\". So long as the total amount in your shopping bag meets the requirements, you can get it for free. Gifts differ from section to section, and a higher shopping bag value corresponds to a higher value of gift choices. Only one gift can be picked from each section. Contact our online customer service if you have any further questions.";
 "FreeGiftDetail_AddCartTips" = "There is already a free gift in your shopping bag. Do you want to change it?";
 "FreeGiftsVC_HasNoDataTips" = "Sorry, no free gifts available right now.";
 
@@ -329,7 +329,7 @@
 "Account_VC_SignOut_Alert_Yes" = "Yes";
 
 "Account_SignIn_SignUp" = "Sign In / Register";
-"Account_Welcome_Zaful" = "Welcome to ZAFUL";
+"Account_Welcome_ZFLanguageLocalized" = "Welcome to ZFLanguageLocalized";
 "Account_TopInfo_ZmeHome" = "Z-Me";
 "Account_Cell_Orders" = "Orders";
 "Account_Cell_Share" = "My Shares";
@@ -350,8 +350,8 @@
 "AccoundHeaderView_SelectPhotoTitle" = "Profile Picture Settings";
 "AccoundHeaderView_TackPhoto" = "Take Photo";
 "AccoundHeaderView_ChooseAlbum" = "Choose From Album";
-"AccoundHeaderView_Settings_Camera" = "Allow Zaful to access your Camera. (Settings > Privacy > Camera)";
-"AccoundHeaderView_Settings_Photos" = "Allow Zaful to access your Photos. (Settings > Privacy > Photos）";
+"AccoundHeaderView_Settings_Camera" = "Allow ZFLanguageLocalized to access your Camera. (Settings > Privacy > Camera)";
+"AccoundHeaderView_Settings_Photos" = "Allow ZFLanguageLocalized to access your Photos. (Settings > Privacy > Photos）";
 "AccoundHeaderView_Divice_Unavailable" = "Sorry, no camera or camera unavailable.";
 "AccountCountry_VC_SelectedCountry" = "Selected Country/Region";
 "AccountCountry_VC_Title" = "Change Country";
@@ -467,8 +467,8 @@
 "GuideReviewAppStore_Rate" = "Rate";
 "GuideReviewAppStore_NotNow" = "Not Now";
 "GuideReviewAppStore_FeedBack" = "Write Feedback";
-"GuideReviewAppStore_Tips" = "Dear Zaful customer, do you enjoy using our App? If you do, please take a moment to rate it. Thanks for your support!";
-"GuideReviewAppStore_Title" = "Go Rate ZAFUL?";
+"GuideReviewAppStore_Tips" = "Dear ZFLanguageLocalized customer, do you enjoy using our App? If you do, please take a moment to rate it. Thanks for your support!";
+"GuideReviewAppStore_Title" = "Go Rate ZFLanguageLocalized?";
 
 /*My Points*/
 "MyPoints_VC_Title" = "My Points";
@@ -609,13 +609,13 @@
 "SettingViewModel_Cache_Alert_Message" = "App cache has been cleared!";
 "SettingViewModel_Cache_Alert_OK" = "OK";
 "SettingViewModel_Version_Alert_Title" = "Version";
-"SettingViewModel_Version_Alert_Message" = "There is a new version of the Zaful app. Update now.";
+"SettingViewModel_Version_Alert_Message" = "There is a new version of the ZFLanguageLocalized app. Update now.";
 "SettingViewModel_Version_Alert_NotNow" = "NO";
 "SettingViewModel_Version_Alert_Update" = "Yes";
 "SettingViewModel_Version_Latest_Alert_Message" = "The current version is";
 "SettingViewModel_Version_Latest_Alert_OK" = "OK";
 "ForceUpgrade_title" = "Update notification";
-"ForceUpgrade_message" = "Dear ZAFUL users, we have recently made an all-round improvement to our app. Please install the latest version to enjoy a better shopping experience.";
+"ForceUpgrade_message" = "Dear ZFLanguageLocalized users, we have recently made an all-round improvement to our app. Please install the latest version to enjoy a better shopping experience.";
 
 /*My Help*/
 "Help_VC_Title" = "Help";
@@ -658,7 +658,7 @@
 "Community_Little_Views" = "%@ views";
 
 "Community_ShareTitle" = "Latest Fashion Deals";
-"Community_ShareContent" = "My style show on Zaful, do you like it?";
+"Community_ShareContent" = "My style show on ZFLanguageLocalized, do you like it?";
 
 /*CommunityViewController*/
 "Community_Tab_Title_Explore" = "Explore";
@@ -767,7 +767,7 @@
 
 /*ContactsViewController*/
 "Contacts_VC_Title" = "Contacts";
-"Contacts_VC_Message" = "Join Z-Me community now! BIG coupons and giveaways are awaiting you. You can also find great shopping experiences and fashion ideas on zaful.com.";
+"Contacts_VC_Message" = "Join Z-Me community now! BIG coupons and giveaways are awaiting you. You can also find great shopping experiences and fashion ideas on ZFLanguageLocalized.com.";
 "Contacts_VC_Send" = "Send";
 
 /*FriendsCommendHeadView*/
@@ -806,7 +806,7 @@
 
 /*ContactsViewModel*/
 "ContactsViewModel_AuthorizationFailure_Title" = "Couldn't access contact";
-"ContactsViewModel_AuthorizationFailure_Message" = "Please allow Zaful to access your Contacts by going to Settings > Privacy > Contacts";
+"ContactsViewModel_AuthorizationFailure_Message" = "Please allow ZFLanguageLocalized to access your Contacts by going to Settings > Privacy > Contacts";
 "ContactsViewModel_AuthorizationFailure__OK" = "OK";
 "ContactsViewModel_AuthorizationFailure__GoToSetting" = "Go to Settings";
 
@@ -834,7 +834,7 @@
 "FriendsCommendViewModel_Share_Content" = "Hurry up, I need a fashion pal to join me!";
 "ZFShare_Community_post" = "Check this out, I just found something fun!";
 "ZFShare_Community_topic" = "Join this topic with me, let's rock it together!";
-"ZFShare_Community_outfits" = "Hey, I just found an outfit on ZAFUL!";
+"ZFShare_Community_outfits" = "Hey, I just found an outfit on ZFLanguageLocalized!";
 
 /*FriendsResultViewModel*/
 "FriendsResultViewModel_NoData_Message" = "Sorry,\n no results matched your search request";
@@ -1078,7 +1078,7 @@
 "NewVersionGuide_Change" = "CHANGE";
 "NewVersionGuide_GoShopping" = "GO SHOPPING";
 
-"native_banner_share" = "ZAFUL - My Fashion Story";
+"native_banner_share" = "ZFLanguageLocalized - My Fashion Story";
 "NEW" = "NEW";
 "POPULAR" = "POPULAR";
 "HOT" = "HOT";
@@ -1102,7 +1102,7 @@
 "Shipping_Address" = "Shipping Address";
 "No_content" = "No content";
 "Next" = "Next";
-"Push_Enable_Disable_Setting>Notifications>Zaful" = "Enable or Disable Zaful via \"Setting>Notifications>Zaful\"";
+"Push_Enable_Disable_Setting>Notifications>ZFLanguageLocalized" = "Enable or Disable ZFLanguageLocalized via \"Setting>Notifications>ZFLanguageLocalized\"";
 "Push_Order_Status_Delivery&_Shipping_Information" = "Be the first to know about your Order Status and Delivery& Shipping Information";
 "Push_Open" = "Open";
 "Push_Later" = "Later";
@@ -1200,7 +1200,7 @@
 // ==================================== V4.2.0 ====================================
 "Languge_Setting_Indonesia"    = "Indonesia";
 "Guest_Sales_Tips_title"       = "Student Discount";
-"Guest_Sales_Tips_Content"     = "Congrats! You're now eligible for student discount with Zaful.";
+"Guest_Sales_Tips_Content"     = "Congrats! You're now eligible for student discount with ZFLanguageLocalized.";
 "StudentVIP_Discount_Title"    = "Student Discount";
 "SupreSutdentVIP_Discount_Title" = "Supreme Student discount";
 
@@ -1274,7 +1274,7 @@
 
 "GroupBuyDetail_StatusTipText" = "Tips: If you successfully form a team, you will definitely get your desired item; One of your team members will also be selected to receive an item.";
 
-"GroupBuyDetail_ruleText" = "1. All Zaful members can start a \" Form a Team to Win\" activity by following these steps: select your desired item, invite friends to form a team, recruit the required number of members, receive the item free of charge.\n\n2. The system will randomly select one member from your team, and gift them one of the selected items. You can ask your team members to help you continue sharing. The more you share, the higher your chances of being selected.\n\n3. After successfully forming a team, we will send the desired item’s coupon code to yours and the winning team member’s account. You can use the coupon to generate an order for $0.01 and then pay to complete it.\n\n4. Any form of cheating is forbidden. If discovered, the coupons will be withdrawed. (If one IP address repeats two times in one event, it is considered cheating.)\n\n5.Here are at most 10 times for each user to join every day,ZAFUL reserves the right to final interpretation of this activity.";
+"GroupBuyDetail_ruleText" = "1. All ZFLanguageLocalized members can start a \" Form a Team to Win\" activity by following these steps: select your desired item, invite friends to form a team, recruit the required number of members, receive the item free of charge.\n\n2. The system will randomly select one member from your team, and gift them one of the selected items. You can ask your team members to help you continue sharing. The more you share, the higher your chances of being selected.\n\n3. After successfully forming a team, we will send the desired item’s coupon code to yours and the winning team member’s account. You can use the coupon to generate an order for $0.01 and then pay to complete it.\n\n4. Any form of cheating is forbidden. If discovered, the coupons will be withdrawed. (If one IP address repeats two times in one event, it is considered cheating.)\n\n5.Here are at most 10 times for each user to join every day,ZFLanguageLocalized reserves the right to final interpretation of this activity.";
 
 "Account_Survey" = "Satisfaction Survey";
 "OrderDetail_returnReason" = "Reason for return";
@@ -1338,7 +1338,7 @@
 
 // ==================================== V4.5.5 ====================================
 "QuestionVC_Title" = "Payment Survey";
-"Question_TitleHeader" = "Your opinion is very important to us. We appreciate your feedback and will use it to  make improvements for your better experience at ZAFUL. We will ensure the safety of your information, please feel free to fill out this form.";
+"Question_TitleHeader" = "Your opinion is very important to us. We appreciate your feedback and will use it to  make improvements for your better experience at ZFLanguageLocalized. We will ensure the safety of your information, please feel free to fill out this form.";
 "Question_Title" = "Select a reason";
 "Question_One" = "I don't want to buy (don’t need/don’t like etc.) the item(s) anymore.";
 "Question_Two" = "No suitable shipping method/Shipping time too long";
@@ -1565,19 +1565,19 @@
 "Community_Preview" = "Preview";
 "Community_HotEvents" = "Hot Events";
 "Community_Shareideas" = "Write down your outfit ideas here.";
-"Community_postSafeTips" = "Your post will be encrypted and will not be shown on the web. Are you sure you want to share it on Zaful?";
-"Community_OnlyZaful" = "Only show on Zaful";
+"Community_postSafeTips" = "Your post will be encrypted and will not be shown on the web. Are you sure you want to share it on ZFLanguageLocalized?";
+"Community_OnlyZFLanguageLocalized" = "Only show on ZFLanguageLocalized";
 "Community_AddPhotoHere" = "Add Photo here";
 "Community_AddItemHere" = "Add photo related items here";
 "Community_PostEditTips" = "This post will not be saved if you exit. Are you sure you want to stop editing?";
-"Zaful_Exit" = "Exit";
+"ZFLanguageLocalized_Exit" = "Exit";
 "Community_Editing" = "Continue editing";
 "Community_PostRules" = "Post Rules";
 "Community_AddItem" = "Add Item";
 "Community_NophotoTips" = "Just add a photo to share your outfit";
-"Zaful_Join" = "Join";
-"Zaful_DontJoin" = "Don’t Join";
-"Zaful_joined" = "Joined";
+"ZFLanguageLocalized_Join" = "Join";
+"ZFLanguageLocalized_DontJoin" = "Don’t Join";
+"ZFLanguageLocalized_joined" = "Joined";
 "Community_HotEvents" = "Hot Events";
 "Community_Complete" = "Complete";
 "Community_LongPressTips" = "Long press and drag photos to change their order";
@@ -1755,7 +1755,7 @@
 "Order_BankTransfer_BankName" = "Bank Name";
 "Share_Failed" = "Share failed";
 "Share_Mail_Successfully" = "Successfully shared on Mail";
-"About_ZAFUL" = "About ZAFUL";
+"About_ZFLanguageLocalized" = "About ZFLanguageLocalized";
 "Share_SMS_Successfully" = "Successfully shared on SMS";
 "Order_BankTransfer_Account_Holder" = "Account Holder";
 "Order_BankTransfer_Country" = "Country";
@@ -1808,13 +1808,13 @@
 "ModifyAddress_Address1_Placeholder_PH" = "Address1*: House number,Building and Street name";
 "ModifyAddress_Address2_Placeholder_PH" = "Address2: Please enter detailed address";
 //=============V6.5.0===============
-"category_virtual_share_title" = "Zaful’s %@ is awesome! Come check it out!";
+"category_virtual_share_title" = "ZFLanguageLocalized’s %@ is awesome! Come check it out!";
 "StudentVerify_Tip" = "Sign up with your academic email to verify yourself as a student and to get extra 20% off each month.";
 "StudentVerify_Congratulations" = "Congratulations";
-"Search_result_share_title" = "I was looking through Zaful’s %@, and saw something that really suits you. Come check it out!";
+"Search_result_share_title" = "I was looking through ZFLanguageLocalized’s %@, and saw something that really suits you. Come check it out!";
 "StudentVerify_Failed" = "Sorry, the student verification has not yet been completed. It may take a few days to verify your student status. If you're eligible for student membership, an email will be sent to your registered email address.";
-"StudentVerify_Successfull" = "One last step,you will become a ZAFUL valuable student membership.\n\nWe have sent the authentication email to your student email,please verify it ASAP";
-"StudentVerify_DescTitle" = "ZAFUL students members benefits";
+"StudentVerify_Successfull" = "One last step,you will become a ZFLanguageLocalized valuable student membership.\n\nWe have sent the authentication email to your student email,please verify it ASAP";
+"StudentVerify_DescTitle" = "ZFLanguageLocalized students members benefits";
 "StudentVerify_subTitle" = "You have successfully registered!";
 "StudentVerify_DiscountTip" = "GET EXTRA 20% DISCOUNT";
 "StudentVerify_ShopNow" = "SHOP NOW";
@@ -1833,7 +1833,7 @@
 "Letter_Clear_tip" = "Empty";
 "Free_Gift_Custom_Category_Tip" = "Spend a certain amount on the specified category of products below to get a free gift";
 //=============V6.7.0===============
-"ZAFUL_NEW" = "ZAFUL NEW";
+"ZFLanguageLocalized_NEW" = "ZFLanguageLocalized NEW";
 "TabBar_New" = "New";
 
 //=============V6.8.0===============
@@ -1859,15 +1859,15 @@
 
 //=============V7.1.0===============
 "login_PrivacyPolicy" = "Privacy Policy";
-"login_agree_termsPrivacy" = "I agree Zaful's Terms & Conditions and Privacy Policy.";
+"login_agree_termsPrivacy" = "I agree ZFLanguageLocalized's Terms & Conditions and Privacy Policy.";
 "login_subscribe_promotion" = "Subscribe us to get latest promotion";
 "home_coupon_alert_subTitle" = "Coupons are waiting for you！";
 "home_coupon_alert_title" = "Welcome Back！";
 "Detail_AfterPay_Title" = "or %@ interest-free installment of %@ by";
 "login_Terms&Conditions" = "Terms & Conditions";
-"login_understand_privac" = "I understand and accept Zaful's Privacy Policy, and will abide by it.";
-"login_follow_receive_news" = "Subscribe to receive emails with the latest news and exclusive offers from ZAFUL. You can unsubscribe at any time.";
-"login_agree_termsConditions" = "I agree to Zaful.com Terms and Conditions";
+"login_understand_privac" = "I understand and accept ZFLanguageLocalized's Privacy Policy, and will abide by it.";
+"login_follow_receive_news" = "Subscribe to receive emails with the latest news and exclusive offers from ZFLanguageLocalized. You can unsubscribe at any time.";
+"login_agree_termsConditions" = "I agree to ZFLanguageLocalized.com Terms and Conditions";
 "login_termsConditions_link" = "Terms and Conditions";
 "home_coupon_alert_expires_on" = "Expires on";
 
@@ -1876,9 +1876,9 @@
 
 //=============V7.1.2===============
 "Goodsdetail_Other_ShareTitle" = "I thought you might like this! Hurry,because it might sell out quick!💖 >>";
-"Goodsdetail_Facebook_ShareTitle" = "I discovered great products on ZAFUL.com. 😍";
+"Goodsdetail_Facebook_ShareTitle" = "I discovered great products on ZFLanguageLocalized.com. 😍";
 "outfit_items_limit_count_tip" = "You can add up to %@ items at the same time!";
-"Goodsdetail_Email_ShareTitle" = "I discovered great products on ZAFUL.com,come check them out! 😍 >>";
+"Goodsdetail_Email_ShareTitle" = "I discovered great products on ZFLanguageLocalized.com,come check them out! 😍 >>";
 "Goodsdetail_ShareTitle" = "I thought you might like this!";
 
 "new_user_price_tip" = "New User Price";
@@ -1904,8 +1904,8 @@
 "Review_current_language" = "Current language";
 "Login_existing_account" = "Link an existing account";
 "Login_link_account" = "Link your account";
-"Login_reset_pwd" = "Reset Zaful password";
-"Login_email_already_use_tip" = "This email is already in use. Please enter the account password in Zaful to link the Google account.";
+"Login_reset_pwd" = "Reset ZFLanguageLocalized password";
+"Login_email_already_use_tip" = "This email is already in use. Please enter the account password in ZFLanguageLocalized to link the Google account.";
 "IDFA_content" = "To provide you with a personalized experience, you can allow this app to use your information to better tailor what you see on this app, as well as on other websites and apps.";
 "IDFA_title" = "Better user experience";
 "Login_switch_acoount" = "Switch to another account";
@@ -1928,7 +1928,7 @@
 "Cancel_pay_modefy_title" = "Modify the order";
 "visitor_Privacy_subTitle" = "Privacy Policy";
 "Cancel_pay_modefy_address" = "Change shipping address";
-"visitor_privacy_content" = "By placing your order you agree to our Terms and Conditions and Privacy Policy. You also consent to some of your data being stored by ZAFUL, which may be used to make future shopping experiences better for you.";
+"visitor_privacy_content" = "By placing your order you agree to our Terms and Conditions and Privacy Policy. You also consent to some of your data being stored by ZFLanguageLocalized, which may be used to make future shopping experiences better for you.";
 "Swipe_left_to_next" = "Balayez vers la gauche pour afficher le commentaire suivant";
 "Swipe_up_to_next" = "Glissez vers le haut pour afficher le produit suivant";
 //=============V7.2.6===============
@@ -1993,7 +1993,7 @@
 "detail_shipping_receiving_time" = "Receiving Time";
 "detail_shipping_click_me_tips" = "Click here For more info and international shipping";
 "detail_shipping_click_me" = "Click here";
-"detail_shipping_not_available_tips" = "The delivery service is temporarily not available in the region you selected. Thanks for your support for ZAFUL!";
+"detail_shipping_not_available_tips" = "The delivery service is temporarily not available in the region you selected. Thanks for your support for ZFLanguageLocalized!";
 
 //=============V7.3.4===============
 
@@ -2037,7 +2037,7 @@
 //=============V7.4.2===============
 "NotifyMe_Title" = "Back in stock reminder";
 "NotifyMe_SubTitle" = "we will notify you when your item is back in stock";
-"NotifyMe_Rules" = "send me exclusive newsletter and offers from zaful";
+"NotifyMe_Rules" = "send me exclusive newsletter and offers from ZFLanguageLocalized";
 "NotifyMe_NotityMe" = "notify me";
 "NotifyMe_Stock_EmailTips" = "If the sku is in stock，an email will be sent to you";
 
@@ -2100,10 +2100,10 @@
 "Korea_clause_0" = "All confirmed and I agree.";
 "Korea_clause_1" = "Full Consent includes consent for required and optional information, and you can choose to consent individually. You can use the service even if you refuse to agree to the selection.";
 "Korea_clause_2" = "[Required] Age 14 or older";
-"Korea_clause_3" = "[Required] Agree to Zaful Terms and conditions";
-"Korea_clause_4" = "[Required] Agree to ZAFUL collection and use of personal information";
-"Korea_clause_5" = "[Required] Agree to provide personal information to Certain third-party service providers and/or ZAFUL’s affiliates located outside of Korea";
-"Korea_clause_6" = "[Optional] Agree to ZAFUL collection and use of personal information for marketing purposes";
+"Korea_clause_3" = "[Required] Agree to ZFLanguageLocalized Terms and conditions";
+"Korea_clause_4" = "[Required] Agree to ZFLanguageLocalized collection and use of personal information";
+"Korea_clause_5" = "[Required] Agree to provide personal information to Certain third-party service providers and/or ZFLanguageLocalized’s affiliates located outside of Korea";
+"Korea_clause_6" = "[Optional] Agree to ZFLanguageLocalized collection and use of personal information for marketing purposes";
 "Korea_clause_7" = "[Optional] Agree to receive advertising information";
 "Korea_clause_8" = "[Optional] Agree to receive emails";
 "Korea_clause_9" = "[Optional] Agree to receive SMS and SNS";
@@ -2154,7 +2154,7 @@
 "PaySuccessFull_Status" = "Payment successful";
 "PaySuccessFull_paid" = "Paid";
 "PaySuccessFull_CouponTile" = "Order Bonus";
-"PaySuccessFull_Content_Tips" = "Thank you for shopping on Zaful! We will process your order as soon as possible.";
+"PaySuccessFull_Content_Tips" = "Thank you for shopping on ZFLanguageLocalized! We will process your order as soon as possible.";
 "PaySuccessFull_Coupon_Tips" = "Great news! Your purchase has unlocked %@ coupons. Check your account for the coupon. Enjoy your shopping!";
 "PaySuccessFull_Points_Tips" = "Great news! Your purchase has earned you %@ points!";
 "PaySuccessFull_CouponAndPoints_Tips" = "Great news! Your purchase has earned you %@ points and unlocked %@ coupons. Enjoy the benefits!";
@@ -2172,7 +2172,7 @@
 "Coupon_not_valid" = "Inactive";
 "Make_Your_Own_Outfit" = "Make Your Own Outfit";
 "Style_with_customize_tip_next" = "Swipe left to view the next look";
-"Share_Content_SignIn" = "Join Zaful and get rewarded by inviting new friends. \nSign in / Register";
+"Share_Content_SignIn" = "Join ZFLanguageLocalized and get rewarded by inviting new friends. \nSign in / Register";
 "Outfit_view_bag" = "View bag";
 "Outfit_view_bag_success_tip" = "The items have been successfully added to your bag.";
 "Share_Content_tips" = "Your friend will receive a %@ coupon upon downloading and registering through the link you shared.";

@@ -1,13 +1,13 @@
 //
-//  ReadCSVFileManager.m
+//  ReadCSVFileTool.m
 //  TestDemo
 //
 //  Created by Luke on 2024/7/13.
 //
 
-#import "ReadCSVFileManager.h"
+#import "ReadCSVFileTool.h"
 
-@implementation ReadCSVFileManager
+@implementation ReadCSVFileTool
 
 /// Path to your CSV file (其中有转义换行)
 /// 映射成: 

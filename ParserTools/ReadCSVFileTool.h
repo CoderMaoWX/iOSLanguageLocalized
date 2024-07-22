@@ -1,5 +1,5 @@
 //
-//  ReadCSVFileManager.h
+//  ReadCSVFileTool.h
 //  TestDemo
 //
 //  Created by Luke on 2024/7/13.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ReadCSVFileManager : NSObject
+@interface ReadCSVFileTool : NSObject
 
 + (NSDictionary *)readCSVFileToArray:(NSString *)filePath;
 

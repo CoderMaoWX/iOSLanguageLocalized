@@ -775,16 +775,16 @@
                                 </connections>
                             </button>
                             <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="3cq-Yj-4bt">
-                                <rect key="frame" x="176" y="105" width="32" height="32"/>
+                                <rect key="frame" x="221" y="111" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </progressIndicator>
                             <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9q-WZ-MvJ">
-                                <rect key="frame" x="168" y="97" width="48" height="48"/>
+                                <rect key="frame" x="213" y="103" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="success" id="Px9-B1-7qS"/>
                             </imageView>
                             <textField hidden="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYU-C6-as3">
-                                <rect key="frame" x="24" y="51" width="336" height="38"/>
+                                <rect key="frame" x="30" y="57" width="413" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="状态提示3" id="RCZ-ug-7UD">
                                     <font key="font" metaFont="system"/>
@@ -792,15 +792,26 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCU-uS-0T7">
-                                <rect key="frame" x="374" y="110" width="97" height="32"/>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7B-n1-F6a">
+                                <rect key="frame" x="76" y="110" width="97" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="开始翻译" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zZ8-G3-fCX">
+                                <buttonCell key="cell" type="push" title="导出翻译" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uF7-Lp-1lW">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="startConvertAction:" target="XfG-lQ-9wD" id="beX-5o-gJv"/>
+                                    <action selector="exportBtnAction:" target="XfG-lQ-9wD" id="bHY-HR-dky"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCU-uS-0T7">
+                                <rect key="frame" x="306" y="110" width="97" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="导入翻译" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zZ8-G3-fCX">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="importBtnAction:" target="XfG-lQ-9wD" id="BCO-WM-6i1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -808,7 +819,8 @@
                     <connections>
                         <outlet property="csvPathCell" destination="zYq-jw-xlL" id="Kbm-qs-yuG"/>
                         <outlet property="csvTipLabel" destination="O9C-uS-0il" id="6Av-mK-WS0"/>
-                        <outlet property="executeButton" destination="YCU-uS-0T7" id="f2F-7P-8FY"/>
+                        <outlet property="exportButton" destination="Q7B-n1-F6a" id="pM9-ZF-XMg"/>
+                        <outlet property="importButton" destination="YCU-uS-0T7" id="V7R-2x-aRy"/>
                         <outlet property="loadingView" destination="3cq-Yj-4bt" id="why-Cx-d4P"/>
                         <outlet property="localizblePathCell" destination="p8Y-Xq-lKO" id="Ar1-Ou-2tm"/>
                         <outlet property="localizbleTipLabel" destination="ZEy-Ge-bnR" id="jGe-Xr-MDw"/>
@@ -818,7 +830,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-176.5" y="761"/>
+            <point key="canvasLocation" x="-185.5" y="720"/>
         </scene>
     </scenes>
     <resources>

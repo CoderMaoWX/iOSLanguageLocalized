@@ -1,6 +1,6 @@
 /*
  Localizable.strings
- Zaful
+ ZFLanguageLocalized
  
  Created by zhaowei on 2017/2/13.
  Copyright © 2017年 Y001. All rights reserved.
@@ -45,7 +45,7 @@
 "Share_VC_I_Know" = "了解" ;
 "Share_CopyLinkTitle" = "複製鏈接" ;
 "Share_VC_Copied_Success" = "複製成功" ;
-"Share_VC_Less_Three_Tip" = "來自Zaful的小東西！ 總數<3！ 去Zaful上查看吧。" ;
+"Share_VC_Less_Three_Tip" = "來自ZFLanguageLocalized的小東西！ 總數<3！ 去ZFLanguageLocalized上查看吧。" ;
 "Share_VC_Shared_Facebook_Success" = "成功分享至Facebook" ;
 "Share_VC_Shared_Messenger_Success" = "成功分享至Messenger" ;
 "Share_VC_Shared_Pinterest_Success" = "成功分享至Pinterest" ;
@@ -54,7 +54,7 @@
 "Share_VC_Pinterest" = "Pinterest" ;
 "Share_VC_CopyLink" = "複製鏈接" ;
 "Share_VC_Twitter" = "Twitter" ;
-"Share_VC_CheckOut_Tip" = "Zaful，真的<3這個！ Zaful上有很多精品店。 快來看看吧！" ;
+"Share_VC_CheckOut_Tip" = "ZFLanguageLocalized，真的<3這個！ ZFLanguageLocalized上有很多精品店。 快來看看吧！" ;
 "Share_VC_GetItFree" = "分享並免費獲取" ;
 "Share_VC_GetItFreeTitle" = "免費獲取" ;
 "Share_Alert_ThanksSharing" = "感謝分享" ;
@@ -93,15 +93,15 @@
 "Register_GG_Connect" = "Google" ;
 "Register_policy" = "我已閱讀並同意隱私政策" ;
 "Register_TermsOfUser" = "使用條款" ;
-"Register_zaful.com" = "要完成註冊，您必須同意Zaful網站的條款和條件。" ;
+"Register_ZFLanguageLocalized.com" = "要完成註冊，您必須同意ZFLanguageLocalized網站的條款和條件。" ;
 "Register_password_less" = "對不起，您的密碼不能少於8個字符。" ;
 "Register_password_include" = "密碼必須包含字母和數字。" ;
 "Register_Confirm_Tip_Password" = "至少8個字符和1個數字。" ;
-"Register_ConfirmInformation" = "我確認所提供的信息真實有效; 我理解並同意根據Zaful隱私政策使用它，我可以隨時撤銷我的同意。" ;
-"Register_AlertSubscribeTitle" = "我同意接收有關Zaful產品和服務的營銷信息，並同意按照Zaful隱私政策中所述的目的處理我的個人數據，我可以隨時撤回。" ;
+"Register_ConfirmInformation" = "我確認所提供的信息真實有效; 我理解並同意根據ZFLanguageLocalized隱私政策使用它，我可以隨時撤銷我的同意。" ;
+"Register_AlertSubscribeTitle" = "我同意接收有關ZFLanguageLocalized產品和服務的營銷信息，並同意按照ZFLanguageLocalized隱私政策中所述的目的處理我的個人數據，我可以隨時撤回。" ;
 "Register_TermsUse" = "使用條款" ;
 "Register_PrivacyPolicy" = "隱私政策" ;
-"Register_AgreeTermsOfUser" = "我同意Zaful使用條款" ;
+"Register_AgreeTermsOfUser" = "我同意ZFLanguageLocalized使用條款" ;
 "Register_agreeSubmitting" = "我確認所有提交信息" ;
 "Register_subscribe" = "訂閱我們的資訊" ;
 "Login_Confirm_Tip_Email" = "請輸入有效電子郵件！" ;
@@ -198,7 +198,7 @@
 "ReturnToBag" = "返回購物車" ;
 "JumpToCart" = "您確定要再次將此訂單中的所有商品添加到購物車嗎？" ;
 "FreeGift" = "免費禮品" ;
-"FreeGift_Rule_Content" = "Zaful向在特定活動中支持我們的客戶發送免費禮品。用戶只需點擊頁面底部按鈕“添加到購物車”，即可選擇任何礼品。只要購物車中的總量符合要求，您就可以免費獲得。 禮品在不同部分之間有所不同，購物車商品總值越高對應可供選擇的禮品的價值也越高。 每個部分只能挑選一件禮物。 如果您有任何其他問題，請聯繫我們的在線客服。" ;
+"FreeGift_Rule_Content" = "ZFLanguageLocalized向在特定活動中支持我們的客戶發送免費禮品。用戶只需點擊頁面底部按鈕“添加到購物車”，即可選擇任何礼品。只要購物車中的總量符合要求，您就可以免費獲得。 禮品在不同部分之間有所不同，購物車商品總值越高對應可供選擇的禮品的價值也越高。 每個部分只能挑選一件禮物。 如果您有任何其他問題，請聯繫我們的在線客服。" ;
 "FreeGiftDetail_AddCartTips" = "購物車裡已經有免費禮品，你要更換嗎？" ;
 "FreeGiftsVC_HasNoDataTips" = "對不起，現在沒有可用的免費禮物。" ;
 "CartOrderInfo_Address_List_Close" = "關閉" ;
@@ -254,7 +254,7 @@
 "Account_VC_SignOut_Alert_No" = "否" ;
 "Account_VC_SignOut_Alert_Yes" = "是" ;
 "Account_SignIn_SignUp" = "登入/註冊" ;
-"Account_Welcome_Zaful" = "歡迎來到ZAFUL" ;
+"Account_Welcome_ZFLanguageLocalized" = "歡迎來到ZFLanguageLocalized" ;
 "Account_TopInfo_ZmeHome" = "Z-Me" ;
 "Account_Cell_Orders" = "訂購" ;
 "Account_Cell_Share" = "我的分享" ;
@@ -275,8 +275,8 @@
 "AccoundHeaderView_SelectPhotoTitle" = "個人檔案圖片設定" ;
 "AccoundHeaderView_TackPhoto" = "拍照" ;
 "AccoundHeaderView_ChooseAlbum" = "從相冊中選擇" ;
-"AccoundHeaderView_Settings_Camera" = "允許Zaful訪問您的相機（設置>隱私>相機）" ;
-"AccoundHeaderView_Settings_Photos" = "允許Zaful訪問您的相片（設置>隱私>相片）" ;
+"AccoundHeaderView_Settings_Camera" = "允許ZFLanguageLocalized訪問您的相機（設置>隱私>相機）" ;
+"AccoundHeaderView_Settings_Photos" = "允許ZFLanguageLocalized訪問您的相片（設置>隱私>相片）" ;
 "AccoundHeaderView_Divice_Unavailable" = "對不起，沒有相機或相機不可用。" ;
 "AccountCountry_VC_SelectedCountry" = "選定的國家/地區" ;
 "AccountCountry_VC_Title" = "更換國家" ;
@@ -363,8 +363,8 @@
 "GuideReviewAppStore_Rate" = "評分" ;
 "GuideReviewAppStore_NotNow" = "不是現在" ;
 "GuideReviewAppStore_FeedBack" = "填寫反饋" ;
-"GuideReviewAppStore_Tips" = "親愛的Zaful客戶，您喜歡使用我們的應用嗎？ 如果您喜歡的話，請您花點時間給它評分，謝您的支持！" ;
-"GuideReviewAppStore_Title" = "去給ZAFUL打分？" ;
+"GuideReviewAppStore_Tips" = "親愛的ZFLanguageLocalized客戶，您喜歡使用我們的應用嗎？ 如果您喜歡的話，請您花點時間給它評分，謝您的支持！" ;
+"GuideReviewAppStore_Title" = "去給ZFLanguageLocalized打分？" ;
 "MyPoints_VC_Title" = "我的積分" ;
 "MyPoints_Rewards_Label" = "積分" ;
 "MyPoints_WhatPoints_VC_Title" = "什麼是積分？" ;
@@ -485,13 +485,13 @@
 "SettingViewModel_Cache_Alert_Message" = "應用緩存已被清除！" ;
 "SettingViewModel_Cache_Alert_OK" = "OK" ;
 "SettingViewModel_Version_Alert_Title" = "版本" ;
-"SettingViewModel_Version_Alert_Message" = "有一個新版本的Zaful應用程式，現在更新。" ;
+"SettingViewModel_Version_Alert_Message" = "有一個新版本的ZFLanguageLocalized應用程式，現在更新。" ;
 "SettingViewModel_Version_Alert_NotNow" = "否" ;
 "SettingViewModel_Version_Alert_Update" = "是" ;
 "SettingViewModel_Version_Latest_Alert_Message" = "已經是最新版本。" ;
 "SettingViewModel_Version_Latest_Alert_OK" = "OK" ;
 "ForceUpgrade_title" = "更新通知" ;
-"ForceUpgrade_message" = "親愛的ZAFUL用戶，我們最近對我們的應用程式進行了全面改進。 請安裝最新版本以享受更好的購物體驗。" ;
+"ForceUpgrade_message" = "親愛的ZFLanguageLocalized用戶，我們最近對我們的應用程式進行了全面改進。 請安裝最新版本以享受更好的購物體驗。" ;
 "Help_VC_Title" = "幫助" ;
 "Profile_VC_Title" = "個人檔案" ;
 "Profile_FirstName_Placeholder" = "名字" ;
@@ -524,7 +524,7 @@
 "Community_Big_Views" = "查看" ;
 "Community_Little_Views" = "查看" ;
 "Community_ShareTitle" = "最新時尚優惠" ;
-"Community_ShareContent" = "我在Zaful上展示的風格，你喜歡嗎？" ;
+"Community_ShareContent" = "我在ZFLanguageLocalized上展示的風格，你喜歡嗎？" ;
 "Community_Tab_Title_Explore" = "發現" ;
 "Community_Tab_Title_Faves" = "流行" ;
 "Community_Tab_Title_Video" = "影片" ;
@@ -587,7 +587,7 @@
 "FriendsResultCell_Posts" = "貼文" ;
 "FriendsResultCell_BeLiked" = "被讃" ;
 "Contacts_VC_Title" = "聯繫人" ;
-"Contacts_VC_Message" = "立即加入Z-Me社區！ 大量優惠券和禮品在等著您。 您還可以在zaful.com上找到更多精彩的購物體驗和時尚創意。" ;
+"Contacts_VC_Message" = "立即加入Z-Me社區！ 大量優惠券和禮品在等著您。 您還可以在ZFLanguageLocalized.com上找到更多精彩的購物體驗和時尚創意。" ;
 "Contacts_VC_Send" = "發送" ;
 "AddMoreFriends_Contacts" = "聯繫人" ;
 "AddMoreFriends_FaceBook" = "Facebook好友" ;
@@ -614,7 +614,7 @@
 "Post_ViewModel_Alert_MaxItem_Tip" = "您只能選擇6個商品" ;
 "RecentViewModel_NoData_Title" = "對不起，我們找不到最近的商品。" ;
 "ContactsViewModel_AuthorizationFailure_Title" = "無法訪問聯繫人" ;
-"ContactsViewModel_AuthorizationFailure_Message" = "通過轉到設定>隱私>通訊錄，允許Zaful訪問您的聯繫人" ;
+"ContactsViewModel_AuthorizationFailure_Message" = "通過轉到設定>隱私>通訊錄，允許ZFLanguageLocalized訪問您的聯繫人" ;
 "ContactsViewModel_AuthorizationFailure__OK" = "OK" ;
 "ContactsViewModel_AuthorizationFailure__GoToSetting" = "前往設定" ;
 "LikesViewModel_NoData_NotLikes" = "還沒有點讚任何東西" ;
@@ -629,7 +629,7 @@
 "FriendsCommendViewModel_Share_Content" = "抓緊了，我們需要一個時尚好友加入我們。" ;
 "ZFShare_Community_post" = "看看這個，我發現了一些有趣的東西！" ;
 "ZFShare_Community_topic" = "和我一起加入這個主題，讓我們一起搖滾吧！" ;
-"ZFShare_Community_outfits" = "嘿，我剛剛在ZAFUL找到了一件衣服！" ;
+"ZFShare_Community_outfits" = "嘿，我剛剛在ZFLanguageLocalized找到了一件衣服！" ;
 "FriendsResultViewModel_NoData_Message" = "抱歉，沒有找到您搜尋的內容" ;
 "TimeLapse_Later" = "稍後" ;
 "TimeLapse_Ago" = "之前" ;
@@ -810,7 +810,7 @@
 "NewVersionGuide_ShopIn" = "購買" ;
 "NewVersionGuide_Change" = "更改" ;
 "NewVersionGuide_GoShopping" = "去購物" ;
-"native_banner_share" = "ZAFUL  - 我的時尚故事" ;
+"native_banner_share" = "ZFLanguageLocalized  - 我的時尚故事" ;
 "NEW" = "新品" ;
 "POPULAR" = "暢銷" ;
 "HOT" = "熱賣" ;
@@ -828,7 +828,7 @@
 "Shipping_Address" = "收貨地址" ;
 "No_content" = "無內容" ;
 "Next" = "下一步" ;
-"Push_Enable_Disable_Setting>Notifications>Zaful" = "通過\“設定>通知> Zaful \”啟用或禁用Zaful" ;
+"Push_Enable_Disable_Setting>Notifications>ZFLanguageLocalized" = "通過\“設定>通知> ZFLanguageLocalized \”啟用或禁用ZFLanguageLocalized" ;
 "Push_Order_Status_Delivery&_Shipping_Information" = "成為第一個知道您的訂單狀態、交貨和運輸信息的人" ;
 "Push_Open" = "開啟" ;
 "Push_Later" = "稍後" ;
@@ -915,7 +915,7 @@
 "ReviewFilter_Picture"  =  "評論照片";
 "Languge_Setting_Indonesia"  =  "印度尼西亞";
 "Guest_Sales_Tips_title"  =  "學生折扣";
-"Guest_Sales_Tips_Content"  =  "恭喜！ 您現在有資格獲得Zaful學生折扣。";
+"Guest_Sales_Tips_Content"  =  "恭喜！ 您現在有資格獲得ZFLanguageLocalized學生折扣。";
 "StudentVIP_Discount_Title"  =  "學生折扣";
 "SupreSutdentVIP_Discount_Title" =  "最高學生折扣";
 "goodsdetail_navigationonline_tip" = "如果您有任何疑問，請聯繫我們的客服。";
@@ -961,7 +961,7 @@
 "modifyAddress_countryCity_country"  =  "國家/地區";
 "modifyAddress_countryCity_state"  =  "州/縣";
 "GroupBuyDetail_StatusTipText"  =  "小貼士：拼團成功，你將得到完整的商品; 你的團隊其他成員將從中抽取一個獲得商品。";
-"GroupBuyDetail_ruleText"  =  "1.所有Zaful會員可以按照以下步驟開始“組建團隊贏”活動：選擇您想要的商品，邀請朋友組建團隊，招募所需數量的會員，免費獲得該商品。 \n\n2.系統將從您的團隊中隨機選擇一名成員，並向他們贈送一個所選商品。 您可以要求您的團隊成員幫助您繼續分享。 分享的越多，被選中的機會就越高。 \n\n3.成功組建團隊後，我們會將所需物品的優惠券代碼發送給您和獲勝團隊成員的帳戶。 您可以使用優惠券生成0.01美元的訂單，然後付款以完成它。 \n\n4.任何形式的作弊都是被禁止的。 如果發現，優惠券將被撤回。 （如果一個IP地址在一個事件中重複兩次，則視為作弊。）\n\n5.ZAFUL保留對此活動進行最終解釋的權利。";
+"GroupBuyDetail_ruleText"  =  "1.所有ZFLanguageLocalized會員可以按照以下步驟開始“組建團隊贏”活動：選擇您想要的商品，邀請朋友組建團隊，招募所需數量的會員，免費獲得該商品。 \n\n2.系統將從您的團隊中隨機選擇一名成員，並向他們贈送一個所選商品。 您可以要求您的團隊成員幫助您繼續分享。 分享的越多，被選中的機會就越高。 \n\n3.成功組建團隊後，我們會將所需物品的優惠券代碼發送給您和獲勝團隊成員的帳戶。 您可以使用優惠券生成0.01美元的訂單，然後付款以完成它。 \n\n4.任何形式的作弊都是被禁止的。 如果發現，優惠券將被撤回。 （如果一個IP地址在一個事件中重複兩次，則視為作弊。）\n\n5.ZFLanguageLocalized保留對此活動進行最終解釋的權利。";
 
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
@@ -1026,7 +1026,7 @@
 "text_menu_share" = "分享";
 // ==================================== V4.5.5 ====================================
 "QuestionVC_Title" = "Payment Survey";
-"Question_TitleHeader" = "Your feedback will help the ZAFUL team provide you with a more satisfactory ZAFUL experience. We will ensure the safety of your information, so please feel free to fill out.";
+"Question_TitleHeader" = "Your feedback will help the ZFLanguageLocalized team provide you with a more satisfactory ZFLanguageLocalized experience. We will ensure the safety of your information, so please feel free to fill out.";
 "Question_Title" = "What made you leave the Order Payment page without finishing the payment?";
 "Question_One" = "I don't want to buy (don’t need/don’t like etc.) the item(s) anymore.";
 "Question_Two" = "No suitable shipping method/Shipping time too long";
@@ -1291,19 +1291,19 @@
 "Community_Preview" = "Preview";
 "Community_HotEvents" = "Hot Events";
 "Community_Shareideas" = "Write down your outfit ideas here.";
-"Community_postSafeTips" = "Your post will be encrypted and will not be shown on the web. Are you sure you want to share it on Zaful?";
-"Community_OnlyZaful" = "Only show on Zaful";
+"Community_postSafeTips" = "Your post will be encrypted and will not be shown on the web. Are you sure you want to share it on ZFLanguageLocalized?";
+"Community_OnlyZFLanguageLocalized" = "Only show on ZFLanguageLocalized";
 "Community_AddPhotoHere" = "Add Photo here";
 "Community_AddItemHere" = "Add photo related items here";
 "Community_PostEditTips" = "This post will not be saved if you exit. Are you sure you want to stop editing?";
-"Zaful_Exit" = "Exit";
+"ZFLanguageLocalized_Exit" = "Exit";
 "Community_Editing" = "Continue editing";
 "Community_PostRules" = "Post Rules";
 "Community_AddItem" = "Add Item";
 "Community_NophotoTips" = "Just add a photo to share your outfit";
-"Zaful_Join" = "Join";
-"Zaful_DontJoin" = "Don’t Join";
-"Zaful_joined" = "Joined";
+"ZFLanguageLocalized_Join" = "Join";
+"ZFLanguageLocalized_DontJoin" = "Don’t Join";
+"ZFLanguageLocalized_joined" = "Joined";
 "Community_HotEvents" = "Hot Events";
 "Community_Complete" = "Complete";
 "Community_LongPressTips" = "Long press and drag photos to change their order";
@@ -1505,7 +1505,7 @@
 "Order_BankTransfer_BankName" = "Bank Name";
 "Share_Failed" = "Share failed";
 "Share_Mail_Successfully" = "Successfully shared on Mail";
-"About_ZAFUL" = "關於ZAFUL";
+"About_ZFLanguageLocalized" = "關於ZFLanguageLocalized";
 "Share_SMS_Successfully" = "Successfully shared on SMS";
 "Order_BankTransfer_Account_Holder" = "Account Holder";
 "Order_BankTransfer_Country" = "Country";
@@ -1545,8 +1545,8 @@
 "Swim_oufit_preview_tip" = "Click items below to add them to the preview window";
 "Search_busy_try_later" = "Search busy, please try again later";
 //=============V6.5.0===============
-"Search_result_share_title" = "I was looking through Zaful’s %@, and saw something that really suits you. Come check it out!";
-"category_virtual_share_title" = "Zaful’s %@ is awesome! Come check it out!";
+"Search_result_share_title" = "I was looking through ZFLanguageLocalized’s %@, and saw something that really suits you. Come check it out!";
+"category_virtual_share_title" = "ZFLanguageLocalized’s %@ is awesome! Come check it out!";
 "Letter_message" = "Messages";
 "Free_Gift_Custom_Goods" = "Specified Products";
 "Free_Gift_Custom_Goods_Tip" = "Spend a certain amount on the specified products below to get a free gift";
@@ -1572,14 +1572,14 @@
 "Letter_Clear_tip" = "Empty";
 //=============V7.1.0===============
 "login_PrivacyPolicy" = "Privacy Policy";
-"login_agree_termsPrivacy" = "I agree Zaful's Terms & Conditions and Privacy Policy.";
+"login_agree_termsPrivacy" = "I agree ZFLanguageLocalized's Terms & Conditions and Privacy Policy.";
 "login_subscribe_promotion" = "Subscribe us to get latest promotion";
 "home_coupon_alert_subTitle" = "Coupons are waiting for you！";
 "home_coupon_alert_title" = "Welcome Back！";
 "Detail_AfterPay_Title" = "or %@ interest-free payments of %@ with";
 "login_Terms&Conditions" = "Terms & Conditions";
-"login_understand_privac" = "I understand and accept Zaful's Privacy Policy, and will abide by it.";
-"login_agree_termsConditions" = "I agree to zaful.com Terms and Conditions";
+"login_understand_privac" = "I understand and accept ZFLanguageLocalized's Privacy Policy, and will abide by it.";
+"login_agree_termsConditions" = "I agree to ZFLanguageLocalized.com Terms and Conditions";
 
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
@@ -1612,8 +1612,8 @@
 "Login_link_account" = "Link your account";
 "Login_existing_account" = "Link an existing account";
 "Removed_from_wishlist" = "Removed from wishlist";
-"Login_reset_pwd" = "Reset Zaful password";
-"Login_email_already_use_tip" = "This email is already in use. Please enter the account password in Zaful to link the Google account.";
+"Login_reset_pwd" = "Reset ZFLanguageLocalized password";
+"Login_email_already_use_tip" = "This email is already in use. Please enter the account password in ZFLanguageLocalized to link the Google account.";
 "Review_current_language" = "Current language";
 "View_my_wishlist" = "View my wishlist";
 "Added_to_wishlist" = "Added to wishlist";
@@ -1687,7 +1687,7 @@
 "detail_shipping_receiving_time" = "Receiving Time";
 "detail_shipping_click_me_tips" = "Click here For more info and international shipping";
 "detail_shipping_click_me" = "Click here";
-"detail_shipping_not_available_tips" = "The delivery service is temporarily not available in the region you selected. Thanks for your support for ZAFUL!";
+"detail_shipping_not_available_tips" = "The delivery service is temporarily not available in the region you selected. Thanks for your support for ZFLanguageLocalized!";
 
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
@@ -1709,10 +1709,10 @@
 "Korea_clause_0" = "All confirmed and I agree.";
 "Korea_clause_1" = "Full Consent includes consent for required and optional information, and you can choose to consent individually. You can use the service even if you refuse to agree to the selection.";
 "Korea_clause_2" = "[Required] Age 14 or older";
-"Korea_clause_3" = "[Required] Agree to Zaful Terms and conditions";
-"Korea_clause_4" = "Required] Agree to ZAFUL collection and use of personal information";
-"Korea_clause_5" = "Required] Agree to provide personal information to Certain third-party service providers and/or ZAFUL’s affiliates located outside of Korea";
-"Korea_clause_6" = "[Optional] Agree to ZAFUL collection and use of personal information for marketing purposes";
+"Korea_clause_3" = "[Required] Agree to ZFLanguageLocalized Terms and conditions";
+"Korea_clause_4" = "Required] Agree to ZFLanguageLocalized collection and use of personal information";
+"Korea_clause_5" = "Required] Agree to provide personal information to Certain third-party service providers and/or ZFLanguageLocalized’s affiliates located outside of Korea";
+"Korea_clause_6" = "[Optional] Agree to ZFLanguageLocalized collection and use of personal information for marketing purposes";
 "Korea_clause_7" = "[Optional] Agree to receive advertising information";
 "Korea_clause_8" = "[Optional] Agree to receive emails";
 "Korea_clause_9" = "[Optional] Agree to receive SMS and SNS";

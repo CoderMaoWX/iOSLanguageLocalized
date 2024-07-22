@@ -22,7 +22,6 @@
     // Insert code here to tear down your application
 }
 
-
 /**
  * 设置关闭窗口之后点击Dock中的图标可以再次打开窗口
  */

@@ -12,10 +12,10 @@
 		58555BB12266CAA100668869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58555BB02266CAA100668869 /* Assets.xcassets */; };
 		58555BB42266CAA100668869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58555BB22266CAA100668869 /* Main.storyboard */; };
 		58555BB72266CAA100668869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58555BB62266CAA100668869 /* main.m */; };
-		A3FCD63F2C42EDB0003FAC88 /* MatchLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */; };
-		A3FCD6402C42EDB0003FAC88 /* ReadCSVFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */; };
+		A3FCD63F2C42EDB0003FAC88 /* MatchLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63D2C42EDB0003FAC88 /* MatchLanguageTool.m */; };
+		A3FCD6402C42EDB0003FAC88 /* ReadCSVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileTool.m */; };
 		CF61109F2C44FCA100A868C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF61109D2C44FCA100A868C3 /* Localizable.strings */; };
-		CF6110AA2C44FE1800A868C3 /* OuputCSVFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6110A92C44FE1800A868C3 /* OuputCSVFileManager.m */; };
+		CF6110AA2C44FE1800A868C3 /* OuputCSVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6110A92C44FE1800A868C3 /* OuputCSVFileTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +29,10 @@
 		58555BB52266CAA100668869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58555BB62266CAA100668869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58555BB82266CAA100668869 /* ZFLanguageLocalized.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZFLanguageLocalized.entitlements; sourceTree = "<group>"; };
-		A3FCD63B2C42EDB0003FAC88 /* ReadCSVFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadCSVFileManager.h; sourceTree = "<group>"; };
-		A3FCD63C2C42EDB0003FAC88 /* MatchLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchLanguageManager.h; sourceTree = "<group>"; };
-		A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchLanguageManager.m; sourceTree = "<group>"; };
-		A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadCSVFileManager.m; sourceTree = "<group>"; };
+		A3FCD63B2C42EDB0003FAC88 /* ReadCSVFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadCSVFileTool.h; sourceTree = "<group>"; };
+		A3FCD63C2C42EDB0003FAC88 /* MatchLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchLanguageTool.h; sourceTree = "<group>"; };
+		A3FCD63D2C42EDB0003FAC88 /* MatchLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchLanguageTool.m; sourceTree = "<group>"; };
+		A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadCSVFileTool.m; sourceTree = "<group>"; };
 		CF61109E2C44FCA100A868C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF6110A02C44FCB000A868C3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		CF6110A12C44FCB000A868C3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -42,8 +42,8 @@
 		CF6110A52C44FCCC00A868C3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CF6110A62C44FCE500A868C3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		CF6110A72C44FCE500A868C3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CF6110A82C44FE1800A868C3 /* OuputCSVFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OuputCSVFileManager.h; sourceTree = "<group>"; };
-		CF6110A92C44FE1800A868C3 /* OuputCSVFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OuputCSVFileManager.m; sourceTree = "<group>"; };
+		CF6110A82C44FE1800A868C3 /* OuputCSVFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OuputCSVFileTool.h; sourceTree = "<group>"; };
+		CF6110A92C44FE1800A868C3 /* OuputCSVFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OuputCSVFileTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		58555B9E2266CAA000668869 = {
 			isa = PBXGroup;
 			children = (
-				585672C322687224000989AA /* ParserManager */,
+				585672C322687224000989AA /* ParserTools */,
 				58555BA92266CAA000668869 /* ZFLanguageLocalized */,
 				58555BA82266CAA000668869 /* Products */,
 			);
@@ -91,17 +91,17 @@
 			path = ZFLanguageLocalized;
 			sourceTree = "<group>";
 		};
-		585672C322687224000989AA /* ParserManager */ = {
+		585672C322687224000989AA /* ParserTools */ = {
 			isa = PBXGroup;
 			children = (
-				A3FCD63C2C42EDB0003FAC88 /* MatchLanguageManager.h */,
-				A3FCD63D2C42EDB0003FAC88 /* MatchLanguageManager.m */,
-				A3FCD63B2C42EDB0003FAC88 /* ReadCSVFileManager.h */,
-				A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileManager.m */,
-				CF6110A82C44FE1800A868C3 /* OuputCSVFileManager.h */,
-				CF6110A92C44FE1800A868C3 /* OuputCSVFileManager.m */,
+				A3FCD63C2C42EDB0003FAC88 /* MatchLanguageTool.h */,
+				A3FCD63D2C42EDB0003FAC88 /* MatchLanguageTool.m */,
+				CF6110A82C44FE1800A868C3 /* OuputCSVFileTool.h */,
+				CF6110A92C44FE1800A868C3 /* OuputCSVFileTool.m */,
+				A3FCD63B2C42EDB0003FAC88 /* ReadCSVFileTool.h */,
+				A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileTool.m */,
 			);
-			path = ParserManager;
+			path = ParserTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,11 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3FCD6402C42EDB0003FAC88 /* ReadCSVFileManager.m in Sources */,
+				A3FCD6402C42EDB0003FAC88 /* ReadCSVFileTool.m in Sources */,
 				58555BAF2266CAA000668869 /* ViewController.m in Sources */,
-				A3FCD63F2C42EDB0003FAC88 /* MatchLanguageManager.m in Sources */,
+				A3FCD63F2C42EDB0003FAC88 /* MatchLanguageTool.m in Sources */,
 				58555BB72266CAA100668869 /* main.m in Sources */,
-				CF6110AA2C44FE1800A868C3 /* OuputCSVFileManager.m in Sources */,
+				CF6110AA2C44FE1800A868C3 /* OuputCSVFileTool.m in Sources */,
 				58555BAC2266CAA000668869 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
