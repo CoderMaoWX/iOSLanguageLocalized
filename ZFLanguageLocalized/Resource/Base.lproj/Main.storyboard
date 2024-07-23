@@ -713,7 +713,7 @@
                             <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYq-jw-xlL">
                                 <rect key="frame" x="27" y="204" width="344" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="请选择你要导入的.CSV翻译文件" drawsBackground="YES" id="FC0-TT-Wbd">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="请选择你要导入的.CSV文件，或导出的文件夹" drawsBackground="YES" id="FC0-TT-Wbd">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -722,24 +722,15 @@
                                     <outlet property="delegate" destination="XfG-lQ-9wD" id="YJ1-z1-6qm"/>
                                 </connections>
                             </textField>
-                            <textField hidden="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9C-uS-0il">
-                                <rect key="frame" x="25" y="185" width="449" height="18"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="状态提示2" id="HlY-dI-MeO">
-                                    <font key="font" size="14" name=".PingFangSC-Regular"/>
-                                    <color key="textColor" red="1" green="0.29512214889999999" blue="0.099468425520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eay-22-hLn">
                                 <rect key="frame" x="381" y="197" width="97" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="选择CSV" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3hr-bG-ODM">
+                                <buttonCell key="cell" type="push" title="选择目录" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3hr-bG-ODM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="11"/>
+                                    <font key="font" metaFont="smallSystem"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="excelPathButtonAction:" target="XfG-lQ-9wD" id="Nq4-OO-mR8"/>
+                                    <action selector="csvPathButtonAction:" target="XfG-lQ-9wD" id="vKo-PQ-W7Q"/>
                                 </connections>
                             </button>
                             <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8Y-Xq-lKO">
@@ -754,12 +745,12 @@
                                     <outlet property="delegate" destination="XfG-lQ-9wD" id="Mps-r0-f6B"/>
                                 </connections>
                             </textField>
-                            <textField hidden="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZEy-Ge-bnR">
-                                <rect key="frame" x="25" y="278" width="449" height="18"/>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZEy-Ge-bnR">
+                                <rect key="frame" x="25" y="274" width="449" height="18"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="状态提示1" id="OZ5-EL-lkF">
-                                    <font key="font" size="14" name=".PingFangSC-Regular"/>
-                                    <color key="textColor" red="1" green="0.29512214889999999" blue="0.099468425520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="*请选择项目中国际化文件（en.lpro）的父文件夹" id="OZ5-EL-lkF">
+                                    <font key="font" metaFont="system" size="11"/>
+                                    <color key="textColor" red="0.61568627450000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -786,7 +777,7 @@
                             <textField hidden="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYU-C6-as3">
                                 <rect key="frame" x="43" y="35" width="413" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="状态提示3" id="RCZ-ug-7UD">
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="执行结果提示" id="RCZ-ug-7UD">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -814,9 +805,20 @@
                                     <action selector="importBtnAction:" target="XfG-lQ-9wD" id="BCO-WM-6i1"/>
                                 </connections>
                             </button>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9C-uS-0il">
+                                <rect key="frame" x="25" y="164" width="449" height="35"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="*如果需要导出翻译，请选择一个的文件夹 *如果需要导入翻译，请选择需要导入的（.csv）翻译文件" id="HlY-dI-MeO">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="chooseCSVBtn" destination="Eay-22-hLn" id="UcR-fM-6eK"/>
+                        <outlet property="chooseLocalizbleBtn" destination="fxQ-dQ-49P" id="0jw-qR-THV"/>
                         <outlet property="csvPathCell" destination="zYq-jw-xlL" id="Kbm-qs-yuG"/>
                         <outlet property="csvTipLabel" destination="O9C-uS-0il" id="6Av-mK-WS0"/>
                         <outlet property="exportButton" destination="Q7B-n1-F6a" id="pM9-ZF-XMg"/>

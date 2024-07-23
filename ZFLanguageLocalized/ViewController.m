@@ -12,12 +12,17 @@
 #import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 @interface ViewController ()<NSTextFieldDelegate>
-//csv翻译文件
-@property (weak) IBOutlet NSTextField *csvPathCell;
-@property (weak) IBOutlet NSTextField *csvTipLabel;
+
 //项目多语言目录
 @property (weak) IBOutlet NSTextField *localizblePathCell;
 @property (weak) IBOutlet NSTextField *localizbleTipLabel;
+@property (weak) IBOutlet NSButton *chooseLocalizbleBtn;
+
+//csv翻译文件
+@property (weak) IBOutlet NSTextField *csvPathCell;
+@property (weak) IBOutlet NSTextField *csvTipLabel;
+@property (weak) IBOutlet NSButton *chooseCSVBtn;
+
 //执行提示
 @property (weak) IBOutlet NSImageView *statusImageView;
 @property (weak) IBOutlet NSTextField *statusTipLabel;
@@ -73,34 +78,59 @@
 }
 
 - (void)refreshUI {
-    self.csvTipLabel.hidden = YES;
-    self.localizbleTipLabel.hidden = YES;
+    [self refreshUIIsLoading:NO];
+    
+    BOOL enabled = (self.csvPathCell.stringValue.length > 0 &&
+                   self.localizblePathCell.stringValue.length > 0);
+    
+    self.importButton.enabled = enabled;
+    
+    self.exportButton.enabled = enabled;
+    
     self.statusImageView.hidden = YES;
     self.statusTipLabel.hidden = YES;
+}
+
+/// 屏蔽其他点击事件，显示转圈
+- (void)refreshUIIsLoading:(BOOL)isLoading {
     
-    self.importButton.enabled = (self.csvPathCell.stringValue.length > 0 &&
-                                  self.localizblePathCell.stringValue.length > 0);
+    self.localizblePathCell.enabled = !isLoading;
+    self.chooseLocalizbleBtn.enabled = !isLoading;
+    self.localizbleTipLabel.stringValue = !isLoading ? @"*请选择项目中国际化文件（en.lpro）的父文件夹" : nil;
+    self.localizbleTipLabel.textColor = !isLoading ? NSColor.grayColor : NSColor.redColor;
     
-    self.exportButton.enabled = self.importButton.enabled;
+    self.csvPathCell.enabled = !isLoading;
+    self.chooseCSVBtn.enabled = !isLoading;
+    self.csvTipLabel.stringValue = !isLoading ? @"*如果需要导出翻译，请选择一个的文件夹 *如果需要导入翻译，请选择需要导入的（.csv）翻译文件" : nil;
+    self.csvTipLabel.textColor = !isLoading ? NSColor.grayColor : NSColor.redColor;
+    
+    self.importButton.enabled = !isLoading;
+    self.exportButton.enabled = !isLoading;
+    
+    self.loadingView.hidden = isLoading ? NO : YES;
+    [self.loadingView startAnimation:nil];
+    
+    self.statusImageView.hidden = isLoading ? YES : NO;
+    self.statusTipLabel.hidden = isLoading ? YES : NO;
 }
 
 - (void)showCheckTip:(NSString *)tipText tipLabel:(NSTextField *)tipLabel {
     tipLabel.hidden = NO;
     tipLabel.stringValue = tipText;
+    tipLabel.textColor = NSColor.redColor;
     self.loadingView.hidden = YES;
+    self.chooseCSVBtn.enabled = YES;
+    self.chooseLocalizbleBtn.enabled = YES;
 }
 
 - (void)showResultTip:(NSString *)tipText status:(BOOL)status {
-    self.csvPathCell.enabled = YES;
-    self.localizblePathCell.enabled = YES;
-    
-    self.loadingView.hidden = YES;
+    [self refreshUIIsLoading:NO];
     
     self.statusImageView.image = [NSImage imageNamed:(status ? @"success" : @"fail")];
     self.statusImageView.hidden = NO;
     
-    self.statusTipLabel.hidden = NO;
     self.statusTipLabel.stringValue = tipText;
+    self.statusTipLabel.hidden = NO;
 
     self.importButton.enabled = !status;
     self.exportButton.enabled = !status;
@@ -117,14 +147,14 @@
     NSString *tipStr = nil;
     if (!isExists) {
         if (isCSV) {
-            tipStr = @"选择的csv文件不存在!";
+            tipStr = @"选择的.csv文件不存在!";
         } else if (isLocalizble) {
             tipStr = @"localizble文件夹目录不存在！";
         }
     }
     if (tipStr == nil && !isDirectory) {
         if (isCSV && ![filePath hasSuffix:@"csv"]) {
-            tipStr = @"仅支持csv文件!";
+            tipStr = @"仅支持.csv文件!";
         } else if (isLocalizble) {
             tipStr = @"localizble目录只能选择文件夹!";
         }
@@ -137,11 +167,28 @@
 
 #pragma mark - 处理添加多语言
 
-/// 选择需要追加翻译的CSV文件路径
-- (IBAction)excelPathButtonAction:(NSButton *)sender {
+/// 选择项目国际化文件夹路径: 每个翻译文件（en.lpro）的父文件夹
+- (IBAction)localizblePathButtonAction:(NSButton *)sender {
+    NSOpenPanel *panel = [NSOpenPanel openPanel];
+    panel.allowsMultipleSelection = NO;
+    panel.canChooseDirectories = YES; //只允许选择文件夹
+    
+    [panel beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse result) {
+        if (result == NSModalResponseCancel)return;
+        NSString *filePath = panel.URL.path;
+        
+        if ([self checkTipInputPath:filePath tipLabel:self.localizbleTipLabel]) {
+            self.localizblePathCell.stringValue = panel.URL.path;
+            [self refreshUI];
+        }
+    }];
+}
+
+/// 选择导入的CSV文件路径， 或者导出的文件夹路径
+- (IBAction)csvPathButtonAction:(NSButton *)sender {
     NSOpenPanel *panel = [NSOpenPanel openPanel];
     panel.allowsMultipleSelection = NO; //是否允许多选file
-    panel.canChooseDirectories = NO;   //是否允许选择文件夹
+    panel.canChooseDirectories = YES;   //是否允许选择文件夹
     //panel.allowedFileTypes = @[@"csv"]; //方法过期了
     // 设置只允许选择csv文件
     panel.allowedContentTypes = @[
@@ -159,34 +206,21 @@
     }];
 }
 
-/// 选择项目国际化文件夹路径: 每个翻译文件的父文件夹
-- (IBAction)localizblePathButtonAction:(NSButton *)sender {
-    NSOpenPanel *panel = [NSOpenPanel openPanel];
-    panel.allowsMultipleSelection = NO;
-    panel.canChooseDirectories = YES; //只允许选择文件夹
-    
-    [panel beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse result) {
-        if (result == NSModalResponseCancel)return;
-        NSString *filePath = panel.URL.path;
-        
-        if ([self checkTipInputPath:filePath tipLabel:self.localizbleTipLabel]) {
-            self.localizblePathCell.stringValue = panel.URL.path;
-            [self refreshUI];
-        }
-    }];
-}
-
 /// 开始导出翻译
 - (IBAction)exportBtnAction:(NSButton *)sender {
     if (![self checkTipInputPath:self.localizblePathCell.stringValue tipLabel:self.localizbleTipLabel]) return;
     
-    self.csvTipLabel.hidden = YES;
-    self.csvPathCell.enabled = NO;
-    self.localizblePathCell.enabled = NO;
-    self.loadingView.hidden = NO;
-    [self.loadingView startAnimation:nil];
-    self.importButton.enabled = NO;
-    self.exportButton.enabled = NO;
+    BOOL isDirectory = NO;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL isExists = [fileManager fileExistsAtPath:self.csvPathCell.stringValue isDirectory:&isDirectory];
+    if (!isExists || !isDirectory) {
+        self.csvTipLabel.stringValue = @"请选择一个正确的文件夹！";
+        self.csvTipLabel.textColor = NSColor.redColor;
+        return;
+    }
+    
+    // 屏蔽其他点击事件，显示转圈
+    [self refreshUIIsLoading:YES];
 
     // 需要导出的翻译文件
     NSString *localizbleURL = self.localizblePathCell.stringValue;
@@ -212,15 +246,11 @@
 
 /// 开始导入翻译
 - (IBAction)importBtnAction:(NSButton *)sender {
-    if (![self checkTipInputPath:self.csvPathCell.stringValue tipLabel:self.csvTipLabel]) return;
     if (![self checkTipInputPath:self.localizblePathCell.stringValue tipLabel:self.localizbleTipLabel]) return;
+    if (![self checkTipInputPath:self.csvPathCell.stringValue tipLabel:self.csvTipLabel]) return;
     
-    self.csvPathCell.enabled = NO;
-    self.localizblePathCell.enabled = NO;
-    self.loadingView.hidden = NO;
-    [self.loadingView startAnimation:nil];
-    self.importButton.enabled = NO;
-    self.exportButton.enabled = NO;
+    // 屏蔽其他点击事件，显示转圈
+    [self refreshUIIsLoading:YES];
     
     // 开始添加CSV表格中的多语言翻译
     NSString *csvFileURL = self.csvPathCell.stringValue;
