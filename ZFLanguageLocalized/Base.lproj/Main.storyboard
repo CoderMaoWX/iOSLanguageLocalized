@@ -711,9 +711,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYq-jw-xlL">
-                                <rect key="frame" x="20" y="285" width="344" height="22"/>
+                                <rect key="frame" x="27" y="204" width="344" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="请选择你要输入的.CSV文件路径" drawsBackground="YES" id="FC0-TT-Wbd">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="请选择你要导入的.CSV翻译文件" drawsBackground="YES" id="FC0-TT-Wbd">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -723,27 +723,27 @@
                                 </connections>
                             </textField>
                             <textField hidden="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9C-uS-0il">
-                                <rect key="frame" x="18" y="266" width="449" height="18"/>
+                                <rect key="frame" x="25" y="185" width="449" height="18"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="状态提示1" id="HlY-dI-MeO">
-                                    <font key="font" metaFont="system" size="14"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="状态提示2" id="HlY-dI-MeO">
+                                    <font key="font" size="14" name=".PingFangSC-Regular"/>
                                     <color key="textColor" red="1" green="0.29512214889999999" blue="0.099468425520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eay-22-hLn">
-                                <rect key="frame" x="374" y="278" width="97" height="32"/>
+                                <rect key="frame" x="381" y="197" width="97" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="选择CSV" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3hr-bG-ODM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="cellTitle"/>
+                                    <font key="font" metaFont="system" size="11"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="excelPathButtonAction:" target="XfG-lQ-9wD" id="Nq4-OO-mR8"/>
                                 </connections>
                             </button>
                             <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8Y-Xq-lKO">
-                                <rect key="frame" x="20" y="215" width="344" height="22"/>
+                                <rect key="frame" x="27" y="298" width="344" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="请选择你要输出的Localizable文件夹目录" drawsBackground="YES" id="Lhk-rg-uQt">
                                     <font key="font" usesAppearanceFont="YES"/>
@@ -755,16 +755,16 @@
                                 </connections>
                             </textField>
                             <textField hidden="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZEy-Ge-bnR">
-                                <rect key="frame" x="18" y="195" width="449" height="18"/>
+                                <rect key="frame" x="25" y="278" width="449" height="18"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="状态提示2" id="OZ5-EL-lkF">
-                                    <font key="font" metaFont="system" size="14"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="状态提示1" id="OZ5-EL-lkF">
+                                    <font key="font" size="14" name=".PingFangSC-Regular"/>
                                     <color key="textColor" red="1" green="0.29512214889999999" blue="0.099468425520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxQ-dQ-49P">
-                                <rect key="frame" x="374" y="209" width="97" height="32"/>
+                                <rect key="frame" x="381" y="292" width="97" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="多语言目录" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="emh-zA-GJA">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -775,16 +775,16 @@
                                 </connections>
                             </button>
                             <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="3cq-Yj-4bt">
-                                <rect key="frame" x="221" y="111" width="32" height="32"/>
+                                <rect key="frame" x="233" y="93" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </progressIndicator>
                             <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9q-WZ-MvJ">
-                                <rect key="frame" x="213" y="103" width="48" height="48"/>
+                                <rect key="frame" x="225" y="85" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="success" id="Px9-B1-7qS"/>
                             </imageView>
                             <textField hidden="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYU-C6-as3">
-                                <rect key="frame" x="30" y="57" width="413" height="38"/>
+                                <rect key="frame" x="43" y="35" width="413" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="状态提示3" id="RCZ-ug-7UD">
                                     <font key="font" metaFont="system"/>
@@ -793,7 +793,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7B-n1-F6a">
-                                <rect key="frame" x="76" y="110" width="97" height="32"/>
+                                <rect key="frame" x="88" y="92" width="97" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="导出翻译" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uF7-Lp-1lW">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -804,7 +804,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCU-uS-0T7">
-                                <rect key="frame" x="306" y="110" width="97" height="32"/>
+                                <rect key="frame" x="318" y="92" width="97" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="导入翻译" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zZ8-G3-fCX">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>

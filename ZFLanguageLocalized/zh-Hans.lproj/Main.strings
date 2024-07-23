@@ -86,8 +86,8 @@
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "Help";
 
-/* Class = "NSTextFieldCell"; placeholderString = "请选择你要输入的.CSV文件路径"; ObjectID = "FC0-TT-Wbd"; */
-"FC0-TT-Wbd.placeholderString" = "请选择你要输入的.CSV文件路径";
+/* Class = "NSTextFieldCell"; placeholderString = "请选择你要导入的.CSV翻译文件"; ObjectID = "FC0-TT-Wbd"; */
+"FC0-TT-Wbd.placeholderString" = "请选择你要导入的.CSV翻译文件";
 
 /* Class = "NSMenuItem"; title = "ZFLanguageLocalized Help"; ObjectID = "FKE-Sm-Kum"; */
 "FKE-Sm-Kum.title" = "ZFLanguageLocalized Help";
@@ -416,5 +416,5 @@
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
 "z6F-FW-3nz.title" = "Show Substitutions";
 
-/* Class = "NSButtonCell"; title = "开始翻译"; ObjectID = "zZ8-G3-fCX"; */
-"zZ8-G3-fCX.title" = "开始翻译";
+/* Class = "NSButtonCell"; title = "导入翻译"; ObjectID = "zZ8-G3-fCX"; */
+"zZ8-G3-fCX.title" = "导入翻译";
