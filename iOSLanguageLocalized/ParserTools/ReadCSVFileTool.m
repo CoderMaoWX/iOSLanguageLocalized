@@ -54,6 +54,12 @@
                 || [resultKey isEqualToString:@"\n"]) {
                 continue;
             }
+            //去除两头的空格
+            resultKey = [resultKey stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+            //去除所有换行符
+            resultKey = [resultKey stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+            resultKey = [resultKey stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+
             NSMutableArray *columnArray = resultDict[resultKey];
             if (!columnArray) {
                 columnArray = [NSMutableArray array];
@@ -129,6 +135,12 @@
                 || [resultKey isEqualToString:@"\n"]) {
                 continue;
             }
+            //去除两头的空格
+            resultKey = [resultKey stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+            //去除所有换行符
+            resultKey = [resultKey stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+            resultKey = [resultKey stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+            
             NSMutableDictionary *columnDict = resultDict[resultKey];
             if (!columnDict) {
                 columnDict = [NSMutableDictionary dictionary];

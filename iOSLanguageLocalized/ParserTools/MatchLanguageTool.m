@@ -64,7 +64,7 @@
         NSMutableString *allFileString = [NSMutableString stringWithContentsOfFile:localizablePath
                                                                           encoding:NSUTF8StringEncoding
                                                                              error:&error];
-        NSString *csvDataKey = fileName;
+        NSString *csvDataKey = [NSString stringWithString:fileName];
         
         //如果没匹配到, 就找映射关系看能否再次匹配
         if (![csvToArrayDataDict.allKeys containsObject:csvDataKey]) {
