@@ -50,8 +50,9 @@
     } else {
         //NSLog(@"成功解析出的CSV文件内容===%@", readCSVToArrayDict);
     }
+    NSString *englishKey = @"en.lproj";
     NSInteger writeSuccessCount = 0;
-    NSArray *englishLanguageArr = csvToArrayDataDict[@"en.lproj"];
+    NSArray *englishLanguageArr = csvToArrayDataDict[englishKey];
     
     for (NSString *fileName in appLprojDict.allKeys) {
         NSString *localizablePath = appLprojDict[fileName];
@@ -89,6 +90,15 @@
         
         //⚠️3. 再把添加的key中 移除旧的中相同的key, 在相同位置保留最新的需要添加的
         NSDictionary *csvInfoDict = csvToDictDataDict[csvDataKey];
+        BOOL useNewValue = YES;
+        
+        //如果没匹配到, 就用英语替换
+        if (![csvInfoDict isKindOfClass:[NSDictionary class]] || csvInfoDict.count == 0) {
+            NSString *tmpEnglishKey = [self matchLanguageKey:englishKey csvToArrayDataDict:csvToDictDataDict];
+            csvInfoDict = csvToDictDataDict[tmpEnglishKey];
+            useNewValue = NO;
+        }
+        
         if ([csvInfoDict isKindOfClass:[NSDictionary class]] && csvInfoDict.count > 0) {
             
             for (NSString *languageKey in csvInfoDict.allKeys) {
@@ -96,7 +106,8 @@
                 //替换现有key中相同key的翻译
                 NSString *replaceResultString = [MatchLanguageTool replaceStringInContent:allFileString
                                                                              matchingPattern:languageKey
-                                                                                withNewValue:languageValue];
+                                                                                withNewValue:languageValue
+                                                                              useNewValue:useNewValue];
                 // 替换相同key之后的
                 allFileString = [NSMutableString stringWithString:replaceResultString];
             }
@@ -198,11 +209,11 @@
 
 //方案: 通过逐行读取和处理来提高效率 (删除掉多余相同的行，只保留第一个行进行替换)
 + (NSString *)replaceStringInContent:(NSString *)content
-                     matchingPattern:(NSString *)pattern
-                        withNewValue:(NSString *)newValue {
+                     matchingPattern:(NSString *)languageKey
+                        withNewValue:(NSString *)languageValue
+                         useNewValue:(BOOL)useNewValue {
     
-    NSMutableString *result = [NSMutableString string];
-    NSString *regexPattern = [NSString stringWithFormat:@"\"%@\"\\s*=\\s*\"[^\"]*\"", pattern];
+    NSString *regexPattern = [NSString stringWithFormat:@"\"%@\"\\s*=\\s*\"[^\"]*\"", languageKey];
     NSError *error = nil;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexPattern options:0 error:&error];
     
@@ -230,12 +241,22 @@
             }
         }
     }
-
+    
+    NSMutableString *result = [NSMutableString string];
     // 构建结果字符串，删除之前的匹配行，只保留最后一个匹配行
     for (NSInteger i = 0; i < lines.count; i++) {
         if (i == lastMatchIndex) {
-            NSString *newLine = [regex stringByReplacingMatchesInString:lines[i] options:0 range:NSMakeRange(0, lines[i].length) withTemplate:[NSString stringWithFormat:@"\"%@\" = \"%@\"", pattern, newValue]];
-            [result appendString:newLine];
+            if (useNewValue) {
+                NSString *replaceTemplate = [NSString stringWithFormat:@"\"%@\" = \"%@\"", languageKey, languageValue];
+                NSString *newLine = [regex stringByReplacingMatchesInString:lines[i]
+                                                                    options:0
+                                                                      range:NSMakeRange(0, lines[i].length)
+                                                               withTemplate:replaceTemplate];
+                [result appendString:newLine];
+            } else {
+                NSString *oldValue = lines[i];
+                [result appendString:oldValue];
+            }
             if (i != lines.count - 1) {
                 [result appendString:@"\n"];
             }
@@ -273,7 +294,10 @@
     NSString *pattern = @"Register_GG_Connect";
     NSString *newValue = @"To provide you with    websites and apps.";
     
-    NSString *result = [self replaceStringInContent:content matchingPattern:pattern withNewValue:newValue];
+    NSString *result = [self replaceStringInContent:content
+                                    matchingPattern:pattern
+                                       withNewValue:newValue
+                                        useNewValue:YES];
     NSLog(@"%@", result);
 }
 
