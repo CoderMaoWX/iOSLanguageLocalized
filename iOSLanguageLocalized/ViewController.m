@@ -81,16 +81,16 @@
     self.chooseLocalizbleBtn.enabled = !isLoading;
     self.localizbleTipLabel.textColor = !isLoading ? NSColor.grayColor : NSColor.redColor;
     if (!isLoading) {
-        self.localizbleTipLabel.stringValue = @"*请选择项目中国际化文件（en.lpro）的父文件夹";
+        self.localizbleTipLabel.stringValue = @"*请选择项目中国际化文件（en.lpro）的父文件夹,   注意:只会读写每个子文件夹中Localizable.strings的翻译文件.";
     }
     
     self.csvPathCell.enabled = !isLoading;
     self.chooseCSVBtn.enabled = !isLoading;
     self.csvTipLabel.textColor = !isLoading ? NSColor.grayColor : NSColor.redColor;
     if (!isLoading) {
-        self.csvTipLabel.stringValue = @"*如果需要导出翻译，请选择一个的文件夹 *如果需要导入翻译，请选择需要导入的（.csv）翻译文件";
+        self.csvTipLabel.stringValue = @"*如果需要导出翻译，请选择一个的文件夹作为导出存放目录; *如果需要导入翻译，请选择需要导入的（.csv）翻译文件;";
     }
-    
+
     self.importButton.enabled = !isLoading;
     self.exportButton.enabled = !isLoading;
     
@@ -136,16 +136,16 @@
     if (isCSV) {
         if (self.csvPathCell.stringValue.length > 0) {
             if (!isExists) {
-                tipStr = @"导入时翻译时 请选择正确的.csv文件!";
+                tipStr = @"导入翻译时: 请选择正确的.csv文件!";
             } else if (isDirectory) {
-                tipStr = @"导入时翻译时 仅支持选择.csv文件!";
+                tipStr = @"导入翻译时: 仅支持选择.csv文件!";
             }
         }
     } else if (isLocalizble) {
         if (!isExists) {
-            tipStr = @"localizble文件夹目录不存在！";
+            tipStr = @"选择的多语言目录文件夹不存在!";
         } else if (!isDirectory) {
-            tipStr = @"localizble目录只能选择文件夹!";
+            tipStr = @"多语言目录只能选择文件夹!";
         }
     }
     if (tipStr != nil) {
@@ -203,7 +203,7 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isExists = [fileManager fileExistsAtPath:self.csvPathCell.stringValue isDirectory:&isDirectory];
     if (!isExists || !isDirectory) {
-        self.csvTipLabel.stringValue = @"导出时翻译时 选择的路径不能为文件，只需选择一个文件夹即可！";
+        self.csvTipLabel.stringValue = @"导出翻译时: 选择的路径不能为文件，请选择一个正确的文件夹即可!";
         self.csvTipLabel.textColor = NSColor.redColor;
         return;
     }
