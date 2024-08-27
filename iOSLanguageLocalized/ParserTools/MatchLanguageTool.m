@@ -237,7 +237,7 @@
     }
     //NSLog(@"成功解析出的CSV文件内容===%@", readCSVToArrayDict);
     
-    NSString *englishKey = [MatchLanguageTool englishCSVKey]; // @"en.lproj";
+    NSString *englishKey = [MatchLanguageTool englishCSVKey];
     NSInteger writeSuccessCount = 0;
     NSArray *englishLanguageArr = csvToArrayDataDict[englishKey];
     
@@ -337,6 +337,9 @@
         for (NSString *key in allKeyArr) {
             NSArray *dataArr = csvToArrayDataDict[key];
             if ([dataArr isKindOfClass:[NSArray class]] && dataArr.count > 0) {
+                return key;
+                
+            } else if ([dataArr isKindOfClass:[NSDictionary class]]) {
                 return key;
             }
         }
