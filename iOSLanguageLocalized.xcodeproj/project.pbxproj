@@ -15,6 +15,7 @@
 		A3FCD6402C42EDB0003FAC88 /* ReadCSVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileTool.m */; };
 		CF61109F2C44FCA100A868C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF61109D2C44FCA100A868C3 /* Localizable.strings */; };
 		CF6110AA2C44FE1800A868C3 /* OuputCSVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6110A92C44FE1800A868C3 /* OuputCSVFileTool.m */; };
+		CF6FB2912C7DD24F001817B3 /* ParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6FB2902C7DD24F001817B3 /* ParserManager.m */; };
 		CFE4F2162C4F4D2400DEA62B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE4F2152C4F4D2400DEA62B /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,9 @@
 		CF6110A72C44FCE500A868C3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF6110A82C44FE1800A868C3 /* OuputCSVFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OuputCSVFileTool.h; sourceTree = "<group>"; };
 		CF6110A92C44FE1800A868C3 /* OuputCSVFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OuputCSVFileTool.m; sourceTree = "<group>"; };
+		CF6FB28F2C7DD24F001817B3 /* ParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserManager.h; sourceTree = "<group>"; };
+		CF6FB2902C7DD24F001817B3 /* ParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserManager.m; sourceTree = "<group>"; };
+		CF6FB2922C7DD2F4001817B3 /* JXArcCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXArcCompatibilityMacros.h; sourceTree = "<group>"; };
 		CFE4F2152C4F4D2400DEA62B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,9 @@
 				CF6110A92C44FE1800A868C3 /* OuputCSVFileTool.m */,
 				A3FCD63B2C42EDB0003FAC88 /* ReadCSVFileTool.h */,
 				A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileTool.m */,
+				CF6FB28F2C7DD24F001817B3 /* ParserManager.h */,
+				CF6FB2902C7DD24F001817B3 /* ParserManager.m */,
+				CF6FB2922C7DD2F4001817B3 /* JXArcCompatibilityMacros.h */,
 			);
 			path = ParserTools;
 			sourceTree = "<group>";
@@ -203,6 +210,7 @@
 				A3FCD63F2C42EDB0003FAC88 /* MatchLanguageTool.m in Sources */,
 				CF6110AA2C44FE1800A868C3 /* OuputCSVFileTool.m in Sources */,
 				CFE4F2162C4F4D2400DEA62B /* main.m in Sources */,
+				CF6FB2912C7DD24F001817B3 /* ParserManager.m in Sources */,
 				58555BAC2266CAA000668869 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

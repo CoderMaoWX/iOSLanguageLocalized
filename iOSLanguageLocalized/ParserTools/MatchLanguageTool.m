@@ -7,8 +7,176 @@
 
 #import "MatchLanguageTool.h"
 #import "ReadCSVFileTool.h"
+#import "ParserManager.h"
 
 @implementation MatchLanguageTool
+
+/**
+ * 专业的解析方案, (有可能为空)
+ */
++ (NSArray *)professionalParserCsvFileWithPath:(NSString *)filePath {
+    ParserManager *parser = [[ParserManager alloc] init];
+    BOOL open = [parser openFileWithPath:filePath];
+    if (open) {
+        [parser autodetectDelimiter];
+        NSArray *infoArray = [parser parseFile];
+        [parser closeFile];
+        //NSLog(@"readCSVData111===%@", infoArray);
+        return infoArray;
+    } else {
+        //NSLog(@"解析文件失败111");
+        return nil;
+    }
+}
+
++ (NSDictionary *)readCSVFileToArray:(NSString *)filePath {
+    NSMutableDictionary *bigDict = [NSMutableDictionary dictionary];
+    
+    //解析成一行一行的数据
+    NSMutableArray *paraDataArr = [NSMutableArray arrayWithArray:[MatchLanguageTool professionalParserCsvFileWithPath:filePath]];
+    
+    NSArray *headerFieldArr = paraDataArr.firstObject;
+    [paraDataArr removeObjectAtIndex:0];
+    
+    for (NSArray *fieldValueArr in paraDataArr) {
+        
+        NSString *firstKey = nil;
+        for (NSInteger j=0; j < fieldValueArr.count; j++) {
+            NSString *fieldString = [MatchLanguageTool fileFieldValue: fieldValueArr[j] ];
+            
+            if (j == 0) {
+                firstKey = fieldString;
+            } else {
+                NSString *keyValue = [NSString stringWithFormat:@"\"%@\" = \"%@\";", firstKey, fieldString];
+                
+                if (fieldValueArr.count == headerFieldArr.count && headerFieldArr.count > j) {
+                    NSString *language = [MatchLanguageTool fileFieldValue: headerFieldArr[j] ];
+                    
+                    NSMutableArray *bigDictArr = bigDict[ language ];
+                    if (![bigDictArr isKindOfClass:[NSMutableArray class]]) {
+                        bigDictArr = [NSMutableArray array];
+                    }
+                    
+                    if (fieldString.length == 0) { // 如果没有相应的翻译, 则使用英语
+                        
+                        NSString *chineseKey = [MatchLanguageTool chineseCSVKey];
+                        NSArray *chineseAllKeyArr = self.mappingLanguageDict[chineseKey];
+                        //如果是中文的value不存在
+                        if ([chineseAllKeyArr containsObject:language]) {
+                            //如果是中文: 特殊设置把key和value设置成一样的, 因为项目中是直接把中文当做key的
+                            keyValue = [NSString stringWithFormat:@"\"%@\" = \"%@\";", firstKey, firstKey];
+                            
+                        } else {
+                            NSString *englishKey = [MatchLanguageTool englishCSVKey];
+                            //如果没匹配到英语的key, 就找映射英语看能否再次匹配
+                            if (![bigDict.allKeys containsObject:englishKey]) {
+                                englishKey = [self matchLanguageKey:englishKey csvToArrayDataDict:bigDict];
+                            }
+                            
+                            NSArray *englishKeyValueArr = bigDict[englishKey];
+                            if ([englishKeyValueArr isKindOfClass:[NSArray class]]) {
+                                NSString *tmpEnglishKey = [NSString stringWithFormat:@"\"%@\" =", firstKey];
+                                for (NSString *englishKeyValue in englishKeyValueArr) {
+                                    if ([englishKeyValue containsString:tmpEnglishKey]) {
+                                        keyValue = englishKeyValue;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    [bigDictArr addObject:keyValue];
+                    bigDict[ language ] = bigDictArr;
+                }
+            }
+        }
+    }
+    return bigDict;
+}
+
++ (NSDictionary *)readCSVFileToDict:(NSString *)filePath {
+    NSMutableDictionary *bigDict = [NSMutableDictionary dictionary];
+    
+    //解析成一行一行的数据
+    NSMutableArray *paraDataArr = [NSMutableArray arrayWithArray:[MatchLanguageTool professionalParserCsvFileWithPath:filePath]];
+    
+    NSArray *headerFieldArr = paraDataArr.firstObject;
+    [paraDataArr removeObjectAtIndex:0];
+    
+    for (NSArray *fieldValueArr in paraDataArr) {
+        
+        NSString *firstKey = nil;
+        for (NSInteger j=0; j < fieldValueArr.count; j++) {
+            NSString *fieldString = [MatchLanguageTool fileFieldValue: fieldValueArr[j] ];
+            
+            if (j == 0) {
+                firstKey = fieldString;
+            } else {
+                //NSString *keyValue = [NSString stringWithFormat:@"\"%@\" = \"%@\";", firstKey, fieldString];
+                
+                if (fieldValueArr.count == headerFieldArr.count && headerFieldArr.count > j) {
+                    NSString *language = [MatchLanguageTool fileFieldValue: headerFieldArr[j] ];
+                    
+                    NSMutableDictionary *bigDictArrDict = bigDict[ language ];
+                    if (![bigDictArrDict isKindOfClass:[NSMutableDictionary class]]) {
+                        bigDictArrDict = [NSMutableDictionary dictionary];
+                    }
+                    
+                    if (fieldString.length == 0) { // 如果没有相应的翻译, 则使用英语
+                        
+                        NSString *chineseKey = [MatchLanguageTool chineseCSVKey];
+                        NSArray *chineseAllKeyArr = self.mappingLanguageDict[chineseKey];
+                        //如果是中文的value不存在
+                        if ([chineseAllKeyArr containsObject:language]) {
+                            //如果是中文: 特殊设置把key和value设置成一样的, 因为项目中是直接把中文当做key的
+                            fieldString = firstKey;
+                            
+                        } else {
+                            NSString *englishKey = [MatchLanguageTool englishCSVKey];
+                            //如果没匹配到英语的key, 就找映射英语看能否再次匹配
+                            if (![bigDict.allKeys containsObject:englishKey]) {
+                                englishKey = [self matchLanguageKey:englishKey csvToArrayDataDict:bigDict];
+                            }
+                            
+                            NSDictionary *englishDict = bigDict[englishKey];
+                            if ([englishDict isKindOfClass:[NSDictionary class]]) {
+                                fieldString = englishDict[firstKey];
+                            }
+                        }
+                    }
+                    
+                    bigDictArrDict[firstKey] = fieldString;
+                    bigDict[ language ] = bigDictArrDict;
+                }
+            }
+        }
+    }
+    return bigDict;
+}
+
+/// 过滤字符串
++ (NSString *)fileFieldValue:(NSString *)fieldValue {
+    if (![fieldValue isKindOfClass:[NSString class]] || fieldValue.length == 0) {
+        return @"";
+    }
+    NSString *fieldString = [NSString stringWithString:fieldValue];
+    //去除两头的空格
+    fieldString = [fieldString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    //去除所有换行符
+    fieldString = [fieldString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    fieldString = [fieldString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    fieldString = [fieldString stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
+    return fieldString;
+}
+
++ (NSString *)englishCSVKey {
+    return @"en.lproj";
+}
+
++ (NSString *)chineseCSVKey {
+    return @"zh-Hans.lproj";
+}
 
 /// 开始导入多语言
 + (void)mappingLanguage:(NSString *)csvURL
@@ -39,20 +207,46 @@
     }
     
     // 读取CSV文件内容
-    NSDictionary *csvToArrayDataDict = [ReadCSVFileTool readCSVFileToArray:csvURL];
-    NSDictionary *csvToDictDataDict = [ReadCSVFileTool readCSVFileToDict:csvURL];
-
+    NSDictionary *csvToArrayDataDict = [MatchLanguageTool readCSVFileToArray:csvURL];
+    NSDictionary *csvToDictDataDict = [MatchLanguageTool readCSVFileToDict:csvURL];
+    
+    //如果解析异常了, 在尝试采用自主解析方案
+    if (csvToArrayDataDict.count == 0 || csvToDictDataDict.count == 0) {
+        csvToArrayDataDict = [ReadCSVFileTool readCSVFileToArray:csvURL];
+        csvToDictDataDict = [ReadCSVFileTool readCSVFileToDict:csvURL];
+    }
+//    NSLog(@"成功解析出的CSV文件内容===%@", csvToArrayDataDict);
+    
     if (![csvToArrayDataDict isKindOfClass:[NSDictionary class]] || csvToArrayDataDict.count == 0) {
         if (compeletion) {
             compeletion(YES, @"多语言翻译失败, \n请检查CSV文件内容是否错误", NO);
         }
         return;
-    } else {
-        //NSLog(@"成功解析出的CSV文件内容===%@", readCSVToArrayDict);
+        
+    } else if (![csvToDictDataDict isKindOfClass:[NSDictionary class]] || csvToDictDataDict.count == 0) {
+        if (compeletion) {
+            compeletion(YES, @"多语言翻译失败, \n请检查CSV文件内容是否错误", NO);
+        }
+        return;
+        
+    } else if (csvToArrayDataDict.count != csvToDictDataDict.count) {
+        if (compeletion) {
+            compeletion(YES, @"多语言翻译失败, \n请检查CSV文件内容是否错误", NO);
+        }
+        return;
     }
-    NSString *englishKey = @"en.lproj";
+    //NSLog(@"成功解析出的CSV文件内容===%@", readCSVToArrayDict);
+    
+    NSString *englishKey = [MatchLanguageTool englishCSVKey]; // @"en.lproj";
     NSInteger writeSuccessCount = 0;
     NSArray *englishLanguageArr = csvToArrayDataDict[englishKey];
+    
+    //如果没匹配到英语的key, 就找映射英语看能否再次匹配
+    if (![englishLanguageArr isKindOfClass:[NSArray class]] ||
+        ![csvToArrayDataDict.allKeys containsObject:englishKey]) {
+        NSString *englishMapKey = [self matchLanguageKey:englishKey csvToArrayDataDict:csvToArrayDataDict];
+        englishLanguageArr = csvToArrayDataDict[englishMapKey];
+    }
     
     for (NSString *fileName in appLprojDict.allKeys) {
         NSString *localizablePath = appLprojDict[fileName];
