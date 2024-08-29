@@ -81,7 +81,7 @@
     self.chooseLocalizbleBtn.enabled = !isLoading;
     self.localizbleTipLabel.textColor = !isLoading ? NSColor.grayColor : NSColor.redColor;
     if (!isLoading) {
-        self.localizbleTipLabel.stringValue = @"*请选择项目中国际化文件（en.lpro）的父文件夹,   注意:只会读写每个子文件夹中Localizable.strings的翻译文件.";
+        self.localizbleTipLabel.stringValue = @"*请选择项目中的国际化文件（en.lpro）的父文件夹,   注意:仅会读写每个子文件夹中文件名字为Localizable.strings的进行翻译;";
     }
     
     self.csvPathCell.enabled = !isLoading;
@@ -210,6 +210,8 @@
     
     // 屏蔽其他点击事件，显示转圈
     [self refreshUIIsLoading:YES];
+    self.localizbleTipLabel.textColor = NSColor.grayColor;
+    self.csvTipLabel.textColor = NSColor.grayColor;
 
     // 需要导出的翻译文件
     NSString *localizbleURL = self.localizblePathCell.stringValue;

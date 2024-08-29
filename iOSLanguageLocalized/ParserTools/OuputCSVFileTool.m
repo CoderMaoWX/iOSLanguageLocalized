@@ -153,37 +153,4 @@
     }
 }
 
-// printf("写入CSV文件的内容: %s", csvContent.UTF8String);
-/// 测试输出csv文件
-+ (void)testOuputCSVFile {
-    
-    // 示例字符串
-    NSString *inputString = @"\"Register_Button\" = \"Register\";\n"
-    "\"Register_Button_left\" = \"Register\";\n"
-    "\"Register_Email\" = \"Email Address\";\n"
-    "\"Register_Password\" = \"Password\";\n"
-    "\"Register_FB_Connect\" = \"   Facebook\";\n"
-    "\"Register_GG_Connect\" = \"   We pay great attentis is an integral part of the app and will only ever be carried out with your consent\";\n"
-    "\"Register_policy\" = \"I have read and agreed to the privacy policy\";\n"
-    "\"Register_GG_Connect\" = \"   We prt of the\";\n"
-    "\"Register_TermsOfUser\" = \"Register_GG_Connect999\";\n"
-    "\"Register_iOSLanguageLocalized.com\" = \"To complete registration, you must agree to the iOSLanguageLocalized website Terms and Conditions.\";\n"
-    "\"Register_password_less\" = \"Sorry, your password can't be less than 8 characters.\";\n"
-    "\"Register_password_include\" = \"Password must include letters and numbers.\";\n"
-    "\"Register_GG_Connect\" = \" is is an integral part of thecarried out with your consent\";\n"
-    "\"Register_Confirm_Tip_Password\" = \"At least 8 characters & 1 number.\";";
-    
-    //⚠️1. 先读取项目中匹配的旧的翻译文件
-    NSString *filePath = @"/Users/wangxin.mao/Documents/GitHub/iOSLanguageLocalized/iOSLanguageLocalized/en.lproj/Localizable.strings";
-    NSError *error = nil;
-    inputString = [NSString stringWithContentsOfFile: filePath
-                                            encoding: NSUTF8StringEncoding
-                                               error: &error];
-    // 输出文件路径
-    NSString *outputFilePath = @"/Users/wangxin.mao/Desktop/output.csv";
-    
-    // 调用解析和生成CSV的函数
-    [OuputCSVFileTool testGenerateCSV:inputString outputPath:outputFilePath];
-}
-
 @end

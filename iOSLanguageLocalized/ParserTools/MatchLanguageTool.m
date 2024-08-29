@@ -215,7 +215,7 @@
         csvToArrayDataDict = [ReadCSVFileTool readCSVFileToArray:csvURL];
         csvToDictDataDict = [ReadCSVFileTool readCSVFileToDict:csvURL];
     }
-//    NSLog(@"成功解析出的CSV文件内容===%@", csvToArrayDataDict);
+    //    NSLog(@"成功解析出的CSV文件内容===%@", csvToArrayDataDict);
     
     if (![csvToArrayDataDict isKindOfClass:[NSDictionary class]] || csvToArrayDataDict.count == 0) {
         if (compeletion) {
@@ -299,8 +299,8 @@
                 NSString *languageValue = csvInfoDict[languageKey];
                 //替换现有key中相同key的翻译
                 NSString *replaceResultString = [MatchLanguageTool replaceStringInContent:allFileString
-                                                                             matchingPattern:languageKey
-                                                                                withNewValue:languageValue
+                                                                          matchingPattern:languageKey
+                                                                             withNewValue:languageValue
                                                                               useNewValue:useNewValue];
                 // 替换相同key之后的
                 allFileString = [NSMutableString stringWithString:replaceResultString];
@@ -390,7 +390,7 @@
             @"Portuguese", @"portuguese", @"葡语", @"葡萄牙语",
         ],
         @"bn.lproj" : @[
-            @"Bengali", @"bengali", @"孟加拉语",
+            @"Bengali", @"bengali", @"孟加拉语", @"孟语", @"孟加拉",
         ],
         @"he.lproj" : @[
             @"Hebrew", @"hebrew", @"希伯来语",
@@ -399,7 +399,8 @@
             @"Japanese", @"japanese", @"日语",
         ],
         @"zh-Hans.lproj" : @[
-            @"Chinaese", @"chinaese", @"zh-Hans", @"中文", @"汉语", @"简体中文", @"繁体中文",
+            @"Chinese", @"chinese", @"Chinaese", @"chinaese",
+            @"zh-Hans", @"中文", @"汉语", @"简体中文"
         ],
     };;
 }
@@ -467,35 +468,7 @@
             }
         }
     }
-    
     return result;
-}
-
-///测试代码
-+ (void)testMatchLanguage {
-    NSString *content = @"\"Register_Button\" = \"Register\";\n"
-    "\"Register_Button_left\" = \"Register\";\n"
-    "\"Register_Email\" = \"Email Address\";\n"
-    "\"Register_Password\" = \"Password\";\n"
-    "\"Register_FB_Connect\" = \"   Facebook\";\n"
-    "\"Register_GG_Connect\" = \"   We pay great attentis is an integral part of the app and will only ever be carried out with your consent\";\n"
-    "\"Register_policy\" = \"I have read and agreed to the privacy policy\";\n"
-    "\"Register_GG_Connect\" = \"   We prt of the\";\n"
-    "\"Register_TermsOfUser\" = \"Register_GG_Connect999\";\n"
-    "\"Register_iOSLanguageLocalized.com\" = \"To complete registration, you must agree to the iOSLanguageLocalized website Terms and Conditions.\";\n"
-    "\"Register_password_less\" = \"Sorry, your password can't be less than 8 characters.\";\n"
-    "\"Register_password_include\" = \"Password must include letters and numbers.\";\n"
-    "\"Register_GG_Connect\" = \" is is an integral part of thecarried out with your consent\";\n"
-    "\"Register_Confirm_Tip_Password\" = \"At least 8 characters & 1 number.\";";
-    
-    NSString *pattern = @"Register_GG_Connect";
-    NSString *newValue = @"To provide you with    websites and apps.";
-    
-    NSString *result = [self replaceStringInContent:content
-                                    matchingPattern:pattern
-                                       withNewValue:newValue
-                                        useNewValue:YES];
-    NSLog(@"%@", result);
 }
 
 @end
