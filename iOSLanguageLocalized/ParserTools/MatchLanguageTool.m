@@ -68,7 +68,7 @@
                             
                         } else {
                             NSString *englishKey = [MatchLanguageTool englishCSVKey];
-                            //如果没匹配到英语的key, 就找映射英语看能否再次匹配
+                            //如果没匹配到英语的key, 就找映射字典看能否再次匹配
                             if (![bigDict.allKeys containsObject:englishKey]) {
                                 englishKey = [self matchLanguageKey:englishKey csvToArrayDataDict:bigDict];
                             }
@@ -155,7 +155,7 @@
     return bigDict;
 }
 
-/// 过滤字符串
+/// 过滤字符串的各种空格和换行符等
 + (NSString *)fileFieldValue:(NSString *)fieldValue {
     if (![fieldValue isKindOfClass:[NSString class]] || fieldValue.length == 0) {
         return @"";
@@ -188,6 +188,13 @@
     NSMutableArray *allLanguageDirArray = [NSMutableArray arrayWithArray:[fileManger contentsOfDirectoryAtPath:localizbleURL error:nil]];
     [allLanguageDirArray removeObject:@".DS_Store"];//排除异常文件
     
+    if (allLanguageDirArray.count == 0) {
+        if (compeletion) {
+            compeletion(NO, @"项目路径文件夹中不存在文件名字为Localizable.strings的翻译文件", NO);
+        }
+        return;
+    }
+    
     // 获取多语言目录列表: Key（Android/iOS Key), en.lproj, de.lproj, es.lproj ...
     NSMutableDictionary *appLprojDict = [NSMutableDictionary dictionary];
     for (NSString *pathDicr in allLanguageDirArray) {
@@ -196,6 +203,11 @@
         NSString *localizablePath = [NSString stringWithFormat:@"%@/%@/Localizable.strings", localizbleURL, pathDicr];
         if ([fileManger fileExistsAtPath:localizablePath]) {
             appLprojDict[pathDicr] = localizablePath;
+        } else {
+            if (compeletion) {
+                compeletion(NO, @"项目路径文件夹中不存在文件名字为Localizable.strings的翻译文件", NO);
+            }
+            return;
         }
     }
     
@@ -319,7 +331,7 @@
     
     if (writeSuccessCount == appLprojDict.allKeys.count) {
         if (compeletion) {
-            compeletion(YES, @"💐恭喜, 多语言文件翻译全部成功", YES);
+            compeletion(YES, @"💐恭喜, 多语翻译言文件全部导入成功", YES);
         }
     } else {
         NSString *tipStr = writeSuccessCount > 0 ? @"😰多语言文件翻译 部分成功,部分失败, \n请检查CSV文件内容是否正确" : @"😰未知错误 翻译失败, \n请检查CSV文件内容是否正确";
@@ -331,16 +343,22 @@
 
 + (NSString *)matchLanguageKey:(NSString *)fileName
             csvToArrayDataDict:(NSDictionary *)csvToArrayDataDict {
-    NSArray *allKeyArr = self.mappingLanguageDict[fileName];
-    if ([allKeyArr isKindOfClass:[NSArray class]]) {
-        
-        for (NSString *key in allKeyArr) {
-            NSArray *dataArr = csvToArrayDataDict[key];
-            if ([dataArr isKindOfClass:[NSArray class]] && dataArr.count > 0) {
-                return key;
-                
-            } else if ([dataArr isKindOfClass:[NSDictionary class]]) {
-                return key;
+    
+    NSArray *dictAllKeyArr = csvToArrayDataDict.allKeys;
+    if (dictAllKeyArr.count == 0) {
+        return fileName;
+    }
+    NSArray *mappingValues = self.mappingLanguageDict[fileName];
+    if ([mappingValues isKindOfClass:[NSArray class]]) {
+        for (NSString *mappingLang in mappingValues) {
+            
+            for (NSString *dictKey in dictAllKeyArr) {
+                NSString *dictKeyString = [MatchLanguageTool fileFieldValue:dictKey.lowercaseString];
+                NSString *mappingLangString = [MatchLanguageTool fileFieldValue:mappingLang.lowercaseString];
+
+                if ([dictKeyString isEqualToString:mappingLangString]) {
+                    return dictKey;
+                }
             }
         }
     }
@@ -348,61 +366,53 @@
 }
 
 /**
- * 此字典是用来映射CSV文件中的每列的翻译需要对应添加到项目的哪个翻译文件中去的
- * 列举映射了一些常规的国家, 后续如果有新需要映射的,可自行追加到后面
+ * 此字典是全球前40种主流语言：用来映射CSV文件中的每列的翻译需要对应添加到项目的哪个翻译文件中去的
+ * 列举映射了一些常规的国家，后续如果有新需要映射的，可自行追加到后面
+ *  https://chatgpt.com/share/9cd0a788-bf8e-4237-9db9-8becdce6332d
  */
 + (NSDictionary *)mappingLanguageDict {
     return @{
-        @"de.lproj": @[
-            @"German", @"german", @"德语",
-        ],
-        @"fr.lproj" : @[
-            @"French", @"french", @"法语",
-        ],
-        @"th.lproj" : @[
-            @"Thailand", @"thailand", @"泰语",
-        ],
-        @"en.lproj" : @[
-            @"English", @"english", @"英文", @"英语",
-        ],
-        @"vi.lproj"  : @[
-            @"Vietnam", @"vietnam", @"越南语", @"越语",
-        ],
-        @"ru.lproj"  : @[
-            @"Russian", @"russian", @"俄罗斯语", @"俄语",
-        ],
-        @"tr.lproj" : @[
-            @"Turkey", @"turkey", @"土耳其语",  @"土耳其",
-        ],
-        @"ar.lproj" : @[
-            @"Arabic", @"arabic", @"阿语", @"阿拉伯语",
-        ],
-        @"es.lproj" : @[
-            @"Spanish", @"spanish", @"西语",  @"西班牙语",
-        ],
-        @"id.lproj" : @[
-            @"Indonesia", @"indonesia", @"印度尼西亚", @"印尼语",
-        ],
-        @"it.lproj" : @[
-            @"Italian", @"italian", @"意大利语", @"意语",
-        ],
-        @"pt.lproj" : @[
-            @"Portuguese", @"portuguese", @"葡语", @"葡萄牙语",
-        ],
-        @"bn.lproj" : @[
-            @"Bengali", @"bengali", @"孟加拉语", @"孟语", @"孟加拉",
-        ],
-        @"he.lproj" : @[
-            @"Hebrew", @"hebrew", @"希伯来语",
-        ],
-        @"ja.lproj" : @[
-            @"Japanese", @"japanese", @"日语",
-        ],
-        @"zh-Hans.lproj" : @[
-            @"Chinese", @"chinese", @"Chinaese", @"chinaese",
-            @"zh-Hans", @"中文", @"汉语", @"简体中文"
-        ],
-    };;
+        @"en.lproj" : @[@"en.lproj", @"English", @"英语"],
+        @"zh-Hans.lproj" : @[@"zh-Hans.lproj", @"Mandarin Chinese",
+                             @"Chinaese", @"Chinese", @"中文", @"简体中文", @"普通话"],
+        @"zh-Hant.lproj" : @[@"zh-Hant.lproj", @"Traditional Chinese", @"繁体中文"],
+        @"hi.lproj" : @[@"hi.lproj", @"Hindi", @"印地语", @"印语"],
+        @"es.lproj" : @[@"es.lproj", @"Spanish", @"西班牙语", @"西语"],
+        @"ar.lproj" : @[@"ar.lproj", @"Arabic", @"阿拉伯语", @"阿语"],
+        @"bn.lproj" : @[@"bn.lproj", @"Bengali", @"孟加拉语", @"孟语"],
+        @"pt.lproj" : @[@"pt.lproj", @"Portuguese", @"葡萄牙语", @"葡语"],
+        @"fr.lproj" : @[@"fr.lproj", @"French", @"法语"],
+        @"ru.lproj" : @[@"ru.lproj", @"Russian", @"俄语"],
+        @"ur.lproj" : @[@"ur.lproj", @"Urdu", @"乌尔都语"],
+        @"id.lproj" : @[@"id.lproj", @"Indonesian", @"印尼语"],
+        @"de.lproj" : @[@"de.lproj", @"German", @"德语"],
+        @"ja.lproj" : @[@"ja.lproj", @"Japanese", @"日语"],
+        @"mr.lproj" : @[@"mr.lproj", @"Marathi", @"马拉地语"],
+        @"te.lproj" : @[@"te.lproj", @"Telugu", @"泰卢固语"],
+        @"pa.lproj" : @[@"pa.lproj", @"Punjabi", @"旁遮普语"],
+        @"vi.lproj" : @[@"vi.lproj", @"Vietnamese", @"越南语"],
+        @"ta.lproj" : @[@"ta.lproj", @"Tamil", @"泰米尔语"],
+        @"tr.lproj" : @[@"tr.lproj", @"Turkish", @"土耳其语"],
+        @"fa.lproj" : @[@"fa.lproj", @"Persian", @"波斯语"],
+        @"it.lproj" : @[@"it.lproj", @"Italian", @"意大利语"],
+        @"jv.lproj" : @[@"jv.lproj", @"Javanese", @"爪哇语"],
+        @"gu.lproj" : @[@"gu.lproj", @"Gujarati", @"古吉拉特语"],
+        @"pl.lproj" : @[@"pl.lproj", @"Polish", @"波兰语"],
+        @"uk.lproj" : @[@"uk.lproj", @"Ukrainian", @"乌克兰语"],
+        @"fil.lproj" : @[@"fil.lproj", @"Filipino", @"菲律宾语"],
+        @"kn.lproj" : @[@"kn.lproj", @"Kannada", @"卡纳达语"],
+        @"ml.lproj" : @[@"ml.lproj", @"Malayalam", @"马拉雅拉姆语"],
+        @"ha.lproj" : @[@"ha.lproj", @"Hausa", @"豪萨语"],
+        @"my.lproj" : @[@"my.lproj", @"Burmese", @"缅甸语"],
+        @"th.lproj" : @[@"th.lproj", @"Thai", @"泰语"],
+        @"az.lproj" : @[@"az.lproj", @"Azerbaijani", @"阿塞拜疆语"],
+        @"ht.lproj" : @[@"ht.lproj", @"Haitian Creole", @"海地克里奥尔语"],
+        @"xh.lproj" : @[@"xh.lproj", @"Xhosa", @"科萨语"],
+        @"am.lproj" : @[@"am.lproj", @"Amharic", @"阿姆哈拉语"],
+        @"ne.lproj" : @[@"ne.lproj", @"Nepali", @"尼泊尔语"],
+        @"sq.lproj" : @[@"sq.lproj", @"Albanian", @"阿尔巴尼亚语"],
+        @"sr.lproj" : @[@"sr.lproj", @"Serbian", @"塞尔维亚语"]
+    };
 }
 
 //方案: 通过逐行读取和处理来提高效率 (删除掉多余相同的行，只保留第一个行进行替换)

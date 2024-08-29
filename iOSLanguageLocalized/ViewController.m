@@ -52,6 +52,7 @@
         self.localizblePathCell.stringValue = filePath;
         [self refreshUI];
     }
+    self.csvPathCell.stringValue = @"/Users/wangxin.mao/Desktop/APP字段翻译V1.2.0_副本.csv";
 }
 
 #pragma mark - refreshUI
@@ -188,10 +189,10 @@
         if (result == NSModalResponseCancel)return;
         NSString *filePath = panel.URL.path;
         
-        if ([self checkTipInputPath:filePath tipLabel:self.csvTipLabel]) {
-            self.csvPathCell.stringValue = panel.URL.path;
+//        if ([self checkTipInputPath:filePath tipLabel:self.csvTipLabel]) {
+            self.csvPathCell.stringValue = filePath;
             [self refreshUI];
-        }
+//        }
     }];
 }
 
@@ -210,9 +211,7 @@
     
     // 屏蔽其他点击事件，显示转圈
     [self refreshUIIsLoading:YES];
-    self.localizbleTipLabel.textColor = NSColor.grayColor;
-    self.csvTipLabel.textColor = NSColor.grayColor;
-
+    
     // 需要导出的翻译文件
     NSString *localizbleURL = self.localizblePathCell.stringValue;
     // 导出文件路径
@@ -242,6 +241,8 @@
     
     // 屏蔽其他点击事件，显示转圈
     [self refreshUIIsLoading:YES];
+    self.localizbleTipLabel.textColor = NSColor.grayColor;
+    self.csvTipLabel.textColor = NSColor.grayColor;
     
     // 开始添加CSV表格中的多语言翻译
     NSString *csvFileURL = self.csvPathCell.stringValue;

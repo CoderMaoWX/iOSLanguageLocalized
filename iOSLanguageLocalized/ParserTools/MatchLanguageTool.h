@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
          localizblePath:(NSString *)localizbleURL
             compeletion:(void (^)(BOOL checkSuccess, NSString *tipString, BOOL tipStatus))compeletion;
 
+/// 过滤字符串的各种空格和换行符等
++ (NSString *)fileFieldValue:(NSString *)fieldValue;
+
 @end
 
 NS_ASSUME_NONNULL_END

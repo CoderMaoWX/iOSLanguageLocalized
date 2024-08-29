@@ -36,6 +36,13 @@
     
     NSInteger count = 0;
     
+    if (allLanguageDirArray.count == 0) {
+        if (compeletion) {
+            compeletion(NO, @"项目路径文件夹中不存在文件名字为Localizable.strings的翻译文件");
+        }
+        return;
+    }
+    
     // 获取多语言目录列表: Key（Android/iOS Key), en.lproj, de.lproj, es.lproj ...
     for (NSString *pathDicr in allLanguageDirArray) {
         //NSLog(@"多语言文件夹子目录===%@", pathDicr);
@@ -86,12 +93,11 @@
                     count += 1;
                 }
             }
-            
-        //    if (error) {
-        //        NSLog(@"Error writing to file: %@", error);
-        //    } else {
-        //        NSLog(@"CSV file successfully created!");
-        //    }
+        } else {
+            if (compeletion) {
+                compeletion(NO, @"项目路径文件夹中不存在文件名字为Localizable.strings的翻译文件");
+            }
+            return;
         }
     }
     BOOL isSuccess = count == allLanguageDirArray.count;
