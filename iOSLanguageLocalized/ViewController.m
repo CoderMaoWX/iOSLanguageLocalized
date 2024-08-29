@@ -52,7 +52,6 @@
         self.localizblePathCell.stringValue = filePath;
         [self refreshUI];
     }
-    self.csvPathCell.stringValue = @"/Users/wangxin.mao/Desktop/APP字段翻译V1.2.0_副本.csv";
 }
 
 #pragma mark - refreshUI
