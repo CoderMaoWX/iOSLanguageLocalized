@@ -1,11 +1,9 @@
 /*
- Localizable.strings
- iOSLanguageLocalized
- 
- Created by zhaowei on 2017/2/13.
- Copyright © 2017年 Y001. All rights reserved.
- */
-
+Localizable.strings
+iOSLanguageLocalized
+Created by zhaowei on 2017/2/13.
+Copyright © 2017年 Y001. All rights reserved.
+*/
 "OK" = "OK";
 "Cancel" = "キャンセル";
 "OrderDetail_Bottom_Cancel" = "キャンセル";
@@ -675,7 +673,6 @@
 "Information_security_SigningUp" = "アカウントを作成することにより、お客様は私たちの利用規約とプライバシーポリシーに同意したことになります。";
 "Information_Register_TermsOfUser" = "利用規約";
 "Information_Register_PrivacyPolicy" = "プライバシーポリシー";
-
 "sign_in_with" = "...でサインイン";
 "Email_used" = "このメールは既に使用されています";
 "login_title" = "サインイン";
@@ -1063,7 +1060,6 @@
 "Car_Empty_ForNewUser" = "新規ユーザーの場合15%オフ";
 "Car_Empty_PickYouLike" = "好きなものを選んでください";
 "Detail_GroupBuy_GetItFreeTitle" = "無料で入手";
-
 // ==================================== V4.5.7 ====================================
 "OrderInfo_check_change_x_address" = "%@サイトに変更する";
 "OrderInfo_page_free" = "無料";
@@ -1092,18 +1088,14 @@
 "OrderInfo_priceList_subtotal_total" = "小計";
 "OrderInfo_check_error_address_cancel" = "キャンセル";
 "CarVC_add" = "追加する";
-
 "Detail_Only_count_left" = "残り%@のみ";
 "Detail_Ends_in" = "..で終わる";
 "ListTimeCountDown_Tip" = "フラッシュセール";
-
 "OrderInfo_priceList_supermeStudent_discount" = "最高学生割引";
 "OrderInfo_priceList_insurance_discount" = "航空貨物保険";
 "OrderInfo_priceList_ZpointToSave" = "Zポイント=貯金";
 "OrderCheckCoupon_NoCouponTips" = "クーポンを使用するには、ボックスにクーポンコードを入力してください。";
-
 //=============V4.6.0===============
-
 "Account_birthday_tips" = "Enter your birthday and we’ll send you a gift on the day";
 "Account_birthday_enter" = "Please enter your birthday";
 "Account_birthday_gain" = "誕生日プレゼントをゲット";
@@ -1157,8 +1149,6 @@
 "Customer_quickly_creating_account" = "クイックチェックアウト。アカウントを作成する必要はありません。";
 "Order_received_share_everyone" = "注文を受けました。 貴方の意見をみんなと共有してください。";
 "Coupon_input_code_box_use_coupon" = "クーポンを使用するには、ボックスにクーポンコードを入力してください。";
-
-
 //=============V4.8.0===============
 "Detail_Similar_Items" = "類似のアイテム";
 "Review_1stPhoto" = "それはもう最初の写真です。";
@@ -1171,11 +1161,8 @@
 "OrderInfo_PagoPayCIPCode" = "CIP支払いコード";
 "OrderDetail_UpdateAddressTitle" = "アドレス更新成功";
 "Title_ShippingMethod" = "配送方法";
-
-
 //=============V4.9.0===============
 "Video_Live_Cart_Tip" = "あなたはここからショッピングカートを入れることができます";
-
 //=============V5.0.0===============
 "OrderInfo_PCCTips" = "Note: Please enter your PCC Code or your date of birth.(YYYYMMDD. E.g. 19950512)This will ensure a smooth customs clearance and delivery.";
 "OrderInfo_PCCErrorTips" = "You entered your PCC Code or date of birth incorrectly";
@@ -1187,8 +1174,6 @@
 "Cart_Match" = "Match";
 "OrderDetail_CancelOrderTips" = "Order will be canceled after";
 "homeSearchTitle" = "何をお探しですか？";
-
-
 //=============V5.1.0===============
 "Live_Enter_Room" = "ライブルームに入ると。";
 "Live_Review_Input_tip" = "チャットまたは質問する";
@@ -1203,7 +1188,6 @@
 "Live_Pause" = "アンカーが一時的に離れました。しばらくお待ちください";
 "InputTextView_%@_message" = "%@文字以下でなければなりません";
 //=============V5.2.0===============
-
 "GoodsDetail_Post_MatchItems" = "コーディアイテム";
 "Account_Wallet" = "財布";
 "Home_Don't_Like" = "好きじゃない";
@@ -1243,7 +1227,6 @@
 "Community_albumPreTips" = "アルバムに保存してアルバムの許可を取得する必要があります";
 "ZFTracking_Delivery" = "配送業者";
 "Community_Outfit_NOContentTips" = "マッチング体験を入力することを忘れないでください";
-
 //=============V5.4.0===============
 "rewardCouponTip" = "When your order is confirmed as received, the first order return coupon will be sent to your account.";
 "Hom_Coupon_Expired" = "クーポンの有効期限が切れています。他のコンテンツをご覧ください";
@@ -1257,7 +1240,6 @@
 "sex_select_tip" = "最も興味のある製品カテゴリを選択してください";
 "Hom_Coupon_UnStart" = "近日公開、後で戻って";
 "sex_Swimwear" = "水着";
-
 "Hom_Coupon_Claimed_Success" = "受け取った";
 "Hom_Coupon_Claimed_Failed" = "受け取りませんでした、もう一度お試しください";
 "Account_Discover_title" = "発見する";
@@ -1296,9 +1278,7 @@
 "Community_Post_Detail_See_All_Comments" = "すべてのコメント を見る";
 "Tab_New_Account" = "アカウント";
 "Order_Comment_Send_Account_XXPoints" = "%@ポイントがあなたのアカウントに送信されました。";
-
 "Order_Comment_Send_Account_XXPoints_XXCoupon_XXCoupon" = "%@ ポイント + %@ ドルのクーポン + %@ ドルのクーポンがアカウントに送信されました";
-
 //=============V5.6.0===============
 "Live_line" = "ライン";
 "Login_email_format_error" = "メールボックスの形式エラー、再入力してください";
@@ -1332,7 +1312,6 @@
 "Login_bind_email_get15_discount" = "メールをバインドしてログインすると、15％の割引が適用されます。";
 "Live_switch_line" = "スイッチライン";
 "Order_cancel_klarna_rexplain" = "説明";
-
 "live_live" = "LIVE";
 "coming_soon" = "Coming Soon";
 "Seckil_ended" = "ended";
@@ -1341,12 +1320,9 @@
 "Login_cancel" = "キャンセル";
 "Login_commit" = "提出する";
 "SecKil_buy_now" = "BUY NOW";
-
 //=============V5.7.0===============
 "Account_Change_Photo" = "画像を変更する";
-
 //=============V5.8.0===============
-
 "Express_delivery_tip" = "速達は英語の住所のみをサポートします。 英語アドレスを入力してください、ありがとう。";
 "Express_modifyFistStr" = "速達は英語の住所のみをサポートします。 このサービスを引き続き使用するには、";
 "Express_modifyLastStr" = "住所を編集してください。";
@@ -1373,7 +1349,6 @@
 "Search_Feedback" = "-フィードバックを送信>";
 "Modifier" = "住所を変更する";
 "Goodsdetail_Bottom_OutOfStock" = "今在庫なし、すぐに在庫に戻る";
-
 //=============V6.0.0===============
 "Community_has_subscribe_live" = "登録済み";
 "Community_cancel_subscribe_success" = "キャンセルした";
@@ -1389,11 +1364,9 @@
 "Order_Unavailable_Goods_tips" = "次の商品はご利用いただけません。ご注文金額を再確認してください";
 "Community_subscribe_success_tip" = "チャンネル購読しました！ライブストリームが開始から5分後に通知されます";
 "Search_NotGoods_Tip_A" = "検索%@はどの製品とも一致しませんでしたか%@？";
-
 "goods_match_tops" = "トップスに合わせる";
 "goods_match_bottoms" = "ボトムスに合わせる";
 "Detail_VIEW_BAG" = "VIEW BAG";
-
 //=============V6.1.0===============
 "Total_order_amount" = "注文総額: ";
 "Order_BankTransfer_Bank_Account" = "銀行口座";
@@ -1422,9 +1395,7 @@
 "Order_BankTransfer_SWIFTCODE" = "スウィフトコード";
 "Account_recommend_title" = "おすすめ";
 "Order_BankTransfer_BankAccount" = "銀行口座";
-
 "FAQ_Support_Center" = "サポートセンター";
-
 //=============V6.2.0===============
 "ModifyAddress_State_Placeholder_UK" = "*州/国";
 "ModifyAddress_Address2_Placeholder_UK" = "住所2行目：アパート、ビル番号、ユニットなど";
@@ -1434,7 +1405,6 @@
 "ModifyAddress_State_TipLabel_UK" = "荷受人の州/郡を入力してください";
 "modifyAddress_countryCity_state_UK" = "*州/国";
 "Print_Konbini_Info" = "コンビニ領収書を確認";
-
 "Swim_outfit_top_size" = "トップスサイズ";
 "Swim_outfit_bottom_size" = "ボトムスサイズ";
 "Swim_outfit_see_detail" = "詳細";
@@ -1443,7 +1413,6 @@
 "Swim_oufit_preview_tip" = "以下の製品をクリックしてウィンドウに追加し、効果をプレビューできます↓";
 "Search_busy_try_later" = "検索人数が多すぎます。しばらくしてからもう一度お試しください";
 "Search_try_again_text" = "もう一度お試し";
-
 //=============V6.3.0===============
 "ReviewsFilter_MostRecent" = "最近";
 "ReviewsFilter_MostRecentToOldest" = "新着順";
@@ -1452,7 +1421,6 @@
 "ReviewsFilter_HighestToLowestRating" = "評価が高い";
 "ReviewsFilter_LowestToHighestRating" = "評価が低い";
 "GoodsDetail_ReturnsWarranty" = "30日返品保証";
-
 //=============V6.4.0===============
 "OrderList_SizeCheck" = "サイズを確認";
 "ModifyAddress_Address1_Placeholder_PH" = "*住所1：街路アドレス";
@@ -1485,7 +1453,6 @@
 //=============V6.7.0===============
 "iOSLanguageLocalized_NEW" = "iOSLanguageLocalized新着";
 "TabBar_New" = "新着";
-
 //=============V6.8.0===============
 "Gift_Card" = "ギフトカード";
 "NO_Gift_Card" = "ギフトカードなし";
@@ -1497,7 +1464,6 @@
 "PayOrderCannel_Title_Tips" = "%@のいい評価の製品を購入しました。この支払いをキャンセルしてもよろしいですか？";
 "PayOrderCannel_Buy_Tips" = "最近購入";
 "PayOrderCannel_Wish_Tips" = "最近お気に入り";
-
 //=============V6.9.0===============
 "ShareView_normalTips" = "Share to your friends";
 "ShareView_Rewards_Title" = "報酬のために共有する";
@@ -1519,7 +1485,6 @@
 "login_agree_termsConditions" = "同意します iOSLanguageLocalized.com 利用規約";
 "login_termsConditions_link" = "利用規約";
 "home_coupon_alert_expires_on" = "有効期限";
-
 //=============V7.1.1===============
 "Setting_Check_updates" = "アップデートを確認する";
 //=============V7.1.2===============
@@ -1528,10 +1493,8 @@
 "outfit_items_limit_count_tip" = "同時に最大%@つのアイテムを追加できます！";
 "Goodsdetail_Email_ShareTitle" = "iOSLanguageLocalized.comで素晴らしい製品を見つけました。ぜひチェックしてください！ 😍 >>";
 "Goodsdetail_ShareTitle" = "あなたがこれを好きかもしれない！";
-
 "new_user_price_tip" = "新規ユーザー価格";
 "new_user_limt_purchase_tip" = "新規ユーザーごとに1つの新規ユーザー価格で購入。";
-
 //=============V7.2.0===============
 "login_one_letter" = "少なくとも1文字";
 "login_not_you" = "あなたじゃないの？";
@@ -1564,9 +1527,7 @@
 "Added_to_wishlist" = "ウィッシュリストに追加した";
 "Removed_from_wishlist" = "ウィッシュリストから削除された";
 "View_my_wishlist" = "ウィッシュリストを見る";
-
 "MyCoupon_Coupon_Available" = "利用可能";
-
 //=============V7.2.4===============
 "Cancel_order_reset_items" = "You can cancel the order, return the goods to the shopping cart and repurchase";
 "Cancel_order_eidt_address" = "You can click the edit icon to modify the address";
@@ -1584,7 +1545,6 @@
 "Outfit_share_placehoder" = "Isn't it just chic looking?Check it for me!";
 "Outfit_share_inZ-me" = "Share in Z-me";
 "Outfit_share_get_30point" = "You will earn 30 Z points.";
-
 //=============V7.2.7===============
 "TaxPop_vat" = "Tax type";
 "TaxPop_rate" = "rate";
@@ -1609,7 +1569,6 @@
 "review_recomendados_sub_ads" = "Pick your faves";
 "review_give_up" = "Give Up";
 "review_more_10_words" = "Write 10+ words for chance to get";
-
 "how_get_points" = "How to get？";
 //=============V7.3.0===============
 "only_shows_3_months_coupons" = "This list only shows the used/expired coupons in recent 3 months";
@@ -1623,12 +1582,10 @@
 "outfits_match_accessories" = "Accessories";
 "detail_buy_together" = "buy together";
 "coupon_expires_soon" = "Expires Soon";
-
 //=============V7.3.3===============
 "but_again_tips1" = "Do you want to add items in this order to shopping cart and buy again?";
 "but_again_tips2" = "Items are back in your bag! However, goods that are out-of-stock may not be added.";
 "Edit_Address" = "Edit Address";
-
 "detail_shipping_to" = "Shipping to";
 "detail_shipping_method" = "Shipping method";
 "detail_shipping_time" = "Shipping time\n(business days)";
@@ -1639,14 +1596,11 @@
 "detail_shipping_click_me_tips" = "Click here For more info and international shipping";
 "detail_shipping_click_me" = "Click here";
 "detail_shipping_not_available_tips" = "The delivery service is temporarily not available in the region you selected. Thanks for your support for iOSLanguageLocalized!";
-
 //=============V7.3.4===============
-
 "promotion_items" = "promotion items";
 "the_following_items" = "The following items";
 "swipe_similar_items" = "swipe to see similar items";
 "cart_empty_login_subTip" = "sign in to check your shopping bag";
-
 //=============V7.3.8===============
 "insured_pageTitle" = "Price Guarantee Program";
 "insured_rules" = "Price Guarantee Program Rules";
@@ -1670,29 +1624,24 @@
 "orderDetail_InsuredPrice" = "Refund of price difference";
 "insured_rateTips" = "There might be slight difference in your refundable amount due to currency exchange rate.";
 "insured_pop_tips" = "For installments, we would send the refund to your original payment account.";
-
 //=============V7.4.0===============
 "address_feedback_tips" = "Can't find your city？Please enter your city.";
 "address_feedback_SuccessTips" = "Thanks for your feed back.";
 "address_feedback_placeholder" = "Enter your city";
 "address_feedback" = "Feed back";
 "Guarantee_Rules" = "Rules";
-
 //=============V7.4.2===============
 "NotifyMe_Title" = "Back in stock reminder";
 "NotifyMe_SubTitle" = "we will notify you when your item is back in stock";
 "NotifyMe_Rules" = "send me exclusive newsletter and offers from iOSLanguageLocalized";
 "NotifyMe_NotityMe" = "notify me";
 "NotifyMe_Stock_EmailTips" = "If the sku is in stock，an email will be sent to you";
-
 "Guide_NewUser1" = "New Users";
 "Guide_NewUser2" = "15% OFF";
 "Guide_NewUser3" = "for your first order";
-
 "sex_choose_content" = "Choose Your Preference";
 "PushView_title" = "Receive sales and order information timely";
 "PushView_content" = "Turn on message notifications to get information on logistics progress, price drop and sales.";
-
 "EmailVerify_Title" = "Email verification";
 "EmailVerify_receive" = "Receive";
 "EmailVerify_100Zpoint" = "100 Zpoints +";
@@ -1702,7 +1651,6 @@
 "EmailVerify_errorTips" = "The email has been used by others. Please specify another email address.";
 "EmailVerify_SubmitTips" = "Check %@ for confirmation email";
 "EmailVerify_Submitted" = "Submitted";
-
 "MyPoints_getPoints" = "Get points";
 "MyPoints_pointsBalance" = "Zpoints balance";
 "MyPoints_noExpiredPointsTips" = "No expired Zpoints within past 30 days";
@@ -1712,11 +1660,9 @@
 "New_user_Unlock" = "Unlock";
 "New_user_Register_get" = "REGISTER AND GET";
 "MatchBuy_get_the_look" = "GET THE LOOK";
-
 //=============V7.4.4===============
 "Self_Service" = "Self-Service";
 "View_The_Look" = "View the look";
-
 //=============V7.4.5===============
 "Account_Security" = "Account Security";
 "Account_Security_account" = "My Account";
@@ -1725,21 +1671,15 @@
 "Account_Security_Verified" = "Verified";
 "Account_Security_delete_account" = "Delete My Account";
 "Address_edit_addressNumberTips" = "We recommend entering the house/building number to assist with delivery.";
-
 //=============V7.4.6===============
 "Tracking_Websites" = "Tracking websites >";
-
 "Cart_new_user_guide_tip" = "Rules:\n1. Each new user would only get one New-User-Price item. \n2. Click the \"change\" button and choose the item to enjoy the discount. ";
 "Cart_new_user_rules_tip" = "Each new user would only get one New-User-Price item.";
-
 //=============V7.4.6===============
 "Suit_Set" = "Set";
-
 //=============V7.4.8===============
 "Clearance_Tag" = "CLEARANCE";
-
 "Clearance_Tip" = "Coupons/points can\'t be applied to the items under clearance/sale.";
-
 //=============V7.4.9===============
 "Korea_clause_0" = "All confirmed and I agree.";
 "Korea_clause_1" = "Full Consent includes consent for required and optional information, and you can choose to consent individually. You can use the service even if you refuse to agree to the selection.";
@@ -1752,7 +1692,6 @@
 "Korea_clause_8" = "[Optional] Agree to receive emails";
 "Korea_clause_9" = "[Optional] Agree to receive SMS and SNS";
 "Korea_clause_10" = "[Optional] Agree to receive app pushes";
-
 //=============V7.5.0===============
 "Cart_UnavailableCoupons" = "Unavailable coupon(s)";
 "Cart_BackBag" = "Back bag";
@@ -1760,20 +1699,16 @@
 "Cart_MoreRnjoyShipping" = "Buy %@ more to enjoy FREE STANDARD SHIPPING !";
 "Cart_SelectCouponSave" = "Save %@ ! Promo code has been applied to your order!";
 "Cart_InputCode" = "Input code";
-
 //=============V7.5.1===============
 "tip_add_to_cart_success" = "バッグに追加しました";
 "text_menu_share" = "シェア";
-
 //=============V7.5.5===============
 "Copy_Success_Share_Link" ="Copied successfully! Share the link with your friends to win the chances!";
 //=============V7.5.7===============
 "suit_original_price" = "Original price";
 "suit_please_choose_size" = "Please Choose Size";
-
 //=============V7.5.8===============
 "Buyer_Protection" = "Buyer Protection";
-
 //=============V7.6.0===============
 "Push_content_tips" = "Enable push notifications to receive delivery updates, promotions and more";
 "Push_order_tips" = "Enable push notifications to receive delivery updates, discounts, promotions and other such info.";
@@ -1786,12 +1721,10 @@
 "Push_turn_on_content" = "We'll notify you when this item is back in stock.";
 "Push_turn_on_allow" = "Allow";
 "Push_newuser_shop" = "Shop new user price";
-
 //=============V7.6.1===============
 "Detail_Select_Color" = "Select color";
 "CMS_Coupon_ReceiveD" = "RECEIVED";
 "Detail_Model_tip_info" = "Model: %@ | Size %@.";
-
 //=============V7.6.2===============
 "PaySuccessFull_Status" = "Payment successful";
 "PaySuccessFull_paid" = "Paid";
@@ -1808,7 +1741,6 @@
 "Order_Amount" = "Order Amount";
 "Swipe_up_next_page"= "Swipe up to view the next page";
 "Swipe_down_previous_page"= "Swipe down to view the previous page";
-
 //=============V7.6.4===============
 "Shop_this_look" = "Shop this look";
 "Coupon_not_valid" = "Inactive";
@@ -1823,7 +1755,6 @@
 "Share_youwillget" = "YOU'LL GET";
 "Share_signIn" = "Sign in / Register";
 "Not_your_style" = "Not your style?";
-
 "Product_Measurement" = "Product Measurement Chart";
 "Body_Measurement" = "Body Measurement Chart";
 "Selected_size" = "Selected size:";
