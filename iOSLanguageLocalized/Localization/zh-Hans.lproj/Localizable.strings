@@ -1,18 +1,14 @@
 /*
- Localizable.strings
- iOSLanguageLocalized
- 
- Created by zhaowei on 2017/2/13.
- Copyright © 2017年 Y001. All rights reserved.
- */
-
+Localizable.strings
+iOSLanguageLocalized
+Created by zhaowei on 2017/2/13.
+Copyright © 2017年 Y001. All rights reserved.
+*/
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 /*GLOBAL*/
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
-
 //2019-01-14
 "OK" = "好" ;
 "Cancel" = "取消" ;
@@ -388,7 +384,6 @@
 "My_Coupon_Expired" = "無法領取優惠券，請稍後再試。" ;
 "MyCouponViewModel_NoData_TitleLabel" = "您現在沒有可用優惠券！" ;
 "OrderCheckCoupon_NoData_TitleLabel" = "您現在沒有可用優惠券！";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Address_VC_Title" = "收貨地址" ;
@@ -878,14 +873,12 @@
 "Search_Tool_Morel" = "更多" ;
 "Handpick_RecommendedBg_tip" = "為你推薦" ;
 "HandpickVC_title_Swinwear" = "泳裝" ;
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Account_Survey" = "滿意度調查";
 "OrderDetail_returnReason" = "Reason for return";
 "Order_reason_for_refund" = "Explain the reason for your refund";
 "Order_inputReason" = "Input your reason";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "CarPiecing_QualifiesTips"  =  "符合免運費要求";
@@ -962,7 +955,6 @@
 "modifyAddress_countryCity_state"  =  "州/縣";
 "GroupBuyDetail_StatusTipText"  =  "小貼士：拼團成功，你將得到完整的商品; 你的團隊其他成員將從中抽取一個獲得商品。";
 "GroupBuyDetail_ruleText"  =  "1.所有iOSLanguageLocalized會員可以按照以下步驟開始“組建團隊贏”活動：選擇您想要的商品，邀請朋友組建團隊，招募所需數量的會員，免費獲得該商品。 \n\n2.系統將從您的團隊中隨機選擇一名成員，並向他們贈送一個所選商品。 您可以要求您的團隊成員幫助您繼續分享。 分享的越多，被選中的機會就越高。 \n\n3.成功組建團隊後，我們會將所需物品的優惠券代碼發送給您和獲勝團隊成員的帳戶。 您可以使用優惠券生成0.01美元的訂單，然後付款以完成它。 \n\n4.任何形式的作弊都是被禁止的。 如果發現，優惠券將被撤回。 （如果一個IP地址在一個事件中重複兩次，則視為作弊。）\n\n5.iOSLanguageLocalized保留對此活動進行最終解釋的權利。";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Languge_Setting_繁體中文" = "繁體中文";
@@ -976,21 +968,17 @@
 "text_gone" = "GONE";
 "snap_up_now" = "SNAP UP NOW";
 "text_starting_soon" = "STARTING SOON";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
-
 // ==================================== V4.5.3 ====================================
 "Community_shows_lookbook" = "Look book";
 "Community_post_detail_link" = "鏈接";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "OrderInfo_COD_Apologies_Msg" = "你有在途未簽收的cod訂單，請簽收完成後，才能再次使用cod結算方式。如有疑問，可聯繫客服人員。 ";
 "OrderInfo_CheckSafety_Msg" = "正在為你檢測設備支付安全環境，請耐心等候";
 "OrderInfo_CheckSafety_Msg2" = "安全保障\n請耐心等候";
 "OrderInfo_CheckSafety_Title" = "安全保障";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "group_use_coupon" = "Use coupon";
@@ -1007,7 +995,6 @@
 "txt_my_free_order" = "My Free Order";
 "group_my_team" = "My team";
 "group_ends_at" = "Ends at:";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 // ==================================== V4.5.4 ====================================
@@ -1021,7 +1008,6 @@
 "cart_soldOut" = "已售罄";
 "goodsShows_noRelatedItem" = "沒有相關商品";
 "goodsShows_noRelatedPosts" = "沒有相關帖子";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 // ==================================== V4.5.5 ====================================
@@ -1047,15 +1033,11 @@
 "PaySDK_ContinuePayment" = "NO, CONTINUE PAYMENT";
 "PaySDK_PaymentSurvey" = "PAYMENT SURVEY";
 "Languge_Setting_Turkish" = "Turkish";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Question_backOrders" = "BACK TO MY ORDERS";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
-
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 // ==================================== V4.5.4 ====================================
@@ -1065,12 +1047,9 @@
 "Community_topic_post_1st" = "第一名";
 "Community_topic_post_2nd" = "第二名";
 "Community_topic_post_3rd" = "第三名";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
-
 // ==================================== V4.5.6 ====================================
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Community_LivesListVC_Title"        = "Z-me紅人直播";
@@ -1079,7 +1058,6 @@
 "Community_Lives_Live_Views"         = "瀏覽量";
 "Community_Lives_Live_Goods"         = "商品";
 "Community_Lives_Live_Start_In"      = "直播開始於";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Community_LivesVideo_Host" = "主播";
@@ -1114,7 +1092,6 @@
 "Car_Empty_ForNewUser" = "新用戶享85折";
 "Car_Empty_PickYouLike" = "請選擇你喜歡的";
 "Detail_GroupBuy_GetItFreeTitle" = "免費領";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 // ==================================== V4.5.7 ====================================
@@ -1145,25 +1122,20 @@
 "OrderInfo_priceList_subtotal_total" = "總計";
 "OrderInfo_check_error_address_cancel" = "取消";
 "CarVC_add" = "添加";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Detail_Only_count_left" = "僅剩%@件";
 "Detail_Ends_in" = "距離結束時間";
 "ListTimeCountDown_Tip" = "限時秒殺";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "OrderInfo_priceList_supermeStudent_discount" = "最高學生折扣";
 "OrderInfo_priceList_insurance_discount" = "航空貨運保險";
 "OrderInfo_priceList_ZpointToSave" = "Z Points = Savings";
 "OrderCheckCoupon_NoCouponTips" = "您可以通過輸入框輸入優惠券碼使用優惠券。";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
-
 //=============V4.6.0===============
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Account_birthday_tips" = "填寫生日，我們將會在當天送你一份生日禮包";
@@ -1219,10 +1191,8 @@
 "Customer_quickly_creating_account" = "不創建賬戶繼續結賬";
 "Order_received_share_everyone" = "您購買的商品已到貨，感覺如何，跟大家分享一下吧";
 "Coupon_input_code_box_use_coupon" = "您可以通過輸入框輸入優惠券碼使用優惠券。";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
-
 //=============V4.8.0===============
 "Detail_Similar_Items" = "相似商品";
 "Review_1stPhoto" = "已經是第一張圖片了";
@@ -1237,15 +1207,12 @@
 "OrderInfo_PagoPayCIPCode" = "憑證碼";
 "OrderDetail_UpdateAddressTitle" = "地址更新成功";
 "Title_ShippingMethod" = "配送方式";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V4.9.0===============
 "Video_Live_Cart_Tip" = "點擊查看購物車";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
-
 //=============V5.0.0===============
 "OrderInfo_PCCTips" = "Note: Please enter your PCC Code or your date of birth. (YYYYMMDD. E.g. 19950512) This will ensure a smooth customs clearance and delivery.";
 "OrderInfo_PCCErrorTips" = "You entered your PCC Code or date of birth incorrectly";
@@ -1257,10 +1224,8 @@
 "Cart_Match" = "搭配";
 "OrderDetail_CancelOrderTips" = "訂單將被取消";
 "homeSearchTitle" = "what are you looking for";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
-
 //=============V5.1.0===============
 "Live_Enter_Room" = "進入直播室。";
 "Live_Review_Input_tip" = "聊天或提問";
@@ -1275,7 +1240,6 @@
 "Live_Pause" = "主播暫時離開了,請耐心等待";
 "InputTextView_%@_message" = "必須不超過%@個字符。" ;
 //=============V5.2.0===============
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "GoodsDetail_Post_MatchItems" = "搭配商品";
@@ -1316,7 +1280,6 @@
 "Community_albumPreTips" = "Album permissions are required to save outfits to your photo album";
 "ZFTracking_Delivery" = "派送機構";
 "Community_Outfit_NOContentTips" = "Oops，don't forget to write the outfit ideas";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V5.4.0===============
@@ -1332,13 +1295,11 @@
 "sex_select_tip" = "Please select the product category you are most interested in";
 "Hom_Coupon_UnStart" = "It's about to start. Come back in a bit!";
 "sex_Swimwear" = "Swimwear";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Hom_Coupon_Claimed_Success" = "Claimed successfully";
 "Hom_Coupon_Claimed_Failed" = "Failed to claim. Try again later.";
 "Account_Discover_title" = "发现";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V5.5.0===============
@@ -1376,12 +1337,10 @@
 "Community_Post_Detail_See_All_Comments" = "See all comments";
 "Tab_New_Account" = "Account";
 "Order_Comment_Send_Account_XXPoints" = "%@ points have been sent to your account";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Order_Comment_Send_Account_XXPoints_XXCoupon_XXCoupon" = "%@ points +%@ coupon + %@ coupon have been sent to your account";
 "Order_Comment_UP_XXPoints_XXCoupon_XXCoupon" = "Get up to %@ points +%@ coupon+%@ coupon";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V5.6.0===============
@@ -1417,7 +1376,6 @@
 "Login_bind_email_get15_discount" = "Bind an email to login and get a 15% discount.";
 "Live_switch_line" = "Switch line";
 "Order_cancel_klarna_rexplain" = "Explanation";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "live_live" = "直播";
@@ -1428,16 +1386,13 @@
 "Login_cancel" = "Cancel";
 "Login_commit" = "Submit";
 "SecKil_buy_now" = "立即購買";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V5.7.0===============
 "Account_Change_Photo" = "Change your photo";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V5.8.0===============
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Express_delivery_tip" = "Express delivery only supports English addresses. Please use English as much as possible, thank you.";
@@ -1466,7 +1421,6 @@
 "Search_Feedback" = "-Send Feedback >";
 "Modifier" = "MODIFY";
 "Goodsdetail_Bottom_OutOfStock" = "Out of stock. Back in stock soon.";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V6.0.0===============
@@ -1484,16 +1438,13 @@
 "Order_Unavailable_Goods_tips" = "The following items are unavailable, please reconfirm your order amount.";
 "Community_subscribe_success_tip" = "Subscribed successfully! You will be notified when the livestream is 5 minutes away from starting";
 "Search_NotGoods_Tip_A" = "Your search %@ did not match any products.Did you mean %@?";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "goods_match_tops" = "Match tops";
 "goods_match_bottoms" = "Match bottoms";
 "Detail_VIEW_BAG" = "VIEW BAG";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
-
 //=============V6.1.0===============
 "Total_order_amount" = "Total order amount: ";
 "Order_BankTransfer_Bank_Account" = "Bank Account ";
@@ -1522,11 +1473,9 @@
 "Order_BankTransfer_SWIFTCODE" = "SWIFTCODE";
 "Account_recommend_title" = "推薦";
 "Order_BankTransfer_BankAccount" = "Bank Account ";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "FAQ_Support_Center" = "Support Center";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V6.2.0===============
@@ -1535,7 +1484,6 @@
 "ModifyAddress_Zip_include_Digits_UK" = "Please enter 6-8 characters, such as G12 8QH, N7 9DS,BH22 2EW";
 "ModifyAddress_Address1_Placeholder_UK" = "*第1行地址：街道地址" ;
 "Print_Konbini_Info" = "Print Konbini Info";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Swim_outfit_top_size" = "TOPS SIZE";
@@ -1551,7 +1499,6 @@
 "Free_Gift_Custom_Goods" = "Specified Products";
 "Free_Gift_Custom_Goods_Tip" = "Spend a certain amount on the specified products below to get a free gift";
 "Free_Gift_Custom_Category" = "Specified Categories";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Letter_Likes" = "Likes";
@@ -1563,7 +1510,6 @@
 "Free_Gift_Custom_Goods" = "Specified Products";
 "Free_Gift_Custom_Goods_Tip" = "Spend a certain amount on the specified products below to get a free gift";
 "Free_Gift_Custom_Category" = "Specified Categories";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Letter_Likes" = "Likes";
@@ -1580,13 +1526,11 @@
 "login_Terms&Conditions" = "Terms & Conditions";
 "login_understand_privac" = "I understand and accept iOSLanguageLocalized's Privacy Policy, and will abide by it.";
 "login_agree_termsConditions" = "I agree to iOSLanguageLocalized.com Terms and Conditions";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "home_coupon_alert_expires_on" = "Expires on";
 //=============V7.1.2===============
 "outfit_items_limit_count_tip" = "You can add up to 6 items at the same time!";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "new_user_price_tip" = "New User Price";
@@ -1604,7 +1548,6 @@
 "login_reset_password" = "Reset password";
 "login_already_registered_tip" = "This email is already registered, do you want to login?";
 "login_create_account" = "create a new one";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "login_sign_or_create" = "Sign into a different account or \n create a new one";
@@ -1620,14 +1563,12 @@
 "Hurry_only_x_left" = "Hurry! Only %@ left!";
 "Received_successfully" = "Received successfully";
 "Login_switch_acoount" = "Switch to another account";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "MyCoupon_Coupon_Available" = "Available";
 //=============V7.2.4===============
 "Swipe_left_to_next" = "Balayez vers la gauche pour afficher le commentaire suivant";
 "Swipe_up_to_next" = "Glissez vers le haut pour afficher le produit suivant";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V7.2.6===============
@@ -1635,7 +1576,6 @@
 "Outfit_share_placehoder" = "Isn't it just chic looking?Check it for me!";
 "Outfit_share_inZ-me" = "Share in Z-me";
 "Outfit_share_get_30point" = "You will earn 30 Z points.";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V7.2.8===============
@@ -1658,17 +1598,14 @@
 "review_give_up_rewards" = "Are you sure to give up rewards";
 "rating_level_tip_0" = "Very Good";
 "review_give_up" = "Give Up";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "how_get_points" = "How to get？";
 //=============V7.3.0===============
 "only_shows_3_months_coupons" = "This list only shows the used/expired coupons in recent 3 months";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V7.3.1===============
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "outfits_match_tops" = "Tops";
@@ -1688,7 +1625,6 @@
 "detail_shipping_click_me_tips" = "Click here For more info and international shipping";
 "detail_shipping_click_me" = "Click here";
 "detail_shipping_not_available_tips" = "The delivery service is temporarily not available in the region you selected. Thanks for your support for iOSLanguageLocalized!";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V7.3.4===============
@@ -1696,11 +1632,9 @@
 "the_following_items" = "The following items";
 "swipe_similar_items" = "swipe to see similar items";
 "cart_empty_login_subTip" = "sign in to check your shopping bag";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V7.4.6===============
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 "Cart_new_user_guide_tip" = "Rules:\n1. Each new user would only get one New-User-Price item. \n2. Click the change  button and choose the item to enjoy the discount. \"";
@@ -1717,7 +1651,6 @@
 "Korea_clause_8" = "[Optional] Agree to receive emails";
 "Korea_clause_9" = "[Optional] Agree to receive SMS and SNS";
 "Korea_clause_10" = "[Optional] Agree to receive app pushes";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V7.5.0===============
@@ -1726,20 +1659,16 @@
 "Cart_MoreRnjoyShipping" = "Buy %@ more to enjoy FREE STANDARD SHIPPING !";
 "Cart_SelectCouponSave" = "Save %@ ! Promo code has been applied to your order!";
 "Cart_InputCode" = "Input code";
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V7.5.1===============
-
 "tip_add_to_cart_success" = "成功加到購物車!";
 "text_menu_share" = "分享";
 //=============V7.5.7===============
-
 "suit_original_price" = "Original price";
 "suit_please_choose_size" = "Please Choose Size";
 //=============V7.4.8===============
 "Clearance_Tip" = "Coupons/points can\'t be applied to the items under clearance/sale.";
-
 //=============V7.6.4===============
 "Make_Your_Own_Outfit" = "Make Your Own Outfit";
 "Outfit_view_bag_success_tip" = "The items have been successfully added to your bag.";
@@ -1748,7 +1677,6 @@
 "Not_your_style" = "Not your style?";
 "Style_with_customize_tip_next" = "Swipe left to view the next look";
 "Style_with_customize_tip" = "Swipe up to view the items";
-
 "Product_Measurement" = "Product Measurement Chart";
 "Body_Measurement" = "Body Measurement Chart";
 "Selected_size" = "Selected size:";
@@ -1756,5 +1684,4 @@
 "Colors" = "colors";
 //=============V7.6.6===============
 "Detail_Gallery" = "Gallery";
-
 "Detail_item_fit_well" = "Did the item fit well?";

@@ -1,11 +1,9 @@
 /*
- Localizable.strings
- iOSLanguageLocalized
- 
- Created by zhaowei on 2017/2/13.
- Copyright © 2017年 Y001. All rights reserved.
- */
-
+Localizable.strings
+iOSLanguageLocalized
+Created by zhaowei on 2017/2/13.
+Copyright © 2017年 Y001. All rights reserved.
+*/
 /*GLOBAL*/
 "OK" = "OK";
 "Cancel" = "Cancel";
@@ -19,29 +17,22 @@
 "LESS" = "LESS";
 "Copy" = "Copy";
 "Success" = "Success";
-
-
 "Global_Network_Not_Available" = "The network is not available!";
 "Global_Network_Server_Error" = "Server exception error";
 "Global_Network_Login_First" = "please login first";
 "Global_Network_No_MoreData" = "No more data";
 "Global_Network_Illegal_Request" = "Illegal request";
-
-
 /*ZFBaseViewController*/
 "Base_VC_ShowAgain_TitleLabel" = "AGAIN  REQUEST";
 "Base_VC_Mix_Characters_Tip" = "Your nickname should be at least 2 characters long";
 "Base_VC_Max_Characters_Tip" = "Your nickname cannot exceed 35 characters";
-
 "Base_VC_Enter_NickName_Message" = "Please enter nickname";
-
 //没有数据的提醒词
 "Global_VC_NO_DATA" = "Loading failed, please try again later";
 //空白页的title
 "Global_EMPTY_TITLE" = "No internet connection";
 //没有网络的提醒词
 "Global_NO_NET_404" = "Please check your network";
-
 /*ZFShareViewController*/
 "Share_VC_Cancel" = "Cancel";
 "Share_VC_Shared_Success" = "Shared successfully";
@@ -64,17 +55,13 @@
 "Share_VC_CheckOut_Tip" = "iOSLanguageLocalized, really <3 this! So many boutiques on iOSLanguageLocalized. Come check them out!";
 "Share_VC_GetItFree" = "Share & Get It Free";
 "Share_VC_GetItFreeTitle" = "Get It Free";
-
 "Share_Alert_ThanksSharing" = "Thanks for sharing";
 "Share_Alert_SharedCheckLinkInMyShare" = "Invite your friends within 72h and get the item for free. Please check in My Shares.";
 "Share_Alert_MYSHARE" = "MY SHARESS";
 "Share_Alert_LUCKYWINIT" = "LUCKY DRAW TO WIN IT";
 "Share_Alert_PleaseTryLater" = "Unknow error, please try again later.";
-
-
 /*AppDelegate*/
 "AppDelegate_Open" = "Open";
-
 /*OrderListPalView*/
 "ZFPaymentView_Alert_Message" = "Payment incomplete, are you sure you want to go back?";
 "ZFPaymentView_Alert_No" = "No";
@@ -82,18 +69,15 @@
 "ZFPaymentView_Close_Title" = "Back";
 "ZFPaymentView_TopicAlert_Yes" = "Yes";
 "ZFPaymentView_TopicAlert_Cancel" = "Cancel";
-
 /*OrderFinishViewController*/
 "OrderFinish_VC_TipLabel_One" = "We appreciate your purchase!";
 "OrderFinish_VC_TipLabel_Two" = "Your order has been submitted successfully.";
 "OrderFinish_VC_TipLabel_Three" = "Please remember your order number:";
 "OrderFinish_VC_Account_Button" = "My ACCOUNT";
 "OrderFinish_VC_Home_Button" = "RETURN TO HOME";
-
 /*OrderFailureViewController*/
 "OrderFailure_VC_Tip" = "Payment Failure!";
 "OrderFailure_VC_Account_Button" = "Check My Order";
-
 /*Sign*/
 "SignIn_Button" = "SIGN IN";
 "SignIn_Button_left" = "SIGN IN";
@@ -105,7 +89,6 @@
 "Guide_Skip_Tips" = "Skip";
 "Continue_As_Guest" = "CONTINUE AS GUEST";
 "login_back" = "Back";
-
 /*Register*/
 "Register_Button" = "Register";
 "Register_Button_left" = "Register";
@@ -120,23 +103,16 @@
 "Register_password_include" = "Password must include letters and numbers.";
 "Register_Confirm_Tip_Password" = "At least 8 characters & 1 number.";
 "Register_ConfirmInformation" = "I confirm all information provided is my own; I understand and agree it will be used as per the iOSLanguageLocalized Privacy Policy. I can withdraw my consent at any time.";
-
 "Register_AlertSubscribeTitle" = "I agree to receive marketing information about iOSLanguageLocalized products and services and agree to the processing of my personal data for such purposes as described in the iOSLanguageLocalized Privacy Policy. I can withdraw my consent at any time.";
-
 "Register_TermsUse" = "Terms of Use";
 "Register_PrivacyPolicy" = "Privacy Policy";
 "Register_AgreeTermsOfUser" = "I agree to the iOSLanguageLocalized Terms of Use";
 "Register_agreeSubmitting" = "By submitting, I confirm all information...";
 "Register_subscribe" = "Subscribe to our newsletter";
-
-
-
-
 /*Login*/
 "Login_Confirm_Tip_Email" = "Please enter a valid Email!";
 "Login_Confirm_Tip_Password" = "Your password must be 6-20 characters long.";
 "Login_Terms_Web_Title" = "TERMS OF USE";
-
 /*Forgot Password*/
 "LoginForgotView_Title" = "FORGOT PASSWORD";
 "LoginForgotView_EmailView_Descripe" = "Confirm your identity to reset your password";
@@ -146,14 +122,12 @@
 "LoginForgotView_Valid_Email" = "Please enter a valid email address.";
 "LoginForgotView_OK" = "OK";
 "LoginForgotView_Cancel" = "CANCEL";
-
 /*Tabbar*/
 "Tabbar_Home" = "Home";
 "Tabbar_Categories" = "Category";
 "Tabbar_Z-Me" = "Z-Me";
 "Tabbar_Wishlist" = "WISH LIST";
 "Tabbar_Account" = "Account";
-
 /*Home*/
 "Home_SectionHeader_Title"               = "HOT ITEMS";
 "GoodsSortViewController_Type_Recommend" = "Recommended";
@@ -162,7 +136,6 @@
 "GoodsSortViewController_Type_LowToHigh" = "Price ↑";
 "GoodsSortViewController_Type_HighToLow" = "Price ↓";
 "GoodsSortViewController_COD_Guide_Tip"  = "All items in this list support Cash On Delivery.";
-
 /*Category*/
 "Category_VC_Title" = "Category";
 "Category_Item_Segmented_Category" = "Category";
@@ -172,13 +145,11 @@
 "Category_Done" = "DONE";
 "Category_Price_Range" = "Price Range";
 "Category_APPLY" = "APPLY";
-
 "GoodsSort_VC_Title" = "Sort";
 "GoodsRefine_VC_Title" = "Refine";
 "GoodsRefine_VC_Clear" = "Clear";
 "GoodsRefine_VC_All" = "All";
 "CategoryNoDate" = "Sorry, we couldn’t find anything for %@";
-
 /*Search*/
 "Search_PlaceHolder_Search" = "Search";
 "Search_ResultViewModel_Tip" = "\n Sorry, no products were found. \n";
@@ -186,7 +157,6 @@
 "Search_ResultHeadView_Sort" = "Sort";
 "SearchHotSearchText" = "Popular Search";
 "SearchSearchHistoryText" = "Search history";
-
 /*Detail*/
 "Detail_Product_Shipping_Tips" = "Shipping info";
 "Detail_Product_Description" = "Product Description";
@@ -205,11 +175,9 @@
 "Detail_Product_Refresh_Footer" = "No more reviews. Give it a review to earn Z points!";
 "Detail_Product_GoodsReviewCell_TipLabel" = "No Reviews.\n Be the first reviewer to earn 40 Z points!";
 "Detail_Product_GoodsReviewCell_ViewAll" = "View All";
-
 /*GoodsReviewsViewController*/
 "GoodsReviews_VC_Title" = "Reviews";
 "GoodsReviews_HeaderView_Reviews" = "Reviews";
-
 /*Bag*/
 "Bag_VC_Title" = "Bag";
 "Bag_RecentHistory" = "My Recent History";
@@ -240,30 +208,23 @@
 "CartSelectAllTips" = "Select all";
 "CartSelectAllItemsTips" = "Select all Items";
 "CartSelectItemsTips" = "Select Items(%lu)";
-
 "ReturnToBagSuccessfully" = "Successfully returned items to Bag.";
 "ReturnToBag" = "Buy again";
 "JumpToCart"  = "Are you sure you want to add all the items from this order to the shopping bag again?";
-
 /*Free Gift*/
 "FreeGift" = "Free gifts";
 "FreeGift_Rule_Content" = "iOSLanguageLocalized sends free gifts to customers who support us during specific activities. Customers are allowed to pick any gift at the bottom of this page by simply clicking \"Add to Bag\". So long as the total amount in your shopping bag meets the requirements, you can get it for free. Gifts differ from section to section, and a higher shopping bag value corresponds to a higher value of gift choices. Only one gift can be picked from each section. Contact our online customer service if you have any further questions.";
 "FreeGiftDetail_AddCartTips" = "There is already a free gift in your shopping bag. Do you want to change it?";
 "FreeGiftsVC_HasNoDataTips" = "Sorry, no free gifts available right now.";
-
-
 /*CartOrderInfo Address*/
 "CartOrderInfo_Address_List_Close" = "Close";
-
 /*CartInfoGoodsViewController*/
 "CartInfo_Goods_VC_Title" = "Product List";
-
 /*OrderInfoViewModel*/
 "OrderInfoViewModel_manager_insurance" = "0.00";
 "OrderInfoViewModel_valid_coupon_tip" = "Please enter a valid coupon code.";
 "OrderInfoViewModel_alertMsg_COD" = "COD order must be under %@~%@US$";
 "OrderReviewAgreeToZMe" = "Agree to post in Z-Me";
-
 /*CartOrderInfo*/
 "CartOrderInfo_VC_Title" = "Order Information";
 "CartOrderInfo_RewardsCell_Instruction" = "There are %@ Points in your account. You can use a maximum of %@ points for this order (saving %@ )";
@@ -272,14 +233,11 @@
 "CartOrderInfo_RewardsCell_ThanZero" = "Must use more than 0 points!";
 "CartOrderInfo_Goods_Items" = "items";
 "CartOrderInfo_Goods_Item" = "item";
-
 "CartOrderInfo_PayMethodCell_PayPalLabel" = "The safer, easier way to pay";
 "CartOrderInfo_PayMethodCell_WordPayLabel" = "Pay by credit card directly";
 "CartOrderInfo_PromotionCodeCell_PromotionCodeLabel" = "Coupon Code";
 "CartOrderInformationBottomView_PlaceOrderBtn" = "PLACE ORDER";
-
 "CartOrderInforTipMessage" = "Please select the carrier number on the address edit page";
-
 "CartOrderInfoViewModel_PlaceOrder_NoShipping" = "Sorry, we currently do not ship to the country you selected";
 "CartOrderInfoViewModel_PlaceOrder_NoPayment" = "Sorry, your country does not currently support the selected payment method.";
 "CartOrderInfoModel_PaymentStatusDone_Alert_Message" = "Your order has been submitted successfully!";
@@ -288,7 +246,6 @@
 "CartOrderInfoModel_PaymentStatusCancel_Alert_Title" = "Payment cancelled";
 "CartOrderInfoModel_PaymentStatusFail_Alert_Message" = "Payment failed. Touch \"Pay Now\" to try again!";
 "CartOrderInfoModel_PaymentStatusFail_Alert_Title" = "Payment failed";
-
 /*CartOrderInfo Coupon*/
 "CartOrderInfo_CouponSelect_VC_Title" = "My Coupon";
 "CartOrderInfo_CouponCode" = "Coupon code";
@@ -298,36 +255,28 @@
 "CartOrderInfo_MyCouponPickerView_Component_NotToUse" = "I DON'T WANT TO USE";
 "CartOrderInfo_MyCouponPickerView_Title" = "My Coupon(s)";
 "CartOrderInfo_UnableCouponCell_Tip" = "I don't want to use";
-
 //CartOrderInfo TotalPrice Cell
 "CartOrderInfo_TotalPrice_Cell_AirCargoInsurance" = "Air Cargo Insurance";
 "CartOrderInfo_TotalPrice_Cell_PayNow" = "Pay";
-
 //CartOrderInfo ShippingInsuranceCell Cell
 "CartOrderInfo_ShippingInsuranceCell_Cell_ShippingInsurance" = "Shipping Insurance";
-
 //CartOrderInfo ShippingMethodSubCell Cell
 "CartOrderInfo_ShippingMethodSubCell_Cell_OFF" = "OFF";
-
 /*VerificationView*/
 "VerificationView_titleLabel" = "Before placing order, please note:";
 "VerificationView_alretLabel_error" = "Verification code error";
 "VerificationView_alretLabel_empty" = "Verification code empty";
 "VerificationView_detailLabel" = "For security purposes, we will send a message to the phone number you provided. Please fill in the verification code below";
-
 "VerificationView_codeField" = "Please enter the correct verification code.";
 "VerificationView_VERIFY" = "VERIFY";
-
 /*Wishlist*/
 "Collection_VC_Title" = "My Favorites";
 "CollectionViewModel_NoData_Tip" = "Find the latest styles and add them to your favorites!";
-
 /*Account*/
 "Account_VC_Title" = "Account";
 "Account_VC_SignOut_Alert_Message" = "Are you sure you want to sign out?";
 "Account_VC_SignOut_Alert_No" = "No";
 "Account_VC_SignOut_Alert_Yes" = "Yes";
-
 "Account_SignIn_SignUp" = "Sign In / Register";
 "Account_Welcome_iOSLanguageLocalized" = "Welcome to iOSLanguageLocalized";
 "Account_TopInfo_ZmeHome" = "Z-Me";
@@ -355,9 +304,6 @@
 "AccoundHeaderView_Divice_Unavailable" = "Sorry, no camera or camera unavailable.";
 "AccountCountry_VC_SelectedCountry" = "Selected Country/Region";
 "AccountCountry_VC_Title" = "Change Country";
-
-
-
 /*My Orders*/
 "MyOrders_VC_Title" = "My Orders";
 "MyOrders_Cell_Order" = "Order";
@@ -368,16 +314,13 @@
 "ZFOrderList_Total" = "Total:";
 "ZFOrderList_Total_Items" = "item(s)";
 "MyOrderList_NoData_Title" = "You have no orders yet!";
-
 "MyOrdersViewModel_PaymentStatusCancel_Message" = "Payment cancelled. Touch \"Pay Now\" to try again!";
 "MyOrdersViewModel_PaymentStatusCancel_Title" = "Payment cancelled";
 "MyOrdersViewModel_PaymentStatusFail_Message" = "Payment failed. Touch \"Pay Now\" to try again!";
 "MyOrdersViewModel_PaymentStatusFail_Title" = "Payment failed";
-
 "MyOrdersViewModel_NoData_Tip" = "You have no orders yet!";
 "MyOrdersViewModel_Cancel_Order_Message" = "You can't cancel this order!";
 "MyHistory_NoData_tip" = "Sorry, we couldn't find anything in your history";
-
 //Order Detail
 "OrderDetail_VC_Title" = "Order Detail";
 "OrderDetailViewController_COD_cost" = "COD cost";
@@ -385,11 +328,9 @@
 "OrderRequestRefund" = "Request a refund";
 "OrderRefundTips" = "Your refund is being processed (We will process your refund request within 48 hours).";
 "OrderRefundAskTips" = "You order has already been packed, are you sure you want to request a refund?";
-
 "OrderDetailViewModel_CancelOrder_Message" = "Are you sure you want to cancel this order?";
 "OrderDetailViewModel_CancelOrder_No" = "No";
 "OrderDetailViewModel_CancelOrder_Yes" = "Yes";
-
 //Order Cell
 "OrderDetail_Order_Cell_Order" = "Order";
 "OrderDetail_Cell_PaymentStatusCancel_Message" = "Payment cancelled. Touch \"Pay Now\" to try again!";
@@ -400,12 +341,10 @@
 "OrderDetail_Cell_CancelOrder_No" = "No";
 "OrderDetail_Cell_CancelOrder_Yes" = "Yes";
 "OrderDetail_CouponCode_InputplaceholderText" = "Select or input code";
-
 //Delivery Cell
 "OrderDetail_Delivery_Cell_Date" = "Date";
 "OrderDetail_Delivery_Cell_Delivery" = "Delivery";
 "OrderDetail_Delivery_Cell_Payment" = "Payment";
-
 //Goods Cell
 "OrderDetail_Goods_Cell_Sku" = "SKU";
 "OrderDetail_Goods_Cell_Color" = "Color";
@@ -414,9 +353,7 @@
 "OrderDetail_Goods_Cell_WriteReview" = "    Write a review    ";
 "OrderDetail_Goods_Cell_CheckMyReview" = "    Check my review    ";
 "OrderDetail_Goods_Cell_SubmitReview" = "Reviews & Show";
-
 "OrderDetail_Copy_Success" = "Copy successful";
-
 //TotalPrice Cell
 "OrderDetail_TotalPrice_Cell_Subtotal" = "Subtotal";
 "OrderDetail_TotalPrice_Cell_RewardsSaving" = "Z Points Saving";
@@ -430,13 +367,11 @@
 "OrderDetail_TotalPrice_Cell_Contiue" = "Continue to pay";
 "OrderDetail_TotalPrice_Cell_Check" = "Check the Boleto Bancario";
 "OrderDetail_Coupon_Header" = "Unavailable Coupons";
-
 /*OrderFinishViewController*/
 "OrderFinishViewController_tipLab4" = "Your items will be with you as soon as possible, please pay attention to your order.";
 "OrderFinishViewController_tipLab3" = "Payment Amount: %@";
 "OrderFinishViewController_tipLab1" = "Order: %@";
 "OrderFinishViewController_tipLab2" = "Payment Method: Cash On Delivery";
-
 //Write a review
 "WriteReview_VC_Title" = "Write a review";
 "WriteReview_Sku" = "SKU";
@@ -444,38 +379,32 @@
 "WriteReview_Size" = "Size";
 "WriteReview_Total" = "Total";
 "WriteReview_Note" = "Note: Share to earn 20 Z Points. The first 5 customers to leave reviews will get DOUBLE Z Points!";
-
 "WriteReview_Rating" = "Rating";
 "WriteReview_Content" = "Content";
 "WriteReview_Textfiled_Placeholder" = "Please write at least 30 characters";
 "WriteReview_Textfiled_Min_Tip" = "Please write at least 30 characters";
 "WriteReview_Textfiled_Max_Tip" = "Please don't exceed 3,000 characters.";
 "WriteReview_Submit" = "Submit";
-
 //Check my review
 "CheckMyReview_VC_Title" = "Check my review";
 "CheckMyReview_Sku" = "SKU";
 "CheckMyReview_Color" = "Color";
 "CheckMyReview_Size" = "Size";
 "CheckMyReview_Total" = "Total";
-
 //Review
 "ZFOrderReview_Tips" = "You can earn 20 Z-points for this review. Continue writing?";
 "ZFOrderReview_AddImageTips" = "Upload your buyer show, to get DOUBLE points.";
-
 //引导评论App store
 "GuideReviewAppStore_Rate" = "Rate";
 "GuideReviewAppStore_NotNow" = "Not Now";
 "GuideReviewAppStore_FeedBack" = "Write Feedback";
 "GuideReviewAppStore_Tips" = "Dear iOSLanguageLocalized customer, do you enjoy using our App? If you do, please take a moment to rate it. Thanks for your support!";
 "GuideReviewAppStore_Title" = "Go Rate iOSLanguageLocalized?";
-
 /*My Points*/
 "MyPoints_VC_Title" = "My Points";
 "MyPoints_Rewards_Label" = "Points";
 "MyPoints_WhatPoints_VC_Title" = "What are Z POINTS";
 "MyPoints_EmptyData_Tip" = "You do not have any Z points";
-
 /*My Coupon*/
 "MyCoupon_VC_Title" = "My Coupons";
 "MyCoupon_VC_Header_Label" = "You can use these when checking out!";
@@ -485,7 +414,6 @@
 "MyCoupon_Coupon_Warning_Content"   = "Save %@";
 "MyCoupon_Coupon_No_Available" = "No Coupons Available";
 "MyCoupon_Coupon_Available" = "%ld Available Coupons";
-
 "MyCoupon_Coupon_Unused" = "Unused";
 "MyCoupon_Coupon_Used" = "Used";
 "MyCoupon_Coupon_Expired" = "Expired";
@@ -495,25 +423,20 @@
 "My_Coupon_Get_Coupon_False"  = "Error! Please try again later.";
 "My_Coupon_Have_Been_Claimed"  = "All coupons have already been claimed.";
 "My_Coupon_Expired"  = "Coupon cannot be claimed, please try again later.";
-
 "MyCouponViewModel_NoData_TitleLabel" = "Sorry, you don't have any available coupons now!";
 "OrderCheckCoupon_NoData_TitleLabel" = "Oops, you don't have any coupons.";
-
 /*My Address*/
 "Address_VC_Title" = "Shipping Address";
 "Address_VC_Add_Address" = "ADD NEW ADDRESS";
 "Address_VC_Done" = "Done";
 "Address_VC_Edit" = "Edit";
-
 "Address_List_Cell_Default" = "Default";
 "Address_List_Cell_Delete" = "Delete";
 "Address_List_Cell_Edit" = "Edit";
-
 "AddressListViewModel_NoData_Add_Address" = "ADD NEW ADDRESS";
 "AddressListViewModel_NoData_Title" = "Please add an address";
 "ProvinceViewModel_NoSelect_Tip" = "Please reselect";
 "Address_VC_PrivacyTerms" = "Privacy Policy & Terms of Use";
-
 /*ModifyAddressViewController*/
 "Modify_Address_VC_Title" = "Shipping Address";
 "ModifyAddress_FristName_Placeholder" = "First Name";
@@ -572,7 +495,6 @@
 "ModifyAddress_Google_Help_Find_Address" = "We will help you to find address";
 "ModifyAddress_Google_Help_NotFind_Address" = "Sorry，Cannot find this address";
 "ModifyAddress_NumberCount_TipLabel" = "Your mobile phone number should be %@ digits long";
-
 /*My Password*/
 "ChangePassword_VC_Title" = "Password";
 "ChangePassword_VC_OrignPassword" = "Original password";
@@ -583,29 +505,24 @@
 "ChangePassword_VC_Confirm_Message" = "Please confirm password";
 "ChangePassword_VC_Provide_Message" = "Please provide a password";
 "ChangePassword_VC_Request_Failure_Message" = "Operation failed, please try again!";
-
 /*Change Password Success*/
 "ChangePassword_Success_Customer" = "Dear customer,";
 "ChangePassword_Success_NewPassword" = "Your new password has been activated!";
 "ChangePassword_Success_SigninLater" = "Sign In Later";
 "ChangePassword_Success_SignInNow" = "Sign In Now";
-
 /*My Currency*/
 "Currency_VC_Title" = "Currency";
-
 /*My Setting*/
 "Setting_VC_Title" = "Settings";
 "Setting_Cell_RateUs" = "Rate Us";
 "Setting_Cell_ClearCache" = "Clear Cache";
 "Setting_Cell_Version" = "Version";
 "Setting_Cell_Languege" = "Language";
-
 /* languge setting */
 "Languge_Setting_English" = "English";
 "Languge_Setting_Arabic"  = "العربية";
 "Languge_Setting_Spanish" = "Español";
 "Languge_Setting_French"  = "Français";
-
 "SettingViewModel_Cache_Alert_Message" = "App cache has been cleared!";
 "SettingViewModel_Cache_Alert_OK" = "OK";
 "SettingViewModel_Version_Alert_Title" = "Version";
@@ -616,10 +533,8 @@
 "SettingViewModel_Version_Latest_Alert_OK" = "OK";
 "ForceUpgrade_title" = "Update notification";
 "ForceUpgrade_message" = "Dear iOSLanguageLocalized users, we have recently made an all-round improvement to our app. Please install the latest version to enjoy a better shopping experience.";
-
 /*My Help*/
 "Help_VC_Title" = "Help";
-
 /*Profile*/
 "Profile_VC_Title" = "Profile";
 "Profile_FirstName_Placeholder" = "First Name";
@@ -632,7 +547,6 @@
 "Profile_Phone_Placeholder" = "Phone";
 "Profile_EmailAddress_Placeholder" = "Email";
 "Profile_Save_Button" = "Save";
-
 "Profile_Enter_FirstName_Message" = "Please enter your first name.";
 "Profile_Least_FirstName_Message" = "Your first name should be at least 2 characters long.";
 "Profile_Maxium_FirstName_Message" = "Your first name can only be 32 characters long.";
@@ -646,20 +560,16 @@
 "Profile_Least_NickName_Message" = "Your nickname should be at least 2 characters long.";
 "Profile_Maxium_NickName_Message" = "Your nickname can only be 35 characters long.";
 "Profile_Personal_Success_Message" = "Your personal information has been successfully modified!";
-
 /*InputTextView*/
 "InputTextView_message" = "Must be under 300 characters.";
 "InputTextView_Send" = "Send";
-
 /*Community*/
 "Community_Follow" = "Follow";
 "Community_TOP" = "TOP";
 "Community_Big_Views" = "views";
 "Community_Little_Views" = "%@ views";
-
 "Community_ShareTitle" = "Latest Fashion Deals";
 "Community_ShareContent" = "My style show on iOSLanguageLocalized, do you like it?";
-
 /*CommunityViewController*/
 "Community_Tab_Title_Explore" = "Explore";
 "Community_Tab_Title_Faves" = "Faves";
@@ -672,30 +582,21 @@
 "Community_HeaderView_styleCallery" = "Style Gallery";
 "Community_HeaderView_New" = "New";
 "Community_HeaderView_Popular" = "Popular";
-
-
-
 /*VideoListViewController*/
 "VideoList_VC_Title" = "Z-Live";
 "Video_VC_TextView_Placeholder" = "What do you think?";
 "Video_VC_CannotPost_Message" = "You can't comment on your own post.";
 "VideoViewViewModel_NoData_Title" = "Posts from “Popular” will appear here";
 "Community_Videos_DetailTitle" = "Detail";
-
-
 /*VideoHeaderView*/
 "VideoView_HeaderView_Title" = "Comments";
-
 /*TopicListViewController*/
 "TopicList_VC_Title" = "Fashion Topic";
 "TopicHead_Cell_JoinedIn" = "joined in";
 "TopicHead_Cell_ViewAll" = "View All";
-
 /*alertview*/
 "TopicLabelDeleteAlertView" = "Are you sure?";
 "TopicLabelDeleteTopicAlertView" = "Are you sure you want to delete this post?";
-
-
 //Topic Detail
 "Topic_VC_Title" = "Topic Details";
 "TopicDetailView_Ranking" = "RANKING";
@@ -703,36 +604,27 @@
 "TopicDetailView_Reviews" = "Reviews";
 "TopicDetailView_ViewAll" = "VIEW ALL";
 "TopicDetailView_joinIn" = "Join in";
-
 /*CommunityDetailViewController*/
 "CommunityDetail_VC_TextView_Placeholder" = "What do you think?";
 "CommunityDetail_VC_CannotPost_Message" = "You can't comment on your own post.";
-
-
 /*CommunityDetailHeaderCell*/
 "CommunityDetailHeaderCell_Likes" = "Likes";
-
 /*FollowViewController*/
 "Follow_VC_Title_LikedBy" = "Liked By";
 "Follow_VC_Title_Following" = "Following";
 "Follow_VC_Title_Followers" = "Followers";
-
 /*FollowViewModel*/
 "FollowViewModel_NoData_GetStatus" = "Follow others to receive \n their recent status updates.";
 "FollowViewModel_NoData_NotAny" = "Not followed anyone yet";
 "FollowViewModel_NoData_AddPhotos" = "Add Photos to get Followers";
 "FollowViewModel_NoData_NoFollowers" = "No followers";
-
 /*PopularViewModel*/
 "PopularViewModel_NoData_Title" = "Posts from \"Popular\" will appear here.";
-
 /*FavesCommendHeadView*/
 "FavesCommendHeadView_RecommendUp" = "Recommend up";
-
 /*FavesViewModel*/
 "FavesViewModel_NoData_Title" = "You will find friends and bloggers sharing their shopping tips here. Follow them now.";
 "FavesViewModel_NoData_AddMoreFriends" = "  Add more friends    ";
-
 //Z-Me
 "MyStylePage_VC_Title" = "Z-Me";
 "MyStylePage_SubVC_Shows" = "Gallery";
@@ -740,41 +632,32 @@
 "MyStylePage_SubVC_Outfits" = "Outfits";
 "MyStylePage_Unfollow_Tip" = "Are you sure you want to unfollow?";
 "MyStylePage_Unfollow" = "Unfollow";
-
 /*StyleSelectView*/
 "StyleSelectView_Shows" = "Shows";
 "StyleSelectView_Likes" = "Likes";
-
 /*StyleHeaderView*/
 "StyleHeaderView_Followed" = "Followed";
 "StyleHeaderView_Following" = "Following";
 "StyleHeaderView_Followers" = "Followers";
 "StyleHeaderView_BeLiked" = "Been Liked";
 "StyleHeaderView_Edit_Profile" = "Edit Profile";
-
 /*CommendUserCell*/
 "CommendUserCell_Posts" = "Posts";
 "CommendUserCell_BeLiked" = "Been Liked";
-
 /*ADD More Friend*/
 "AddMoreFriends_VC_Title" = "Add more friends";
-
 "CommunitySearchNoResultTips" = "Sorry,\n no results matched your search request.";
-
 /*FriendsResultCell*/
 "FriendsResultCell_Posts" = "Posts";
 "FriendsResultCell_BeLiked" = "Been Liked";
-
 /*ContactsViewController*/
 "Contacts_VC_Title" = "Contacts";
 "Contacts_VC_Message" = "Join Z-Me community now! BIG coupons and giveaways are awaiting you. You can also find great shopping experiences and fashion ideas on iOSLanguageLocalized.com.";
 "Contacts_VC_Send" = "Send";
-
 /*FriendsCommendHeadView*/
 "AddMoreFriends_Contacts" = "Contacts";
 "AddMoreFriends_FaceBook" = "Facebook Friends";
 "AddMoreFriends_Suggested" = "Suggested users";
-
 //post topic
 "Post_VC_Post" = "Post";
 "Post_VC_Post_TextView_Placeholder" = "What's on your mind? (0/2000).";
@@ -787,58 +670,43 @@
 "Post_VC_Post_MaxTag_Tip" = "You can only select 6 tags";
 "Post_VC_Post_TextView_Tip" = "Must be under 3000 characters.";
 "Post_VC_Post_Alert_OK" = "OK";
-
 "Post_VC_Post_Success_Tips" = "Successfully posted!";
 "Post_VC_Post_Success_Points_Tips" = "Z Points +30";
-
 /*ZFCommunityShowGoodsPageVC*/
 "GoodsPage_VC_WishList" = "Wish List";
 "GoodsPage_VC_Bag" = "Bag";
 "GoodsPage_VC_Order" = "Order";
 "GoodsPage_VC_Recent" = "Recent";
 "GoodsPage_VC_Done" = "Done";
-
 "Post_ViewModel_Alert_NoItem_Tip" = "You have added this item already";
 "Post_ViewModel_Alert_MaxItem_Tip" = "You can only select 6 items";
-
 /*RecentViewModel*/
 "RecentViewModel_NoData_Title" = "Sorry, we couldn't find any recent items.";
-
 /*ContactsViewModel*/
 "ContactsViewModel_AuthorizationFailure_Title" = "Couldn't access contact";
 "ContactsViewModel_AuthorizationFailure_Message" = "Please allow iOSLanguageLocalized to access your Contacts by going to Settings > Privacy > Contacts";
 "ContactsViewModel_AuthorizationFailure__OK" = "OK";
 "ContactsViewModel_AuthorizationFailure__GoToSetting" = "Go to Settings";
-
-
 /*LikesViewModel*/
 "LikesViewModel_NoData_NotLikes" = "Not liked anything yet";
-
 /*ShowsViewModel*/
 "ShowsViewModel_NoData_NotShowed" = "Not showed anything yet";
-
 "AccountOutfits_NoData_NotOutfits" = "You haven't posted any outfits yet";
 "AccountOtherOutfits_NoData_NotOutfits" = "There are no outfits yet";
 /*TopicViewModel*/
 "TopicViewModel_NoData_FirstJoined" = "Be the first to join";
-
 /*WishlistViewModel*/
 "WishlistViewModel_NoData_CannotFind" = "Sorry, we couldn't find anything in your wish list";
-
 /*MessagesViewModel*/
 "MessagesViewModel_title" = "Messages";
 "MessagesViewModel_NoData_Message" = "Sorry You have no messages yet";
 "MessagesViewModel_Data_Detete" = "The post has been deleted";
-
-
 "FriendsCommendViewModel_Share_Content" = "Hurry up, I need a fashion pal to join me!";
 "ZFShare_Community_post" = "Check this out, I just found something fun!";
 "ZFShare_Community_topic" = "Join this topic with me, let's rock it together!";
 "ZFShare_Community_outfits" = "Hey, I just found an outfit on iOSLanguageLocalized!";
-
 /*FriendsResultViewModel*/
 "FriendsResultViewModel_NoData_Message" = "Sorry,\n no results matched your search request";
-
 "TimeLapse_Later" = "later";
 "TimeLapse_Ago" = "ago";
 "TimeLapse_Secs" = "secs";
@@ -853,30 +721,21 @@
 "TimeLapse_Month" = "month";
 "TimeLapse_Years" = "years";
 "TimeLapse_Year" = "year";
-
 /*DZNEmptyDataSet*/
 "EmptyCustomViewManager_titleLabel" = "Loading failed, please try again later.";
 "EmptyCustomViewManager_refreshButton" = "REFRESH";
 "BlankPage_NetworkError_tipTitle" = "There is no internet connection. Please check your network.";
 "HomeTopBar_NetworkErrorTipTitle" = "Please load or re-login to refresh this page.";
 "EmptyCustomViewHasNoData_titleLabel" = "No data yet";
-
 /*YYPhotoBrowseView*/
 "Save_Picture" = "Save Picture";
-
-
 "ZFTracking_information_title" = "Tracking Info";
 "ZFTracking_number" = "Tracking NO";
 "ZFTrackingNoData" = "No tracking details yet";
 "ZFPackage" = "Package %ld";
-
-
 "ZFOrderList_Learn_more" = "Learn More";
 "ZFOrderInfo_Or"         = "or";
-
-
 "ZFCheckout_mybag" = "My Bag";
-
 /* payMethod */
 "ZFPaymentTitle" = "Choose Payment";
 "ZFPaymentTips" = "Some items in your order support Cash On Delivery. Please choose your payment method first.";
@@ -897,8 +756,6 @@
 "ZFOrderUsedCoupon" = "This coupon has been used";
 "GoodsDetail_ShareIt" = "Share It";
 "GoodsDetail_TellYourFriends" = "Tell your friends";
-
-
 /** 注册登录 */
 "Information_security_LoginAdvice"   = "To ensure your information security, please change your password on a regular basis.";
 "Information_security_publicAdvice"   = "It is recommended that you do not use the same password as other websites.";
@@ -916,8 +773,6 @@
 "Forgot_message" = "An email with the reset link has been sent to %@. Please check receipt.";
 "Forgot_success" = "Successfully sent";
 "email_notRegister" = "This email address has not been registered. Please input again.";
-
-
 /** (订单确认页,订单详情页)价格明细 */
 "TotalPrice_Cell_ProductTotal"  = "Product(s) Total";
 "TotalPrice_Cell_Shipping"      = "Shipping";
@@ -931,52 +786,40 @@
 "TotalPrice_Cell_CODDiscount"   = "COD Discount";   //向下取整
 "TotalPrice_Cell_TotalPayable"  = "Total Payable";
 "TotalPrice_Cell_AirCargoInsurance" = "Air Cargo Insurance"; //向上取整
-
 "shipping_info" = "All parcels have detailed tracking information.";
 "shipping_help" = "Shipping insurance offers protection and safety for your valuable items during international shipping. We’ll reship your package immediately at no extra charge if its reported lost or damaged";
 "CheckOrder_ShippingInfo_CA" = "You may need to pay EXTRA customs clearance fee to DHL before delivery.";
-
 /** 允许推送权限 */
 "PushAllowView_AllowBtnTitle" = "YEP";
 "PushAllowView_NotNow" = "NOPE";
-
-
 /** 收藏成功提示 */
 "Product_Collection_success" = "You have a good taste in fashion.";
 "Product_remover_Collection_success" = "Successfully removed favorited items!";
-
-
 /** 列表总量显示 */
 "list_item" = "%@ item(s)";
-
 /** 3DTouch */
 "3DTouch_icon_Search" = "Search";
 "3DTouch_icon_Favorites" = "Wish List";
 "3DTouch_icon_Bag" = "My Bag";
-
 "3DTouch_Pop_Add_To_Bag" = "ADD TO BAG";
 "3DTouch_Pop_Add_To_Favorites" = "ADD TO WISH LIST";
 "3DTouch_Pop_Remove_Favorites" = "REMOVE WISH LIST";
 "3DTouch_Pop_Cancel" = "CANCEL";
-
 /** 商详页秒杀价 */
 "Flash_sale" = "Flash sale";
 "Ends_in" = "Ends in";
 "Starts_at" = "Starts at";
 "new_member" = "New Users Only";
 "free" = "gift";
-
 /** H5提示 */
 "WebView_SaveImageSuccessTip" = "Download successful! Please share on Z-me!";
 "WebView_SaveImageFailTip" = "Download failed.";
-
 /** 第三方注册提示 */
 "warmPrompt" = "Sign up with social media without having to remember additional passwords. Don't worry, we will never share any of your data or post anything on your behalf.";
 "gender" = "Gender";
 "emailTip" = "We'll send your order confirmation here";
 "register_title" = "We are almost done...";
 "REGISTER" = "REGISTER";
-
 //新版本引导图提示文案
 "Guide_Page1_Title" = "FREE SHIPPING WORLDWIDE";
 "Guide_Page1_SubTitle" = "SPEND $49 TO GET FREE STANDARD SHIPPING\n SPEND $99 TO GET EXPRESS SHIPPING";
@@ -986,7 +829,6 @@
 "Guide_Page3_SubTitle" = "JOIN US TO GET INSPIRED in Z-Me\n CONTEST A OR B IN Battle of Z points \n Share & Get It Free";
 "Guide_Register_Button" = "REGISTER";
 "Guide_PushNotifycation_title" = "4TH Anniv.";
-
 // 社区穿搭
 "community_outfistpost_counttost" = "You can add no more than 15 products.";
 "community_outfit" = "Outfits";
@@ -1009,7 +851,6 @@
 "community_post_simalar" = "Similar";
 "community_show_new"                    = "Showcase";
 "community_outfit_new"                  = "Outfit";
-
 // 支付成功页
 "paySuccess_Point" = "You earnt %@ Z points for this order! Upload a post in Z-me to get another 20 Z points.";
 "orderListButton"  = "Check Your Order";
@@ -1018,7 +859,6 @@
 "Address"       = "Address";
 "paySuccess_title" = "Payment Result";
 "Payment_Success" = "Payment Successful";
-
 // 以图搜图
 "inputPlaceHolder" = "Search your picture";
 "SDKFilureTip"     = "No results found";
@@ -1028,17 +868,13 @@
 "result"           = "Results";
 "crop_tip"         = "Click the image to select what section you want to search.";
 "crop_title"       = "Please crop what you want to search";
-
-
 // 搜索结果页
 "search_result_matches_tip" = "Oh no! No matches: %@";
 "search_result_matches_keyword" = "Do you mean:";
 "search_result_matches_title" = "There are %@ results for %@";
 "search_result_matches_viewall" = "View All";
-
 // 社区邀请通讯录好友
 "ContactsVC_HasNoDataTips" = "Sorry, your contact list is empty";
-
 // 社区帖子详情
 "community_topicdetail_liked"         = "Liked %@";
 "community_topicdetail_like"          = "Like %@";
@@ -1057,37 +893,26 @@
 "community_topic_relateempty"         = "Currently no relavant items";
 "community_topic_commenttitle"        = "Comments";
 "community_topic_commentempty"        = "No comments. Be the first to leave one.";
-
 //社区首页 FollowList
 "suggestionForYou" = "SUGGESTIONS FOR YOU";
 "seeMore" = "See More";
 "Community_shows_top" = "Top";
-
 "payNow_failure" = "Internet connectivity issue. Please resubmit your order.";
-
 "unline_similargoods_title" = "Similar items";
 "cart_unline_findsimilar_tag" = "Find Similar";
-
 "refresh_pull_down" = "Swipe down for exciting surprises!";
 "refresh_release"   = "Release for exciting surprises!";
 "refresh_loading"   = "Loading...";
-
 // ==================================== V3.6.0 ====================================
-
 "NewVersionGuide_ShopIn" = "SHOP IN";
 "NewVersionGuide_Change" = "CHANGE";
 "NewVersionGuide_GoShopping" = "GO SHOPPING";
-
 "native_banner_share" = "iOSLanguageLocalized - My Fashion Story";
 "NEW" = "NEW";
 "POPULAR" = "POPULAR";
 "HOT" = "HOT";
-
-
 // ==================================== V3.7.0 ====================================
 "paySuccess_usePoint" = "Upload a post in Z-me to get more 20 Z points";
-
-
 // ==================================== V3.8.0 ====================================
 "Edited_successfully" = "Edited successfully";
 "Leave" = "Leave";
@@ -1112,8 +937,6 @@
 "Push_Notifications_Settings" = "Notifications Settings";
 "Push_Notifications" = "Notifications";
 "Push_Enable" = "Enable";
-
-
 "Detail_Product_Coupons_Tips" = "Collection Of Coupons";
 "Detail_Product_CouponsList_Title" = "Coupons";
 "Detail_ReceiveCouponTitle" = "RECEIVE";
@@ -1122,18 +945,14 @@
 "Detail_ReceiveCouponFail" = "Oops! Failed to claim. Please try again later.";
 "Detail_CouponClaimed" = "Expired";
 "Detail_CouponUsedUp" = "Used up";
-
 // ==================================== V3.6.1 ====================================
-
 "Register_ChooseGender" = "Please select your gender";
 "Register_ChooseGender_Sure" = "Sure";
 "Community_AccountShowsBtn" = "Posts";
 "Community_AccountFollowBtn" = "Follow";
 "Community_AccountLiked" = "Liked";
 "Community_outfitBuilderTitle" = "Customize Your Own Fashion Outfits";
-
 // ==================================== V3.7.0 ====================================
-
 "CODVerify_NoteTip" = "Note: you may have difficulty in choosing COD as payment method in the future if you rejected a COD order upon delivery.";
 "COD_SMS_5-10WorkingDays" = "5-10 working days";
 "COD_SMS_Description1" = "1.Estimated time for delivery: ";
@@ -1143,7 +962,6 @@
 "VerificationView_showButton_titile" = "CONFIRM & SEND SMS";
 "SOAPayMentCancelContent" = "Are you sure you want to cancel this payment?";
 "CartVC_AddCarFiale_tip" = "Failed to add to cart";
-
 // ==================================== V3.9.0 ====================================
 "PiecingOrderVCTitle_AddItems" = "Add Items";
 "ModifyAddress_Enter_your_delivery_city" = "Enter your delivery city";
@@ -1154,14 +972,12 @@
 "community_xx'sFashion_Shop" = "%@'s Shop";
 "Post_VC_Add_photo" = "Add a photo";
 "Post_Goods_Hot" = "Hot";
-
 "Home_Channel_Recently_Title" = "RECENTLY VIEWED";
 "History_View_Title"          = "Recently Viewed";
 "Home_Channel_Recently_Clear" = "CLEAR";
 "Search_Tool_tip"             = "Click on the button below to search for the items you’re looking for.";
 "Handpick_RecommendedBg_tip"  = "Recommended for you";
 "HandpickVC_title_Swinwear"   = "Featured";
-
 "Search_Tool_Camera"          = "Camera";
 "Search_Tool_Photos"          = "Photos";
 "Search_Tool_Morel"           = "More";
@@ -1169,7 +985,6 @@
 "CarPiecing_PayMoreTips" = "%@ from free standard shipping";
 "OrderDetail_UnRefundTips" = "Your order does not qualify for automatic returns. Please contact us.";
 "OrderDetail_Apologies" = "Apologies";
-
 // ==================================== V3.9.1 ====================================
 "GameLogin_EmailPlaceHold" = "We will not send you any marketing emails.";
 "GameLogin_OtherLoginMethod" = "Alternative login methods";
@@ -1182,12 +997,10 @@
 "GameLogin_GuestOrderDetailSee" = "See details";
 "OrderDetail_CancelManyOrderTip" = "Please select the order you wish to cancel.";
 "OrderDetail_SureWantToRefund" = "Are you sure you want to apply for a refund?";
-
 "MyCoupon_Only_for_Standard_Shipping" = "Only for Standard Shipping";
 "MyCoupon_FREE_SHIPPING" = "FREE SHIPPING";
 "GameLogin_GuestUser" = "Guest User";
 "GameLogin_GuestUserTips" = "This is your temporary account. Click on settings, then go to “Set up Password” to register.";
-
 // ==================================== V4.1.0 ====================================
 "Languge_Setting_German"  = "Deutsch";
 "Public_items_Found" = "%@ items Found";
@@ -1195,59 +1008,42 @@
 "ReviewFilter_All"           = "All";
 "ReviewFilter_Recent"        = "Recent";
 "ReviewFilter_Picture"       = "With Pictures";
-
-
 // ==================================== V4.2.0 ====================================
 "Languge_Setting_Indonesia"    = "Indonesia";
 "Guest_Sales_Tips_title"       = "Student Discount";
 "Guest_Sales_Tips_Content"     = "Congrats! You're now eligible for student discount with iOSLanguageLocalized.";
 "StudentVIP_Discount_Title"    = "Student Discount";
 "SupreSutdentVIP_Discount_Title" = "Supreme Student discount";
-
 // ==================================== V4.3.0 ====================================
 "goodsdetail_navigationonline_tip" = "Please contact our customer services if you have any queries.";
-
 "CountDownTimer_Day" = "D";
-
-
 // ==================================== V4.4.0 ====================================
 "CarVC_AddedWishlist_Title" = "Move to Wishlist";
 "CarVC_AddedWishlist_Success" = "Added to your Wishlist";
-
-
-
 "community_get_gift" = "Get her gift";
 "community_get_draw" = "Join her draw";
 "community_Buy" = "Buy";
 "Address_List_Cell_No_Support_Mail" = "Express is unavailable to this area";
 "order_detail_count_down_remind" = "Pay now so that we can deliver now.";
-
 "you_may_also_like" = "You may also like";
 "first_change_country_tip" = "Your delivery address will be changed with your current region, are you sure to continue?";
 "first_change_country_CONTINUE" = "CONTINUE";
 "first_change_country_CANCEL" = "CANCEL";
-
-
 // ==================================== V4.5.0 ====================================
-
 "community_Home_Z-Me_Guide" = "Welcome to Z-Me! Here you can share your fashion stories";
 "community_Home_Topic_Guide" = "Here you can take part in fashion topics";
 "community_PostDetail_Share_Guide" = "Here you can share any shows or outfits that you like";
 "community_PostDetail_Buy_Guide" = "You can buy this outfit here";
 "community_Post_Show_Relate_Goods_Guide" = "Add the products in your photos";
 "community_Post_Outfit_Filter_Goods_Guide" = "Filter the products you like";
-
 "ModifyAddress_Check_Address_Title" = "Add a new address";
 "ModifyAddress_Check_Address_Original" = "Original address:";
 "ModifyAddress_Check_Address_Suggested" = "Suggested address:";
 "ModifyAddress_Check_Address_Tip" = "there's a probelm with the address provided -we've marked our suggestions in red below.please choose or edit which version of the address you want to use.";
-
 "Confirm" = "Confirm";
 "Next_Step" = "Next Step";
-
 "Languge_Setting_Thai" = "Thai";
 "Upgrade_Now" = "Update now";
-
 "choose_tax_shipping" = "* NOTE: Your order will be sent to Peru. If you choose Standard Shipping, please fill in your DNI number (ID card number) to enable a smooth clearance and delivery.";
 "checkout_shipping_tax_remind" = "Tax number required";
 "Car_Header_Add_Codes" = "Add Codes";
@@ -1255,39 +1051,30 @@
 "Car_Header_Promotion_Code" = "Promotion Code";
 "Car_1Code_Applied" = "1 Code Applied:";
 "Car_Available_Coupons" = "Available Coupons";
-
 // ==================================== V4.5.1 ====================================
-
 "paySuccessPendingTipsTitle" = "We appreciate your shopping! Your order has been submitted successfully.";
 "paySuccessPendingTipsContent" = "There is a little delay for payment status confirmation, please come back to check your order status a few minutes later.";
 "paySuccessPendingTipsCodTitle" = "Please confirm your delivery information by clicking the link in the SMS we sent to you. (If you have confirmed, please ignore this message)";
 "community_post_detail_swipe_guide" = "Slide to the left to switch to the next outfit";
 "community_post_detail_shop_now" = "shop now";
 "community_post_detail_no_more_outfits" = "No more outfits";
-
 "modifyAddress_countryCity_city" = "City";
 "modifyAddress_countryCity_country" = "Country/Region";
 "modifyAddress_countryCity_state" = "State/County";
 "modifyAddress_countryCity_village" = "Barangay";
 "ModifyAddress_Village_Placeholder" = "Barangay";
 "ModifyAddress_Village_TipLabel" = "Please enter the Barangay";
-
 "GroupBuyDetail_StatusTipText" = "Tips: If you successfully form a team, you will definitely get your desired item; One of your team members will also be selected to receive an item.";
-
 "GroupBuyDetail_ruleText" = "1. All iOSLanguageLocalized members can start a \" Form a Team to Win\" activity by following these steps: select your desired item, invite friends to form a team, recruit the required number of members, receive the item free of charge.\n\n2. The system will randomly select one member from your team, and gift them one of the selected items. You can ask your team members to help you continue sharing. The more you share, the higher your chances of being selected.\n\n3. After successfully forming a team, we will send the desired item’s coupon code to yours and the winning team member’s account. You can use the coupon to generate an order for $0.01 and then pay to complete it.\n\n4. Any form of cheating is forbidden. If discovered, the coupons will be withdrawed. (If one IP address repeats two times in one event, it is considered cheating.)\n\n5.Here are at most 10 times for each user to join every day,iOSLanguageLocalized reserves the right to final interpretation of this activity.";
-
 "Account_Survey" = "Satisfaction Survey";
 "OrderDetail_returnReason" = "Reason for return";
 "Order_reason_for_refund" = "Explain the reason for your refund";
 "Order_inputReason" = "Input your reason";
-
 "Languge_Setting_繁體中文" = "繁體中文";
 "Languge_Setting_Italiano" = "Italiano";
 "Languge_Setting_Português" = "Português";
-
 "Rules" = "Rules";
 "Seckill_For_New_User" = "Seckill For New User";
-
 "newcomer_check_it" = "Check It >";
 "newcomer_no_login" = "Login or Sign up Now";
 "group_rule" = "Rules";
@@ -1296,19 +1083,14 @@
 "text_gone" = "GONE";
 "snap_up_now" = "SNAP UP NOW";
 "text_starting_soon" = "STARTING SOON";
-
-
 // ==================================== V4.5.3 ====================================
 "Community_shows_lookbook" = "Look book";
 "Community_post_detail_link" = "link";
-
 //"OrderInfo_COD_Apologies_Msg" = "You have cod orders that have not been signed on the way, please sign for completion After that, cod settlement method can be used again. If in doubt, contact customer service staff.";
 "OrderInfo_COD_Apologies_Msg" = "You have COD orders that haven't been paid for. You can only process another COD after you've completed the current one. If you have any questions, please contact customer services.";
-
 "OrderInfo_CheckSafety_Msg" = "Testing your equipment for a safe payment environment. Please be patient.";
 "OrderInfo_CheckSafety_Msg2" = "Safety Guarantee\nPlease be patient.";
 "OrderInfo_CheckSafety_Title" = "Safety Guarantee";
-
 "group_use_coupon" = "Use coupon";
 "group_keep_building_team" = "Keep building team";
 "group_congrats" = "Congrats! You joined a group! Do you want real-time notifications?";
@@ -1323,7 +1105,6 @@
 "txt_my_free_order" = "My Free Order";
 "group_my_team" = "My team";
 "group_ends_at" = "Ends at:";
-
 // ==================================== V4.5.4 ====================================
 "Community_review_translate_default" = "Default";
 "Community_review_translate_change" = "Change";
@@ -1335,7 +1116,6 @@
 "cart_soldOut" = "Sold Out";
 "goodsShows_noRelatedItem" = "No related items";
 "goodsShows_noRelatedPosts" = "No related posts";
-
 // ==================================== V4.5.5 ====================================
 "QuestionVC_Title" = "Payment Survey";
 "Question_TitleHeader" = "Your opinion is very important to us. We appreciate your feedback and will use it to  make improvements for your better experience at iOSLanguageLocalized. We will ensure the safety of your information, please feel free to fill out this form.";
@@ -1360,9 +1140,6 @@
 "PaySDK_ContinuePayment" = "NO, CONTINUE PAYMENT";
 "PaySDK_PaymentSurvey" = "PAYMENT SURVEY";
 "Question_backOrders" = "BACK TO MY ORDERS";
-
-
-
 // ==================================== V4.5.4 ====================================
 "Community_outfit_goods" = "Items";
 "Community_outfit_border" = "Frames";
@@ -1370,17 +1147,13 @@
 "Community_topic_post_1st" = "1st";
 "Community_topic_post_2nd" = "2nd";
 "Community_topic_post_3rd" = "3rd";
-
-
 // ==================================== V4.5.6 ====================================
-
 "Community_LivesListVC_Title"        = "Z-Me Popular Livestream";
 "Community_Lives_Livestreams"        = "Livestreams";
 "Community_Lives_Videos"             = "Videos";
 "Community_Lives_Live_Views"         = "Views";
 "Community_Lives_Live_Goods"         = "Items";
 "Community_Lives_Live_Start_In"      = "Livestream starts at";
-
 "Community_LivesVideo_Host" = "Host";
 "Community_LivesVideo_No_Wifi_Play_Msg" = "You are currently using your mobile data, do you want to continue？";
 "Community_LivesVideo_No_Wifi_Play_Cancel" = "Cancel";
@@ -1413,7 +1186,6 @@
 "Car_Empty_ForNewUser" = "15% OFF For New Users";
 "Car_Empty_PickYouLike" = "Please pick what you like";
 "Detail_GroupBuy_GetItFreeTitle" = "Get It Free";
-
 // ==================================== V4.5.7 ====================================
 "OrderInfo_check_change_x_address" = "Change to %@ site";
 "OrderInfo_page_free" = "FREE";
@@ -1442,17 +1214,14 @@
 "OrderInfo_priceList_subtotal_total" = "Sub-total";
 "OrderInfo_check_error_address_cancel" = "Cancel";
 "CarVC_add" = "Add";
-
 "Detail_Only_count_left" = "Only %@ left";
 "Detail_Ends_in" = "Ends in";
 "ListTimeCountDown_Tip" = "Flash sale";
-
 "OrderInfo_priceList_supermeStudent_discount" = "Supreme Student discount";
 "OrderInfo_priceList_insurance_discount" = "Air Cargo Insurance";
 "OrderInfo_priceList_ZpointToSave" = "Z Points = Savings";
 "OrderCheckCoupon_NoCouponTips" = "Input the coupon code into the box to use the coupon.";
 //=============V4.6.0===============
-
 "Account_birthday_tips" = "Enter your birthday and we’ll send you a gift on the day";
 "Account_birthday_enter" = "Please enter your birthday";
 "Account_birthday_gain" = "Get your birthday gift";
@@ -1506,7 +1275,6 @@
 "Customer_quickly_creating_account" = "Checkout quickly without creating an account.";
 "Order_received_share_everyone" = "You’ve received your order. Please share your views with everyone.";
 "Coupon_input_code_box_use_coupon" = "Input the coupon code into the box to use the coupon.";
-
 //=============V4.8.0===============
 "Detail_Similar_Items" = "Similar Items";
 "Review_1stPhoto" = "It's already the 1st photo";
@@ -1519,11 +1287,8 @@
 "OrderInfo_PagoPayCIPCode" = "CIP Payment Code";
 "OrderDetail_UpdateAddressTitle" = "Address updated";
 "Title_ShippingMethod" = "Shipping Method";
-
 //=============V4.9.0===============
 "Video_Live_Cart_Tip" = "You can enter your shopping cart from here";
-
-
 //=============V5.0.0===============
 "OrderInfo_PCCTips" = "Note: Please enter your PCC Code or your date of birth. (YYYYMMDD. E.g. 19950512) This will ensure a smooth customs clearance and delivery.";
 "OrderInfo_PCCErrorTips" = "You entered your PCC Code or date of birth incorrectly";
@@ -1535,7 +1300,6 @@
 "Cart_Match" = "Match";
 "OrderDetail_CancelOrderTips" = "Order will be canceled after";
 "homeSearchTitle" = "what are you looking for";
-
 //=============V5.1.0===============
 "Live_Enter_Room" = "Enter livestream room.";
 "Live_Review_Input_tip" = "Chat or ask a question";
@@ -1550,7 +1314,6 @@
 "Live_Pause" = "The host has left for a moment, please wait patiently.";
 "InputTextView_%@_message" = "Must be under %@ characters.";
 //=============V5.2.0===============
-
 "GoodsDetail_Post_MatchItems" = "Matching Items";
 "Account_Wallet" = "Wallet";
 "Home_Don't_Like" = "Don't like";
@@ -1590,7 +1353,6 @@
 "Community_albumPreTips" = "Album permissions are required to save outfits to your photo album";
 "ZFTracking_Delivery" = "Delivery Agency";
 "Community_Outfit_NOContentTips" = "Oops，don't forget to write the outfit ideas";
-
 //=============V5.4.0===============
 "rewardCouponTip" = "When your order is confirmed as received, the first order return coupon will be sent to your account.";
 "Hom_Coupon_Expired" = "Oops! This coupon has already expired. Take a look at some of the others!";
@@ -1604,7 +1366,6 @@
 "sex_select_tip" = "Please select the product category you are most interested in";
 "Hom_Coupon_UnStart" = "It's about to start. Come back in a bit!";
 "sex_Swimwear" = "Swimwear";
-
 "Hom_Coupon_Claimed_Success" = "Claimed successfully";
 "Hom_Coupon_Claimed_Failed" = "Failed to claim. Try again later.";
 "Account_Discover_title" = "Discover";
@@ -1643,9 +1404,7 @@
 "Community_Post_Detail_See_All_Comments" = "See all comments";
 "Tab_New_Account" = "Account";
 "Order_Comment_Send_Account_XXPoints" = "%@ points have been sent to your account";
-
 "Order_Comment_Send_Account_XXPoints_XXCoupon_XXCoupon" = "%@ points +%@ coupon + %@ coupon have been sent to your account";
-
 //=============V5.6.0===============
 "Live_line" = "Line";
 "Login_email_format_error" = "Mailbox format error, please re-enter";
@@ -1679,7 +1438,6 @@
 "Login_bind_email_get15_discount" = "Bind an email to login and get a 15% discount.";
 "Live_switch_line" = "Switch line";
 "Order_cancel_klarna_rexplain" = "Explanation";
-
 "live_live" = "LIVE";
 "coming_soon" = "Coming Soon";
 "Seckil_ended" = "ended";
@@ -1688,12 +1446,9 @@
 "Login_cancel" = "Cancel";
 "Login_commit" = "Submit";
 "SecKil_buy_now" = "BUY NOW";
-
 //=============V5.7.0===============
 "Account_Change_Photo" = "Change your photo";
-
 //=============V5.8.0===============
-
 "Express_delivery_tip" = "Express delivery only supports English addresses. Please use English as much as possible, thank you.";
 "Express_modifyFistStr" = "Express delivery only supports English addresses. To continue using this service, ";
 "Express_modifyLastStr" = "please edit your address.";
@@ -1706,9 +1461,7 @@
 "NotifyMe_successful" = "We'll notify you as soon as the product is back in stock.";
 "Notify_Me" = "NOTIFY ME";
 "NotifyMe_successful_title" = "YOU'RE ALL SET";
-
 //=============V5.9.0===============
-
 "Reminder" = "Reminder";
 "Reminder_dispatch_Tip" = "We have sent a reminder to dispatch your goods. Please wait.";
 "Reminder_transit_Tip" = "Your goods are currently in transit. Please wait.";
@@ -1722,7 +1475,6 @@
 "Search_Feedback" = "-Send Feedback >";
 "Modifier" = "MODIFY";
 "Goodsdetail_Bottom_OutOfStock" = "Out of stock. Back in stock soon.";
-
 //=============V6.0.0===============
 "Community_has_subscribe_live" = "Subscribed";
 "Community_cancel_subscribe_success" = "Canceled";
@@ -1738,11 +1490,9 @@
 "Order_Unavailable_Goods_tips" = "The following items are unavailable, please reconfirm your order amount.";
 "Community_subscribe_success_tip" = "Subscribed successfully! You will be notified when the livestream is 5 minutes away from starting";
 "Search_NotGoods_Tip_A" = "Your search %@ did not match any products.Did you mean %@?";
-
 "goods_match_tops" = "Match tops";
 "goods_match_bottoms" = "Match bottoms";
 "Detail_VIEW_BAG" = "VIEW BAG";
-
 //=============V6.1.0===============
 "Total_order_amount" = "Total order amount: ";
 "Order_BankTransfer_Bank_Account" = "Bank Account ";
@@ -1772,9 +1522,7 @@
 "Order_BankTransfer_SWIFTCODE" = "SWIFTCODE";
 "Account_recommend_title" = "Recommended";
 "Order_BankTransfer_BankAccount" = "Bank Account ";
-
 "FAQ_Support_Center" = "Support Center";
-
 //=============V6.2.0===============
 "ModifyAddress_State_Placeholder_UK" = "*County";
 "ModifyAddress_Address2_Placeholder_UK" = "Address Line 2: Apartment, Suite, Unit, Floor";
@@ -1784,7 +1532,6 @@
 "ModifyAddress_State_TipLabel_UK" = "Please enter the consignee's County";
 "modifyAddress_countryCity_state_UK" = "County";
 "Print_Konbini_Info" = "Print Konbini Info";
-
 "Swim_outfit_top_size" = "TOPS SIZE";
 "Swim_outfit_bottom_size" = "BOTTOMS SIZE";
 "Swim_outfit_see_detail" = "details";
@@ -1793,7 +1540,6 @@
 "Swim_oufit_preview_tip" = "Click items below to add them to the preview window↓";
 "Search_busy_try_later" = "Search busy, please try again later";
 "Search_try_again_text" = "try again";
-
 //=============V6.3.0===============
 "ReviewsFilter_MostRecent" = "Most Recent";
 "ReviewsFilter_MostRecentToOldest" = "Most Recent to Oldest";
@@ -1802,7 +1548,6 @@
 "ReviewsFilter_HighestToLowestRating" = "Highest to Lowest Rating";
 "ReviewsFilter_LowestToHighestRating" = "Lowest to Highest Rating";
 "GoodsDetail_ReturnsWarranty" = "30 Days Returns Warranty";
-
 //=============V6.4.0===============
 "OrderList_SizeCheck" = "Size Check";
 "ModifyAddress_Address1_Placeholder_PH" = "Address1*: House number,Building and Street name";
@@ -1835,7 +1580,6 @@
 //=============V6.7.0===============
 "iOSLanguageLocalized_NEW" = "iOSLanguageLocalized NEW";
 "TabBar_New" = "New";
-
 //=============V6.8.0===============
 "Gift_Card" = "Gift Card";
 "NO_Gift_Card" = "No Gift Card";
@@ -1847,7 +1591,6 @@
 "PayOrderCannel_Title_Tips" = "This product has %@ of positive ratings. Are you sure you want to cancel this payment?";
 "PayOrderCannel_Buy_Tips" = "Recently Purchased";
 "PayOrderCannel_Wish_Tips" = "Recently Saved";
-
 //=============V6.9.0===============
 "ShareView_normalTips" = "Share to your friends";
 "ShareView_Rewards_Title" = "Share for Rewards";
@@ -1856,7 +1599,6 @@
 "Points_Redeem_Alert_Title" = "Points Sale";
 "Points_Redeem_Alert_Get" = "How to get xxx";
 "Points_Redeem_Save" = "Save";
-
 //=============V7.1.0===============
 "login_PrivacyPolicy" = "Privacy Policy";
 "login_agree_termsPrivacy" = "I agree iOSLanguageLocalized's Terms & Conditions and Privacy Policy.";
@@ -1870,20 +1612,16 @@
 "login_agree_termsConditions" = "I agree to iOSLanguageLocalized.com Terms and Conditions";
 "login_termsConditions_link" = "Terms and Conditions";
 "home_coupon_alert_expires_on" = "Expires on";
-
 //=============V7.1.1===============
 "Setting_Check_updates" = "Check for updates";
-
 //=============V7.1.2===============
 "Goodsdetail_Other_ShareTitle" = "I thought you might like this! Hurry,because it might sell out quick!💖 >>";
 "Goodsdetail_Facebook_ShareTitle" = "I discovered great products on iOSLanguageLocalized.com. 😍";
 "outfit_items_limit_count_tip" = "You can add up to %@ items at the same time!";
 "Goodsdetail_Email_ShareTitle" = "I discovered great products on iOSLanguageLocalized.com,come check them out! 😍 >>";
 "Goodsdetail_ShareTitle" = "I thought you might like this!";
-
 "new_user_price_tip" = "New User Price";
 "new_user_limt_purchase_tip" = "1 Purchase per new user for New User Price.";
-
 //=============V7.2.0===============
 "login_one_letter" = "At least one letter";
 "login_not_you" = "Not you?";
@@ -1916,9 +1654,7 @@
 "Added_to_wishlist" = "Added to wishlist";
 "Removed_from_wishlist" = "Removed from wishlist";
 "View_my_wishlist" = "View my wishlist";
-
 "MyCoupon_Coupon_Available" = "Available";
-
 //=============V7.2.4===============
 "Cancel_order_reset_items" = "You can cancel the order, return the goods to the shopping cart and repurchase.";
 "Cancel_order_eidt_address" = "You can click the edit icon to modify the address";
@@ -1936,8 +1672,6 @@
 "Outfit_share_placehoder" = "Isn't it just chic looking?Check it for me!";
 "Outfit_share_inZ-me" = "Share in Z-me";
 "Outfit_share_get_30point" = "You will earn 30 Z points.";
-
-
 //=============V7.2.7===============
 "TaxPop_vat" = "Tax type";
 "TaxPop_rate" = "rate";
@@ -1962,15 +1696,12 @@
 "review_recomendados_sub_ads" = "Pick your faves";
 "review_give_up" = "Give Up";
 "review_more_10_words" = "Write 10+ words for chance to get";
-
 "how_get_points" = "How to get？";
 //=============V7.3.0===============
 "only_shows_3_months_coupons" = "This list only shows the used/expired coupons in recent 3 months";
-
 "empty_here_tip" = "It is empty here";
 "FirstAddress" = "Address Line 1";
 "SecondAddress" = "Address Line 2";
-
 //=============V7.3.1===============
 "OrderList_notifications" = "【Allow Notifications regarding your Order Status & Tracking Information.】";
 "outfits_match_tops" = "Tops";
@@ -1978,12 +1709,10 @@
 "outfits_match_accessories" = "Accessories";
 "detail_buy_together" = "buy together";
 "coupon_expires_soon" = "Expires Soon";
-
 //=============V7.3.3===============
 "but_again_tips1" = "Do you want to add items in this order to shopping cart and buy again?";
 "but_again_tips2" = "Items are back in your bag! However, goods that are out-of-stock may not be added.";
 "Edit_Address" = "Edit Address";
-
 "detail_shipping_to" = "Shipping to";
 "detail_shipping_method" = "Shipping method";
 "detail_shipping_time" = "Shipping time\n(business days)";
@@ -1994,14 +1723,11 @@
 "detail_shipping_click_me_tips" = "Click here For more info and international shipping";
 "detail_shipping_click_me" = "Click here";
 "detail_shipping_not_available_tips" = "The delivery service is temporarily not available in the region you selected. Thanks for your support for iOSLanguageLocalized!";
-
 //=============V7.3.4===============
-
 "promotion_items" = "promotion items";
 "the_following_items" = "The following items";
 "swipe_similar_items" = "swipe to see similar items";
 "cart_empty_login_subTip" = "sign in to check your shopping bag";
-
 //=============V7.3.8===============
 "insured_pageTitle" = "Price Guarantee Program";
 "insured_rules" = "Price Guarantee Program Rules";
@@ -2025,30 +1751,24 @@
 "orderDetail_InsuredPrice" = "Refund of price difference";
 "insured_rateTips" = "There might be slight difference in your refundable amount due to currency exchange rate.";
 "insured_pop_tips" = "For installments, we would send the refund to your original payment account.";
-
 //=============V7.4.0===============
 "address_feedback_tips" = "Can't find your city？Please enter your city.";
 "address_feedback_SuccessTips" = "Thanks for your feed back.";
 "address_feedback_placeholder" = "Enter your city";
 "address_feedback" = "Feed back";
 "Guarantee_Rules" = "Rules";
-
-
 //=============V7.4.2===============
 "NotifyMe_Title" = "Back in stock reminder";
 "NotifyMe_SubTitle" = "we will notify you when your item is back in stock";
 "NotifyMe_Rules" = "send me exclusive newsletter and offers from iOSLanguageLocalized";
 "NotifyMe_NotityMe" = "notify me";
 "NotifyMe_Stock_EmailTips" = "If the sku is in stock，an email will be sent to you";
-
 "Guide_NewUser1" = "New Users";
 "Guide_NewUser2" = "15% OFF";
 "Guide_NewUser3" = "for your first order";
-
 "sex_choose_content" = "Choose Your Preference";
 "PushView_title" = "Receive sales and order information timely";
 "PushView_content" = "Turn on message notifications to get information on logistics progress, price drop and sales.";
-
 "EmailVerify_Title" = "Email verification";
 "EmailVerify_receive" = "Receive";
 "EmailVerify_100Zpoint" = "100 Zpoints +";
@@ -2058,7 +1778,6 @@
 "EmailVerify_errorTips" = "The email has been used by others. Please specify another email address.";
 "EmailVerify_SubmitTips" = "Check %@ for confirmation email";
 "EmailVerify_Submitted" = "Submitted";
-
 "MyPoints_getPoints" = "Get points";
 "MyPoints_pointsBalance" = "Zpoints balance";
 "MyPoints_noExpiredPointsTips" = "No expired Zpoints within past 30 days";
@@ -2068,11 +1787,9 @@
 "New_user_Unlock" = "Unlock";
 "New_user_Register_get" = "REGISTER AND GET";
 "MatchBuy_get_the_look" = "GET THE LOOK";
-
 //=============V7.4.4===============
 "Self_Service" = "Self-Service";
 "View_The_Look" = "View the look";
-
 //=============V7.4.5===============
 "Account_Security" = "Account Security";
 "Account_Security_account" = "My Account";
@@ -2081,21 +1798,15 @@
 "Account_Security_Verified" = "Verified";
 "Account_Security_delete_account" = "Delete My Account";
 "Address_edit_addressNumberTips" = "We recommend entering the house/building number to assist with delivery.";
-
 //=============V7.4.6===============
 "Tracking_Websites" = "Tracking websites >";
-
 "Cart_new_user_guide_tip" = "Rules:\n1. Each new user would only get one New-User-Price item. \n2. Click the \"change\" button and choose the item to enjoy the discount. ";
 "Cart_new_user_rules_tip" = "Each new user would only get one New-User-Price item.";
-
 //=============V7.4.6===============
 "Suit_Set" = "Set";
-
 //=============V7.4.8===============
 "Clearance_Tag" = "CLEARANCE";
-
 "Clearance_Tip" = "Coupons/points can\'t be applied to the items under clearance/sale.";
-
 //=============V7.4.9===============
 "Korea_clause_0" = "All confirmed and I agree.";
 "Korea_clause_1" = "Full Consent includes consent for required and optional information, and you can choose to consent individually. You can use the service even if you refuse to agree to the selection.";
@@ -2108,7 +1819,6 @@
 "Korea_clause_8" = "[Optional] Agree to receive emails";
 "Korea_clause_9" = "[Optional] Agree to receive SMS and SNS";
 "Korea_clause_10" = "[Optional] Agree to receive app pushes";
-
 //=============V7.5.0===============
 "Cart_UnavailableCoupons" = "Unavailable coupon(s)";
 "Select_Coupon" = "Select Coupons";
@@ -2117,20 +1827,16 @@
 "Cart_MoreRnjoyShipping" = "Buy %@ more to enjoy FREE STANDARD SHIPPING !";
 "Cart_SelectCouponSave" = "Save %@ ! Promo code has been applied to your order!";
 "Cart_InputCode" = "Input code";
-
 //=============V7.5.1===============
 "tip_add_to_cart_success" = "Added to bag";
 "text_menu_share" = "Share";
-
 //=============V7.5.5===============
 "Copy_Success_Share_Link" ="Copied successfully! Share the link with your friends to win the chances!";
 //=============V7.5.7===============
 "suit_original_price" = "Original price";
 "suit_please_choose_size" = "Please Choose Size";
-
 //=============V7.5.8===============
 "Buyer_Protection" = "Buyer Protection";
-
 //=============V7.6.0===============
 "Push_content_tips" = "Enable push notifications to receive delivery updates, promotions and more";
 "Push_order_tips" = "Enable push notifications to receive delivery updates, discounts, promotions and other such info.";
@@ -2143,13 +1849,10 @@
 "Push_turn_on_content" = "We'll notify you when this item is back in stock.";
 "Push_turn_on_allow" = "Allow";
 "Push_newuser_shop" = "Shop new user price";
-
 //=============V7.6.1===============
 "Detail_Select_Color" = "Select color";
 "CMS_Coupon_ReceiveD" = "RECEIVED";
-
 "Detail_Model_tip_info" = "Model: %@ | Size %@.";
-
 //=============V7.6.2===============
 "PaySuccessFull_Status" = "Payment successful";
 "PaySuccessFull_paid" = "Paid";
@@ -2166,7 +1869,6 @@
 "Order_Amount" = "Order Amount";
 "Swipe_up_next_page"= "Swipe up to view the next page";
 "Swipe_down_previous_page"= "Swipe down to view the previous page";
-
 //=============V7.6.4===============
 "Shop_this_look" = "Shop this look";
 "Coupon_not_valid" = "Inactive";
@@ -2181,7 +1883,6 @@
 "Share_youwillget" = "YOU'LL GET";
 "Share_signIn" = "Sign in / Register";
 "Not_your_style" = "Not your style?";
-
 "Product_Measurement" = "Product Measurement Chart";
 "Body_Measurement" = "Body Measurement Chart";
 "Selected_size" = "Selected size:";

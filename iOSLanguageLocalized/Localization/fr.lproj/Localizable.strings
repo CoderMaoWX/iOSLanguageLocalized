@@ -1,11 +1,9 @@
 /*
- Localizable.strings
- iOSLanguageLocalized
- 
- Created by zhaowei on 2017/2/13.
- Copyright © 2017年 Y001. All rights reserved.
- */
-
+Localizable.strings
+iOSLanguageLocalized
+Created by zhaowei on 2017/2/13.
+Copyright © 2017年 Y001. All rights reserved.
+*/
 /*GLOBAL*/
 "OK" = "OK";
 "Cancel" = "Annuler";
@@ -19,28 +17,22 @@
 "LESS" = "MOINS";
 "Copy" = "Copier";
 "Success" = "Succès";
-
 "Global_Network_Not_Available" = "Le réseau n'est pas disponible !";
 "Global_Network_Server_Error" = "Erreur d'exception du serveur";
 "Global_Network_Login_First" = "s'il vous plait Connectez-vous d'abord";
 "Global_Network_No_MoreData" = "Plus de données";
 "Global_Network_Illegal_Request" = "Demande illégale";
-
-
 /*ZFBaseViewController*/
 "Base_VC_ShowAgain_TitleLabel" = "NOUVELLE DEMANDE";
 "Base_VC_Mix_Characters_Tip" = "Votre pseudo doit avoir au moins 2 caractères";
 "Base_VC_Max_Characters_Tip" = "Votre pseudo doit faire 35 caractères max.";
-
 "Base_VC_Enter_NickName_Message" = "Entrez le surnom";
-
 //没有数据的提醒词
 "Global_VC_NO_DATA" = "Chargement échoué, essayez à nouveau plus tard";
 //空白页的title
 "Global_EMPTY_TITLE" = "Connexion Internet perdue";
 //没有网络的提醒词
 "Global_NO_NET_404" = "Vérifiez votre réseau";
-
 /*ZFShareViewController*/
 "Share_VC_Cancel" = "Annuler";
 "Share_VC_Shared_Success" = "Partagé avec succès";
@@ -63,18 +55,13 @@
 "Share_VC_CheckOut_Tip" = "iOSLanguageLocalized, vraiment j'<3 ça ! Beaucoup de boutiques sur iOSLanguageLocalized. Allez voir !";
 "Share_VC_GetItFree" = " Partagez & Obtenez-le Gratuitement";
 "Share_VC_GetItFreeTitle" = "Obtenez-le Gratuitement";
-
 "Share_Alert_ThanksSharing" = "Merci pour le partage.";
 "Share_Alert_SharedCheckLinkInMyShare" = "Invitez vos amis en 72h et obtenez l'article gratuitement. Merci de vérifiez dans mes partages";
 "Share_Alert_MYSHARE" = "Mon partage";
 "Share_Alert_LUCKYWINIT" = "GAGNEZ AU TIRAGE AU SORT";
 "Share_Alert_PleaseTryLater" = "Erreur inconnue. Veuillez essayer plus tard.";
-
-
 /*AppDelegate*/
 "AppDelegate_Open" = "Ouvrir";
-
-
 /*OrderListPalView*/
 "ZFPaymentView_Alert_Message" = "Le paiement n'est pas terminé, êtes-vous sûr de vouloir revenir en arrière ?";
 "ZFPaymentView_Alert_No" = "NON";
@@ -82,18 +69,15 @@
 "ZFPaymentView_Close_Title" = "Arrière";
 "ZFPaymentView_TopicAlert_Yes" = "Oui";
 "ZFPaymentView_TopicAlert_Cancel" = "Annuler";
-
 /*OrderFinishViewController*/
 "OrderFinish_VC_TipLabel_One" = "Nous apprécions vos achats !";
 "OrderFinish_VC_TipLabel_Two" = "Votre commande a été soumise avec succès.";
 "OrderFinish_VC_TipLabel_Three" = "Rappelez-vous de votre numéro de commande:";
 "OrderFinish_VC_Account_Button" = "Mon COMPTE";
 "OrderFinish_VC_Home_Button" = "RETOURNER À L'ACCUEIL";
-
 /*OrderFailureViewController*/
 "OrderFailure_VC_Tip" = "Échec de paiement!";
 "OrderFailure_VC_Account_Button" = "Vérifiez ma commande";
-
 /*Sign*/
 "SignIn_Button" = " SE CONNECTER";
 "SignIn_Button_left" = "Se Connecter";
@@ -105,7 +89,6 @@
 "Guide_Skip_Tips" = "PASSER";
 "Continue_As_Guest" = "CONTINUE AS GUEST";
 "login_back" = "Retour";
-
 /*Register*/
 "Register_Button" = "S'inscrire";
 "Register_Button_left" = "S'inscrire";
@@ -120,9 +103,7 @@
 "Register_password_include" = "Le mot de passe doit inclure des lettres et des chiffres.";
 "Register_Confirm_Tip_Password" = "8 Caractères minimum, & 1 nombre.";
 "Register_ConfirmInformation" = "Je confirme que toutes les informations fournies sont les miennes ; Je comprends et accepte qu'elles soient utilisées conformément à la \"Politique de Confidentialité\" de iOSLanguageLocalized. Je peux annuler mon consentement à tout moment.    ";
-
 "Register_AlertSubscribeTitle" = "J'accepte de recevoir des informations marketing sur les produits et services de iOSLanguageLocalized et sur le traitement de mes données personnelles à des fins décrites dans la \"Politique de Confidentialité\" de iOSLanguageLocalized. Je peux retirer mon consentement à tout moment.    ";
-
 "Register_TermsUse" = "Conditions d'Utilisation";
 "Register_PrivacyPolicy" = "Politique de Confidentialité";
 "Register_AgreeTermsOfUser" = "J'accepte les Conditions d'utilisation de iOSLanguageLocalized.";
@@ -131,12 +112,10 @@
 "Information_security_SigningUp" = "En créant votre compte, vous acceptez nos termes d'utilisation, et notre politique de confidentialité.";
 "Information_Register_TermsOfUser" = "termes d'utilisation";
 "Information_Register_PrivacyPolicy" = "politique de confidentialité";
-
 /*Login*/
 "Login_Confirm_Tip_Email" = "Veuillez entrer une adresse mail valide";
 "Login_Confirm_Tip_Password" = "Votre mot de passe doit faire entre 6 et 20 caractères";
 "Login_Terms_Web_Title" = "CONDITIONS D'UTILISATION";
-
 /*Forgot Password*/
 "LoginForgotView_Title" = "MOT DE PASSE OUBLIÉ";
 "LoginForgotView_EmailView_Descripe" = "Confirmez votre identité pour réinitialiser le mot de passe";
@@ -146,21 +125,18 @@
 "LoginForgotView_Valid_Email" = "Merci de mettre une adresse email valide.";
 "LoginForgotView_OK" = "OK";
 "LoginForgotView_Cancel" = "ANNULER";
-
 /*Tabbar*/
 "Tabbar_Home" = "Accueil";
 "Tabbar_Categories" = "Catégorie";
 "Tabbar_Z-Me" = "Z-Me";
 "Tabbar_Wishlist" = "FAVORIS";
 "Tabbar_Account" = "Mon Compte";
-
 /*Home*/
 "Home_SectionHeader_Title" = "ARTICLES POPULAIRES";
 "GoodsSortViewController_Type_Recommend" = "Recommander";
 "GoodsSortViewController_Type_New" = "Nouvelles arrivées";
 "GoodsSortViewController_Type_LowToHigh" = "Prix △";
 "GoodsSortViewController_Type_HighToLow" = "Prix ▽";
-
 /*Category*/
 "Category_VC_Title" = "Catégorie";
 "Category_Item_Segmented_Category" = "Catégorie";
@@ -170,13 +146,11 @@
 "Category_Done" = "TERMINÉ";
 "Category_Price_Range" = "Prix";
 "Category_APPLY" = "APPLIQUER";
-
 "GoodsSort_VC_Title" = "Trier";
 "GoodsRefine_VC_Title" = "Affiner";
 "GoodsRefine_VC_Clear" = "RÉINITIALISER";
 "GoodsRefine_VC_All" = "Tout";
 "CategoryNoDate" = "Désolé, nous n'avons pas trouvé de résultats dans la catégorie %@";
-
 /*Search*/
 "Search_PlaceHolder_Search" = "Trouver";
 "Search_ResultViewModel_Tip" = "Désolé, Nous ne trouvons pas cet article.\n";
@@ -184,9 +158,6 @@
 "Search_ResultHeadView_Sort" = "Trier";
 "SearchHotSearchText" = "Recherche populaire";
 "SearchSearchHistoryText" = "Historique de recherche";
-
-
-
 /*Detail*/
 "Detail_Product_Shipping_Tips" = "Informations d'expédition";
 "Detail_Product_Description" = "Description du Produit";
@@ -205,11 +176,9 @@
 "Detail_Product_Refresh_Footer" = "Plus de commentaires. Donnez-lui un avis et obtenez des Z points !";
 "Detail_Product_GoodsReviewCell_TipLabel" = "Pas d'avis. \n Soyez le premier critique et obtenez 40 Z points !";
 "Detail_Product_GoodsReviewCell_ViewAll" = "Tout voir";
-
 /*GoodsReviewsViewController*/
 "GoodsReviews_VC_Title" = "Commentaires";
 "GoodsReviews_HeaderView_Reviews" = "Commentaires";
-
 /*Bag*/
 "Bag_VC_Title" = "Mon Panier";
 "Bag_RecentHistory" = "Mon historique récent";
@@ -240,39 +209,30 @@
 "CartSelectAllTips" = "Tout Sélectionner";
 "CartSelectAllItemsTips" = "Sélectionner tous les articles";
 "CartSelectItemsTips" = "Sélectionner (%lu)";
-
 "ReturnToBagSuccessfully" = "Articles remis dans le Panier avec succès";
 "ReturnToBag" = "Acheter à nouveau";
 "JumpToCart"  = "Êtes-vous sûr de vouloir ajouter tous les articles de cette commande au panier de nouveau ?";
-
 /*CartOrderInfo Address*/
 "CartOrderInfo_Address_List_Close" = "Fermer";
-
 /*CartInfoGoodsViewController*/
 "CartInfo_Goods_VC_Title" = "Liste de produits";
-
 /*OrderInfoViewModel*/
 "OrderInfoViewModel_manager_insurance" = "0.00";
 "OrderInfoViewModel_valid_coupon_tip" = "Entrez un code de coupon valide.";
 "OrderInfoViewModel_alertMsg_COD" = "L'ordre de remboursement doit être inférieur à %@~%@US$";
 "OrderReviewAgreeToZMe" = "Autorisé à publier sur Z-Me";
-
-
 /*CartOrderInfo*/
 "CartOrderInfo_VC_Title" = "Informations sur la commande";
 "CartOrderInfo_RewardsCell_Instruction" = "Il y a %@ Points dans votre compte, vous pouvez utiliser %@ Points max pour cette commande (économise %@)";
 "CartOrderInfo_RewardsCell_RewardLabel" = "Z Points";
 "CartOrderInfo_RewardsCell_MaxPoint" = "Plus que le nombre max- !";
 "CartOrderInfo_RewardsCell_ThanZero" = "Le point doit être supérieur à 0 !";
-
 "CartOrderInfo_Goods_Items" = "Articles";
 "CartOrderInfo_Goods_Item" = "Article";
-
 "CartOrderInfo_PayMethodCell_PayPalLabel" = "La manière la plus sûre et la plus facile de payer";
 "CartOrderInfo_PayMethodCell_WordPayLabel" = "Payer par carte de crédit directement";
 "CartOrderInfo_PromotionCodeCell_PromotionCodeLabel" = "Code promotionnel";
 "CartOrderInformationBottomView_PlaceOrderBtn" = "Paiement sécurisé";
-
 "CartOrderInfoViewModel_PlaceOrder_NoShipping" = "Désolé, nous ne livrons actuellement pas dans le pays de destination sélectionné.";
 "CartOrderInfoViewModel_PlaceOrder_NoPayment" = "Désolé, votre pays ne peut actuellement pas supporter la méthode de paiement que vous avez sélectionnée.";
 "CartOrderInfoModel_PaymentStatusDone_Alert_Message" = "Votre commande a été soumise avec succès !";
@@ -281,7 +241,6 @@
 "CartOrderInfoModel_PaymentStatusCancel_Alert_Title" = "Paiement annulé";
 "CartOrderInfoModel_PaymentStatusFail_Alert_Message" = "Paiement échoué. Appuyez sur \ 'Payer maintenant \' pour réessayer !";
 "CartOrderInfoModel_PaymentStatusFail_Alert_Title" = "Paiement échoué";
-
 /*CartOrderInfo Coupon*/
 "CartOrderInfo_CouponSelect_VC_Title" = "Mon coupon";
 "CartOrderInfo_CouponCode" = "Code promo";
@@ -291,45 +250,33 @@
 "CartOrderInfo_MyCouponPickerView_Component_NotToUse" = "JE NE VEUX PAS L'UTILISER";
 "CartOrderInfo_MyCouponPickerView_Title" = "Mon coupon";
 "CartOrderInfo_UnableCouponCell_Tip" = "Je ne veux pas l'utiliser";
-
 //CartOrderInfo TotalPrice Cell
 "CartOrderInfo_TotalPrice_Cell_AirCargoInsurance" = "Assurance pour le transport aérien";
 "CartOrderInfo_TotalPrice_Cell_PayNow" = "PAYER";
-
 //CartOrderInfo ShippingInsuranceCell Cell
 "CartOrderInfo_ShippingInsuranceCell_Cell_ShippingInsurance" = "L'assurance d'expédition";
-
 //CartOrderInfo ShippingMethodSubCell Cell
 "CartOrderInfo_ShippingMethodSubCell_Cell_OFF" = "OFF";
-
 /*Free Gift*/
 "FreeGift" = "Cadeaux Gratuits";
 "FreeGift_Rule_Content" = "iOSLanguageLocalized donne des cadeaux gratuits aux clients qui nous soutiennent pendant les événements. Les clients peuvent choisir tous les cadeaux en bas de la page en cliquant sur le bouton \"Ajouter au panier\" tant que le montant total du panier répond aux critères. Les cadeaux diffèrent selon les sections et un montant d'achat plus élevé correspond à un montant plus élevé de choix de cadeaux. Cependant, on peut choisir qu'un cadeau dans chaque section. N'hésitez pas à contacter notre service clientèle en ligne si vous avez d'autres questions.";
 "FreeGiftDetail_AddCartTips" = "Il y a déjà un cadeaux gratuit dans votre panier. Voulez-vous l'échanger ?";
 "FreeGiftsVC_HasNoDataTips" = "Désolé, aucun cadeau n'est disponible dans l'immédiat.";
-
-
 /*VerificationView*/
 "VerificationView_titleLabel" = "Avant de passer commande, veuillez noter :";
 "VerificationView_alretLabel_error" = "Erreur de code de vérification";
 "VerificationView_alretLabel_empty" = "Code de vérification vide";
-
-
 "VerificationView_detailLabel" = "Pour la sécurité des commandes, nous vous enverrons un message à votre adresse de livraison sur le numéro de téléphone enregistré, veuillez donner le code de vérification ci-dessous";
-
 "VerificationView_codeField" = "Entrez le code de vérification correct.";
 "VerificationView_VERIFY" = "VÉRIFIER";
-
 /*Wishlist*/
 "Collection_VC_Title" = "Mes favoris";
 "CollectionViewModel_NoData_Tip" = "Trouvez les derniers styles et ajoutez vos favoris !";
-
 /*Account*/
 "Account_VC_Title" = "Mon Compte";
 "Account_VC_SignOut_Alert_Message" = "Êtes-vous sûr de vous déconnecter?";
 "Account_VC_SignOut_Alert_No" = "NON";
 "Account_VC_SignOut_Alert_Yes" = "OUI";
-
 "Account_SignIn_SignUp" = "Se connecter / S'inscrire";
 "Account_Welcome_iOSLanguageLocalized" = "Bienvenue sur iOSLanguageLocalized";
 "Account_TopInfo_ZmeHome" = "Z-me";
@@ -350,14 +297,12 @@
 "Account_View_and_edit_profile" = "modifier mon profil";
 "AccountCountry_VC_SelectedCountry" = "Pays/Région Sélectionné";
 "AccountCountry_VC_Title" = "Changer le Pays";
-
 "AccoundHeaderView_SelectPhotoTitle" = "Paramétrer la Photo de Profil";
 "AccoundHeaderView_TackPhoto" = "Prendre une photo";
 "AccoundHeaderView_ChooseAlbum" = "Sélectionner via l'album";
 "AccoundHeaderView_Settings_Camera" = "Autoriser iOSLanguageLocalized à accéder à votre appareil photo. (Dans Paramètres> Confidentialité> Appareil photo)";
 "AccoundHeaderView_Settings_Photos" = "Autoriser iOSLanguageLocalized à accéder à vos photos. (Dans Paramètres> Confidentialité> Photos)";
 "AccoundHeaderView_Divice_Unavailable" = "Désolé, aucune caméra n'est disponible.";
-
 /*My Orders*/
 "MyOrders_VC_Title" = "Mes commandes";
 "MyOrders_Cell_Order" = "Commande";
@@ -368,32 +313,23 @@
 "ZFOrderList_Total" = "Total:";
 "ZFOrderList_Total_Items" = "article(s)";
 "MyOrderList_NoData_Title" = "Vous n'avez pas encore de commande !";
-
-
 "MyOrdersViewModel_PaymentStatusCancel_Message" = "Paiement annulé. Appuyez sur \ 'Payer maintenant \' pour réessaye r!";
 "MyOrdersViewModel_PaymentStatusCancel_Title" = "Paiement annulé";
 "MyOrdersViewModel_PaymentStatusFail_Message" = "Paiement échoué. Appuyez sur \ 'Payer maintenant \' pour réessayer !";
 "MyOrdersViewModel_PaymentStatusFail_Title" = "Paiement échoué";
-
 "MyOrdersViewModel_NoData_Tip" = "Vous n'avez pas encore de commande !";
 "MyOrdersViewModel_Cancel_Order_Message" = "Vous ne pouvez pas annuler cette commande !";
 "MyHistory_NoData_tip" = "Désolé, nous n'avons rien trouvé dans votre Vente Flash";
-
 //Order Detail
 "OrderDetail_VC_Title" = "Détails de la commande";
 "OrderDetailViewController_COD_cost" = "Coût de la COD";
 "DeliveryShippingView_deliveryLabel" = "Commande réussie.Délai de livraison estimé: 7-15 jours.Il peut arriver que nous receviez un SMS ou un appel afin de confirmer votre commande";
-
 "OrderRequestRefund" = "Remboursement";
 "OrderRefundTips" = "Votre remboursement est en cours de traitement (Nous allons traiter votre demande de remboursement dans les prochaines 48 heures).";
 "OrderRefundAskTips" = "Votre commande avait été emballée, êtes-vous sûr  de vouloir demander un remboursement ?";
-
-
 "OrderDetailViewModel_CancelOrder_Message" = "Êtes-vous sûr de vouloir annuler cette commande ?";
 "OrderDetailViewModel_CancelOrder_No" = "NON";
 "OrderDetailViewModel_CancelOrder_Yes" = "OUI";
-
-
 //Order Cell
 "OrderDetail_Order_Cell_Order" = "Commande";
 "OrderDetail_Cell_PaymentStatusCancel_Message" = "Paiement annulé. Appuyez sur \ 'Payer maintenant \' pour réessayer !";
@@ -403,12 +339,10 @@
 "OrderDetail_Cell_CancelOrder_Message" = "Êtes-vous sûr de vouloir annuler cette commande ?";
 "OrderDetail_Cell_CancelOrder_No" = "NON";
 "OrderDetail_Cell_CancelOrder_Yes" = "OUI";
-
 //Delivery Cell
 "OrderDetail_Delivery_Cell_Date" = "Date";
 "OrderDetail_Delivery_Cell_Delivery" = "Livraison";
 "OrderDetail_Delivery_Cell_Payment" = "Paiement";
-
 //Goods Cell
 "OrderDetail_Goods_Cell_Sku" = "SKU";
 "OrderDetail_Goods_Cell_Color" = "Couleur";
@@ -429,15 +363,12 @@
 "OrderDetail_TotalPrice_Cell_PayNow" = "    Payer maintenant    ";
 "OrderDetail_TotalPrice_Cell_Contiue" = "Continuer pour payer";
 "OrderDetail_TotalPrice_Cell_Check" = "Boleto";
-
 /*OrderFinishViewController*/
 "OrderFinishViewController_tipLab4" = "Nous enverrons les marchandises dès que possible, merci de vérifier régulièrement.";
 "OrderFinishViewController_tipLab3" = "Montant du paiement :%@";
 "OrderFinishViewController_tipLab1" = "Commande :%@";
 "OrderFinishViewController_tipLab2" = "Méthode de paiement : en espèces à la livraison";
-
 "OrderDetail_Copy_Success" = "Copier : succès";
-
 //Write a review
 "WriteReview_VC_Title" = "Écrire une critique";
 "WriteReview_Sku" = "SKU";
@@ -445,68 +376,54 @@
 "WriteReview_Size" = "Taille";
 "WriteReview_Total" = "Total";
 "WriteReview_Note" = "Note: Partagez et obtenez 20 Z Point, les 5 premiers à soumettre les deux critiques recevront le double de Z POINTS !";
-
-
 "WriteReview_Rating" = "Évaluation";
 "WriteReview_Content" = "Contenu";
 "WriteReview_Textfiled_Placeholder" = "Écrivez au moins 30 caractères";
 "WriteReview_Textfiled_Min_Tip" = "Écrivez au moins 30 caractères";
 "WriteReview_Textfiled_Max_Tip" = "Ne dépassez pas 3000 caractères.";
 "WriteReview_Submit" = "Soumettre";
-
 //Check my review
 "CheckMyReview_VC_Title" = "Vérifiez mon avis";
 "CheckMyReview_Sku" = "SKU";
 "CheckMyReview_Color" = "Couleur";
 "CheckMyReview_Size" = "Taille";
 "CheckMyReview_Total" = "Total";
-
 //Review
 "ZFOrderReview_Tips" = "Vous pouvez recevoir 20 Points-Z par écrire un commentaire. Voulez-vous continuer à finir?";
 "ZFOrderReview_AddImageTips" = "Téléchargez les photos des produits,vous pouvez obtenir les DOUBLES Points Z.";
-
 //引导评论App store
 "GuideReviewAppStore_Rate" = "Noter";
 "GuideReviewAppStore_NotNow" = "Plus Tard";
 "GuideReviewAppStore_FeedBack" = "Écrire des retours";
 "GuideReviewAppStore_Tips" = "Cher/Chère client(e), aimez-vous utiliser notre APPLI ? Si vous le faites, prenez un moment pour la noter. Merci pour votre soutien !";
 "GuideReviewAppStore_Title" = "Venez évaluer iOSLanguageLocalized?";
-
-
 /*My Points*/
 "MyPoints_VC_Title" = "Mes points";
 "MyPoints_Rewards_Label" = "points";
 "MyPoints_WhatPoints_VC_Title" = "Que sont les Z POINTS";
 "MyPoints_EmptyData_Tip" = "Vous n'avez aucun Z Points";
-
 /*My Coupon*/
 "MyCoupon_VC_Title" = "Mes Coupons";
 "MyCoupon_VC_Header_Label" = "Vous pouvez les utiliser lorsque vous passez commande !";
 "MyCoupon_Coupon_Cell_CouponCode" = "Code Coupon";
 "MyCoupon_Coupon_Cell_Expires_Date" = "date";
-
 "MyCoupon_Coupon_Unused" = "Non utilisé";
 "MyCoupon_Coupon_Used" = "Déjà utilisé";
 "MyCoupon_Coupon_Expired" = "Expiré";
-
 "MyCouponViewModel_NoData_TitleLabel" = "Désolé, vous n'avez pas de coupon disponible maintenant!";
 "OrderCheckCoupon_NoData_TitleLabel" = "Oh, vous n'avez pas de coupon";
-
 /*My Address*/
 "Address_VC_Title" = "Adresse de livraison";
 "Address_VC_Add_Address" = "AJOUTER UNE NOUVELLE ADRESSE";
 "Address_VC_Done" = "Terminé";
 "Address_VC_Edit" = "Editer";
-
 "Address_List_Cell_Default" = "Défaut";
 "Address_List_Cell_Delete" = "Effacer";
 "Address_List_Cell_Edit" = "Modifier";
-
 "AddressListViewModel_NoData_Add_Address" = "AJOUTER UNE NOUVELLE ADRESSE";
 "AddressListViewModel_NoData_Title" = "Veuillez ajouter une adresse";
 "ProvinceViewModel_NoSelect_Tip" = "Veuillez essayer à nouveau";
 "Address_VC_PrivacyTerms" = "Politique de Confidentialité & Conditions d'utilisation";
-
 //ModifyAddressViewController
 "Modify_Address_VC_Title" = "Adresse de livraison";
 "ModifyAddress_FristName_Placeholder" = "Prénom";
@@ -568,7 +485,6 @@
 "ModifyAddress_Google_Help_Find_Address" = "Nous vous aiderons à trouver votre adresse";
 "ModifyAddress_Google_Help_NotFind_Address" = "Désolé, vous ne pouvez pas utiliser ce code-ci.";
 "ModifyAddress_NumberCount_TipLabel" = "Votre numéro de téléphone portable doit comporter %@ chiffres";
-
 /*My Password*/
 "ChangePassword_VC_Title" = "Modifier le mot de passe";
 "ChangePassword_VC_OrignPassword" = "Le mot de passe d'origine";
@@ -579,29 +495,24 @@
 "ChangePassword_VC_Confirm_Message" = "Veuillez confirmer le mot de passe";
 "ChangePassword_VC_Provide_Message" = "Veuillez fournir un mot de passe";
 "ChangePassword_VC_Request_Failure_Message" = "L'opération a échoué, réessayez！";
-
 /*Change Password Success*/
 "ChangePassword_Success_Customer" = "Cher client,";
 "ChangePassword_Success_NewPassword" = "Votre nouveau mot de passe a été activé!";
 "ChangePassword_Success_SigninLater" = "Connectez-vous plus tard";
 "ChangePassword_Success_SignInNow" = "Connectez vous maintenant";
-
 /*My Currency*/
 "Currency_VC_Title" = "Devise";
-
 /*My Setting*/
 "Setting_VC_Title" = "Réglage";
 "Setting_Cell_RateUs" = "Évaluez-nous";
 "Setting_Cell_ClearCache" = "Vider le cache";
 "Setting_Cell_Version" = "Version";
 "Setting_Cell_Languege" = "Langue";
-
 /* languge setting */
 "Languge_Setting_English" = "English";
 "Languge_Setting_Arabic"  = "العربية";
 "Languge_Setting_Spanish" = "Español";
 "Languge_Setting_French"  = "Français";
-
 "SettingViewModel_Cache_Alert_Message" = "Le cache de l'application a été effacé!";
 "SettingViewModel_Cache_Alert_OK" = "OK";
 "SettingViewModel_Version_Alert_Title" = "Version";
@@ -615,10 +526,8 @@
 "SettingViewModel_Version_Latest_Alert_OK" = "OK";
 "ForceUpgrade_title" = "Notification de mise à jour";
 "ForceUpgrade_message" = "Dear iOSLanguageLocalized users, we have recently made an all-round improvement to our app. Please install the latest version to enjoy a better shopping experience.";
-
 /*My Help*/
 "Help_VC_Title" = "Aidez-moi";
-
 /*Profile*/
 "Profile_VC_Title" = "Profile";
 "Profile_FirstName_Placeholder" = "Prénom";
@@ -631,7 +540,6 @@
 "Profile_Phone_Placeholder" = "Téléphone";
 "Profile_EmailAddress_Placeholder" = "Adresse e-mail";
 "Profile_Save_Button" = "Sauvegarder";
-
 "Profile_Enter_FirstName_Message" = "Entrez le prénom";
 "Profile_Least_FirstName_Message" = "Votre prénom doit avoir au moins 2 caractères";
 "Profile_Maxium_FirstName_Message" = "Votre prénom doit être de 32 caractères maximum";
@@ -645,20 +553,16 @@
 "Profile_Least_NickName_Message" = "Votre pseudonyme doit avoir au moins 2 caractères";
 "Profile_Maxium_NickName_Message" = "Votre surnom doit être de 35 caractères maximum";
 "Profile_Personal_Success_Message" = "Vos informations personnelles ont été modifiées avec succès !";
-
 /*InputTextView*/
 "InputTextView_message" = "Doit être inférieur à 300 caractères.";
 "InputTextView_Send" = "Envoyer";
-
 /*Community*/
 "Community_Follow" = "Suivre";
 "Community_TOP" = "TOP";
 "Community_Big_Views" = "vues";
 "Community_Little_Views" = "%@ vues";
-
 "Community_ShareTitle" = "Dernières offres de mode";
 "Community_ShareContent" = "Mon émission tendance sur iOSLanguageLocalized, est-ce que vous l'aimez ?";
-
 /*CommunityViewController*/
 "Community_Tab_Title_Faves" = "Favoris";
 "Community_Tab_Title_Explore" = "Explorer";
@@ -671,7 +575,6 @@
 "Community_HeaderView_styleCallery" = "Style Gallery";
 "Community_HeaderView_New" = "Nouveau";
 "Community_HeaderView_Popular" = "Populaire";
-
 /*VideoListViewController*/
 "VideoList_VC_Title" = "Z-Live";
 "Video_VC_TextView_Placeholder" = "Qu'en penses-tu ?";
@@ -679,19 +582,15 @@
 "VideoViewViewModel_NoData_Title" = "Vos messages Populaires apparaîtront ici";
 "VideoViewViewModel_Refresh" = "Rafraîchir";
 "Community_Videos_DetailTitle" = "Détail";
-
 /*VideoHeaderView*/
 "VideoView_HeaderView_Title" = "Commentaires";
-
 /*TopicListViewController*/
 "TopicList_VC_Title" = "Sujets Fashion";
 "TopicHead_Cell_JoinedIn" = "rejoint en";
 "TopicHead_Cell_ViewAll" = "VOIR TOUT";
-
 /*alertview*/
 "TopicLabelDeleteAlertView" = "Êtes-vous sûr ?";
 "TopicLabelDeleteTopicAlertView" = "Êtes-vous sûr de supprimer ce texte ?";
-
 //Topic Detail
 "Topic_VC_Title" = "Détail du sujet";
 "TopicDetailView_Ranking" = "CLASSEMENT";
@@ -699,37 +598,28 @@
 "TopicDetailView_Reviews" = "Avis";
 "TopicDetailView_ViewAll" = "VOIR TOUT";
 "TopicDetailView_joinIn" = "Rejoindre";
-
 /*CommunityDetailViewController*/
 "CommunityDetail_VC_TextView_Placeholder" = "Qu'en penses-tu ?";
 "CommunityDetail_VC_CannotPost_Message" = "Vous ne pouvez pas commenter votre propre article.";
-
 /*CommunityDetailHeaderCell*/
 "CommunityDetailHeaderCell_Likes" = "J'Aime";
-
-
 /*FollowViewController*/
 "Follow_VC_Title_LikedBy" = "Aimé par";
 "Follow_VC_Title_Following" = "Suivi";
 "Follow_VC_Title_Followers" = "Followers";
-
 /*FollowViewModel*/
 "FollowViewModel_NoData_GetStatus" = "Suivre les autres pour obtenir son statut récent";
 "FollowViewModel_NoData_NotAny" = "Pas encore suivi";
 "FollowViewModel_NoData_AddPhotos" = "Ajouter des photos pour obtenir des Followers";
 "FollowViewModel_NoData_NoFollowers" = "Aucun Followers";
-
 /*PopularViewModel*/
 "PopularViewModel_NoData_Title" = "Vos messages populaires apparaîtront ici";
 "PopularViewModel_Refresh" = "Rafraîchir";
-
 /*FavesCommendHeadView*/
 "FavesCommendHeadView_RecommendUp" = "Recommander";
-
 /*FavesViewModel*/
 "FavesViewModel_NoData_Title" = "Vous trouverez des amis et des blogueurs qui partagent leurs conseils d'achat ici, suivez-les maintenant.";
 "FavesViewModel_NoData_AddMoreFriends" = " AJOUTER PLUS D'AMIS ";
-
 //Z-Me
 "MyStylePage_VC_Title" = "Z-Me";
 "MyStylePage_SubVC_Shows" = "Shows";
@@ -737,40 +627,32 @@
 "MyStylePage_SubVC_Outfits" = "Tenues";
 "MyStylePage_Unfollow_Tip" = "Êtes-vous sûr de ne pas vouloir suivre";
 "MyStylePage_Unfollow" = "Désabonner";
-
 /*StyleSelectView*/
 "StyleSelectView_Shows" = "Montre";
 "StyleSelectView_Likes" = "Likes";
-
 /*StyleHeaderView*/
 "StyleHeaderView_Followed" = "Suivi";
 "StyleHeaderView_Following" = "Suivi";
 "StyleHeaderView_Followers" = "Suiveurs";
 "StyleHeaderView_BeLiked" = "Aimé par";
 "StyleHeaderView_Edit_Profile" = "Modifier le profil";
-
 /*CommendUserCell*/
 "CommendUserCell_Posts" = "Posts";
 "CommendUserCell_BeLiked" = "être Liké";
-
 /*ADD More Friend*/
 "AddMoreFriends_VC_Title" = "Ajouter plus d'amis";
 "CommunitySearchNoResultTips" = "Désolé,\n Aucun resultat ne correpond à votre recherche.";
 /*FriendsResultCell*/
 "FriendsResultCell_Posts" = "Posts";
 "FriendsResultCell_BeLiked" = "être Liké";
-
 /*ContactsViewController*/
 "Contacts_VC_Title" = "Contacts";
 "Contacts_VC_Message" = "Rejoignez la communauté Z-Me maintenant ! De grands coupons et cadeaux sont en attente et vous pouvez voir des expériences de magasinage et des idées de mode sur iOSLanguageLocalized.com.";
 "Contacts_VC_Send" = "Envoyer";
-
 /*FriendsCommendHeadView*/
 "AddMoreFriends_Contacts" = "Contacts";
 "AddMoreFriends_FaceBook" = "Amis Facebook";
 "AddMoreFriends_Suggested" = "utilisateurs suggérés";
-
-
 //post topic
 "Post_VC_Post" = "Post";
 "Post_VC_Post_TextView_Placeholder" = "Qu'est-ce qui préoccupe votre esprit? (0/2000)";
@@ -785,52 +667,41 @@
 "Post_VC_Post_Alert_OK" = "OK";
 "Post_VC_Post_Success_Tips" = "Vous avez réussi à Poster !";
 "Post_VC_Post_Success_Points_Tips" = "30 PZ Points Obtenus ";
-
 /*ZFCommunityShowGoodsPageVC*/
 "GoodsPage_VC_WishList" = "J'adore";
 "GoodsPage_VC_Bag" = "Sac";
 "GoodsPage_VC_Order" = "Commande";
 "GoodsPage_VC_Recent" = "Récent";
 "GoodsPage_VC_Done" = "Terminé";
-
 "Post_ViewModel_Alert_NoItem_Tip" = "Vous avez déjà ajouté cet élément";
 "Post_ViewModel_Alert_MaxItem_Tip" = "Vous ne pouvez sélectionner que 6 éléments";
-
 /*RecentViewModel*/
 "RecentViewModel_NoData_Title" = "Désolé, nous n'avons rien trouvé dans votre recherche récente";
-
 /*ContactsViewModel*/
 "ContactsViewModel_AuthorizationFailure_Title" = "Impossible d'accéder au contact";
 "ContactsViewModel_AuthorizationFailure_Message" = "Veuillez autoriser iOSLanguageLocalized à accéder à votre contact en allant dans Paramètres> Confidentialité> Contacts";
 "ContactsViewModel_AuthorizationFailure__OK" = "OK";
 "ContactsViewModel_AuthorizationFailure__GoToSetting" = "Aller au Réglage";
-
 /*LikesViewModel*/
 "LikesViewModel_NoData_NotLikes" = "Pas encore aimé";
-
 /*ShowsViewModel*/
 "ShowsViewModel_NoData_NotShowed" = "Pas encore montré";
 "AccountOutfits_NoData_NotOutfits" = "Vous n'avez pas encore publié de Looks.";
 "AccountOtherOutfits_NoData_NotOutfits" = "Il n'y a pas encore de look créé.";
 /*TopicViewModel*/
 "TopicViewModel_NoData_FirstJoined" = "Soyez le premier à participer";
-
 /*WishlistViewModel*/
 "WishlistViewModel_NoData_CannotFind" = "Désolé, nous n'avons rien trouvé dans votre liste de souhaits";
-
 /*MessagesViewModel*/
 "MessagesViewModel_title" = "Messages";
 "MessagesViewModel_NoData_Message" = "Désolé, vous n'avez pas encore de message";
 "MessagesViewModel_Data_Detete" = "Le message a été supprimé";
-
 "FriendsCommendViewModel_Share_Content" = "Coucou les amis ! Rejoignez-moi vite sur iOSLanguageLocalized pour partager notre passion de la mode !";
 "ZFShare_Community_post" = "Regardez ça, je viens de poster un truc marrant !";
 "ZFShare_Community_topic" = "Les filles, je partage le sujet avec vous ! Venez bavarder tous ensemble :p";
 "ZFShare_Community_outfits" = "Tiens, j’ai crée un look sur iOSLanguageLocalized !";
-
 /*FriendsResultViewModel*/
 "FriendsResultViewModel_NoData_Message" = "Désolé, \n aucun résultat ne correspond à votre  recherche";
-
 "TimeLapse_Later" = "plus tard";
 "TimeLapse_Ago" = "il y a";
 "TimeLapse_Secs" = "secs";
@@ -845,29 +716,21 @@
 "TimeLapse_Month" = "mois";
 "TimeLapse_Years" = "années";
 "TimeLapse_Year" = "an";
-
 /*DZNEmptyDataSet*/
 "EmptyCustomViewManager_titleLabel" = "Le chargement a échoué, réessayez ultérieurement.";
 "EmptyCustomViewManager_refreshButton" = "ACTUALISER";
 "BlankPage_NetworkError_tipTitle" = "La connexion Internet semble inactive. Merci de vérifier votre connexion.";
 "HomeTopBar_NetworkErrorTipTitle" = "Veuillez actualiser ou vous reconnecter pour aller sur la page.";
 "EmptyCustomViewHasNoData_titleLabel" = "Vous n'avez pas encore de données";
-
 /*YYPhotoBrowseView*/
 "Save_Picture" = "Sauvegarder la photo";
-
-
 "ZFTracking_information_title" = "Infos Sur Votre Colis";
 "ZFTracking_number" = "Numéro de Suivi";
 "ZFTrackingNoData" = " Pas encore d’infos de suivi";
 "ZFPackage" = "Colis%ld";
-
-
 "ZFOrderList_Learn_more" = "En Savoir Plus";
 "ZFOrderInfo_Or"         = "ou";
-
 "ZFCheckout_mybag" = "Mon Panier";
-
 /* payMethod */
 "ZFPaymentTitle" = "Choisir le Mode de Paiement";
 "ZFPaymentTips" = "Certains articles dans votre commande peuvent être payés à la livraison, veuillez sélectionner le mode de paiement d’abord.";
@@ -887,7 +750,6 @@
 "ZFOrderEvent" = "Remise des Offres";
 "ZFPayStateOnlineFailed" = "Paiement en ligne échoué";
 "ZFOrderUsedCoupon" = "Ce coupon a déjà été utilisé.";
-
 "OrderDetail_Coupon_Header" = "Coupon(s) Indisponible(s)";
 "MyCoupon_Coupon_Warning_Title"   = "Coupon Promotionnel ";
 "MyCoupon_Coupon_Warning_Content"   = "économiser %@";
@@ -899,11 +761,9 @@
 "My_Coupon_Get_Coupon_False" = "Erreur! S'il vous plait, re-essayez plus tard.";
 "My_Coupon_Have_Been_Claimed" = "Tous les coupons ont déjà été réclamés.";
 "My_Coupon_Expired" = "Les coupons ne peuvent être réclamés, s'il vous plait essayez plus tard.";
-
 "OrderDetail_CouponCode_InputplaceholderText" = "Sélectionnez ou entrez le code";
 "GoodsDetail_ShareIt" = "Partagez";
 "GoodsDetail_TellYourFriends" = "Dis-le à tes amis";
-
 /** 注册登录 */
 "Information_security_LoginAdvice"  = "Pour assurer la sécurité de vos informations, veuillez changer votre mot de passe régulièrement.";
 "Information_security_publicAdvice"  = "Nous vous recommandons de ne pas utiliser le même mot de passe que sur les autres sites web.";
@@ -918,7 +778,6 @@
 "Forgot_message" = "Un Email avec le lien de réinitialisation a été envoyé à l'adresse %@. Merci d'en vérifier la réception.";
 "Forgot_success" = "Envoyé avec succès";
 "email_notRegister" = "Cette adresse e-mail n'a pas été enregistrée. Veuillez l'entrer à nouveau";
-
 /** (订单确认页,订单详情页)价格明细 */
 "TotalPrice_Cell_ProductTotal"          = "Sous-Total";
 "TotalPrice_Cell_Shipping"              = "Frais de Port";
@@ -932,51 +791,40 @@
 "TotalPrice_Cell_CODDiscount"           = "Somme finale";
 "TotalPrice_Cell_TotalPayable"          = "Montant total à payer";
 "TotalPrice_Cell_AirCargoInsurance"     = "Assurance pour le transport aérien";
-
 "shipping_info" = "Tous les colis ont des informations de suivi détaillées";
 "shipping_help" = "L'assurance d'expédition offre une protection et sécurité pour votre produits de valeur lors de l'expédition internationale. Nous réexpédierons immédiatement votre colis sans frais supplémentaires si le colis est déclaré perdu ou endommagé";
 "CheckOrder_ShippingInfo_CA" = "Vous devrez peut-être payer des frais de dédouanement SUPPLÉMENT à DHL avant la livraison.";
-
 /** 允许推送权限 */
 "PushAllowView_AllowBtnTitle" = "OUI";
 "PushAllowView_NotNow" = "NON";
-
 /** 收藏成功提示 */
 "Product_Collection_success" = "Vous avez un gout tendance certain.";
 "Product_remover_Collection_success" = "Cet article a été supprimé de vos préférés !";
-
-
 /** 列表总量显示 */
 "list_item" = "%@ article(s)";
-
 /** 3DTouch */
 "3DTouch_icon_Search" = "Rechercher";
 "3DTouch_icon_Favorites" = "Favoris";
 "3DTouch_icon_Bag" = "Mon Panier";
-
 "3DTouch_Pop_Add_To_Bag" = "AJOUTER AU PANIER";
 "3DTouch_Pop_Add_To_Favorites" = "AJOUTER AUX FAVORIS";
 "3DTouch_Pop_Remove_Favorites" = "ANNULER LES FAVORIS";
 "3DTouch_Pop_Cancel" = "ANNULER";
-
 /** 商详页秒杀价 */
 "Flash_sale" = "Vente Flash";
 "Ends_in" = "Termine dans";
 "Starts_at" = "Commencera le";
 "new_member" = "Exclusivité Nouveaux Clients";
 "free" = "CGratuit";
-
 /** H5提示 */
 "WebView_SaveImageSuccessTip" = "Téléchargement réussi ! Partagez sur Z-me";
 "WebView_SaveImageFailTip" = "Téléchargement échoué .";
-
 /** 第三方注册提示 */
 "warmPrompt" = "Inscrivez-vous sur les médias sociaux sans avoir à mémoriser de mots de passe supplémentaires. Ne vous inquiétez pas, nous ne partagerons jamais aucune de vos données ni ne posterons rien en votre nom.";
 "gender" = "Sexe";
 "emailTip" = "Nous avons envoyé votre confirmation de commande ici";
 "register_title" = "Nous avons presque fini...";
 "REGISTER" = "S'INSCRIRE";
-
 //新版本引导图提示文案
 "Guide_Page1_Title" = "LIVRAISON GRATUITE DANS LE MONDE ENTIER";
 "Guide_Page1_SubTitle" = "49 $ d'achat : Envoi gratuit Standard \n 99 $ d'achat : Envoi gratuit Express";
@@ -986,7 +834,6 @@
 "Guide_Page3_SubTitle" = "REJOIGNEZ-NOUS ET SOYEZ INSPIRÉS sur Z-Me \n Partagez et obtenez Gratuitement";
 "Guide_Register_Button" = "S'INSCRIRE";
 "Guide_PushNotifycation_title" = "4ème Anniversaire";
-
 // 社区穿搭
 "community_outfistpost_counttost" = "Vous ne pouvez ajouter plus de 15 produits.";
 "community_outfit" = "tenues";
@@ -1009,8 +856,6 @@
 "community_post_simalar" = "similaire";
 "community_show_new"                    = "Voir";
 "community_outfit_new"                  = "Tenue";
-
-
 // 支付成功页
 "paySuccess_Point" = "Vous avez %@ Z-Points pour cette commande ! Uploadez un post sur Z-me pour obtenir de 20 Z-points en plus.";
 "orderListButton"  = "Vérifiez votre commande";
@@ -1019,7 +864,6 @@
 "Address"          = "Adresse";
 "paySuccess_title" = "Résultat de paiement";
 "Payment_Success" = "Paiement réussi";
-
 // 以图搜图
 "inputPlaceHolder" = "Cherchez votre image";
 "SDKFilureTip"     = "Aucun résultat trouvé";
@@ -1029,10 +873,8 @@
 "result"           = "résultats";
 "crop_tip"         = "Cliquez sur l'image pour sélectionner la section que vous désirez";
 "crop_title"       = "Cadrez ce que vous voulez rechercher";
-
 // 社区邀请通讯录好友
 "ContactsVC_HasNoDataTips" = "Désolé, votre liste de contact est vide";
-
 // 社区帖子详情
 "community_topicdetail_liked"         = "Aimer %@";
 "community_topicdetail_like"          = "Aimer %@";
@@ -1051,39 +893,26 @@
 "community_topic_relateempty"         = "Aucun article approprié actuellement";
 "community_topic_commenttitle"        = "Comentarios";
 "community_topic_commentempty"        = "Sans commentaires. Soyez le premier à en laisser un.";
-
-
 //社区首页 FollowList
 "suggestionForYou" = "Suggestions pour vous";
 "seeMore" = "Voir +";
 "Community_shows_top" = "Épingler";
-
 "payNow_failure" = "Problème de connexion Internet. Merci de renvoyer votre commande.";
-
 "unline_similargoods_title" = "Produits similaires";
 "cart_unline_findsimilar_tag" = "Trouver des similaires";
-
 "refresh_pull_down" = "Tirez vers le bas, la surprise arrive bientôt";
 "refresh_release"   = "Relâchez, la surprise arrive bientôt!";
 "refresh_loading"   = "Chargement ...";
-
-
 // ==================================== V3.6.0 ====================================
-
 "NewVersionGuide_ShopIn" = "Acheté en";
 "NewVersionGuide_Change" = "Changement";
 "NewVersionGuide_GoShopping" = "GO SHOPPING";
-
 "native_banner_share" = "iOSLanguageLocalized - My Fashion Story";
 "NEW" = "NOUVEAUTÉ";
 "POPULAR" = "EN VOGUE";
 "HOT" = "POPULAIRE";
-
-
 // ==================================== V3.7.0 ====================================
 "paySuccess_usePoint" = "Uploadez un post sur Z-me pour obtenir de 20 Z-points en plus.";
-
-
 // ==================================== V3.8.0 ====================================
 "Edited_successfully" = "Edité avec succès";
 "Leave" = "JUSTE QUITTER";
@@ -1108,8 +937,6 @@
 "Push_Notifications_Settings" = "Paramètres de Notifications";
 "Push_Notifications" = "Notifications";
 "Push_Enable" = "Activé";
-
-
 "Detail_Product_Coupons_Tips" = "Collection De Coupons";
 "Detail_Product_CouponsList_Title" = "Coupon";
 "Detail_ReceiveCouponTitle" = "RECEVOIR";
@@ -1118,18 +945,14 @@
 "Detail_ReceiveCouponFail" = "Oups ! Impossible de réclamer. Merci d'essayer ultérieurement.";
 "Detail_CouponClaimed" = "Expiré";
 "Detail_CouponUsedUp" = "Récupéré";
-
 // ==================================== V3.6.1 ====================================
-
 "Register_ChooseGender" = "Selectionnez votre genre，s'il vous plait.";
 "Register_ChooseGender_Sure" = "Sûr";
 "Community_AccountShowsBtn" = "Posts";
 "Community_AccountFollowBtn" = "Suivre";
 "Community_AccountLiked" = "Liké";
 "Community_outfitBuilderTitle" = "Personnalisez votre propre mode";
-
 // ==================================== V3.7.0 ====================================
-
 "COD_SMS_5-10WorkingDays" = "5-10 jours ouvrables";
 "COD_SMS_Description1" = "1. Temps estimé pour la livraison : ";
 "COD_SMS_Description2" = "2. Total de la commande :";
@@ -1138,9 +961,7 @@
 "VerificationView_showButton_titile" = "CONFIRM & SEND SMS";
 "SOAPayMentCancelContent" = "Êtes-vous sûr de vouloir annuler le paiement?";
 "CartVC_AddCarFiale_tip" = "Échec de l'ajout au panier";
-
 // ==================================== V3.9.0 ====================================
-
 "PiecingOrderVCTitle_AddItems" = "Ajouter des articles";
 "ModifyAddress_Enter_your_delivery_city" = "Entrez votre ville de livraison";
 "community_topicdetail_Create" = "Créer";
@@ -1162,7 +983,6 @@
 "CarPiecing_QualifiesTips" = "Qualifié pour l'expédition standard gratuite";
 "OrderDetail_UnRefundTips" = "Votre commande ne donne pas droit à des retours automatiques. Merci de nous contacter.";
 "OrderDetail_Apologies" = "Excuses";
-
 // ==================================== V3.9.1 ====================================
 "GameLogin_EmailPlaceHold" = "Vous ne recevrez aucun mail marketing";
 "GameLogin_OtherLoginMethod" = "Méthodes de connexion alternatives";
@@ -1178,12 +998,10 @@
 "CarPiecing_PayMoreTips" = "Payez %@ de plus pour la livraison standard gratuite";
 "OrderDetail_UnRefundTips" = "Votre commande ne donne pas droit à des retours automatiques. Merci de nous contacter.";
 "OrderDetail_Apologies" = "Excuses";
-
 "MyCoupon_Only_for_Standard_Shipping" = "Seulement pour l'expédition standard";
 "MyCoupon_FREE_SHIPPING" = "LIVRAISON GRATUITE";
 "GameLogin_GuestUser" = "Utilisateur invité";
 "GameLogin_GuestUserTips" = "Ceci est votre compte temporaire. Cliquez sur Paramètres, puis allez à «Configurer le mot de passe» pour vous enregistrer.";
-
 // ==================================== V4.1.0 ====================================
 "Languge_Setting_German"  = "Deutsch";
 "Public_items_Found" = "%@ articles trouvés";
@@ -1191,59 +1009,42 @@
 "ReviewFilter_All"           = "Tout";
 "ReviewFilter_Recent"        = "Récent";
 "ReviewFilter_Picture"       = "Commentaires photo";
-
-
 // ==================================== V4.2.0 ====================================
 "Languge_Setting_Indonesia"    = "Indonesia";
 "Guest_Sales_Tips_title"       = "Réduction étudiante";
 "Guest_Sales_Tips_Content"     = "Félicitations ! Vous êtes maintenant éligible au rabais étudiant avec iOSLanguageLocalized.";
 "StudentVIP_Discount_Title"    = "Réduction étudiante";
 "SupreSutdentVIP_Discount_Title" = "Réduction étudiant Suprême";
-
 // ==================================== V4.3.0 ====================================
 "goodsdetail_navigationonline_tip" = "Merci de contacter notre service client si vous avez des questions.";
-
 "CountDownTimer_Day" = "D";
-
-
 // ==================================== V4.4.0 ====================================
 "CarVC_AddedWishlist_Title" = "Placer dans la liste de souhaits";
 "CarVC_AddedWishlist_Success" = "Ajouté à votre liste de souhaits";
-
-
-
 "community_get_gift" = "Obtenir son cadeau";
 "community_get_draw" = "Rejoindre son tirage au sort";
 "community_Buy" = "Achat";
 "Address_List_Cell_No_Support_Mail" = "Express est indisponible";
 "order_detail_count_down_remind" = "Payer pour que nous puissions livrer maintenant.";
-
 "you_may_also_like" = "Tu pourrais aussi aimer";
 "first_change_country_tip" = "Votre adresse de livraison sera modifiée avec votre région actuelle, êtes-vous sûr de continuer?";
 "first_change_country_CONTINUE" = "CONTINUER";
 "first_change_country_CANCEL" = "ANNULER";
-
-
 // ==================================== V4.5.0 ====================================
-
 "community_Home_Z-Me_Guide" = "Bienvenue sur Z-Me ! Ici vous pouvez partager vos histoires de mode";
 "community_Home_Topic_Guide" = "Ici, vous pouvez prendre part à des sujets de mode";
 "community_PostDetail_Share_Guide" = "Ici, vous pouvez partager tous les shows ou des tenues que vous aimez";
 "community_PostDetail_Buy_Guide" = "Vous pouvez acheter cette tenue ici";
 "community_Post_Show_Relate_Goods_Guide" = "Ajouter les produits dans vos photos";
 "community_Post_Outfit_Filter_Goods_Guide" = "Filtrer les produits que vous aimez";
-
 "ModifyAddress_Check_Address_Title" = "Ajouter une nouvelle adresse";
 "ModifyAddress_Check_Address_Original" = "Adresse Originale : ";
 "ModifyAddress_Check_Address_Suggested" = "Adresse Suggérée : ";
 "ModifyAddress_Check_Address_Tip" = "il y a un problème avec l'adresse fournie - nous avons marqué nos suggestions en rouge ci-dessous. Veuillez choisir ou modifier la version de l'adresse que vous souhaitez utiliser.";
-
 "Confirm"  = "Confirmer";
 "Next_Step" = "L'étape suivante";
-
 "Languge_Setting_Thai" = "Thai";
 "Upgrade_Now" = "Mettre à jour maintenant";
-
 "choose_tax_shipping" = "* NOTE: Votre commande sera envoyée au Pérou. Si vous choisissez la livraison standard, veuillez entrer votre numéro DNI (numéro de carte d'identité) pour permettre un dédouanement et une livraison en toute tranquillité.";
 "checkout_shipping_tax_remind" = "Numéro de taxe requis";
 "Car_Header_Add_Codes" = "Ajouter des codes";
@@ -1251,7 +1052,6 @@
 "Car_Header_Promotion_Code" = "Code promotionnel";
 "Car_1Code_Applied" = "1 code appliqué :";
 "Car_Available_Coupons" = "coupons disponibles";
-
 // ==================================== V4.5.1 ====================================
 "paySuccessPendingTipsTitle" = "Nous apprécions vos achats ! Votre commande a été soumise avec succès.";
 "paySuccessPendingTipsContent" = "Il y a un petit/léger délai pour la confirmation du statut du paiement, Merci de revenir a fin de vérifier l'état de votre commande quelques minutes plus tard.";
@@ -1259,24 +1059,18 @@
 "community_post_detail_swipe_guide" = "Glisser à gauche pour passer à la tenue suivante";
 "community_post_detail_shop_now" = "Achat";
 "community_post_detail_no_more_outfits" = "Pas plus de tenues";
-
 "modifyAddress_countryCity_city" = "Ville";
 "modifyAddress_countryCity_country" = "Pays / Région";
 "modifyAddress_countryCity_state" = "Région/Province";
 "modifyAddress_countryCity_village" = "Village";
 "ModifyAddress_Village_Placeholder" = "Village";
 "ModifyAddress_Village_TipLabel" = "Veuillez saisir le Village";
-
 "GroupBuyDetail_StatusTipText" = "Conseils: Si vous formez une équipe avec succès, vous obtiendrez certainement le produit souhaité. Un des membres de votre équipe sera également sélectionné pour recevoir un article.";
-
 "Account_Survey" = "Enquête de Satisfaction";
-
 "OrderDetail_returnReason" = "Raison du renvoi";
 "Order_reason_for_refund" = "Expliquez la raison de votre remboursement";
 "Order_inputReason" = "Entrez votre  raison";
-
 "GroupBuyDetail_ruleText" = "1. Tous les membres de iOSLanguageLocalized peuvent commencer l'activité \"Former une équipe pour gagner\" en procédant comme suit : sélectionnez l’article désiré, invitez des amis à former une équipe, recrutez le nombre requis de membres, recevez l’article gratuitement.\n\n2. Le système sélectionnera au hasard un membre de votre équipe et lui offrira l'un des éléments sélectionnés. Vous pouvez demander aux membres de votre équipe de vous aider à continuer à partager. Plus vous partagez, plus vos chances d'être sélectionné sont élevées.\n\n3. Après avoir formé avec succès une équipe, nous vous envoyerons le code coupon de l’article désiré ainsi qu'au compte du membre gagnant. Vous pouvez utiliser le coupon pour générer une commande de 0,01€, puis payer pour la compléter.\n\n4. Toute forme de triche est interdite. Si découvert, les coupons seront retirés. (Si une adresse IP se répète deux fois dans un événement, cela sera considéré comme de la triche.)\n\n5.iOSLanguageLocalized se réserve le droit d'interpréter définitivement les résultats.";
-
 "Languge_Setting_繁體中文" = "繁體中文";
 "Languge_Setting_Italiano" = "Italiano";
 "Languge_Setting_Português" = "Português";
@@ -1289,18 +1083,13 @@
 "text_gone" = "VENDU";
 "snap_up_now" = "Achetez";
 "text_starting_soon" = "Commencer bientôt";
-
-
-
 // ==================================== V4.5.3 ====================================
 "Community_shows_lookbook" = "Look book";
 "Community_post_detail_link" = "Lien";
-
 "OrderInfo_COD_Apologies_Msg" = "Vous avez des commandes contre remboursement qui n'ont pas été payées. Vous ne pouvez procéder à une autre COD qu'après avoir réglé la commande actuelle. Si vous avez des questions, merci de bien vouloir contacter le service clientèle.";
 "OrderInfo_CheckSafety_Msg" = "Tester votre équipement pour un environnement de paiement sécurisé. S'il vous plaît soyez patient.";
 "OrderInfo_CheckSafety_Msg2" = "Garantie de sécurité\nS'il vous plaît soyez patient.";
 "OrderInfo_CheckSafety_Title" = "Garantie de sécurité";
-
 "group_use_coupon" = "Utiliser le coupon";
 "group_keep_building_team" = "Continuer à former l'équipe";
 "group_congrats" = "Félicitations ! Vous avez commencé un groupe. Souhaitez-vous recevoir des notifications pertinentes en temps réel ?";
@@ -1315,7 +1104,6 @@
 "txt_my_free_order" = "Mes commandes gratuites";
 "group_my_team" = "Mon équipe";
 "group_ends_at" = "Finit à:";
-
 // ==================================== V4.5.4 ====================================
 "Community_review_translate_default" = "Défaut";
 "Community_review_translate_change" = "Changement";
@@ -1328,7 +1116,6 @@
 "goodsShows_noRelatedItem" = "Aucun article associé";
 "goodsShows_noRelatedPosts" = "Aucun article lié";
 "search_result_matches_viewall" = "Tout voir";
-
 // ==================================== V4.5.5 ====================================
 "QuestionVC_Title" = "Questionnaire de Paiement";
 "Question_TitleHeader" = "Your opinion is very important to us. We appreciate your feedback and will use it to  make improvements for your better experience at iOSLanguageLocalized. We will ensure the safety of your information, please feel free to fill out this form.";
@@ -1352,10 +1139,7 @@
 "PaySDK_ContinuePayment" = "NON, CONTINUER LE PAIEMENT";
 "PaySDK_PaymentSurvey" = "QUESTIONNAIRE DE PAIEMENT";
 "Languge_Setting_Turkish" = "Turkish";
-
 "Question_backOrders" = "REVENIR À MES COMMANDES";
-
-
 // ==================================== V4.5.4 ====================================
 "Community_outfit_goods" = "Articles";
 "Community_outfit_border" = "Cadre";
@@ -1363,17 +1147,13 @@
 "Community_topic_post_1st" = "1er";
 "Community_topic_post_2nd" = "2ème";
 "Community_topic_post_3rd" = "3ème";
-
-
 // ==================================== V4.5.6 ====================================
-
 "Community_LivesListVC_Title"        = "Stream Live Z-me Populaire";
 "Community_Lives_Livestreams"        = "Streams Live";
 "Community_Lives_Videos"             = "Vidéos";
 "Community_Lives_Live_Views"         = "Vus";
 "Community_Lives_Live_Goods"         = "Articles";
 "Community_Lives_Live_Start_In"      = "Stream Live commencera à";
-
 "Community_LivesVideo_Host" = "Hôte";
 "Community_LivesVideo_No_Wifi_Play_Msg" = "Vous utilisez actuellement vos données mobiles, souhaitez-vous continuer ？";
 "Community_LivesVideo_No_Wifi_Play_Cancel" = "Annuler";
@@ -1406,7 +1186,6 @@
 "Car_Empty_ForNewUser" = "15% de réduction pour les Nouveaux Clients";
 "Car_Empty_PickYouLike" = "Veuillez choisir ce que vous aimez";
 "Detail_GroupBuy_GetItFreeTitle" = "Gratuit";
-
 // ==================================== V4.5.7 ====================================
 "OrderInfo_check_change_x_address" = "Changer ver le site %@";
 "OrderInfo_page_free" = "GRATUIT";
@@ -1435,17 +1214,14 @@
 "OrderInfo_priceList_subtotal_total" = "Sous-Total";
 "OrderInfo_check_error_address_cancel" = "Annuler";
 "CarVC_add" = "Ajouter";
-
 "Detail_Only_count_left" = "Seulement %@ restant(s)";
 "Detail_Ends_in" = "Plus que";
 "ListTimeCountDown_Tip" = "Vente Flash";
-
 "OrderInfo_priceList_supermeStudent_discount" = "Remise suprême Etudiant";
 "OrderInfo_priceList_insurance_discount" = "Assurance du fret aérien";
 "OrderInfo_priceList_ZpointToSave" = "Points Z = Économiser";
 "OrderCheckCoupon_NoCouponTips" = "Entrez le code de coupon dans la case pour utiliser le coupon.";
 //=============V4.6.0===============
-
 "Account_birthday_tips" = "Saisissez votre anniversaire et nous vous enverrons un cadeau le jour même.";
 "Account_birthday_enter" = "Veuillez saisir votre anniversaire";
 "Account_birthday_gain" = "Obtenez votre cadeau d'anniversaire";
@@ -1499,7 +1275,6 @@
 "Customer_quickly_creating_account" = " Payer rapidement sans créer de compte.";
 "Order_received_share_everyone" = "Vous avez reçu votre commande. Veuillez partager votre avis sur celle-ci avec tout le monde.";
 "Coupon_input_code_box_use_coupon" = "Entrez le code de coupon dans la case pour utiliser le coupon.";
-
 //=============V4.8.0===============
 "Detail_Similar_Items" = "Articles Similaires";
 "Review_1stPhoto" = "C'est déjà la 1ère photo";
@@ -1512,11 +1287,8 @@
 "OrderInfo_PagoPayCIPCode" = "Code de paiement CIP";
 "OrderDetail_UpdateAddressTitle" = "Adresse mise à jour";
 "Title_ShippingMethod" = "Méthode d'envoi";
-
-
 //=============V4.9.0===============
 "Video_Live_Cart_Tip" = "Vous pouvez entrer votre panier ici";
-
 //=============V5.0.0===============
 "OrderInfo_PCCTips" = "Note: Please enter your PCC Code or your date of birth. (YYYYMMDD. E.g. 19950512) This will ensure a smooth customs clearance and delivery.";
 "OrderInfo_PCCErrorTips" = "You entered your PCC Code or date of birth incorrectly";
@@ -1528,8 +1300,6 @@
 "Cart_Match" = "Combinaison";
 "OrderDetail_CancelOrderTips" = "La commande sera annulée après";
 "homeSearchTitle" = "que cherchez-vous";
-
-
 //=============V5.1.0===============
 "Live_Enter_Room" = "Entrez dans la salle de livestream";
 "Live_Review_Input_tip" = "Bavarder ou poser une question";
@@ -1544,7 +1314,6 @@
 "Live_Pause" = "Le présentateur est temporairement parti, attendez patiemment s'il vous plait.";
 "InputTextView_%@_message" = "Doit être inférieur à %@ caractères.";
 //=============V5.2.0===============
-
 "GoodsDetail_Post_MatchItems" = "Articles recommandés";
 "Account_Wallet" = "Portefeuille";
 "Home_Don't_Like" = "Je n'aime pas";
@@ -1584,7 +1353,6 @@
 "Community_albumPreTips" = "Des autorisations d'album sont requises pour enregistrer des tenues dans votre album de photo.";
 "ZFTracking_Delivery" = "Agence de livraison";
 "Community_Outfit_NOContentTips" = "Oups, n'oubliez pas de partagez vos idées de tenue ! ";
-
 //=============V5.4.0===============
 "rewardCouponTip" = "Lorsque votre commande est confirmée comme reçue, le coupon de retour de la première commande sera envoyé à votre compte.";
 "Hom_Coupon_Expired" = "Oops! Ce coupon a déjà expiré. S'il vous plaît parcourir certains des autres! ";
@@ -1598,7 +1366,6 @@
 "sex_select_tip" = "Veuillez sélectionner la catégorie de produits qui vous intéresse le plus";
 "Hom_Coupon_UnStart" = "Cela commence tout de suite. Revenez plus tard !";
 "sex_Swimwear" = "Maillots de Bain";
-
 "Hom_Coupon_Claimed_Success" = "Reçu avec succès";
 "Hom_Coupon_Claimed_Failed" = "Échec de recevoir. Veuillez réessayer plus tard.";
 "Account_Discover_title" = "Découvrir";
@@ -1637,9 +1404,7 @@
 "Community_Post_Detail_See_All_Comments" = "Voir tous les commentaires";
 "Tab_New_Account" = "Compte";
 "Order_Comment_Send_Account_XXPoints" = "%@ points ont été envoyés sur votre compte";
-
 "Order_Comment_Send_Account_XXPoints_XXCoupon_XXCoupon" = "%@ points + un coupon de %@ + un coupon de %@ ont ¨¦t¨¦ envoy¨¦s ¨¤ votre compte";
-
 //=============V5.6.0===============
 "Live_line" = "Ligne";
 "Login_email_format_error" = "Erreur de format de l'adresse mail, veuillez ressaisir";
@@ -1673,7 +1438,6 @@
 "Login_bind_email_get15_discount" = "Liez une adresse mail pour vous connecter et bénéficiez d'une remise de 15%.";
 "Live_switch_line" = "Changer de Ligne";
 "Order_cancel_klarna_rexplain" = "Explication";
-
 "live_live" = "LIVE";
 "coming_soon" = "Arrivera Bientôt";
 "Seckil_ended" = "Terminé";
@@ -1682,12 +1446,9 @@
 "Login_cancel" = "Annuler";
 "Login_commit" = "Soumettre";
 "SecKil_buy_now" = "Shoppez";
-
 //=============V5.7.0===============
 "Account_Change_Photo" = "Changez votre photo";
-
 //=============V5.8.0===============
-
 "Express_delivery_tip" = "La livraison express ne prend en charge que les adresses en anglais. Veuillez saisir une adresse en anglais, merci.";
 "Express_modifyFistStr" = "La livraison express ne prend en charge que les adresses en anglais. Pour continuer à utiliser ce service,";
 "Express_modifyLastStr" = "veuillez modifier votre adresse.";
@@ -1714,7 +1475,6 @@
 "Search_Feedback" = "-Envoyer un avis>";
 "Modifier" = "MODIFIER";
 "Goodsdetail_Bottom_OutOfStock" = "Rupture de stock. Bientôt de retour en stock.";
-
 //=============V6.0.0===============
 "Community_has_subscribe_live" = "Se désabonner";
 "Community_cancel_subscribe_success" = "Annulé";
@@ -1730,11 +1490,9 @@
 "Order_Unavailable_Goods_tips" = "Les articles suivants ne sont pas disponibles, veuillez reconfirmer le montant de votre commande.";
 "Community_subscribe_success_tip" = "Abonnez-vous avec succès! Vous serez averti lorsque la vidéo en direct commencera dans 5 minutes";
 "Search_NotGoods_Tip_A" = "Votre recherche %@ ne correspond à aucun produit. Vouliez-vous dire %@?";
-
 "goods_match_tops" = "Choisissez Tops";
 "goods_match_bottoms" = "Choisissez Bas";
 "Detail_VIEW_BAG" = "VIEW BAG";
-
 //=============V6.1.0===============
 "Total_order_amount" = "Montant total de la commande:";
 "Order_BankTransfer_Bank_Account" = "Compte Bancaire";
@@ -1763,9 +1521,7 @@
 "Order_BankTransfer_SWIFTCODE" = "CODE SWIFT";
 "Account_recommend_title" = "NOUS RECOMMANDONS";
 "Order_BankTransfer_BankAccount" = "Compte Bancaire";
-
 "FAQ_Support_Center" = "Centre de Support";
-
 //=============V6.2.0===============
 "ModifyAddress_State_Placeholder_UK" = "*Région/Province";
 "ModifyAddress_Address2_Placeholder_UK" = "Adresse ligne 2: appartement, numéro, code, ect";
@@ -1775,7 +1531,6 @@
 "ModifyAddress_State_TipLabel_UK" = "Merci d'entrer l'État / pays du destinataire";
 "modifyAddress_countryCity_state_UK" = "Région/Province";
 "Print_Konbini_Info" = "Print Konbini Info";
-
 "Swim_outfit_top_size" = "TAILLE DES TOPS";
 "Swim_outfit_bottom_size" = "TAILLE DES BAS";
 "Swim_outfit_see_detail" = "détails";
@@ -1784,7 +1539,6 @@
 "Swim_oufit_preview_tip" = "Cliquez sur les éléments ci-dessous pour les ajouter à la fenêtre d'aperçu↓";
 "Search_busy_try_later" = "Recherche occupée, veuillez réessayer plus tard";
 "Search_try_again_text" = "réessayer";
-
 //=============V6.3.0===============
 "ReviewsFilter_MostRecent" = "Le Plus Récent";
 "ReviewsFilter_MostRecentToOldest" = "Du plus Récent au plus Ancien";
@@ -1793,7 +1547,6 @@
 "ReviewsFilter_HighestToLowestRating" = "De la note la plus Élevée à la plus Faible";
 "ReviewsFilter_LowestToHighestRating" = "De la note la plus Faible à la plus Élevée";
 "GoodsDetail_ReturnsWarranty" = "30 Jours de Garantie Retour";
-
 //=============V6.4.0===============
 "OrderList_SizeCheck" = "Vérification de la taille";
 "ModifyAddress_Address1_Placeholder_PH" = "*Address Line 1: Street Address";
@@ -1826,7 +1579,6 @@
 //=============V6.7.0===============
 "iOSLanguageLocalized_NEW" = "NOUVEAUTÉ iOSLanguageLocalized";
 "TabBar_New" = "Nouveauté";
-
 //=============V6.8.0===============
 "Gift_Card" = "Cartes cadeaux";
 "NO_Gift_Card" = "Pas de Carte cadeau";
@@ -1838,7 +1590,6 @@
 "PayOrderCannel_Title_Tips" = "Ce produit a %@ de commentaires positifs. Voulez-vous vraiment annuler ce paiement ?";
 "PayOrderCannel_Buy_Tips" = "Acheté Récemment";
 "PayOrderCannel_Wish_Tips" = "Enregistré Récemment";
-
 //=============V6.9.0===============
 "ShareView_normalTips" = "Share to your friends";
 "ShareView_Rewards_Title" = "Partagez pour des Récompenses";
@@ -1860,7 +1611,6 @@
 "login_agree_termsConditions" = "Je suis d\'accord avec iOSLanguageLocalized.com Conditions d\'Utilisation";
 "login_termsConditions_link" = "Conditions d\'Utilisation";
 "home_coupon_alert_expires_on" = "Valide jusqu'à";
-
 //=============V7.1.1===============
 "Setting_Check_updates" = "Rechercher des mises à jour";
 //=============V7.1.2===============
@@ -1869,10 +1619,8 @@
 "outfit_items_limit_count_tip" = "Vous pouvez ajouter jusqu'à %@ articles en même temps!";
 "Goodsdetail_Email_ShareTitle" = "J'ai découvert de supers produits sur iOSLanguageLocalized.com, venez voir ça 😍 >>";
 "Goodsdetail_ShareTitle" = "Je pense que vous allez aimer ça !";
-
 "new_user_price_tip" = "Prix pour les Nouveaux Utilisateurs";
 "new_user_limt_purchase_tip" = "Chaque utilisateur ne bénéficie qu'une seule fois du prix d'un nouvel utilisateur.";
-
 //=============V7.2.0===============
 "login_one_letter" = "Au moins une lettre";
 "login_not_you" = "Pas votre compte?";
@@ -1905,9 +1653,7 @@
 "Added_to_wishlist" = "Ajouté à la liste de souhaits";
 "Removed_from_wishlist" = "Supprimé de la liste de souhaits";
 "View_my_wishlist" = "Voir ma liste de souhaits";
-
 "MyCoupon_Coupon_Available" = "Disponible";
-
 //=============V7.2.4===============
 "Cancel_order_reset_items" = "Vous pouvez annuler la commande, retourner les marchandises dans le panier et racheter";
 "Cancel_order_eidt_address" = "Vous pouvez cliquer sur l'icône d'édition pour modifier l'adresse";
@@ -1925,7 +1671,6 @@
 "Outfit_share_placehoder" = "N'est-ce pas juste chic? Vérifiez-le pour moi!";
 "Outfit_share_inZ-me" = "Partager dans Z-me";
 "Outfit_share_get_30point" = "Vous gagnerez 30 points Z.";
-
 //=============V7.2.7===============
 "TaxPop_vat" = "Type de taxe";
 "TaxPop_rate" = "taux";
@@ -1951,7 +1696,6 @@ peuvent obtenir x points";
 "review_recomendados_sub_ads" = "Choisissez vos favoris";
 "review_give_up" = "Abandonner";
 "review_more_10_words" = "la critique compte plus de 10 mots, Obtenez jusqu";
-
 "how_get_points" = "Comment obtenir?";
 //=============V7.3.0===============
 "only_shows_3_months_coupons" = "Cette liste ne montre que les coupons utilisés/expirés au cours des trois derniers mois.";
@@ -1965,12 +1709,10 @@ peuvent obtenir x points";
 "outfits_match_accessories" = "Accessoires";
 "detail_buy_together" = "Acheter ensemble";
 "coupon_expires_soon" = "Expire bientôt";
-
 //=============V7.3.3===============
 "but_again_tips1" = "Voulez-vous ajouter des articles dans cette à votre panier d'achat et acheter à nouveau ?";
 "but_again_tips2" = "Les articles sont de retour dans votre sac ! Cependant, les marchandises en rupture de stock ne peuvent pas être ajoutées.";
 "Edit_Address" = "Modifier l'adresse";
-
 "detail_shipping_to" = "Expédition à";
 "detail_shipping_method" = "Méthode d'envoi";
 "detail_shipping_time" = "Temps d'expédition\n(jours ouvrables)";
@@ -1981,14 +1723,11 @@ peuvent obtenir x points";
 "detail_shipping_click_me_tips" = "Cliquez ici pour plus d'informations et la livraison internationale.";
 "detail_shipping_click_me" = "Cliquez ici";
 "detail_shipping_not_available_tips" = "Le service de livraison n'est temporairement pas disponible dans la région que vous avez sélectionnée. Merci pour votre soutien à iOSLanguageLocalized!";
-
 //=============V7.3.4===============
-
 "promotion_items" = "articles promotionnels";
 "the_following_items" = "Les éléments suivants";
 "swipe_similar_items" = "faites glisser pour voir des articles similaires";
 "cart_empty_login_subTip" = "connectez-vous pour vérifier votre panier";
-
 //=============V7.3.8===============
 "insured_pageTitle" = "Programme de garantie des prix";
 "insured_rules" = "Des règles";
@@ -2012,29 +1751,24 @@ peuvent obtenir x points";
 "orderDetail_InsuredPrice" = "Remboursement de la différence de prix";
 "insured_rateTips" = "Il peut y avoir une légère différence dans votre montant remboursable en raison du taux de change.";
 "insured_pop_tips" = "Pour les paiements par versement, nous enverrons le remboursement sur votre compte de paiement d'origine.";
-
 //=============V7.4.0===============
 "address_feedback_tips" = "Je ne trouve pas ma ville ? Veuillez entrer votre ville.";
 "address_feedback_SuccessTips" = "Merci pour votre commantaire.";
 "address_feedback_placeholder" = "Entrez votre ville";
 "address_feedback" = "Commentaire";
 "Guarantee_Rules" = "Des règles";
-
 //=============V7.4.2===============
 "NotifyMe_Title" = "Rappel de retour en stock";
 "NotifyMe_SubTitle" = "nous vous informerons lorsque votre article sera de nouveau en stock";
 "NotifyMe_Rules" = "Envoyez-moi une newsletter exclusive et des offres de iOSLanguageLocalized";
 "NotifyMe_NotityMe" = "Prévenez-moi";
 "NotifyMe_Stock_EmailTips" = "Si le sku est en stock, un email vous sera envoyé";
-
 "Guide_NewUser1" = "New Users";
 "Guide_NewUser2" = "15% de réduction";
 "Guide_NewUser3" = "pour votre première commande";
-
 "sex_choose_content" = "Choisissez votre préférence";
 "PushView_title" = "Recevez des informations sur les ventes et les commandes en temps opportun";
 "PushView_content" = "Activez les notifications de message pour obtenir des informations sur les progrès de la logistique, la baisse des prix et les ventes.";
-
 "EmailVerify_Title" = "Vérification de l'e-mail";
 "EmailVerify_receive" = "Recevez";
 "EmailVerify_100Zpoint" = "100 Zpoints +";
@@ -2044,7 +1778,6 @@ peuvent obtenir x points";
 "EmailVerify_errorTips" = "L'e-mail a été utilisé par d'autres. Veuillez spécifier une autre adresse e-mail.";
 "EmailVerify_SubmitTips" = "Vérifiez %@ pour la confirmation email.";
 "EmailVerify_Submitted" = "Soumis";
-
 "MyPoints_getPoints" = "Obtenir des points";
 "MyPoints_pointsBalance" = "Solde des points Z";
 "MyPoints_noExpiredPointsTips" = "Aucun Zpoint expiré au cours des 30 derniers jours";
@@ -2054,11 +1787,9 @@ peuvent obtenir x points";
 "New_user_Unlock" = "Ouvrir";
 "New_user_Register_get" = "INSCRIVEZ-VOUS ET OBTENEZ";
 "MatchBuy_get_the_look" = "ACHETER ENSEMBLE";
-
 //=============V7.4.4===============
 "Self_Service" = "Self-Service";
 "View_The_Look" = "Voir le look";
-
 //=============V7.4.5===============
 "Account_Security" = "Sécurité du compte";
 "Account_Security_account" = "Mon compte";
@@ -2067,21 +1798,15 @@ peuvent obtenir x points";
 "Account_Security_Verified" = "Confirmé";
 "Account_Security_delete_account" = "Supprimer mon compte";
 "Address_edit_addressNumberTips" = "Nous vous recommandons d'entrer le numéro de maison/bâtiment pour faciliter la livraison.";
-
 //=============V7.4.6===============
 "Tracking_Websites" = "sites de suivi >";
-
 "Cart_new_user_guide_tip" = "Règles :\n1. Chaque nouvel utilisateur n'obtiendrait qu'un seul Nouvel Utilisateur Prix d'Article. \n2. Cliquez sur le bouton \"changer\" et choisissez l'article pour bénéficier de la réduction. ";
 "Cart_new_user_rules_tip" = "Chaque nouvel utilisateur n'obtiendrait qu'un seul Nouvel Utilisateur Prix d'Article";
-
 //=============V7.4.6===============
 "Suit_Set" = "Set";
-
 //=============V7.4.8===============
 "Clearance_Tag" = "LIQUIDATION";
-
 "Clearance_Tip" = "Les coupons/points ne peuvent pas être appliqués aux articles en liquidation/vente.";
-
 //=============V7.4.9===============
 "Korea_clause_0" = "All confirmed and I agree.";
 "Korea_clause_1" = "Full Consent includes consent for required and optional information, and you can choose to consent individually. You can use the service even if you refuse to agree to the selection.";
@@ -2094,7 +1819,6 @@ peuvent obtenir x points";
 "Korea_clause_8" = "[Optional] Agree to receive emails";
 "Korea_clause_9" = "[Optional] Agree to receive SMS and SNS";
 "Korea_clause_10" = "[Optional] Agree to receive app pushes";
-
 //=============V7.5.0===============
 "Cart_UnavailableCoupons" = "Coupon(s) non disponible(s)";
 "Cart_BackBag" = "Sac à dos";
@@ -2102,21 +1826,16 @@ peuvent obtenir x points";
 "Cart_MoreRnjoyShipping" = "Achetez %@ USD de plus pour bénéficier de la LIVRAISON STANDARD GRATUITE !";
 "Cart_SelectCouponSave" = "Économisez %@ ! Le code promotionnel a été appliqué à votre commande !";
 "Cart_InputCode" = "Code d'entrée.";
-
-
 //=============V7.5.1===============
 "tip_add_to_cart_success" = "Déjà Ajouté";
 "text_menu_share" = "Partager";
-
 //=============V7.5.5===============
 "Copy_Success_Share_Link" ="Copied successfully! Share the link with your friends to win the chances!";
 //=============V7.5.7===============
 "suit_original_price" = "Prix original";
 "suit_please_choose_size" = "Choisissez Votre Taille SVP";
-
 //=============V7.5.8===============
 "Buyer_Protection" = "PROTECTION D'ACHETEUR";
-
 //=============V7.6.0===============
 "Push_content_tips" = "Activez les notifications pour recevoir les informations logistiques, les discounts, les promotions et des autres info.";
 "Push_order_tips" = "Activez les notifications pour recevoir les informations logistiques, les discounts, les promotions et des autres info.";
@@ -2129,12 +1848,10 @@ peuvent obtenir x points";
 "Push_turn_on_content" = "Nous allons vous informer lors que cet article est de retour en stock.";
 "Push_turn_on_allow" = "Permettre";
 "Push_newuser_shop" = "Shoppez les prix pour nouveaux clients";
-
 //=============V7.6.1===============
 "Detail_Select_Color" = "Select color";
 "CMS_Coupon_ReceiveD" = "RECEIVED";
 "Detail_Model_tip_info" = "Mannequin: %@ | Size: %@.";
-
 //=============V7.6.2===============
 "PaySuccessFull_Status" = "Paiement s'est réalisé";
 "PaySuccessFull_paid" = "Payé";
@@ -2151,7 +1868,6 @@ peuvent obtenir x points";
 "Order_Amount" = "Montant de la Commande";
 "Swipe_up_next_page"= "Balayez vers le haut pour afficher la page suivante";
 "Swipe_down_previous_page"= "Balayez vers le bas pour afficher la page précédente";
-
 //=============V7.6.4===============
 "Shop_this_look" = "Shoppez ce look";
 "Coupon_not_valid" = "Invalide";
@@ -2166,7 +1882,6 @@ peuvent obtenir x points";
 "Share_youwillget" = "VOUS OBTIENDREZ";
 "Share_signIn" = "Inscrivez-vous/ connectez-vous maintenant";
 "Not_your_style" = "C'est pas votre style?";
-
 "Product_Measurement" = "Tableau de Mesure du Produit";
 "Body_Measurement" = "Tableau de Mesure du Corps";
 "Selected_size" = "Taille Sélectionnée:";
