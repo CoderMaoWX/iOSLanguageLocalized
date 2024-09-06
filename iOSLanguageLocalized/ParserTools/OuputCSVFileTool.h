@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+///导出多语言到表格
 @interface OuputCSVFileTool : NSObject
 
 + (void)generateCSV:(NSString *)localizbleURL

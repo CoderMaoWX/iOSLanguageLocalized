@@ -13,6 +13,8 @@
 		58555BB42266CAA100668869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58555BB22266CAA100668869 /* Main.storyboard */; };
 		A3FCD63F2C42EDB0003FAC88 /* MatchLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63D2C42EDB0003FAC88 /* MatchLanguageTool.m */; };
 		A3FCD6402C42EDB0003FAC88 /* ReadCSVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileTool.m */; };
+		CF5D0E022C8952B0004C8F6E /* Region.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF5D0E002C8952B0004C8F6E /* Region.strings */; };
+		CF5D0E102C895ABD004C8F6E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF5D0E0F2C895A97004C8F6E /* Info.plist */; };
 		CF61109F2C44FCA100A868C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF61109D2C44FCA100A868C3 /* Localizable.strings */; };
 		CF6110AA2C44FE1800A868C3 /* OuputCSVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6110A92C44FE1800A868C3 /* OuputCSVFileTool.m */; };
 		CF6FB2912C7DD24F001817B3 /* ParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6FB2902C7DD24F001817B3 /* ParserManager.m */; };
@@ -27,12 +29,17 @@
 		58555BAE2266CAA000668869 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		58555BB02266CAA100668869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58555BB32266CAA100668869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		58555BB52266CAA100668869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58555BB82266CAA100668869 /* iOSLanguageLocalized.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSLanguageLocalized.entitlements; sourceTree = "<group>"; };
 		A3FCD63B2C42EDB0003FAC88 /* ReadCSVFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadCSVFileTool.h; sourceTree = "<group>"; };
 		A3FCD63C2C42EDB0003FAC88 /* MatchLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchLanguageTool.h; sourceTree = "<group>"; };
 		A3FCD63D2C42EDB0003FAC88 /* MatchLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchLanguageTool.m; sourceTree = "<group>"; };
 		A3FCD63E2C42EDB0003FAC88 /* ReadCSVFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadCSVFileTool.m; sourceTree = "<group>"; };
+		CF5D0E012C8952B0004C8F6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Region.strings; sourceTree = "<group>"; };
+		CF5D0E032C8952D5004C8F6E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Region.strings"; sourceTree = "<group>"; };
+		CF5D0E042C8952D9004C8F6E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Region.strings; sourceTree = "<group>"; };
+		CF5D0E052C8952DA004C8F6E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Region.strings; sourceTree = "<group>"; };
+		CF5D0E062C8952DB004C8F6E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Region.strings; sourceTree = "<group>"; };
+		CF5D0E0F2C895A97004C8F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF61109E2C44FCA100A868C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF6110A12C44FCB000A868C3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF6110A32C44FCBF00A868C3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -109,7 +116,7 @@
 				58555BB02266CAA100668869 /* Assets.xcassets */,
 				58555BB22266CAA100668869 /* Main.storyboard */,
 				CFE4F2152C4F4D2400DEA62B /* main.m */,
-				58555BB52266CAA100668869 /* Info.plist */,
+				CF5D0E0F2C895A97004C8F6E /* Info.plist */,
 				58555BB82266CAA100668869 /* iOSLanguageLocalized.entitlements */,
 			);
 			path = Resource;
@@ -119,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				CF61109D2C44FCA100A868C3 /* Localizable.strings */,
+				CF5D0E002C8952B0004C8F6E /* Region.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -194,6 +202,8 @@
 			files = (
 				58555BB12266CAA100668869 /* Assets.xcassets in Resources */,
 				CF61109F2C44FCA100A868C3 /* Localizable.strings in Resources */,
+				CF5D0E022C8952B0004C8F6E /* Region.strings in Resources */,
+				CF5D0E102C895ABD004C8F6E /* Info.plist in Resources */,
 				58555BB42266CAA100668869 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +234,18 @@
 				58555BB32266CAA100668869 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF5D0E002C8952B0004C8F6E /* Region.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF5D0E012C8952B0004C8F6E /* en */,
+				CF5D0E032C8952D5004C8F6E /* zh-Hans */,
+				CF5D0E042C8952D9004C8F6E /* fr */,
+				CF5D0E052C8952DA004C8F6E /* de */,
+				CF5D0E062C8952DB004C8F6E /* ja */,
+			);
+			name = Region.strings;
 			sourceTree = "<group>";
 		};
 		CF61109D2C44FCA100A868C3 /* Localizable.strings */ = {

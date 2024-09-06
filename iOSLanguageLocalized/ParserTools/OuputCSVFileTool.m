@@ -8,6 +8,7 @@
 
 #import "OuputCSVFileTool.h"
 
+///导出多语言到表格
 @implementation OuputCSVFileTool
 
 + (void)generateCSV:(NSString *)localizbleURL
@@ -31,25 +32,44 @@
         outputPath = [outputPath componentsSeparatedByString:tmpSeparated].firstObject;
     }
     
-    NSMutableArray *allLanguageDirArray = [NSMutableArray arrayWithArray:[fileManger contentsOfDirectoryAtPath:localizbleURL error:nil]];
-    [allLanguageDirArray removeObject:@".DS_Store"];//排除异常文件
+    NSArray *allLanguageNames = [fileManger contentsOfDirectoryAtPath:localizbleURL error:nil];
     
-    NSInteger count = 0;
+    NSMutableArray *allLanguageDirArray = [NSMutableArray array];
+    //排除异常文件
+    for (NSString *fileName in allLanguageNames) {
+        if ([fileName.lowercaseString hasSuffix:@".lproj"]) {
+            [allLanguageDirArray addObject:fileName];
+        }
+    }
     
     if (allLanguageDirArray.count == 0) {
         if (compeletion) {
-            compeletion(NO, @"项目路径文件夹中不存在文件名字为Localizable.strings的翻译文件");
+            compeletion(NO, @"项目路径文件夹中不存在国际化多语言翻译文件");
         }
         return;
     }
     
+    NSInteger failCount = 0;
+    NSInteger allCount = 0;
+    
     // 获取多语言目录列表: Key（Android/iOS Key), en.lproj, de.lproj, es.lproj ...
     for (NSString *pathDicr in allLanguageDirArray) {
-        //NSLog(@"多语言文件夹子目录===%@", pathDicr);
         
-        NSString *localizablePath = [NSString stringWithFormat:@"%@/%@/Localizable.strings", localizbleURL, pathDicr];
-        if ([fileManger fileExistsAtPath:localizablePath]) {
+        NSString *tmpPath = [NSString stringWithFormat:@"%@/%@", localizbleURL, pathDicr];
+        NSArray *lprojSubDirectoryArr = [fileManger contentsOfDirectoryAtPath:tmpPath error:nil];
+        
+        for (NSString *subPath in lprojSubDirectoryArr) {
+            if (![subPath.lowercaseString hasSuffix:@".strings"] ||
+                [subPath.lowercaseString hasSuffix:@"plist.strings"]) {
+                continue;
+            }
+            allCount += 1;
             
+            NSString *localizablePath = [NSString stringWithFormat:@"%@/%@", tmpPath, subPath];
+            if (![fileManger fileExistsAtPath:localizablePath]) {
+                failCount += 1;
+                continue;
+            }
             NSError *error = nil;
             //先读取项目中匹配的旧的翻译文件
             NSString *inputString = [NSString stringWithContentsOfFile: localizablePath
@@ -61,101 +81,55 @@
             
             for (NSString *line in lines) {
                 NSRange equalRange = [line rangeOfString:@"="];
-                if (equalRange.location != NSNotFound) {
-                    NSString *key = [[line substringToIndex:equalRange.location] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-                    NSString *value = [[line substringFromIndex:equalRange.location + 1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-                    
-                    if (![key isEqualToString:@""] && ![value isEqualToString:@""]) {
-                        if ([value hasSuffix:@";"]) {
-                            NSString *tmpValue = [value stringByReplacingOccurrencesOfString:@";" withString:@""];
-                            [validLines addObject:@[key, tmpValue]];
-                        } else {
-                            [validLines addObject:@[key, value]];
-                        }
+                if (equalRange.location == NSNotFound) { continue; }
+                
+                NSCharacterSet *character = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+                NSString *key = [[line substringToIndex:equalRange.location] stringByTrimmingCharactersInSet:character];
+                NSString *value = [[line substringFromIndex:equalRange.location + 1] stringByTrimmingCharactersInSet:character];
+                
+                if (![key isEqualToString:@""] && ![value isEqualToString:@""]) {
+                    if ([value hasSuffix:@";"]) {
+                        NSString *tmpValue = [value stringByReplacingOccurrencesOfString:@";" withString:@""];
+                        [validLines addObject:@[key, tmpValue]];
+                    } else {
+                        [validLines addObject:@[key, value]];
                     }
                 }
             }
             
             NSMutableString *csvString = [NSMutableString stringWithCapacity:1000];
             [csvString appendFormat:@"key,%@\n", pathDicr];
-
+            
             for (NSArray *pair in validLines) {
                 [csvString appendFormat:@"%@,%@\n", pair[0], pair[1]];
             }
             
-            if ([fileManger fileExistsAtPath:outputPath]) {
-                NSString *outputURL = [NSString stringWithFormat:@"%@/%@.csv", outputPath, pathDicr];
-                
-                NSURL *fileURL = [NSURL fileURLWithPath: outputURL];
-                [[csvString dataUsingEncoding:NSUTF8StringEncoding] writeToURL:fileURL options:NSDataWritingAtomic error:&error];
-                
-                if (error == nil) {
-                    count += 1;
-                }
+            if (![fileManger fileExistsAtPath:outputPath]) {
+                failCount += 1;
+                continue;
             }
-        } else {
-            if (compeletion) {
-                compeletion(NO, @"项目路径文件夹中不存在文件名字为Localizable.strings的翻译文件");
-            }
-            return;
-        }
-    }
-    BOOL isSuccess = count == allLanguageDirArray.count;
-    
-    NSString *tipStr = @"💐恭喜, 多语言文件导出成功";
-    if (!isSuccess) {
-        tipStr = @"部分多语言文件导出成功, 请检查文件夹中是否存在其他文件";
-    }
-    if (compeletion) {
-        compeletion(isSuccess, tipStr);
-    }
-}
-
-// 测试逐行读取字符串方案
-+ (void)testGenerateCSV:(NSString *)inputString
-             outputPath:(NSString *)outputFilePath {
-
-    // 准备一个可变字符串，用于构建CSV内容
-    NSMutableString *csvContent = [NSMutableString stringWithString:@"key,value\n"];
-    
-    // 分割字符串为每一行
-    NSArray *lines = [inputString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-    
-    for (NSString *line in lines) {
-        NSString *key = nil;
-        NSString *value = nil;
-        
-        // 创建NSScanner
-        NSScanner *scanner = [NSScanner scannerWithString:line];
-        
-        // 尝试扫描key
-        if ([scanner scanString:@"\"" intoString:NULL] &&
-            [scanner scanUpToString:@"\"" intoString:&key] &&
-            [scanner scanString:@"\"" intoString:NULL] &&
-            [scanner scanString:@"=" intoString:NULL] &&
-            [scanner scanCharactersFromSet:[NSCharacterSet whitespaceCharacterSet] intoString:NULL] &&
-            [scanner scanString:@"\"" intoString:NULL] &&
-            [scanner scanUpToString:@"\"" intoString:&value] &&
-            [scanner scanString:@"\"" intoString:NULL] &&
-            [scanner scanString:@";" intoString:NULL]) {
+            NSString *joinName = [subPath componentsSeparatedByString:@"."].firstObject;
+            NSString *nameSuffix = [pathDicr componentsSeparatedByString:@"."].firstObject;
+            NSString *outputURL = [NSString stringWithFormat:@"%@/%@-%@.csv", outputPath, joinName, nameSuffix];
             
-            // 检查key和value是否为空白
-            if (key.length > 0 && value.length > 0) {
-                // 添加到CSV内容
-                [csvContent appendFormat:@"%@,%@\n", key, value];
+            NSURL *fileURL = [NSURL fileURLWithPath: outputURL];
+            BOOL success = [[csvString dataUsingEncoding:NSUTF8StringEncoding] writeToURL:fileURL options:NSDataWritingAtomic error:&error];
+            
+            if (success == NO) {
+                failCount += 1;
             }
         }
     }
-    printf("写入CSV文件的内容: %s", csvContent.UTF8String);
     
-    // 将CSV内容写入文件
-    NSError *error = nil;
-    BOOL success = [csvContent writeToFile:outputFilePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    if (!compeletion) { return; }
     
-    if (!success) {
-        NSLog(@"写入CSV文件失败: %@", error);
+    if (failCount == 0) {
+        compeletion(YES, @"💐恭喜, 多语言文件全部导出成功");
+        
+    } else if (failCount == allCount) {
+        compeletion(NO, @"😰糟糕, 多语言文件全部导出失败,请检查文件格式");
     } else {
-        NSLog(@"CSV文件写入成功: %@", outputFilePath);
+        compeletion(YES, @"❗️多语言部分导出成功, 部分导出失败, 请检查文件格式");
     }
 }
 
