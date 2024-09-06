@@ -81,7 +81,7 @@
     self.chooseLocalizbleBtn.enabled = !isLoading;
     self.localizbleTipLabel.textColor = !isLoading ? NSColor.grayColor : NSColor.redColor;
     if (!isLoading) {
-        self.localizbleTipLabel.stringValue = @"*请选择项目中的国际化文件（en.lpro）的父文件夹,   注意:仅会读写每个子文件夹中文件名字为Localizable.strings的进行翻译;";
+        self.localizbleTipLabel.stringValue = @"*请选择项目中的国际化文件（en.lpro）的父文件夹";
     }
     
     self.csvPathCell.enabled = !isLoading;
