@@ -20,7 +20,7 @@
     NSFileManager *fileManger = [NSFileManager defaultManager];
     NSArray *allLanguageNames = [fileManger contentsOfDirectoryAtPath:localizbleURL error:nil];
     
-    NSMutableArray *allLanguageDirArray = [NSMutableArray array];
+    NSMutableArray<NSString *> *allLanguageDirArray = [NSMutableArray array];
     //排除异常文件
     for (NSString *fileName in allLanguageNames) {
         if ([fileName.lowercaseString hasSuffix:@".lproj"]) {
@@ -35,6 +35,79 @@
         return;
     }
     
+    NSString *firstDathDicr = allLanguageDirArray.firstObject;
+    NSString *firstTmpPath = [NSString stringWithFormat:@"%@/%@", localizbleURL, firstDathDicr];
+    NSMutableArray *firstSubDirectoryArr = [NSMutableArray arrayWithArray:[fileManger contentsOfDirectoryAtPath:firstTmpPath error:nil]];
+
+    for (NSString *subDirectoryName in firstSubDirectoryArr.mutableCopy) {
+        if (![subDirectoryName.lowercaseString hasSuffix:@".strings"]) {
+            [firstSubDirectoryArr removeObject:subDirectoryName];
+        }
+    }
+    NSString *allNameStr = @"全部";
+    
+    // 超过一个才提示要选择哪一个
+    if (firstSubDirectoryArr.count > 1) {
+        
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert setMessageText:@"你的项目中有多个国际化文件?"];
+        [alert setInformativeText:@"请选择一个你需要导入的国际化文件, 或者你可以选择全部导入。"];
+
+        // 添加按钮
+        for (NSString *subDirectoryName in firstSubDirectoryArr) {
+            [alert addButtonWithTitle:subDirectoryName];
+        }
+        
+        // 设置特定按钮为默认选中的按钮，比如将 "全部" 设置为默认按钮
+        NSButton *allButton = [alert addButtonWithTitle:allNameStr];
+        [alert.window setDefaultButtonCell:allButton.cell];
+        
+        // 设置弹窗样式
+        [alert setAlertStyle:NSAlertStyleInformational];
+        
+        // 展示弹窗 (runModal此方法会阻塞线程，等待用户选择按钮后返回响应)
+        NSModalResponse response = [alert runModal];
+        
+        // 根据用户点击的按钮处理响应/ 遍历按钮，判断用户是否点击了 "全部" 按钮
+        for (NSButton *button in alert.buttons) {
+            if (response != button.tag) { continue; }
+            NSString *buttonTitle = button.title;
+            
+            if ([buttonTitle isEqualToString:allNameStr]) {
+                NSLog(@"弹窗选择中点击了: '全部'");
+            } else {
+                NSLog(@"弹窗选择中点击了: %@", buttonTitle);
+            }
+            //异步处理
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                [self handerDealwithImportLanguage:allLanguageDirArray
+                                        filterName:buttonTitle
+                                            csvURL:csvURL
+                                    localizblePath:localizbleURL
+                                       compeletion:compeletion];
+            });
+        }
+        NSLog(@"弹窗弹出来了吗?");
+    } else { //异步处理
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            [self handerDealwithImportLanguage:allLanguageDirArray
+                                    filterName:allNameStr
+                                        csvURL:csvURL
+                                localizblePath:localizbleURL
+                                   compeletion:compeletion];
+        });
+    }
+}
+
+//异步处理开始导入多语言
++ (void)handerDealwithImportLanguage:(NSArray *)allLanguageDirArray
+                          filterName:(NSString *)filterName
+                              csvURL:(NSString *)csvURL
+                      localizblePath:(NSString *)localizbleURL
+                         compeletion:(void (^)(BOOL checkSuccess, NSString *tipString, BOOL tipStatus))compeletion {
+    
+    NSFileManager *fileManger = [NSFileManager defaultManager];
+    
     // 获取多语言目录列表: Key（Android/iOS Key), en.lproj, de.lproj, es.lproj ...
     NSMutableDictionary<NSString *, NSMutableArray *> *appLprojDict = [NSMutableDictionary dictionary];
     
@@ -45,9 +118,9 @@
         NSArray *lprojSubDirectoryArr = [fileManger contentsOfDirectoryAtPath:tmpPath error:nil];
         
         for (NSString *subPath in lprojSubDirectoryArr) {
-            if ([subPath.lowercaseString hasSuffix:@".strings"] &&
-                ![subPath.lowercaseString hasSuffix:@"plist.strings"]) {
-                
+            if (![subPath.lowercaseString hasSuffix:@".strings"]) { continue; }
+            
+            if ([filterName isEqualToString:@"全部"] || [subPath isEqualToString:filterName]) {
                 NSMutableArray *tmpPathArr = appLprojDict[pathDicr];
                 if (![tmpPathArr isKindOfClass:[NSMutableArray class]]) {
                     tmpPathArr = [NSMutableArray array];
@@ -196,6 +269,7 @@
             compeletion(YES, tipStr, NO);
         }
     }
+    
 }
 
 /// 过滤字符串的各种空格和换行符等

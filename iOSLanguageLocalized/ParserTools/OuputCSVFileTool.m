@@ -59,8 +59,7 @@
         NSArray *lprojSubDirectoryArr = [fileManger contentsOfDirectoryAtPath:tmpPath error:nil];
         
         for (NSString *subPath in lprojSubDirectoryArr) {
-            if (![subPath.lowercaseString hasSuffix:@".strings"] ||
-                [subPath.lowercaseString hasSuffix:@"plist.strings"]) {
+            if (![subPath.lowercaseString hasSuffix:@".strings"]) {
                 continue;
             }
             allCount += 1;

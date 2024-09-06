@@ -188,10 +188,8 @@
         if (result == NSModalResponseCancel)return;
         NSString *filePath = panel.URL.path;
         
-//        if ([self checkTipInputPath:filePath tipLabel:self.csvTipLabel]) {
-            self.csvPathCell.stringValue = filePath;
-            [self refreshUI];
-//        }
+        self.csvPathCell.stringValue = filePath;
+        [self refreshUI];
     }];
 }
 
@@ -238,6 +236,12 @@
     if (![self checkTipInputPath:self.localizblePathCell.stringValue tipLabel:self.localizbleTipLabel]) return;
     if (![self checkTipInputPath:self.csvPathCell.stringValue tipLabel:self.csvTipLabel]) return;
     
+    if (![self.csvPathCell.stringValue.lowercaseString hasSuffix:@".csv"]) {
+        self.csvTipLabel.stringValue = @"导入翻译时: 仅支持选择.csv文件!";
+        self.csvTipLabel.textColor = NSColor.redColor;
+        return;
+    }
+    
     // 屏蔽其他点击事件，显示转圈
     [self refreshUIIsLoading:YES];
     self.localizbleTipLabel.textColor = NSColor.grayColor;
@@ -246,23 +250,21 @@
     // 开始添加CSV表格中的多语言翻译
     NSString *csvFileURL = self.csvPathCell.stringValue;
     NSString *localizbleURL = self.localizblePathCell.stringValue;
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
         
-        [MatchLanguageTool mappingLanguage:csvFileURL
-                            localizblePath:localizbleURL
-                               compeletion:^(BOOL checkSuccess, NSString * _Nonnull tipString, BOOL tipStatus) {
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                if (checkSuccess) {
-                    [self showResultTip:tipString status:tipStatus];
-                } else {
-                    [self showCheckTip:tipString tipLabel:self.localizbleTipLabel];
-                }
-                [[NSUserDefaults standardUserDefaults] setObject:localizbleURL forKey:kLanguageLocalized];
-                [[NSUserDefaults standardUserDefaults] synchronize];
-            });
-        }];
-    });
+    [MatchLanguageTool mappingLanguage:csvFileURL
+                        localizblePath:localizbleURL
+                           compeletion:^(BOOL checkSuccess, NSString * _Nonnull tipString, BOOL tipStatus) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (checkSuccess) {
+                [self showResultTip:tipString status:tipStatus];
+            } else {
+                [self showCheckTip:tipString tipLabel:self.localizbleTipLabel];
+            }
+            [[NSUserDefaults standardUserDefaults] setObject:localizbleURL forKey:kLanguageLocalized];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        });
+    }];
 }
 
 @end
