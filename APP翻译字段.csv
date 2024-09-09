@@ -1,0 +1,76 @@
+key,Chinese,English,French,Arabic,Portuguese,Bengali
+现在邀请,,INVITE NOW,INVITEZ MAINTENANT,ادعو اصدقاءك الآن,CONVITE AGORA,এখনই ইনভাইট করুন 
+会员代码,,Affiliate Code,Code de l'affilié,كود الشراكة ,Código de afiliado,অ্যাফিলিয়েট কোড
+会员用户,,Affiliate User,Utilisateur affilié,الشريك المستخدم,Usuário afiliado,অ্যাফিলিয়েট ইউজার
+网盟订单,,Affiliate Order,Commande de l'affilié,أمر الانتساب,Pedido de afiliado,অ্যাফিলিয়েট অর্ডার
+网盟活动,,Affiliate Activity,Activité de l'affilié,نشاط الشريك ,Atividade de afiliados,অ্যাফিলিয়েট কার্যকলাপ
+我的提现,,My Withdraws,Mes retraits, السحب الخاصة بي,Minhas retiradas,পেমেন্ট উত্তোলন
+网盟账单,,Statement of Account,Resumé du compte,كشف حساب,Extrato de conta,অ্যাকাউন্ট স্টেটমেন্ট
+名称,,Name,Nom de l'affilié,الاسم,Nome,নাম
+会员类型,,Affiliate Type,Type d'affilié,نوع الشراكة ,Tipo de afiliado,অ্যাফিলিয়েট টাইপ
+新的用户委员会,,New User Commission,Commission pour les nouveaux utilisateurs,عمولة المستخدم الجديد,Comissão de novos usuários,নতুন ইউজারের কমিশন
+您的委托,,Your Commission,Votre Commission,عمولتك,Sua Comissão,আপনার কমিশন
+手机号码,,Phone Number,Numéro de téléphone,رقم التليفون,Número de telefone,ফোন নাম্বার
+需要该字段,,The field is required,Ce champ est obligatoire,هذه الخانة إلزامية,O campo é obrigatório,জরুরি
+社交媒体表现,,Social Media Performance,Performance des médias sociaux,أداء وسائل التواصل الاجتماعي,Desempenho nas redes sociais,সোশ্যাল মিডিয়া প্যারফমেন্স
+您的要求已经收到我们将在3个工作日内进行审查,,"Your request already received, we will review it within 3 working days!","Votre demande a déjà été reçue, nous l'examinerons dans les 3 jours ouvrables !",تم استلام طلبك بالفعل، وسنقوم بمراجعته خلال 3 أيام عمل!,"Sua solicitação já foi recebida, iremos analisá-la em até 3 dias úteis!","আপনার অনুরোধ ইতিমধ্যেই প্রাপ্ত হয়েছে, আমরা ৩ কার্যদিবসের মধ্যে রিভিউ করবো।"
+事件的规则如下,,THE RULES OF THE EVENT ARE AS FOLLOWS,LES RÈGLES DE L'ÉVÉNEMENT SONT LES SUIVANTES,قوانين الحدث هي كما يلي:,AS REGRAS DO EVENTO SÃO AS SEGUINTES,ইভেন্টের নিয়মগুলো নিম্নে দেয়া হয়েছে
+查看历史,,View History,Voir l'historique,عرض السجل,Ver histórico,হিস্টোরি দেখুন 
+提交成功,,Submitted successfully,Soumis avec succès,تم الإرسال بنجاح,Enviado com sucesso,সফলভাবে সাবমিট হয়েছে
+提款正在审查请耐心等待,,"Withdrawal is under review, please wait patiently","Le retrait est en cours d'examen, veuillez patienter",السحب قيد المراجعة، يرجى الانتظار .,"A retirada está em análise, aguarde pacientemente","আপনার উত্তোলন রিকুয়েস্ট রিভিউ করা হচ্ছে, অপেক্ষা করুন।"
+所有订单,,All Orders,Toutes les commandes,جميع الطلبات,Todos os pedidos,সকল অর্ডার
+推荐,,Referral,Renvoi,الإحالة,Referência,রেফারেল 
+达到VIP,,to VIP,vers VIP,الى VIP,para VIP,ভিআইপি
+提取历史,,Withdraw History,Historique des retraits,سجل السحب,Histórico de retiradas,পেমেন্ট উত্তোলন হিস্টোরি
+佣金网盟,,Commission Affiliate,Commission d'affiliation,عمولة تسويق,Comissão de afiliado,কমিশন আফিলিয়েট
+积分网盟,,Points Affiliate,Points d'affiliation ,نقاط تسويق ,Pontos de afiliado,পয়েন্ট আফিলিয়েট 
+交易金额,,Transaction amount,Montant de la transaction,قيمة التحويل,Quantia da Transação,লেনদেনের পরিমাণ
+供你参考,,Your reference,Votre référence,مرجعك,Sua Referência,আপনার রেফারেন্স
+实体号,,Entity: %@,Entité,كيان,Entidade,
+您的订单将使用此参考ID付款并且付款完成后将立即到期,,"Your order will be paid with this reference ID, and it will expire immediately after payment is completed. 
+(This reference ID will expire after this time: %@)","« Votre commande sera payée avec cet identifiant de référence, qui expirera immédiatement après le paiement. 
+(Cet ID de référence expirera après ce délai : %s) »",ستدفع طلبك عن طريق هذا الرقم المرجعي وستنتهي صلاحية الرقم مباشرة بعد إتمام الدفع (الرقم المرجعي سينتهي في خلال:%s),"Seu pedido será pago com este ID de referência, e ele expirará imediatamente após a conclusão do pagamento.
+（Este ID de referência expirará após este tempo：）","আপনার অর্ডারটি এই রেফারেন্স আইডির মাধ্যমে পেমেন্ট হবে এবং পেমেন্ট শেষ হওয়ার সাথে সাথেই এটির মেয়াদ শেষ হয়ে যাবে.
+(এই রেফারেন্স আইডি শেষ হবেঃ %s)"
+我的账户,,My Account,Mon compte,حسابي ,Minha conta,আমার অ্যাকাউন্ট
+邀请并赚钱,,Invite & Earn,Invite & Earn,ادع وأربح ,Invite & Earn,Invite & Earn
+邀请并赚取积分,,Invite & Earn Points,Inviter et gagner des points,ادع واكسب المزيد من النقاط,Convide e ganhe pontos,ইনভাইট করুন এবং পয়েন্ট জিতে নিন
+给你,,for you,pour vous,من أجلك,Para você ,আপনার জন্য
+给朋友,,for friends,pour vos amis,من أجل اصدقائك,para amigos,বন্ধুর জন্য
+邀请朋友下载并注册让你们一起赚钱,,Invite a friend to download and sign up – you both win! Gift your friend %@ WELCOME POINTS for registering and subscribing. Let's earn it!,Invitez un ami à télécharger et à s'inscrire - vous gagnez tous les deux ! Offrez à votre ami 600 POINTS DE BIENVENUE pour son inscription et son abonnement. Gagnez !,ادعُ صديقًا لتحميل التطبيق والتسجيل – ليفز كلاكما! قدّم لصديقك 600 نقطة ترحيب عند تسجيله والاشتراك!,Convide um amigo para baixar e se inscrever – vocês dois ganham! Presenteie seu amigo com 600 PONTOS DE BEM-VINDO por se registrar e se inscrever. Vamos ganhar!,"ডাউনলোড এবং সাইন আপ করার জন্য বন্ধুকে ইনভাইট করে দুইজনই জিতে নিন!
+বন্ধুকে রেজিস্টার এবং সাবস্ক্রাইব করার জন্য ৬০০ ওয়েলকাম পয়েন্ট গিফট করুন।"
+详细规则,,Detailed Rules,Règles détaillées,القواعد التفصيلية,Regras detalhadas,বিস্তারিত নিয়ম
+开始分享,,Start Sharing,Commencer à partager,ابدأ بالمشاركة,Inícia compartilhando,শেয়ার শুরু করুন
+分享您的推荐链接,,1.Share your referral link,1. partagez votre lien de parrainage,1. شارك رابط الدعوة الخاص بك,1.Compartilhe seu link de indicação,১. আপনার রেফারেল লিঙ্ক শেয়ার করুন
+查看,,View,Voir,عرض,Ver,দেখুন
+或者,,or,ou,أو,ou,অথবা
+分享您的推荐代码,,2.Share your referral code,2. partagez votre code de parrainage,2. شارك رمز الدعوة الخاص بك,2. Compartilhe seu código de referência,২. আপনার রেফারেল কোড শেয়ার করুন
+定制,,Customize,personnaliser,تخصيص,Personalizar,
+邀请分享,,Invite by Sharing,Inviter en partageant,ادع بالمشاركة,Processo de convite,শেয়ারিং এর মাধ্যমে ইনভাইট
+邀请过程,,Invitation Process,Processus d'invitation,عملية الدعوة,Convide amigos,ইনভাইটেশন প্রসেস
+邀请朋友,,Invite Friends,Inviter des amis,ادعُ الأصدقاء,Amigos baixem e inscrevam-se,বন্ধুদের ইনভাইট করুন
+朋友下载并注册,,Friends download & register,Les amis téléchargent et s'inscrivent,عند إتمام عملية التحميل والتسجيل,Amigos baixem e inscrevam-se,বন্ধুদের ডাউনলোড এবং রেজিস্টার
+赚取奖励,,Earn Rewards,Obtenir des récompenses,احصل على المكافآت,Ganhe recompensas,রিওয়ার্ড জিতুন
+赢得了奖励,,Earned Rewards,Récompenses obtenues,المكافآت التي حصلت عليها,Recompensas ganhas,অর্জিত রিওয়ার্ড 
+朋友们,,Friends,Amis,الأصدقاء,amigos,বন্ধু
+自定义您的推荐代码,,Customize Your Referrall Code,Personnalisez votre code de référence,خصص رمز الدعوة الخاص بك,Personalize seu código de referência,রেফারেল কোড কাস্টমাইজ করুন
+该链接只能每30天重命名和保存一次,,The link can only be renamed and saved once every 30 days.,Le lien ne peut être renommé et sauvegardé qu'une fois tous les 30 jours.,يمكن تغيير اسم الرابط وحفظه مرة واحدة فقط كل 30 يومًا,O link só pode ser renomeado e salvo uma vez a cada 30 dias.,লিংকটি ৩০ দিনে একবার নাম চেঞ্জ ও সেইভ করা যাবে
+重命名将使原始链接无效提示谨慎操作,,Renaming will invalidate the original link. And successful referrals made through the old link will not be recorded. Exercise caution with edits to avoid losing referral records and rewards.,Le changement de nom invalidera le lien original. Les parrainages réussis effectués à l'aide de l'ancien lien ne seront pas enregistrés. Soyez prudent lors des modifications afin d'éviter de perdre des enregistrements de parrainage et des récompenses.,تغيير اسم الرابط سيؤدي إلى إبطال الرابط الأصلي. ولن يتم تسجيل الدعوات الناجحة التي تمت عبر الرابط القديم. يرجى الحذر عند تعديل الرابط لتجنب فقدان سجلات الدعوة والمكافآت.,Renomear invalidará o link original. E as indicações bem-sucedidas feitas através do link antigo não serão registradas. Tenha cuidado com as edições para evitar perder registros de indicações e recompensas.,নাম চেঞ্জ করা হলে আগের লিংকটি বাতিল হয়ে যাবে এবং আগের লিংকের সফল রেফারেল গুলো থাকবে না। সাবধানতার সাথে এডিট করুন যাতে পুরানো রেফারেল রেকর্ড এবং রিওয়ার্ড হারিয়ে না যায়। 
+保存并复制代码,,Save & Copy Code,Enregistrer et copier le code,احفظ وانسخ الرمز,Salvar e copiar código,কোড সেইভ এবং কপি করুন
+继续保存吗,,Continue to save?,Continuer à sauvegarder ?,هل تريد التأكيد؟,Continuar economizando?,সেইভ করতে চান?
+他邀请您参加此活动,,%@ is inviting you to participate in this activity,%@ vous invite à participer à cette activité,%@ يدعوك للمشاركة في هذه الفعالية,%@ está convidando você para participar desta atividade,এই কার্যক্রমে অংশগ্রহণের জন্য %@ আপনাকে ইনভাইট করেছে
+谨慎行事以避免失去推荐记录和奖励,,Exercise caution with edits to avoid losing referral records and rewards.,Soyez prudent lors des modifications afin d'éviter de perdre les enregistrements et les récompenses des personnes recommandées.,يرجى الحذر عند تعديل الرابط لتجنب فقدان سجلات الدعوة والمكافآت.,Tenha cuidado com as edições para evitar perder registros de indicações e recompensas.,সাবধানতার সাথে এডিট করুন যাতে পুরানো রেফারেল রেকর্ড এবং রিওয়ার্ড হারিয়ে না যায়। 
+扫描并使用xxx的代码注册并获取yyy积分,,Scan/use xxx's code to register and get yyy points,Scannez/utilisez le code de xxx pour vous inscrire et obtenir yyy points.,امسح/استخدم رمز xxx للتسجيل واحصل على yyy نقاط,Digitalize/use o código de xxx para se registrar e ganhar pontos yyy,রেজিস্টার করতে xxx এর কোড স্ক্যান/ব্যবহার করুন এবং yyy পয়েন্ট জিতুন
+赢得的奖励,,Earned Rewards,Récompenses obtenues,المكافآت التي حصلت عليها,Recompensas ganhas,অর্জিত রিওয়ার্ড 
+我的参考,,My Reference,Ma référence,دعواتي,Minha referência,আমার রেফারেন্স
+我的参考代码,,My reference code,Mon code de référence,رمز الدعوة الخاص بي,Meu código de referência,আমার রেফারেন্স কোড
+如果您有来自品牌大使的参考代码请在此处输入,,"If you have a reference code from a Brand Ambassador, please enter it here. If you don't, please disregard this par","Si vous disposez d'un code de référence d'un ambassadeur de la marque, veuillez le saisir ici. Si vous n'en avez pas, ne tenez pas compte de cette partie.",إذا كان لديك رمز دعوة من العلامة التجارية، يرجى إدخاله هنا. إذا لم يكن لديك، يرجى تجاهل هذا الجزء.,"Se você tiver um código de referência de um Embaixador da Marca, insira-o aqui. Caso contrário, desconsidere este par",যদি আপনার কাছে কোন ব্র্যান্ড অ্যাম্বাসেডরের কোড থাকে তাহলে সেটি এখানে লিখুন। যদি না থাকে তাহলে এই অংশটি বাদ দিন। 
+请输入正确的参考代码,,Please enter the correct reference code.,Veuillez saisir le code de référence correct.,يرجى إدخال الرقم المرجعي الصحيح,Por favor insira o código de referência correto.,সঠিক রেফারেন্স কোডটি লিখুন
+排行榜,,Leaderboard,Tableau de bord,الترتيب,Tabela de classificação,লিডারবোর্ড
+日期更新于这个时间,,Date updated on %@,Date de mise à jour le %@,تاريخ التحديث: %@,Data atualizada em %@,আপডেট করা হয়েছে %@
+用户电子邮件,,User Email,Email de l'utilisateur,بريد المستخدم,E-mail do usuário,ইউজার ইমেইল
+奖励,,Rewards,Récompenses,المكافآت,Recompensas,রিওয়ার্ড 
+邀请码,,Invitation Code,Code d'invitation,رمز الدعوة,Código de Convite,আমন্ত্রণ কোড
+验证成功,,Verification Successful,Vérification réussie,تم التحقق,Verificação Bem-Sucedida,সফল যাচাইকরণ
+您的推荐人xxx赢得了积分购物中心检查您的奖励积分,,Your referrer @ xxx has earned  points. Check your rewarded points in the app's Points Mall.,Votre référent @ xxx a gagné des points. Vérifiez vos points récompensés dans le centre commercial des points de l'application.,"""المدعو @ xxx قد حصل على نقاط. تحقق من نقاطك المكافأة في متجر النقاط داخل التطبيق.""",Seu indicado @ xxx ganhou pontos. Verifique seus pontos premiados na Loja de Pontos do aplicativo.,আপনার রেফারার @ xxx নয়াদিগন্ত পয়েন্ট আয়োজন করেছেন। অ্যাপের পয়েন্ট মল-এ আপনার পয়েন্ট পরীক্ষা করুন।
+查看我的积分细节,,View My Points Details,Voir les détails de mes points,عرض تفاصيل نقاطي,Visualizar Detalhes dos Meus Pontos,আমার পয়েন্টের বিস্তারিত দেখুন
