@@ -81,14 +81,14 @@
     self.chooseLocalizbleBtn.enabled = !isLoading;
     self.localizbleTipLabel.textColor = !isLoading ? NSColor.grayColor : NSColor.redColor;
     if (!isLoading) {
-        self.localizbleTipLabel.stringValue = @"*请选择项目中的国际化文件（en.lpro）的父文件夹";
+        self.localizbleTipLabel.stringValue = @"*请选择项目中的国际化文件（en.lproj）的父文件夹；";
     }
     
     self.csvPathCell.enabled = !isLoading;
     self.chooseCSVBtn.enabled = !isLoading;
     self.csvTipLabel.textColor = !isLoading ? NSColor.grayColor : NSColor.redColor;
     if (!isLoading) {
-        self.csvTipLabel.stringValue = @"*如果需要导出翻译，请选择一个的文件夹作为导出存放目录; *如果需要导入翻译，请选择需要导入的（.csv）翻译文件;";
+        self.csvTipLabel.stringValue = @"*如果需要导出翻译，请选择一个的文件夹作为导出存放目录； *如果需要导入翻译，请选择需要导入的（.csv）翻译文件；";
     }
 
     self.importButton.enabled = !isLoading;
