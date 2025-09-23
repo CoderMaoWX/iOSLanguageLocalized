@@ -1,6 +1,6 @@
 # iOSLanguageLocalized
 
-![下载安装包](https://github.com/CoderMaoWX/iOSLanguageLocalized/releases)
+[下载安装包](https://github.com/CoderMaoWX/iOSLanguageLocalized/releases)
 
 一个简易的iOS国际化多语言翻译工具，具有以下功能方便在开发中管理多语言翻译：
 
