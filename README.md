@@ -1,5 +1,7 @@
 # iOSLanguageLocalized
 
+![下载安装包](https://github.com/CoderMaoWX/iOSLanguageLocalized/releases)
+
 一个简易的iOS国际化多语言翻译工具，具有以下功能方便在开发中管理多语言翻译：
 
 1. 一键从`.CSV`文件中导入多语言到项目中；（注意：如果你的翻译表格是Excel格式的文件，可以使用Mac系统项目中的`NUmbers表格`软件打开后导出保存为`.CSV`表格）
