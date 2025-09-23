@@ -225,6 +225,11 @@
                 
                 [[NSUserDefaults standardUserDefaults] setObject:localizbleURL forKey:kLanguageLocalized];
                 [[NSUserDefaults standardUserDefaults] synchronize];
+                
+                //导出成功后，自动打开文件夹
+                if (status) {
+                    [[NSWorkspace sharedWorkspace] openURL:[NSURL fileURLWithPath:outputFilePath]];
+                }
             });
         }];
     });
@@ -265,6 +270,12 @@
             [[NSUserDefaults standardUserDefaults] synchronize];
         });
     }];
+}
+
+/// 好用就给个赞吧
+- (IBAction)giveStarAction:(NSButton *)sender {
+    //打开Github项目地址
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/CoderMaoWX/iOSLanguageLocalized.git"]];
 }
 
 @end
